@@ -1,0 +1,10 @@
+Imágenes de Encuentros RGM
+logo-encuentros.png  ya incluido (logo oficial con fondo transparente).
+
+Fotos (JPG). Coloca aquí las fotos con estos nombres exactos. Si falta alguna, la página muestra un bloque decorativo.
+foto-portada.jpg     vertical (4:5), por ejemplo 1200 x 1500 px
+foto-foros.jpg       horizontal (4:3), 1600 x 1200 px
+foto-encuentros.jpg  horizontal (4:3), 1600 x 1200 px
+foto-simposio.jpg    horizontal (4:3), 1600 x 1200 px
+foto-congreso.jpg    horizontal (4:3), 1600 x 1200 px
+Peso recomendado: menos de 300 KB cada una.

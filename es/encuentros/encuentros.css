@@ -1,0 +1,185 @@
+/* Encuentros RGM – landing (borrador 2). Estilo alineado con redglobaldementores.org: azul marino y dorado, tipografía Poppins. */
+:root {
+  --azul: #651A3D;
+  --azul-2: #561433;
+  --azul-oscuro: #3A0B22;
+  --oro: #D2B13F;
+  --oro-claro: #EBD58E;
+  --texto: #F8EEF2;
+  --texto-suave: #E2C9D3;
+  --linea: rgba(255,255,255,.14);
+  --fuente: "Poppins", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --ancho: 1120px; --radio: 12px; --alto-menu: 80px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--alto-menu) + 8px); }
+body { margin: 0; font-family: var(--fuente); font-size: 1.02rem; line-height: 1.7; color: var(--texto); background: var(--azul); }
+img { max-width: 100%; display: block; }
+a { color: var(--oro-claro); }
+h1, h2, h3 { color: #fff; line-height: 1.15; margin: 0 0 .6em; letter-spacing: -.02em; font-weight: 700; }
+h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); font-weight: 800; }
+h2 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); font-weight: 800; }
+h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -.01em; }
+p { margin: 0 0 1em; }
+.contenedor { width: min(100% - 40px, var(--ancho)); margin-inline: auto; }
+.seccion { padding: 92px 0; }
+.seccion--alt { background: var(--azul-2); }
+.sobretitulo { display: block; font-size: .78rem; letter-spacing: .3em; text-transform: uppercase; font-weight: 600; color: var(--oro-claro); margin-bottom: 1rem; }
+.titulo { max-width: 780px; margin-bottom: 2.6rem; }
+.titulo::after, .regla::after { content: ""; display: block; width: 92px; height: 3px; background: var(--oro); margin-top: 1.4rem; }
+.bajada { font-size: 1.15rem; color: var(--texto-suave); font-weight: 300; }
+
+/* Botones */
+.boton { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: 999px; font-family: var(--fuente); font-weight: 600; font-size: .92rem; text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+.boton::after { content: "↗"; font-size: .95em; }
+.boton--oro { background: var(--oro); color: #14100A; border-color: var(--oro); }
+.boton--oro:hover, .boton--oro:focus-visible { background: var(--oro-claro); border-color: var(--oro-claro); }
+.boton--borde { background: transparent; color: #fff; border-color: rgba(255,255,255,.65); }
+.boton--borde:hover, .boton--borde:focus-visible { background: #fff; color: var(--azul); border-color: #fff; }
+.boton:focus-visible, a:focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
+
+/* Menú */
+.menu { position: sticky; top: 0; z-index: 50; height: var(--alto-menu); background: rgba(74,16,43,.97); backdrop-filter: blur(6px); border-bottom: 1px solid var(--linea); }
+.menu__interior { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.marca { display: flex; align-items: center; }
+.marca img { height: 54px; width: auto; }
+.menu__nav { display: flex; align-items: center; gap: 24px; }
+.menu__nav > a:not(.boton) { color: #fff; text-decoration: none; font-weight: 500; font-size: .93rem; }
+.menu__nav > a:not(.boton):hover { color: var(--oro-claro); }
+.menu__nav .boton { padding: 9px 18px; font-size: .82rem; }
+.idiomas { display: flex; gap: 6px; margin-left: 4px; }
+.idiomas span, .idiomas a { font-weight: 600; font-size: .82rem; padding: 6px 12px; border-radius: 8px; color: var(--oro-claro); }
+.idiomas a { text-decoration: none; }
+.idiomas .activo { background: var(--oro); color: #14100A; }
+.idiomas .pronto { opacity: .55; cursor: default; }
+.menu__boton { display: none; background: none; border: 1px solid var(--oro-claro); color: #fff; border-radius: 8px; padding: 8px 14px; font: inherit; font-weight: 600; cursor: pointer; }
+
+/* Portada */
+.portada { position: relative; overflow: hidden; padding: 84px 0 100px;
+  background: radial-gradient(1000px 600px at 90% 80%, rgba(255,255,255,.07), transparent 60%), linear-gradient(170deg, #561433 0%, #7A2149 100%); }
+.portada__motivo { position: absolute; right: -180px; bottom: -200px; width: 720px; opacity: .28; color: var(--oro); pointer-events: none; }
+.portada__grid { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
+.portada .bajada { max-width: 600px; }
+.portada__botones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 1.8rem; }
+.portada__nota { margin-top: 1.4rem; font-size: .9rem; color: var(--texto-suave); }
+
+/* Fotos: si el archivo no existe, se muestra un bloque decorativo */
+.foto { position: relative; margin: 0; border-radius: 16px; overflow: hidden; background: var(--azul-oscuro); aspect-ratio: 4 / 3; border: 1px solid var(--linea); }
+.foto img { width: 100%; height: 100%; object-fit: cover; }
+.foto.vacia img { display: none; }
+.foto.vacia { display: grid; place-items: center; background: linear-gradient(135deg, #3A0B22, #7A2149); }
+.foto.vacia::before { content: ""; width: 44%; aspect-ratio: 1; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200' fill='none' stroke='%23EBD58E' stroke-width='5' opacity='.5'%3E%3Ccircle cx='100' cy='62' r='46'/%3E%3Ccircle cx='100' cy='62' r='28'/%3E%3Ccircle cx='100' cy='138' r='46'/%3E%3Ccircle cx='100' cy='138' r='28'/%3E%3Ccircle cx='62' cy='100' r='46'/%3E%3Ccircle cx='62' cy='100' r='28'/%3E%3Ccircle cx='138' cy='100' r='46'/%3E%3Ccircle cx='138' cy='100' r='28'/%3E%3C/svg%3E") center / contain no-repeat; }
+.foto--alta { aspect-ratio: 4 / 5; }
+
+/* Índice de cuatro */
+.cuatro { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.mini { background: rgba(255,255,255,.05); border: 1px solid var(--linea); border-radius: var(--radio); padding: 26px 22px; text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform .15s, border-color .15s, background .15s; }
+.mini:hover { transform: translateY(-3px); border-color: var(--oro); background: rgba(255,255,255,.08); }
+.mini__n { font-weight: 800; font-size: 2rem; color: var(--oro-claro); line-height: 1; margin-bottom: .7rem; }
+.mini h3 { margin-bottom: .4rem; }
+.mini p { color: var(--texto-suave); font-size: .93rem; margin: 0; line-height: 1.6; }
+
+/* Bloques por tipo de evento */
+.evento { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.evento--inversa .evento__texto { order: 2; }
+.etiqueta { display: inline-block; border: 1px solid var(--oro); color: var(--oro-claro); font-weight: 600; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; padding: 5px 14px; border-radius: 999px; margin-bottom: 1.1rem; }
+.dias { display: flex; flex-wrap: wrap; gap: 10px; margin: 1.2rem 0 1.8rem; }
+.dia { background: var(--oro); color: #14100A; font-weight: 700; padding: 9px 20px; border-radius: 10px; }
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 1.1rem 0 1.5rem; }
+.chips li { margin: 0; background: rgba(255,255,255,.06); border: 1px solid var(--linea); border-left: 4px solid var(--oro); border-radius: 8px; padding: 8px 16px; font-weight: 500; font-size: .95rem; }
+.puntos { list-style: none; padding: 0; margin: 1.1rem 0 1.6rem; }
+.puntos li { position: relative; padding-left: 28px; margin-bottom: .7em; }
+.puntos li::before { content: ""; position: absolute; left: 2px; top: .6em; width: 11px; height: 11px; border: 3px solid var(--oro); border-radius: 50%; }
+
+/* Formatos RGMx */
+.formatos { margin-top: 3.4rem; background: var(--azul-oscuro); border: 1px solid var(--linea); border-radius: 18px; padding: 40px 36px; }
+.formatos h3 { font-size: 1.5rem; }
+.formatos__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 1.4rem 0 1.8rem; }
+.formato { background: rgba(255,255,255,.05); border: 1px solid var(--linea); border-radius: 10px; padding: 16px 18px; }
+.formato strong { display: block; color: var(--oro-claro); font-size: .95rem; margin-bottom: 2px; }
+.formato span { font-size: .9rem; color: var(--texto-suave); }
+.pasos { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; list-style: none; padding: 0; margin: 1rem 0 0; counter-reset: p; }
+.pasos li { counter-increment: p; margin: 0; font-weight: 600; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; border-top: 3px solid var(--oro); padding-top: 10px; color: #fff; }
+.pasos li::before { content: counter(p); display: block; font-size: 1.5rem; color: var(--oro-claro); font-weight: 800; letter-spacing: 0; }
+.formatos small { display: block; margin-top: 1.5rem; color: var(--texto-suave); font-size: .85rem; line-height: 1.6; }
+
+/* Por qué Holding Mentors */
+.dosc { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.tarjeta { background: rgba(255,255,255,.05); border: 1px solid var(--linea); border-radius: 16px; padding: 32px 30px; }
+.tarjeta h3 { margin-top: 0; font-size: 1.35rem; }
+.cita { font-weight: 800; font-size: clamp(1.5rem, 3.2vw, 2.2rem); color: #fff; line-height: 1.2; margin: 0 0 1rem; letter-spacing: -.02em; }
+
+/* Cierre y pie */
+.cierre { background: linear-gradient(170deg, #7A2149 0%, #561433 100%); text-align: center; padding: 88px 0; position: relative; overflow: hidden; border-top: 1px solid var(--linea); }
+.cierre p { color: var(--texto-suave); max-width: 640px; margin-inline: auto; }
+.cierre .portada__botones { justify-content: center; }
+.pie { background: var(--azul-oscuro); color: var(--texto-suave); padding: 38px 0; font-size: .88rem; }
+.pie__interior { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; }
+.pie .marca img { height: 52px; }
+
+@media (max-width: 1040px) { .menu__nav { gap: 16px; } }
+@media (max-width: 960px) {
+  .portada__grid, .evento, .dosc { grid-template-columns: 1fr; gap: 34px; }
+  .evento--inversa .evento__texto { order: 0; }
+  .cuatro, .formatos__grid { grid-template-columns: repeat(2, 1fr); }
+  .pasos { grid-template-columns: repeat(3, 1fr); }
+  .portada .foto { max-width: 520px; }
+}
+@media (max-width: 1100px) {
+  .menu__boton { display: inline-block; }
+  .menu__nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: var(--azul-oscuro); border-bottom: 1px solid var(--linea); padding: 8px 20px 18px; }
+  .menu__nav.abierto { display: flex; }
+  .menu__nav > a:not(.boton) { padding: 13px 0; border-bottom: 1px solid var(--linea); }
+  .menu__nav .boton { margin-top: 14px; justify-content: center; }
+  .idiomas { margin: 14px 0 0; }
+}
+@media (max-width: 620px) {
+  .seccion { padding: 62px 0; }
+  .cuatro, .formatos__grid { grid-template-columns: 1fr; }
+  .pasos { grid-template-columns: repeat(2, 1fr); }
+  .formatos { padding: 28px 20px; }
+  .portada { padding-top: 48px; }
+  .marca img { height: 46px; }
+  .boton { width: 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .mini, .boton { transition: none; } }
+
+.menu__nav .volver { color: var(--oro-claro) !important; font-weight: 600; white-space: nowrap; }
+.pie .boton { padding: 10px 20px; font-size: .85rem; }
+.menu__nav { gap: 18px; }
+.menu__nav > a, .menu__nav .boton { white-space: nowrap; }
+.menu__nav > a:not(.boton) { font-size: .88rem; }
+.menu__nav .boton { padding: 8px 16px; font-size: .8rem; }
+.idiomas span { padding: 5px 9px; }
+.marca { flex-shrink: 0; }
+
+/* Identidad propia de Encuentros: vino + dorado (piezas del Primer Congreso Global de Mentoring) */
+.marca img { height: 50px; }
+.pie .marca img { height: 64px; }
+.portada__motivo { stroke-width: 2.2; }
+.cierre::before { content: ""; position: absolute; left: -90px; bottom: -70px; width: 460px; height: 330px; background: url("img/arcos-encuentros-dorado.png") center / contain no-repeat; opacity: .16; pointer-events: none; }
+.cierre .contenedor { position: relative; }
+.menu { border-bottom: 2px solid var(--oro); }
+.seccion--alt { background: linear-gradient(180deg, #4A102B, #561433); }
+.dia { background: #A8920A; color: #fff; }
+.pie { border-top: 3px solid var(--oro); }
+
+/* Logo (arcos y palabras del mismo ancho) */
+.menu .marca img { height: 62px; }
+.pie .marca img { height: 88px; }
+@media (max-width: 620px) { .menu .marca img { height: 52px; } .pie .marca img { height: 76px; } }
+
+/* Barra superior estándar de unidad */
+.barra { background: var(--azul-oscuro); font-size: .8rem; border-bottom: 1px solid var(--linea); }
+.barra__in { display: flex; justify-content: space-between; gap: 16px; padding: 7px 0; }
+.barra a { color: var(--oro-claro); text-decoration: none; font-weight: 600; }
+.barra span { color: var(--texto-suave); }
+@media (max-width: 620px) { .barra span { display: none; } }
+
+/* Zócalo estándar */
+.pie--zocalo { padding: 46px 0 34px; }
+.pie--zocalo .contenedor { display: block; }
+.zocalo__datos { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; font-size: .85rem; color: var(--texto-suave); }
+.zocalo__datos p { margin: 0; } .zocalo__datos b { color: #fff; }
+.zocalo__c { text-align: center; font-size: .8rem; color: var(--texto-suave); margin: 28px 0 0; }
+@media (max-width: 760px) { .zocalo__datos { grid-template-columns: 1fr; } }

@@ -1,0 +1,32 @@
+/* Congreso 2027 – subsección de Encuentros RGM (usa ../encuentros.css) */
+.portada h1 { font-size: clamp(2.2rem, 5vw, 3.7rem); }
+.portada .bajada { font-size: 1.35rem; color: var(--oro-claro); font-weight: 500; }
+.fechas { margin: 1.2rem 0 0; display: flex; flex-direction: column; gap: 2px; font-size: 1.1rem; }
+.fechas strong { color: #fff; font-size: 1.3rem; }
+.fechas span { color: var(--texto-suave); }
+.acts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.act { background: rgba(255,255,255,.05); border: 1px solid var(--linea); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+.act .foto { border-radius: 0; border: 0; aspect-ratio: 16 / 10; }
+.act__cuerpo { padding: 24px 24px 28px; }
+.act__cuerpo h3 { font-size: 1.4rem; margin-bottom: .5rem; }
+.etiqueta { display: inline-block; font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: var(--oro-claro); margin-bottom: .6rem; }
+.act__meta { display: flex; flex-direction: column; gap: 2px; font-size: .9rem; color: var(--oro-claro); margin-bottom: 1rem; }
+.act__cuerpo p:last-child { font-size: .95rem; color: var(--texto-suave); margin: 0; }
+.tres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: start; }
+.dirigida { font-size: .78rem; letter-spacing: .2em; text-transform: uppercase; color: var(--oro-claro); font-weight: 600; margin: 1.2rem 0 .3rem; }
+.chica { font-size: .88rem; color: var(--texto-suave); }
+.programa { list-style: none; margin: 0; padding: 0; counter-reset: p; }
+.programa li { display: flex; gap: 16px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--linea); }
+.programa li span { font-weight: 800; color: var(--oro); min-width: 2.2ch; }
+.programa__foto { margin-top: 1.6rem; aspect-ratio: 16 / 10; }
+.trayectoria { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+.trayectoria li { background: rgba(255,255,255,.05); border: 1px solid var(--linea); border-radius: 14px; padding: 22px 16px; display: flex; flex-direction: column; gap: 2px; }
+.trayectoria li.actual { border-color: var(--oro); background: rgba(210,177,63,.12); }
+.ed__n { font-weight: 800; font-size: 1.8rem; color: var(--oro-claro); line-height: 1; margin-bottom: .6rem; }
+.trayectoria strong { color: #fff; }
+.trayectoria em { font-style: normal; font-size: .85rem; color: var(--oro-claro); margin-top: .5rem; }
+.pendiente { font-size: .9rem; color: var(--oro-claro); font-style: italic; }
+@media (max-width: 960px) {
+  .acts, .tres { grid-template-columns: 1fr; }
+  .trayectoria { grid-template-columns: repeat(2, 1fr); }
+}
