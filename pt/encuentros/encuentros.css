@@ -183,3 +183,9 @@ p { margin: 0 0 1em; }
 .zocalo__datos p { margin: 0; } .zocalo__datos b { color: #fff; }
 .zocalo__c { text-align: center; font-size: .8rem; color: var(--texto-suave); margin: 28px 0 0; }
 @media (max-width: 760px) { .zocalo__datos { grid-template-columns: 1fr; } }
+
+/* Botón principal solo; los secundarios juntos debajo */
+.portada__botones--pila { flex-direction: column; align-items: flex-start; gap: 14px; }
+.portada__botones--sec { margin-top: 0; gap: 12px; }
+.cierre .portada__botones--pila { align-items: center; }
+@media (max-width: 640px) { .portada__botones--pila { align-items: stretch; } .portada__botones--sec { flex-direction: column; } }
