@@ -107,6 +107,8 @@ p{margin:0 0 1em}
 .claro .precio b{color:#7d7021}
 .precio small{font-weight:400;color:var(--suave)}
 .claro .precio small{color:#3b4377}
+.precio--gratis{display:inline-block;align-self:flex-start;width:fit-content;background:var(--oro-v);color:#14100A!important;font-family:var(--titulo);font-size:1.4rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1;padding:9px 18px;border-radius:999px;box-shadow:0 0 0 3px rgba(255,255,255,.18)}
+.claro .precio--gratis{color:#14100A!important}
 /* programas */
 .escala{list-style:none;padding:0;margin:2rem 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:e}
 .escala li{counter-increment:e;position:relative;background:var(--azul);color:#fff;padding:22px 16px 18px;border-right:2px solid var(--crema-2);display:flex;flex-direction:column;gap:4px}
