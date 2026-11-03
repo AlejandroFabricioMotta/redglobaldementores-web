@@ -592,6 +592,12 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
 .caja .boton { font-size: 15px; padding: 12px 24px; }
 @media (max-width: 760px) { .cajas { grid-template-columns: 1fr; } .caja { min-height: 0; } }
 
+/* Directorio · Mentores Expertos: Nivel 3 aprobado = fondo azul; Nivel 3 en curso = fondo gris */
+.mc-bloque:has(.mc-banda) .mc-card.mc-card--aprobado { background: #232857; }
+.mc-bloque:has(.mc-banda) .mc-card.mc-card--encurso { background: #5a5e6b; border-color: rgba(255,255,255,.25); }
+.mc-bloque:has(.mc-banda) .mc-card.mc-card--encurso .mc-foto { background: rgba(255,255,255,.08); }
+.mc-aviso--encurso { margin: 0; font-size: 13px; color: #eceef3; }
+
 /* Tema Editorial: paleta #3A3129 #7A6652 #BFA98A #EFE2CF #FFF9EE (generado) */
 .tema-editorial{--color-fondo:#3A3129;--color-fondo-2:#7A6652;--color-acento-vivo:#BFA98A;--color-acento-verde:#BFA98A;--color-texto-2:#EFE2CF;--color-dorado:#BFA98A;--color-arena:#BFA98A;--color-texto:#FFF9EE;background:#3A3129;color:#FFF9EE}
 .tema-editorial .encabezado{
@@ -667,3 +673,4 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
 .tema-editorial .caja{ display: flex; flex-direction: column; justify-content: space-between; gap: 14px; min-height: 340px; padding: 34px 34px 30px; border-radius: 18px;
   border: 1px solid rgba(191, 169, 138, .55); border-top: 5px solid var(--color-dorado);
   background: linear-gradient(160deg, rgba(122, 102, 82, .55), rgba(58, 49, 41, .85)); scroll-margin-top: 76px; }
+.tema-editorial .mc-bloque:has(.mc-banda) .mc-card.mc-card--aprobado{ background: #4a3e33; }
