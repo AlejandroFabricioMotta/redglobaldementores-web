@@ -276,3 +276,7 @@ p{margin:0 0 1em}
 /* Idioma de la formación */
 .solo-es{display:inline-block;margin:.2rem 0 .4rem;padding:3px 10px;border-left:3px solid var(--oro-v);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--oro-v)}
 .claro .solo-es{color:#7d7021;border-left-color:#7d7021}
+
+.centros--3{--n:3}
+@media(max-width:1060px){.centros--3{--n:3}}
+@media(max-width:760px){.centros--3{--n:1}}
