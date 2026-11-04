@@ -634,6 +634,9 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
 .historia .historia-foto { margin: 0; }
 .texto-g.historia-texto { max-width: none; margin-top: 36px; }
 .texto-g.historia-texto p { max-width: none; }
+/* Teacher en curso: cartel arriba, botones abajo */
+.mc-aviso--arriba { margin-top: auto; margin-bottom: 10px; }
+.mc-acciones--tras { margin-top: 0; padding-top: 0; }
 
 /* Tema Editorial: paleta #3A3129 #7A6652 #BFA98A #EFE2CF #FFF9EE (generado) */
 .tema-editorial{--color-fondo:#3A3129;--color-fondo-2:#7A6652;--color-acento-vivo:#BFA98A;--color-acento-verde:#BFA98A;--color-texto-2:#EFE2CF;--color-dorado:#BFA98A;--color-arena:#BFA98A;--color-texto:#FFF9EE;background:#3A3129;color:#FFF9EE}
