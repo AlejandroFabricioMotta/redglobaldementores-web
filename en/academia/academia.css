@@ -286,5 +286,3 @@ p{margin:0 0 1em}
 .card__ico--br{position:absolute;bottom:20px;right:20px;width:auto;height:auto;max-width:96px;max-height:72px;margin:0}
 .card:has(.card__ico--tr) h3{padding-right:118px}
 @media(max-width:700px){.card__ico--tr{max-width:84px;max-height:70px}.card:has(.card__ico--tr) h3{padding-right:96px}.card__ico--br{max-width:80px;max-height:60px}}
-.card:has(.card__ico--br) p{margin-bottom:3.2rem}
-@media(max-width:700px){.card:has(.card__ico--br) p{padding-right:0;margin-bottom:4.2rem}}
