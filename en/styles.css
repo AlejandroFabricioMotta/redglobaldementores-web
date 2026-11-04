@@ -608,6 +608,7 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
 .mc-bloque:has(.mc-banda.tm) .mc-card h3 { color: #EFE6D8; }
 .mc-bloque:has(.mc-banda.tm) .mc-card .boton.secundario { border-color: #8B3F5C; color: #C9A16B; }
 .mc-bloque:has(.mc-banda.tm) .mc-card .dot.on { background: #C9A16B; }
+.mc-bloque:has(.mc-banda.tm) .mc-aviso--encurso { background: #5a5e6b; color: #eceef3; padding: 8px 10px; border-radius: 6px; text-align: center; }
 
 /* Tema Editorial: paleta #3A3129 #7A6652 #BFA98A #EFE2CF #FFF9EE (generado) */
 .tema-editorial{--color-fondo:#3A3129;--color-fondo-2:#7A6652;--color-acento-vivo:#BFA98A;--color-acento-verde:#BFA98A;--color-texto-2:#EFE2CF;--color-dorado:#BFA98A;--color-arena:#BFA98A;--color-texto:#FFF9EE;background:#3A3129;color:#FFF9EE}
