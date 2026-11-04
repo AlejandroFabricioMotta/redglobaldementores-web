@@ -621,6 +621,14 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
 .caja .etiqueta, .caja h3 { max-width: calc(100% - 100px); }
 @media (max-width: 760px) { .caja .caja-icono { width: 52px; height: 52px; top: 20px; right: 20px; } .caja .etiqueta, .caja h3 { max-width: calc(100% - 80px); } }
 
+/* Modelo de gobernanza: foto a la derecha con degradé hacia el texto */
+.modelo-bloque { position: relative; }
+.modelo-bloque .modelo-txt { position: relative; z-index: 1; max-width: 62%; }
+.modelo-bloque .modelo-foto { position: absolute; top: -8px; bottom: 0; right: calc(50% - 50vw); width: min(64vw, 920px); height: calc(100% + 8px); object-fit: cover; object-position: left center; z-index: 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.55) 30%, #000 62%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.55) 30%, #000 62%); filter: brightness(.82); }
+.seccion#modelo { overflow: hidden; }
+@media (max-width: 900px) { .modelo-bloque .modelo-txt { max-width: none; } .modelo-bloque .modelo-foto { width: 100%; right: 0; opacity: .16; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent); } }
+
 /* Tema Editorial: paleta #3A3129 #7A6652 #BFA98A #EFE2CF #FFF9EE (generado) */
 .tema-editorial{--color-fondo:#3A3129;--color-fondo-2:#7A6652;--color-acento-vivo:#BFA98A;--color-acento-verde:#BFA98A;--color-texto-2:#EFE2CF;--color-dorado:#BFA98A;--color-arena:#BFA98A;--color-texto:#FFF9EE;background:#3A3129;color:#FFF9EE}
 .tema-editorial .encabezado{
