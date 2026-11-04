@@ -165,11 +165,16 @@ h1 { font-weight: 800; font-size: clamp(34px, 5.4vw, 60px); max-width: 17ch; }
 }
 .caja h3 { font-weight: 800; font-size: 24px; }
 .caja p { color: var(--color-texto-2); margin: 12px 0 0; }
-.principios { display: grid; gap: 18px; margin-top: 32px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-.principio { border-top: 3px solid var(--color-dorado); background: rgba(31, 37, 85, .55); padding: 20px 20px 24px; border-radius: 0 0 var(--radio) var(--radio); }
+.principios { display: grid; gap: 0; margin-top: 32px; grid-template-columns: repeat(5, 1fr); }
+.principio { padding: 4px 22px 8px; border-left: 1px solid rgba(214, 196, 150, .45); background: none; border-radius: 0; }
+.principio:first-child { border-left: 0; padding-left: 0; }
+.principio:last-child { padding-right: 0; }
+.principio .principio-icono { display: block; height: 108px; width: auto; max-width: 100%; margin: 0 0 22px; object-fit: contain; object-position: left center; }
 .principio .num { font-weight: 800; font-size: 14px; letter-spacing: .2em; color: var(--color-arena); }
 .principio h3 { font-size: 20px; font-weight: 700; margin-top: 6px; }
 .principio p { color: var(--color-texto-2); font-size: 15.5px; margin: 10px 0 0; }
+@media (max-width: 1100px) { .principios { grid-template-columns: repeat(2, 1fr); row-gap: 34px; } .principio, .principio:first-child, .principio:last-child { padding: 4px 22px 8px; } .principio:nth-child(odd) { border-left: 0; padding-left: 0; } }
+@media (max-width: 640px) { .principios { grid-template-columns: 1fr; } .principio, .principio:nth-child(n) { border-left: 0; padding: 0 0 26px; border-bottom: 1px solid rgba(214, 196, 150, .35); } .principio:last-child { border-bottom: 0; } }
 .organos { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 14px; max-width: 72ch; }
 .organos li { border-left: 3px solid var(--color-dorado); padding-left: 18px; color: var(--color-texto-2); }
 .organos strong { color: var(--color-texto); display: block; }
@@ -651,7 +656,6 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
   background: rgba(122, 102, 82, .4); border: 1px solid rgba(191, 169, 138, .5);
   border-radius: var(--radio); padding: 28px 28px 30px;
 }
-.tema-editorial .principio{ border-top: 3px solid var(--color-dorado); background: rgba(58, 49, 41, .55); padding: 20px 20px 24px; border-radius: 0 0 var(--radio) var(--radio); }
 .tema-editorial .figura-ancha img{ display: block; width: 100%; height: auto; border-radius: var(--radio); border: 1px solid rgba(191, 169, 138, .5); }
 .tema-editorial .doc{ display: flex; flex-direction: column; background: rgba(122, 102, 82, .4); border: 1px solid rgba(191, 169, 138, .5); border-radius: var(--radio); padding: 18px; }
 .tema-editorial .placa img{ display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(191, 169, 138, .45); }
