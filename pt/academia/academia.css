@@ -280,3 +280,5 @@ p{margin:0 0 1em}
 .centros--3{--n:3}
 @media(max-width:1060px){.centros--3{--n:3}}
 @media(max-width:760px){.centros--3{--n:1}}
+.card__ico{display:block;height:84px;width:auto;max-width:100%;align-self:flex-start;margin:0 0 1.1rem;object-fit:contain}
+@media(max-width:700px){.card__ico{height:72px}}
