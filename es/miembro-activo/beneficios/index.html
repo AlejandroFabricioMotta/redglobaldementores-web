@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../styles.css?v=ben1">
-<link rel="stylesheet" href="beneficios.css?v=2">
+<link rel="stylesheet" href="beneficios.css?v=3">
 </head>
 <body>
 <header class="encabezado">
@@ -28,6 +28,44 @@
   </div>
 </header>
 <main>
+<div id="cargando" class="seccion"><div class="contenedor"><p class="ben-msg">Verificando tu acceso…</p><noscript><p class="ben-msg">Para ingresar a esta sección necesitás activar JavaScript en tu navegador.</p></noscript></div></div>
+
+<div id="puerta" hidden>
+<section class="heroe ben-heroe ben-puerta">
+  <div class="contenedor">
+    <p class="migas"><a href="../">Miembro Activo</a> / Beneficios</p>
+    <p class="volanta">Sección exclusiva · Miembros Activos</p>
+    <h1>Beneficios exclusivos para Miembros Activos</h1>
+    <p class="bajada">RGM Plus, manuales, libros y cursos de perfeccionamiento para mentores. Un único pago, 12 meses de acceso.</p>
+    <hr class="linea-dorada">
+    <p id="ben-aviso" class="ben-msg ben-msg--aviso" hidden></p>
+    <div class="ben-puerta__g">
+      <article class="ben-caja">
+        <p class="etiqueta">Membresía anual</p>
+        <p class="ben-precio"><span id="ben-precio">u$s 50</span> <small>pago único</small></p>
+        <p id="ben-precio-nota" class="ben-nota"></p>
+        <label class="ben-check"><input type="checkbox" id="ben-acepto"> <span>Entiendo que los contenidos están solo en español.</span></label>
+        <button type="button" class="boton" id="ben-pagar">Pagar y acceder</button>
+        <p id="ben-error" class="ben-msg ben-msg--error" hidden></p>
+        <p class="ben-nota">Pago seguro con tarjeta a través de Stripe. El acceso dura 12 meses desde la fecha de pago.</p>
+      </article>
+      <article class="ben-caja">
+        <p class="etiqueta">¿Ya sos Miembro Activo?</p>
+        <p class="ben-nota">Ingresá el email con el que pagaste y te enviamos un enlace de acceso.</p>
+        <form id="ben-form-ingreso" class="ben-form" novalidate>
+          <label for="ben-email">Email</label>
+          <input type="email" id="ben-email" autocomplete="email" required placeholder="tu@email.com">
+          <button type="submit" class="boton secundario">Enviarme el enlace</button>
+        </form>
+        <p id="ben-ok" class="ben-msg" hidden></p>
+      </article>
+    </div>
+  </div>
+</section>
+</div>
+
+<div id="contenido-miembro" hidden>
+<div class="ben-barra"><div class="contenedor"><span id="ben-vence"></span> <button type="button" id="ben-salir" class="ben-salir">Cerrar sesión</button></div></div>
 <section class="heroe ben-heroe">
   <div class="contenedor ben-heroe__g">
     <div>
@@ -117,6 +155,7 @@
     <p class="ben-pronto">En breve estamos agregando más beneficios…</p>
   </div>
 </section>
+</div>
 </main>
 <footer class="pie pie--zocalo">
   <div class="contenedor">
@@ -134,5 +173,6 @@
     b.setAttribute('aria-expanded', abierto ? 'true' : 'false');
   });
 </script>
+<script src="acceso.js?v=1"></script>
 </body>
 </html>
