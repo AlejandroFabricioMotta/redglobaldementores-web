@@ -643,6 +643,11 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
 .mc-aviso--arriba { margin-top: auto; margin-bottom: 10px; }
 .mc-acciones--tras { margin-top: 0; padding-top: 0; }
 
+/* ---------- Llave de acceso privado (Home) ---------- */
+.llave { flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; margin-left: 10px; border-radius: 8px; color: var(--color-arena); border: 1px solid rgba(167, 151, 56, .45); text-decoration: none; transition: background .2s, color .2s; }
+.llave:hover, .llave:focus-visible { background: var(--color-dorado); color: var(--color-fondo); }
+@media (max-width: 860px) { .llave { margin-left: 8px; width: 38px; height: 38px; } .marca span { white-space: normal; } }
+
 /* Tema Editorial: paleta #3A3129 #7A6652 #BFA98A #EFE2CF #FFF9EE (generado) */
 .tema-editorial{--color-fondo:#3A3129;--color-fondo-2:#7A6652;--color-acento-vivo:#BFA98A;--color-acento-verde:#BFA98A;--color-texto-2:#EFE2CF;--color-dorado:#BFA98A;--color-arena:#BFA98A;--color-texto:#FFF9EE;background:#3A3129;color:#FFF9EE}
 .tema-editorial .encabezado{
@@ -720,3 +725,4 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
   border: 1px solid rgba(191, 169, 138, .55); border-top: 5px solid var(--color-dorado);
   background: linear-gradient(160deg, rgba(122, 102, 82, .55), rgba(58, 49, 41, .85)); scroll-margin-top: 76px; }
 .tema-editorial .mc-bloque:has(.mc-banda) .mc-card.mc-card--aprobado{ background: #4a3e33; }
+.tema-editorial .llave{ flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; margin-left: 10px; border-radius: 8px; color: var(--color-arena); border: 1px solid rgba(191, 169, 138, .45); text-decoration: none; transition: background .2s, color .2s; }
