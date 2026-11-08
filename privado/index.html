@@ -35,6 +35,10 @@ h1{margin:0;font-size:clamp(30px,5vw,48px);line-height:1.15;font-weight:700;text
 a.tarjeta:hover,a.tarjeta:focus-visible{background:rgba(255,255,255,.09);border-color:var(--dorado)}
 a.tarjeta:focus-visible{outline:3px solid var(--dorado);outline-offset:3px}
 .tarjeta.inactiva{opacity:.78}
+.sub{margin:48px 0 16px;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--arena)}
+.grilla.menor{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.grilla.menor .tarjeta{padding:16px;gap:8px;background:rgba(0,0,0,.22);border-style:dashed}
+.grilla.menor .tarjeta h2{font-size:15px;font-weight:500}
 .nota{margin:36px 0 0;color:var(--arena);font-size:14px;max-width:62ch}
 </style>
 </head>
@@ -46,7 +50,7 @@ a.tarjeta:focus-visible{outline:3px solid var(--dorado);outline-offset:3px}
 <main><div class="contenedor">
   <p class="volanta">Zona privada</p>
   <h1>Accesos privados</h1>
-  <p class="bajada">Documentos internos del ecosistema. Cada uno se abre con su propia contraseña.</p>
+  <p class="bajada">Documentos y tableros internos del ecosistema. Cada uno se abre con su propia contraseña.</p>
   <div class="linea"></div>
   <div class="grilla">
     <a class="tarjeta" href="/MapaTecnico-EcosistemaRGM/">
@@ -56,29 +60,22 @@ a.tarjeta:focus-visible{outline:3px solid var(--dorado);outline-offset:3px}
     </a>
     <div class="tarjeta inactiva">
       <span class="etiqueta pronto">En preparación</span>
-      <h2>Manuales de Gobernanza RGM, ReGM, GMN</h2>
-      <p>Red Global de Mentores, Rede Global de Mentores y Global Mentoring Network.</p>
+      <h2>Repositorio de Manuales del Ecosistema</h2>
+      <p>Los manuales de gobernanza y de operación de todo el ecosistema, en un solo lugar.</p>
     </div>
     <div class="tarjeta inactiva">
       <span class="etiqueta pronto">En preparación</span>
-      <h2>Manuales de Gobernanza Academia</h2>
-      <p>Academia Global RGM.</p>
+      <h2>Progreso y Tracción de la Academia Global RGM</h2>
+      <p>Avance y resultados de la Academia Global.</p>
     </div>
-    <div class="tarjeta inactiva">
-      <span class="etiqueta pronto">En preparación</span>
-      <h2>Manuales de Gobernanza RGM+</h2>
-      <p>La plataforma de contenidos RGM+.</p>
-    </div>
-    <div class="tarjeta inactiva">
-      <span class="etiqueta pronto">En preparación</span>
-      <h2>Manuales de Gobernanza Editorial</h2>
-      <p>Editorial RGM.</p>
-    </div>
-    <div class="tarjeta inactiva">
-      <span class="etiqueta pronto">En preparación</span>
-      <h2>Manuales de Gobernanza Encuentros</h2>
-      <p>Encuentros RGM: foros, encuentros, simposios y congreso.</p>
-    </div>
+  </div>
+  <h3 class="sub">Otros tableros de progreso</h3>
+  <div class="grilla menor">
+    <div class="tarjeta inactiva"><span class="etiqueta pronto">En preparación</span><h2>Progreso y Tracción de Editorial RGM</h2></div>
+    <div class="tarjeta inactiva"><span class="etiqueta pronto">En preparación</span><h2>Progreso y Tracción de RGM+</h2></div>
+    <div class="tarjeta inactiva"><span class="etiqueta pronto">En preparación</span><h2>Progreso y Tracción de Encuentros RGM</h2></div>
+    <div class="tarjeta inactiva"><span class="etiqueta pronto">En preparación</span><h2>Progreso y Tracción de Directorio RGM</h2></div>
+    <div class="tarjeta inactiva"><span class="etiqueta pronto">En preparación</span><h2>Progreso y Tracción de Ventas de Servicios RGM</h2></div>
   </div>
 </div></main>
 </body>
