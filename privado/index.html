@@ -35,6 +35,9 @@ h1{margin:0;font-size:clamp(30px,5vw,48px);line-height:1.15;font-weight:700;text
 a.tarjeta:hover,a.tarjeta:focus-visible{background:rgba(255,255,255,.09);border-color:var(--dorado)}
 a.tarjeta:focus-visible{outline:3px solid var(--dorado);outline-offset:3px}
 .tarjeta.inactiva{opacity:.78}
+.boton{align-self:flex-start;margin-top:auto;padding:10px 20px;border-radius:999px;background:var(--dorado);color:var(--fondo);font-size:14px;font-weight:600;text-decoration:none}
+.boton:hover{background:var(--arena)}
+.boton:focus-visible{outline:3px solid var(--arena);outline-offset:3px}
 .sub{margin:48px 0 16px;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--arena)}
 .grilla.menor{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .grilla.menor .tarjeta{padding:16px;gap:8px;background:rgba(0,0,0,.22);border-style:dashed}
@@ -58,10 +61,11 @@ a.tarjeta:focus-visible{outline:3px solid var(--dorado);outline-offset:3px}
       <h2>Mapa Técnico - Ecosistema RGM</h2>
       <p>Herramientas, conexiones y recorridos del sistema, para quien lo mantiene.</p>
     </a>
-    <div class="tarjeta inactiva">
-      <span class="etiqueta pronto">En preparación</span>
-      <h2>Repositorio de Manuales del Ecosistema</h2>
-      <p>Los manuales de gobernanza y de operación de todo el ecosistema, en un solo lugar.</p>
+    <div class="tarjeta">
+      <span class="etiqueta activo">Con contraseña</span>
+      <h2>Avances de las Unidades Productivas</h2>
+      <p>En esta sección se muestra lo hecho y lo por hacer en cada Unidad Productiva (Academia Global RGM, RGM+, Editorial RGM, Directorio RGM, Encuentros RGM).</p>
+      <a class="boton" href="/seguimiento-unidadesproductivas">Ver avances</a>
     </div>
     <div class="tarjeta inactiva">
       <span class="etiqueta pronto">En preparación</span>
