@@ -61,6 +61,7 @@ window.RGMPlayer = (function () {
 
     // subtítulos: una pista por idioma
     langs.forEach(function (l) {
+      if (!item.subs[l]) return;
       var tr = document.createElement('track');
       tr.kind = 'subtitles'; tr.srclang = l; tr.label = names[l]; tr.src = item.subs[l];
       V.appendChild(tr);
@@ -87,7 +88,7 @@ window.RGMPlayer = (function () {
              ' <small>' + (l === item.orig ? '(' + t.original + ')' : '(' + t.dubbed + ')') + '</small></button>';
       });
       h += '<h4>' + t.subtitles + '</h4><button role="menuitemradio" data-s="off" aria-checked="' + (st.sub === 'off') + '">' + t.off + '</button>';
-      langs.forEach(function (l) { h += '<button role="menuitemradio" data-s="' + l + '" aria-checked="' + (st.sub === l) + '">' + names[l] + '</button>'; });
+      langs.forEach(function (l) { if (!item.subs[l]) return; h += '<button role="menuitemradio" data-s="' + l + '" aria-checked="' + (st.sub === l) + '">' + names[l] + '</button>'; });
       menu.innerHTML = h;
     }
     menu.addEventListener('click', function (e) {
