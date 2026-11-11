@@ -418,7 +418,10 @@
     'a2087036-a524-437f-84a9-0409f55bd4ab',
     '171bc62d-3da4-43b1-8762-f082585db677',
     '59a9944a-e794-486e-9dea-57dda98e9ac1',
-    '180b2e10-0e07-4697-a59d-9cc1433ab258'];
+    '180b2e10-0e07-4697-a59d-9cc1433ab258',
+    '8a92231f-38ba-4546-a516-9c8f58d4a2f6',
+    '7d357957-2878-4697-9c43-71b35dd9b2a5',
+    '93433a5e-4cd5-4738-b17f-8533508838a5'];
   var PTSRC = ['409c278c-c994-435b-960d-0852bc65d434', 'f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
   var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
   function capOf(g) { return SUBBED.indexOf(g) >= 0 ? { es: CDN + g + '/captions/ES.vtt', pt: CDN + g + '/captions/PT.vtt', en: CDN + g + '/captions/EN.vtt' } : {}; }
