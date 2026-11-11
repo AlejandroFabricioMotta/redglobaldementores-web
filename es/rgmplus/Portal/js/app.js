@@ -156,13 +156,14 @@
   }
 
   function viewHome() {
-    var T = t(), feat = CAT.videos.filter(function (v) { return v.featured; }).slice(0, 4);
-    var slides = feat.map(function (v, i) {
-      return '<div class="slide' + (i ? '' : ' on') + '"><div class="art' + (v.slide ? ' bg' : '') + '" style="' + (v.slide ? "background-image:url('" + res(v.slide) + "')" : art(v)) + '"></div><div class="scrim"></div>' +
-        '<div class="wrap txt"><span class="kick">' + esc(secName(v.section)) + ' · ' + esc(catName(v.category)) + '</span><h2>' + esc(title(v)) + '</h2><span class="meta">' + esc(author(v.author).name) + ' · ' + dur(v.duration) + '</span>' +
-        '<a class="btn" href="' + U.watch(v.id) + '">' + T.watchNow + '</a></div></div>';
+    var T = t(), feat = CAT.sections;
+    // un slide por sección: promociona la sección y el botón lleva a ella (no a un video en particular)
+    var slides = feat.map(function (s, i) {
+      return '<div class="slide' + (i ? '' : ' on') + '"><div class="art bg" style="background-image:url(\'' + res('assets/img/slide-' + s.id + '.jpg') + '\')"></div><div class="scrim"></div>' +
+        '<div class="wrap txt"><span class="kick">RGM+</span><h2>' + esc(secName(s.id)) + '</h2><span class="meta">' + esc(I18N._secDesc[s.id][lang]) + '</span>' +
+        '<a class="btn" href="' + U.section(s.id) + '">' + T.explore + '</a></div></div>';
     }).join('');
-    var dots = feat.map(function (v, i) { return '<button data-slide="' + i + '" aria-label="' + f(T.slide, { n: i + 1 }) + '" aria-current="' + (i === 0) + '"></button>'; }).join('');
+    var dots = feat.map(function (s, i) { return '<button data-slide="' + i + '" aria-label="' + f(T.slide, { n: i + 1 }) + '" aria-current="' + (i === 0) + '"></button>'; }).join('');
     var rows = '';
     if (saved.length) rows += row(T.myList, saved.map(function (id) { return byId(CAT.videos, id); }).filter(Boolean), '');
     CAT.sections.forEach(function (s) {

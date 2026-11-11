@@ -15,7 +15,7 @@ window.RGM_I18N = {
     demoTitle: 'Ingreso de demostración',
     demoText: 'Esta es una vista previa: todavía no hay cuentas reales. El acceso se conectará con el sistema de membresías.',
     demoBtn: 'Entrar como {n}', cancel: 'Cancelar',
-    featured: 'Destacados de la semana', viewAll: 'Ver todos', watchNow: 'Ver ahora', prev: 'Anterior', next: 'Siguiente', slide: 'Ir a la diapositiva {n}',
+    featured: 'Destacados de la semana', viewAll: 'Ver todos', watchNow: 'Ver ahora', explore: 'Explorar', prev: 'Anterior', next: 'Siguiente', slide: 'Ir a la diapositiva {n}',
     search: 'Ingrese su búsqueda', searchBtn: 'Buscar', noResults: 'No se encontraron videos.',
     myList: 'Mi lista', myListEmpty: 'Aún no guardaste videos. Usa el botón + en cualquier video.',
     save: 'Guardar para ver después', saved: 'Guardado', like: 'Me gusta', share: 'Compartir', copied: 'Enlace copiado',
@@ -58,7 +58,7 @@ window.RGM_I18N = {
     demoTitle: 'Entrada de demonstração',
     demoText: 'Esta é uma pré-visualização: ainda não existem contas reais. O acesso será ligado ao sistema de subscrições.',
     demoBtn: 'Entrar como {n}', cancel: 'Cancelar',
-    featured: 'Destaques da semana', viewAll: 'Ver todos', watchNow: 'Ver agora', prev: 'Anterior', next: 'Seguinte', slide: 'Ir para o diapositivo {n}',
+    featured: 'Destaques da semana', viewAll: 'Ver todos', watchNow: 'Ver agora', explore: 'Explorar', prev: 'Anterior', next: 'Seguinte', slide: 'Ir para o diapositivo {n}',
     search: 'Introduza a sua pesquisa', searchBtn: 'Pesquisar', noResults: 'Não foram encontrados vídeos.',
     myList: 'A minha lista', myListEmpty: 'Ainda não guardou vídeos. Use o botão + em qualquer vídeo.',
     save: 'Guardar para ver mais tarde', saved: 'Guardado', like: 'Gosto', share: 'Partilhar', copied: 'Ligação copiada',
@@ -101,7 +101,7 @@ window.RGM_I18N = {
     demoTitle: 'Demo sign-in',
     demoText: 'This is a preview: there are no real accounts yet. Access will be connected to the membership system.',
     demoBtn: 'Sign in as {n}', cancel: 'Cancel',
-    featured: 'Featured this week', viewAll: 'View all', watchNow: 'Watch now', prev: 'Previous', next: 'Next', slide: 'Go to slide {n}',
+    featured: 'Featured this week', viewAll: 'View all', watchNow: 'Watch now', explore: 'Explore', prev: 'Previous', next: 'Next', slide: 'Go to slide {n}',
     search: 'Enter your search', searchBtn: 'Search', noResults: 'No videos found.',
     myList: 'My list', myListEmpty: 'You have not saved any videos yet. Use the + button on any video.',
     save: 'Save to watch later', saved: 'Saved', like: 'Like', share: 'Share', copied: 'Link copied',
@@ -136,6 +136,12 @@ window.RGM_I18N = {
     'masterclass':       { es: 'MasterClass', pt: 'MasterClass', en: 'MasterClass' },
     'interviews-panels': { es: 'Entrevistas y Paneles', pt: 'Entrevistas e Painéis', en: 'Interviews & Panels' },
     'storytelling':      { es: 'Storytelling', pt: 'Storytelling', en: 'Storytelling' }
+  },
+  _secDesc: {
+    'presentations':     { es: 'Presentaciones de mentores de la comunidad, disponibles cuando quieras.', pt: 'Apresentações de mentores da comunidade, disponíveis quando quiser.', en: 'Presentations by community mentors, available whenever you want.' },
+    'masterclass':       { es: 'Clases magistrales para aprender de grandes mentores.', pt: 'Aulas magistrais para aprender com grandes mentores.', en: 'Masterclasses to learn from great mentors.' },
+    'interviews-panels': { es: 'Conversaciones y paneles con mentores y referentes.', pt: 'Conversas e painéis com mentores e referências.', en: 'Conversations and panels with mentors and leading figures.' },
+    'storytelling':      { es: 'Historias personales contadas por sus protagonistas.', pt: 'Histórias pessoais contadas pelos seus protagonistas.', en: 'Personal stories told by the people who lived them.' }
   },
   _cat: {
     human:       { es: 'Humano', pt: 'Humano', en: 'Human' },
