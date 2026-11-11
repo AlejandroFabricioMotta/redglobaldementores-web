@@ -167,6 +167,44 @@
       bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'maria-susana-pascuccio', name: "María Susana Pascuccio", photo: null,
       bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'adriana-zambrano', name: "Adriana Zambrano", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'anabella-arroyo', name: "Anabella Arroyo", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'rosa-de-vicentis', name: "Rosa De Vicentis", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'alex-roseman', name: "Alex Roseman", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'chelsey-baker', name: "Chelsey Baker", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'jorge-crosetti', name: "Jorge Crosetti", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'michael-butle', name: "Michael Butle", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'angela-lodono', name: "Angela Lodoño", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'fernanda-ferreira', name: "Fernanda Ferreira", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'claudia-patricia-vasquez-ramirez', name: "Claudia Patricia Vasquez Ramirez", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'blanca-penafiel', name: "Blanca Peñafiel", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'eduardo-rodriguez-garcia', name: "Eduardo Rodriguez Garcia", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'esther-sadin', name: "Esther Sadin", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'ana-balbuena', name: "Ana Balbuena", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'daniel-garay-fleck', name: "Daniel Garay Fleck", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'josep-maria-verdaguer', name: "Josep Maria Verdaguer", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'ines-gregorio', name: "Ines Gregorio", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'ferran-tognetta', name: "Ferran Tognetta", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'juan-carlos-torres', name: "Juan Carlos Torres", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'lucia', name: 'Lucía Herrera', photo: null,
       bio: T('Docente mentora. Biografía provisoria.', 'Docente mentora. Biografia provisória.', 'Teacher and mentor. Provisional biography.') }
   ];
@@ -330,6 +368,45 @@
       description: DESC.storytelling, duration: r[2], year: 2025, date: '2025-11-' + (10 + (i % 18)),
       orig: PTSRC.indexOf(r[1]) >= 0 ? 'pt' : 'es', slide: SLIDE('storytelling'), video: '', hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/thumbnail.jpg',
       dub: {}, subs: cap
+    });
+  });
+
+  // ---------- Presentaciones reales (Bunny Stream) ----------
+  var PRES = [ // [autor, guid, segundos, tipo]
+    ["adriana-zambrano", 'a9e212e6-7738-4662-9ea0-8c6bb72b7f67', 217, "Presentación"],
+    ["anabella-arroyo", '89faf76d-9546-455e-b2c6-365b4ca57fee', 741, "Presentación"],
+    ["dora-rozo", '498cbfb4-e427-4c9a-9b23-062971994e3c', 527, "Presentación"],
+    ["rosa-de-vicentis", '6f71545f-b8fb-4f37-acc8-cf05d1cdcd0a', 61, "Mensaje"],
+    ["alex-roseman", 'f1406d13-58ae-472c-bd1f-59ba93d2f28e', 139, "Testimonio"],
+    ["chelsey-baker", '6701fe90-e431-4f15-8751-1a6943a45e9d', 68, "Testimonio"],
+    ["jorge-crosetti", '7b770f3b-7298-4b05-ae17-ea23d8fa77b8', 121, "Presentación"],
+    ["michael-butle", '13e9a091-fa48-40be-9c94-0c39430d8cbb', 169, "Testimonio"],
+    ["angela-lodono", 'b48e9f9f-7575-418f-840a-a476fef27e34', 83, "Presentación"],
+    ["fernanda-ferreira", '409c278c-c994-435b-960d-0852bc65d434', 374, "Presentación"],
+    ["claudia-patricia-vasquez-ramirez", 'c800ff39-78a1-4ec1-85e7-7dc50ca96586', 54, "Presentación"],
+    ["blanca-penafiel", 'fd5526e3-12ec-4339-a46d-a9c1411d60c6', 99, "Presentación"],
+    ["eduardo-rodriguez-garcia", '44ef21b7-bd10-45a6-a47f-9f25237780b3', 175, "Presentación"],
+    ["esther-sadin", 'ee7c9805-797c-487f-bacc-18cf5c8c3923', 312, "Presentación"],
+    ["ana-balbuena", '6f674f2f-0694-404f-8b3b-b6c5f8ca6c3d', 168, "Presentación"],
+    ["daniel-garay-fleck", 'bad98332-8ad6-4744-958b-b0371db86a9a', 71, "Presentación"],
+    ["josep-maria-verdaguer", '9214e5f8-dee1-4f3c-a492-545ba84fbd47', 205, "Presentación"],
+    ["ines-gregorio", 'edbff6d8-54e1-45c6-95d1-82c0e0129145', 532, "Presentación"],
+    ["ferran-tognetta", '97af3356-4268-4ea3-8864-c3b7a430077f', 142, "Presentación"],
+    ["juan-carlos-torres", '6c48720e-95be-4d7d-83f1-d008abaccb78', 121, "Presentación"],
+  ];
+  var PRES_T = {
+    'Presentación': ['Presentación', 'Apresentação', 'Presentation'],
+    'Mensaje': ['Mensaje', 'Mensagem', 'Message'],
+    'Testimonio': ['Testimonio', 'Testemunho', 'Testimonial']
+  };
+  PRES.forEach(function (r, i) {
+    var a = AUTHORS.filter(function (x) { return x.id === r[0]; })[0], k = PRES_T[r[3]];
+    videos.push({
+      id: 'pr' + (i + 1), section: 'presentations', category: 'human', author: r[0], others: [], tags: [],
+      title: T(k[0] + ' – ' + a.name, k[1] + ' – ' + a.name, k[2] + ' – ' + a.name), featured: false,
+      description: DESC.presentations, duration: r[2], year: 2026, date: '2026-11-11', orig: 'es', slide: SLIDE('presentations'), video: '',
+      hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/thumbnail.jpg',
+      dub: {}, subs: {}
     });
   });
 
