@@ -219,14 +219,35 @@
     'd1a37235-3131-41c9-8912-9abfe6bf8aae',
     '0879d5dd-688b-4d54-bd73-7e3fcc6f5cef',
     'e8e83d14-c752-4704-b284-1bf74baad85d',
-    '297a2102-d0e4-4a0e-9db5-7091783a140d'];
+    '297a2102-d0e4-4a0e-9db5-7091783a140d',
+    'c6e31bf2-5683-43b4-a14d-c2294e7f5181',
+    'f97c88e1-a9b7-41c7-b629-1427a931f310',
+    'ed8386e4-3425-42f1-98d3-03da05a82954',
+    '7c185d24-bd2d-44b4-bbf4-120b58c2794f',
+    'e96cdb5f-3a83-4a9e-b761-5a6f2da9b54b',
+    'd5388394-0cb3-4da3-a71f-22b4ab045724',
+    'f9ed632e-384c-4cbe-9738-c3abab15252f',
+    '584f7b7d-a253-4489-827f-75f6c676b7e5',
+    'fc58c4bc-8a65-40b1-b66c-2578c855e7fc',
+    '194092e1-41a0-42b3-896b-99220874b582',
+    '3e1d8602-1bca-4ae8-80e2-79bb0299e9b6',
+    'd690d2b9-8d37-44e4-b546-00241b2b7c35',
+    '7364c8dd-3bb8-4417-8df1-f693beaa22fd',
+    'cc632e29-515e-4d6d-85b4-aa871973c25e',
+    '0f9b018b-da32-42a7-94e1-0bbb8b4b5522',
+    '46bdae20-9984-4835-bd30-bf5823109375',
+    'ee99e363-65e7-4714-a07f-2c34da4f900a',
+    '5324326f-1bb6-4ae9-8432-ba07a7cc2537',
+    '93d5b4e4-731f-4331-85e4-4b0907afead6',
+    '4fc39c56-79b2-4d4c-bc11-affaa0ec8452'];
+  var PTSRC = ['f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
   var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
   REAL.forEach(function (r, i) {
     var cap = SUBBED.indexOf(r[1]) >= 0 ? { es: CDN + r[1] + '/captions/ES.vtt', pt: CDN + r[1] + '/captions/PT.vtt', en: CDN + r[1] + '/captions/EN.vtt' } : {};
     videos.push({
       id: 'st' + (i + 1), section: 'storytelling', category: 'human', author: r[0], others: [], tags: [], title: T(r[3], r[3], r[3]), featured: i === 0,
       description: DESC.storytelling, duration: r[2], year: 2025, date: '2025-11-' + (10 + (i % 18)),
-      orig: 'es', slide: SLIDE('storytelling'), video: '', hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/thumbnail.jpg',
+      orig: PTSRC.indexOf(r[1]) >= 0 ? 'pt' : 'es', slide: SLIDE('storytelling'), video: '', hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/thumbnail.jpg',
       dub: {}, subs: cap
     });
   });
