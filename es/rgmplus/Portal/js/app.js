@@ -61,7 +61,7 @@
   function avatar(a, size) {
     var st = 'width:' + size + 'px;height:' + size + 'px;font-size:' + Math.round(size / 2.6) + 'px';
     if (a.photo) return '<img class="av" style="' + st + ';object-fit:cover" src="' + res(a.photo) + '" alt="' + esc(a.name) + '">';
-    return '<span class="av" style="' + st + '" aria-hidden="true">' + esc(initials(a.name)) + '</span>';
+    return '<span class="av av-logo" style="' + st + '" aria-hidden="true"><img src="' + res('assets/rgm-rings.svg') + '" alt=""></span>';
   }
   function dur(sec) {
     var T = t(), h = Math.floor(sec / 3600), m = Math.floor(sec % 3600 / 60), s = sec % 60, o = [];

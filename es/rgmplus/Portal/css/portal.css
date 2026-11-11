@@ -278,3 +278,6 @@ main{background:linear-gradient(180deg,#2a0046 0,#470073 45%,#650099 100%);min-h
 .grid .item .t{text-align:left}
 @media(max-width:900px){.vi{width:calc((100% - 14px)/2)}}
 @media(max-width:560px){.vi{width:78%}}
+
+.av-logo{background:#2a0046;border:1px solid rgba(212,187,98,.35)}
+.av-logo img{width:58%;height:58%;object-fit:contain}
