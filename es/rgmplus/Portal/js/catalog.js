@@ -445,6 +445,9 @@
     ,{ id: 'liderazgo-humanamente-efectivo', author: 'nelson-rueda', section: 'masterclass', category: 'business', cover: 'assets/img/coll-liderazgo.jpg',
       title: T('Liderazgo Humanamente Efectivo', 'Liderança Humanamente Efetiva', 'Humanly Effective Leadership'),
       description: T('Serie de 20 clases de Nelson Rueda, Director de la Academia RGM, sobre liderazgo humanamente efectivo.', 'Série de 20 aulas de Nelson Rueda, Diretor da Academia RGM, sobre liderança humanamente efetiva.', 'Series of 20 classes by Nelson Rueda, Director of the RGM Academy, on humanly effective leadership.') }
+    ,{ id: 'reflexiones-serafin-contreras', author: 'serafin-contreras-galeano', section: 'masterclass', category: 'family', cover: 'assets/img/coll-serafin.jpg',
+      title: T('Reflexiones de Serafín Contreras', 'Reflexões de Serafín Contreras', 'Reflections by Serafín Contreras'),
+      description: T('Serie de reflexiones de Serafín Contreras, especialista en salud mental y adicciones.', 'Série de reflexões de Serafín Contreras, especialista em saúde mental e dependências.', 'Series of reflections by Serafín Contreras, specialist in mental health and addictions.') }
   ];
   var EPISODES = [ // [colección, n.º de episodio, guid de Bunny, segundos, fecha, título propio (opcional)]
     ['reflexiones', 1, 'a2002f51-ba2e-4b26-bbc1-9b269c1c7660', 242, '2024-02-25'],
@@ -477,6 +480,9 @@
     ['liderazgo-humanamente-efectivo', 18, 'e5be3a0f-410b-40e0-a672-969b022c5137', 206, '2026-11-11', 'Perfiles de comportamiento'],
     ['liderazgo-humanamente-efectivo', 19, '6d20b26b-0446-4a24-b241-26379d7b5cd3', 234, '2026-11-11', 'Sabiduría y Legado'],
     ['liderazgo-humanamente-efectivo', 20, 'e049c384-5451-422a-a44e-317bd7c2c7da', 289, '2026-11-11', 'Cierre Módulo Gestión del Ser'],
+    ['reflexiones-serafin-contreras', 1, 'cba8068b-5b76-4f52-8685-6b8e479c915f', 529, '2026-11-11', 'Mentor y Restauración'],
+    ['reflexiones-serafin-contreras', 2, '946a3469-d3a3-466a-806e-c76b7386e247', 435, '2026-11-11', 'Replicando la Mentoría'],
+    ['reflexiones-serafin-contreras', 3, '4d413367-2d9e-4c35-a6b7-7645d44ccbe5', 733, '2026-11-11', 'Historia y Vida'],
   ];
   EPISODES.forEach(function (e) {
     var c = COLLECTIONS.filter(function (x) { return x.id === e[0]; })[0];
