@@ -340,8 +340,11 @@
     { id: 'reflexiones', author: 'alejandro-motta', section: 'masterclass', category: 'business', cover: 'assets/img/coll-reflexiones.jpg',
       title: T('Reflexiones de un Mentor de Emprendedores', 'Reflexões de um Mentor de Empreendedores', 'Reflections of an Entrepreneurs\' Mentor'),
       description: T('Serie de episodios de Alejandro Motta sobre emprendedurismo y mentoría de emprendedores.', 'Série de episódios de Alejandro Motta sobre empreendedorismo e mentoria de empreendedores.', 'Episode series by Alejandro Motta on entrepreneurship and mentoring entrepreneurs.') }
+    ,{ id: 'liderazgo-humanamente-efectivo', author: 'nelson-rueda', section: 'masterclass', category: 'business', cover: 'assets/img/coll-liderazgo.jpg',
+      title: T('Liderazgo Humanamente Efectivo', 'Liderança Humanamente Efetiva', 'Humanly Effective Leadership'),
+      description: T('Serie de 20 clases de Nelson Rueda, Director de la Academia RGM, sobre liderazgo humanamente efectivo.', 'Série de 20 aulas de Nelson Rueda, Diretor da Academia RGM, sobre liderança humanamente efetiva.', 'Series of 20 classes by Nelson Rueda, Director of the RGM Academy, on humanly effective leadership.') }
   ];
-  var EPISODES = [ // [colección, n.º de episodio, guid de Bunny, segundos, fecha]
+  var EPISODES = [ // [colección, n.º de episodio, guid de Bunny, segundos, fecha, título propio (opcional)]
     ['reflexiones', 1, 'a2002f51-ba2e-4b26-bbc1-9b269c1c7660', 242, '2024-02-25'],
     ['reflexiones', 2, 'fc963dec-0e3d-40d1-ad24-0ecc656e8848', 242, '2024-02-25'],
     ['reflexiones', 3, 'c8bb0b70-103d-472b-8b13-fcbf926643a7', 326, '2024-02-25'],
@@ -352,12 +355,28 @@
     ['reflexiones', 8, '0cccf890-380f-4419-9115-f5f4302aa9d7', 411, '2024-02-25'],
     ['reflexiones', 9, 'a418c7e9-881f-4f3e-9112-e64216550104', 182, '2024-02-25'],
     ['reflexiones', 10, '18ce9853-cee3-4aeb-96c0-7b7b3686421e', 125, '2025-10-06'],
+    ['liderazgo-humanamente-efectivo', 1, 'da2d0e0a-9f64-40ca-8ebf-21a6b32191dc', 212, '2026-11-11', 'Bienvenida al proceso de LHE'],
+    ['liderazgo-humanamente-efectivo', 2, '4e67ee14-0a11-48ce-bd3c-c612dc2d8e46', 217, '2026-11-11', 'Desarrollo de Habilidades y destrezas LHE'],
+    ['liderazgo-humanamente-efectivo', 3, '93e1893c-1cc0-4294-9cd4-5e4de19c1afa', 207, '2026-11-11', 'Cuatro Módulos LHE'],
+    ['liderazgo-humanamente-efectivo', 4, 'd0c6a261-1f80-418d-b3c1-0f1092796aad', 234, '2026-11-11', 'Por qué Liderazgo Humanamente efectivo'],
+    ['liderazgo-humanamente-efectivo', 5, 'ef4eab33-b932-4367-a661-3d15625d99b4', 212, '2026-11-11', 'Modelo 70 20 10'],
+    ['liderazgo-humanamente-efectivo', 6, 'feedfdac-f8e8-43a3-b040-742c508fd8d0', 212, '2026-11-11', 'Grupos de estudio y mente maestra'],
+    ['liderazgo-humanamente-efectivo', 7, 'ea1ac702-7fef-4269-b321-084cdd07a779', 210, '2026-11-11', 'Evaluación del proceso'],
+    ['liderazgo-humanamente-efectivo', 8, '886447d3-ff39-4240-a4b3-c06accc33500', 221, '2026-11-11', 'La experiencia humana. 1a Ley'],
+    ['liderazgo-humanamente-efectivo', 9, 'b2393a0f-453d-48fc-b2b1-c3df1b83c36d', 211, '2026-11-11', 'La experiencia humana. 2da ley'],
+    ['liderazgo-humanamente-efectivo', 10, 'c5d0869c-a76b-4d47-9099-a84f0f103452', 217, '2026-11-11', 'La experiencia humana. 3a Ley'],
+    ['liderazgo-humanamente-efectivo', 11, '1576d7b3-0aca-4ff8-80be-52cd61ab2f00', 218, '2026-11-11', 'La experiencia humana. 4ta ley'],
+    ['liderazgo-humanamente-efectivo', 12, '87c474e6-05be-426e-8a30-2b6ef9aee3a5', 228, '2026-11-11', 'Conceptos esenciales Gestión del Ser'],
+    ['liderazgo-humanamente-efectivo', 13, 'f8c3e3df-9913-4eaa-882b-3b15941e4f50', 195, '2026-11-11', 'Los tres estados del ser'],
+    ['liderazgo-humanamente-efectivo', 14, '349dc3de-336b-41c8-bbc2-6fbfa9d032ef', 214, '2026-11-11', 'El modelo del Observador'],
+    ['liderazgo-humanamente-efectivo', 15, '7b07bfd9-36ee-4ad3-893a-4fad65ec9ae0', 198, '2026-11-11', 'La rueda de la vida'],
+    ['liderazgo-humanamente-efectivo', 16, '321f2625-7afa-43ec-b654-5f2853158561', 210, '2026-11-11', 'Insights de Comportamiento'],
   ];
   EPISODES.forEach(function (e) {
     var c = COLLECTIONS.filter(function (x) { return x.id === e[0]; })[0];
     videos.push({
       id: 'ep-' + e[0] + '-' + e[1], section: c.section, category: c.category, author: c.author, others: [], tags: [],
-      title: T(c.title.es + ' – Episodio ' + e[1], c.title.pt + ' – Episódio ' + e[1], c.title.en + ' – Episode ' + e[1]), featured: false,
+      title: e[5] ? T(c.title.es + ' – ' + e[1] + '. ' + e[5], c.title.pt + ' – ' + e[1] + '. ' + e[5], c.title.en + ' – ' + e[1] + '. ' + e[5]) : T(c.title.es + ' – Episodio ' + e[1], c.title.pt + ' – Episódio ' + e[1], c.title.en + ' – Episode ' + e[1]), featured: false,
       description: c.description, duration: e[3], year: +e[4].slice(0, 4), date: e[4], orig: 'es', slide: SLIDE(c.section), video: '',
       hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + e[2] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + e[2] + '/thumbnail.jpg',
       dub: {}, subs: {}, collection: e[0], episode: e[1]
