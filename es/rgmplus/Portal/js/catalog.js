@@ -344,8 +344,12 @@
   var EPISODES = [ // [colección, n.º de episodio, guid de Bunny, segundos, fecha]
     ['reflexiones', 1, 'a2002f51-ba2e-4b26-bbc1-9b269c1c7660', 242, '2024-02-25'],
     ['reflexiones', 2, 'fc963dec-0e3d-40d1-ad24-0ecc656e8848', 242, '2024-02-25'],
+    ['reflexiones', 3, 'c8bb0b70-103d-472b-8b13-fcbf926643a7', 326, '2024-02-25'],
+    ['reflexiones', 4, '859ce9f2-f96d-4c9a-bb0f-9eb1caacb356', 306, '2024-02-25'],
     ['reflexiones', 5, '807cb098-fd7b-49da-a6f5-acef316b81cb', 281, '2024-02-25'],
+    ['reflexiones', 6, '8e8c90b3-3932-4873-b10e-a409f60cc86c', 403, '2024-02-25'],
     ['reflexiones', 7, '0ef9ef7a-20d5-44d6-929e-7e55b6cb652e', 198, '2024-02-25'],
+    ['reflexiones', 8, '0cccf890-380f-4419-9115-f5f4302aa9d7', 411, '2024-02-25'],
     ['reflexiones', 9, 'a418c7e9-881f-4f3e-9112-e64216550104', 182, '2024-02-25'],
     ['reflexiones', 10, '18ce9853-cee3-4aeb-96c0-7b7b3686421e', 125, '2025-10-06'],
   ];
