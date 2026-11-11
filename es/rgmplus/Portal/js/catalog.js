@@ -561,7 +561,7 @@
     ,{ id: 'reflexiones-serafin-contreras', author: 'serafin-contreras-galeano', section: 'masterclass', category: 'family', cover: 'assets/img/coll-serafin.jpg',
       title: T('Reflexiones de Serafín Contreras', 'Reflexões de Serafín Contreras', 'Reflections by Serafín Contreras'),
       description: T('Serie de reflexiones de Serafín Contreras, especialista en salud mental y adicciones.', 'Série de reflexões de Serafín Contreras, especialista em saúde mental e dependências.', 'Series of reflections by Serafín Contreras, specialist in mental health and addictions.') }
-    ,{ id: 'mentoria-en-1-minuto', author: 'angela-lodono', section: 'masterclass', category: 'education', cover: 'assets/img/coll-mentoria-1-minuto.jpg',
+    ,{ id: 'mentoria-en-1-minuto', author: 'angela-kohler', section: 'masterclass', category: 'education', cover: 'assets/img/coll-mentoria-1-minuto.jpg',
       title: T('Mentoría en 1 minuto', 'Mentoria em 1 minuto', 'Mentoring in 1 minute'),
       description: T('40 cápsulas de alto contenido de mentoría de Ángela Mentora, de un minuto cada una.', '40 cápsulas de alto conteúdo de mentoria da Ángela Mentora, de um minuto cada uma.', '40 high-content mentoring capsules by Ángela Mentora, one minute each.') }
   ];
