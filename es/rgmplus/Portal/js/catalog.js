@@ -29,6 +29,22 @@
     .map(function (id) { return { id: id, path: id.charAt(0).toUpperCase() + id.slice(1) }; });
 
   var AUTHORS = [
+    { id: 'aura-narvaez', name: "Aura Narváez", photo: 'assets/img/autores/aura-narvaez.jpg',
+      bio: T("Dover New Jersey, Estados Unidos", "Dover New Jersey, Estados Unidos", "Dover New Jersey, Estados Unidos") },
+    { id: 'saxa-irizar', name: "Saxa Irizar", photo: 'assets/img/autores/saxa-irizar.jpg',
+      bio: T("Londres, Reino Unido", "Londres, Reino Unido", "Londres, Reino Unido") },
+    { id: 'monico-carvajal', name: "Mónico Carvajal", photo: 'assets/img/autores/monico-carvajal.jpg',
+      bio: T("Caracas, Venezuela", "Caracas, Venezuela", "Caracas, Venezuela") },
+    { id: 'rosalinda-pizarro', name: "Rosalinda Pizarro", photo: 'assets/img/autores/rosalinda-pizarro.jpg',
+      bio: T("Ciudad de México, México", "Ciudad de México, México", "Ciudad de México, México") },
+    { id: 'juan-carlos-valencia', name: "Juan Carlos Valencia", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'rosana-navarro', name: "Rosana Navarro", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'silvia-pasamonti', name: "Silvia Pasamonti", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'alejandro-de-mexico', name: "Alejandro (México)", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'amarilis', name: 'Amarilis Vellon', photo: 'assets/img/amarilis-vellon.jpg',
       bio: T('Mentora de la Red Global de Mentores. Biografía provisoria.', 'Mentora da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'clara', name: 'Clara María', photo: null,
@@ -99,8 +115,8 @@
       bio: T("Buenos Aires, Argentina", "Buenos Aires, Argentina", "Buenos Aires, Argentina") },
     { id: 'laura-vaccarini', name: "Laura Vaccarini", photo: 'assets/img/autores/laura-vaccarini.jpg',
       bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
-    { id: 'marcela-barbita', name: "Marcela Barbita", photo: null,
-      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'marcela-barbita', name: "Marcela Barbitta", photo: 'assets/img/autores/marcela-barbita.jpg',
+      bio: T("CABA, Argentina", "CABA, Argentina", "CABA, Argentina") },
     { id: 'rafael-guillermo-hernandez-molina', name: "Rafael Guillermo Hernández Molina", photo: 'assets/img/autores/rafael-guillermo-hernandez-molina.jpg',
       bio: T("Medelin, Colombia", "Medelin, Colombia", "Medelin, Colombia") },
     { id: 'rodolfo-cremer', name: "Rodolfo Cremer", photo: 'assets/img/autores/rodolfo-cremer.jpg',
@@ -232,17 +248,7 @@
 
   // [id, sección, categoría, autor, otros participantes, hashtags, título, destacado]
   var V = [
-    ['p1','presentations','family','amarilis',[],['familia','valores','emotivo'],T('El valor de la Familia','O valor da Família','The value of the Family'),1],
-    ['p2','presentations','business','mateus',[],['liderazgo','practica'],T('Mentoría en las empresas familiares','Mentoria nas empresas familiares','Mentoring in family businesses')],
-    ['p3','presentations','education','lucia',[],['practica','crecimiento'],T('La mentoría en el aula','A mentoria na sala de aula','Mentoring in the classroom')],
-    ['p4','presentations','culture','clara',[],['historia','comunidad'],T('Cultura y mentoría','Cultura e mentoria','Culture and mentoring')],
-    ['p5','presentations','environment','david',[],['comunidad','valores'],T('Mentoría y cuidado del ambiente','Mentoria e cuidado do ambiente','Mentoring and caring for the environment')],
 
-    ['m1','masterclass','human','clara',[],['emotivo','inspirador','crecimiento'],T('Ideas para el crecimiento','Ideias para o crescimento','Ideas for growth'),1],
-    ['m2','masterclass','skills','mateus',[],['practica','liderazgo'],T('Habilidades del mentor','Competências do mentor','Skills of the mentor')],
-    ['m3','masterclass','technology','david',[],['practica','crecimiento'],T('Tecnología al servicio de la mentoría','Tecnologia ao serviço da mentoria','Technology in the service of mentoring')],
-    ['m4','masterclass','workers','lucia',[],['practica','comunidad'],T('Mentoría para trabajadores','Mentoria para trabalhadores','Mentoring for workers')],
-    ['m5','masterclass','health','clara',[],['crecimiento','valores'],T('Mentoría y bienestar','Mentoria e bem-estar','Mentoring and well-being')],
 
     ['i1','interviews-panels','public','mateus',['Clara María','David Whitmore'],['liderazgo','etica'],T('Panel: la mentoría en el sector público','Painel: a mentoria no setor público','Panel: mentoring in the public sector'),1],
     ['i2','interviews-panels','sport','david',['Lucía Herrera'],['inspirador','liderazgo'],T('Entrevista: mentoría en el deporte','Entrevista: mentoria no desporto','Interview: mentoring in sport')],
@@ -543,6 +549,37 @@
       description: DESC.presentations, duration: r[2], year: 2026, date: '2026-11-11', orig: PTSRC.indexOf(r[1]) >= 0 ? 'pt' : 'es', slide: SLIDE('presentations'), video: '',
       hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/thumbnail.jpg',
       dub: {}, subs: capOf(r[1])
+    });
+  });
+
+  // ---------- MasterClass reales (Bunny Stream) ----------
+  var MC = [ // [autor, guid, segundos, etiqueta, categoría, fecha, idioma original]
+    ["layla-edward", "692e622b-2189-4e15-8a19-1ac47a894dcd", 193, "Celebraciones", "human", "2026-06-18", "es"],
+    ["fernanda-ferreira", "f4607ed1-18e0-4e84-ace9-0d0afbbc3b74", 169, "Celebraciones", "human", "2026-06-18", "es"],
+    ["alejandro-de-mexico", "dfed0fb1-9a8b-48da-9b9b-7865f513188a", 316, "Celebraciones", "human", "2026-06-18", "es"],
+    ["rosalinda-pizarro", "2c420867-4fce-4d3c-8bb4-5ec87ca70261", 1183, "Celebraciones", "human", "2026-06-18", "es"],
+    ["alejandro-motta", "47f5a4fa-8be2-4951-a5e7-6d8e0e5dbfbb", 444, "Proceso Reflexivo", "human", "2026-11-11", "es"],
+    ["marcela-barbita", "dd955ef1-743d-451a-bd43-b9935f8b566d", 623, "Celebraciones", "human", "2026-05-21", "es"],
+    ["saxa-irizar", "5245fd56-959f-48cc-9ab7-8d8318270ba2", 764, "Salud", "health", "2026-11-11", "es"],
+    ["monico-carvajal", "7780cf7d-6840-4b58-8563-c4b14cedd712", 882, "MasterClass", "human", "2026-11-11", "es"],
+    ["aura-narvaez", "b6e95016-54cf-45be-8d30-aab089457fde", 1097, "Celebraciones", "human", "2026-07-16", "es"],
+    ["juan-carlos-valencia", "d5a48fe5-4c50-42e2-8a65-2f4f8f3f0f31", 1198, "Celebraciones", "human", "2026-07-16", "es"],
+    ["rosana-navarro", "326a7562-fe56-4b72-bdf2-91ee1a4a8cbc", 1159, "Celebraciones", "human", "2026-07-16", "es"],
+    ["claudia-patricia-vasquez-ramirez", "0cb24d87-3211-4f71-91c2-ca4bd9f2a7d2", 1599, "Celebraciones", "human", "2026-11-11", "es"],
+    ["aldo-tomas-pinero", "28054517-4f10-41f8-b6aa-a93bc2997e50", 2123, "Celebraciones", "human", "2026-06-18", "es"],
+    ["alejandro-motta", "67102891-ef0d-4250-a0be-64e3bcb2b06e", 2588, "Expansión de la Consciencia", "human", "2026-11-11", "es"],
+    ["alejandro-motta", "ab2650b6-7684-4981-b69a-91923abcea85", 3741, "Cómo determinar el precio", "business", "2026-11-11", "es"],
+    ["alejandro-motta", "2a9d7be8-9010-482f-bb39-b672c13937c7", 3602, "Los Umbrales", "human", "2026-11-11", "es"],
+    ["silvia-pasamonti", "804a4d42-ca58-47ce-aa03-33cc9d6e9ea7", 3842, "Mujeres Líderes", "human", "2026-03-05", "es"],
+    ["ferran-tognetta", "71333bfb-55e5-4ce4-bb03-e147558580aa", 4242, "MasterClass", "human", "2026-11-11", "es"],
+    ["daniela-algeri", "3e19a331-d034-49c1-9906-ca67d3d3fcd9", 5929, "Mujeres Líderes", "human", "2026-04-02", "es"],
+  ];
+  MC.forEach(function (r, i) {
+    var a = AUTHORS.filter(function (x) { return x.id === r[0]; })[0], nm = a ? a.name : r[0], ti = r[3] + ' – ' + nm;
+    videos.push({
+      id: 'mc' + (i + 1), section: 'masterclass', category: r[4], author: r[0], others: [], tags: [], title: T(ti, ti, ti), featured: false,
+      description: DESC.masterclass, duration: r[2], year: +r[5].slice(0, 4), date: r[5], orig: PTSRC.indexOf(r[1]) >= 0 ? 'pt' : r[6], slide: SLIDE('masterclass'), video: '',
+      hls: CDN + r[1] + '/playlist.m3u8', thumb: CDN + r[1] + '/thumbnail.jpg', dub: {}, subs: capOf(r[1])
     });
   });
 
