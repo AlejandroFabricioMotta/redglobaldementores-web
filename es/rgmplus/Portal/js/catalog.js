@@ -333,5 +333,32 @@
     });
   });
 
-  window.RGM_CATALOG = { sections: SECTIONS, categories: CATEGORIES, authors: AUTHORS, videos: videos };
+  // ---------- Eventos o Colecciones ----------
+  // Una colección es una serie de episodios (videos) con portada vertical. Cada episodio es un video normal
+  // (con su sección y categoría, así aparece también en los filtros) + { collection: id, episode: n }.
+  var COLLECTIONS = [
+    { id: 'reflexiones', author: 'alejandro-motta', section: 'masterclass', category: 'business', cover: 'assets/img/coll-reflexiones.jpg',
+      title: T('Reflexiones de un Mentor de Emprendedores', 'Reflexões de um Mentor de Empreendedores', 'Reflections of an Entrepreneurs\' Mentor'),
+      description: T('Serie de episodios de Alejandro Motta sobre emprendedurismo y mentoría de emprendedores.', 'Série de episódios de Alejandro Motta sobre empreendedorismo e mentoria de empreendedores.', 'Episode series by Alejandro Motta on entrepreneurship and mentoring entrepreneurs.') }
+  ];
+  var EPISODES = [ // [colección, n.º de episodio, guid de Bunny, segundos, fecha]
+    ['reflexiones', 1, 'a2002f51-ba2e-4b26-bbc1-9b269c1c7660', 242, '2024-02-25'],
+    ['reflexiones', 2, 'fc963dec-0e3d-40d1-ad24-0ecc656e8848', 242, '2024-02-25'],
+    ['reflexiones', 5, '807cb098-fd7b-49da-a6f5-acef316b81cb', 281, '2024-02-25'],
+    ['reflexiones', 7, '0ef9ef7a-20d5-44d6-929e-7e55b6cb652e', 198, '2024-02-25'],
+    ['reflexiones', 9, 'a418c7e9-881f-4f3e-9112-e64216550104', 182, '2024-02-25'],
+    ['reflexiones', 10, '18ce9853-cee3-4aeb-96c0-7b7b3686421e', 125, '2025-10-06'],
+  ];
+  EPISODES.forEach(function (e) {
+    var c = COLLECTIONS.filter(function (x) { return x.id === e[0]; })[0];
+    videos.push({
+      id: 'ep-' + e[0] + '-' + e[1], section: c.section, category: c.category, author: c.author, others: [], tags: [],
+      title: T(c.title.es + ' – Episodio ' + e[1], c.title.pt + ' – Episódio ' + e[1], c.title.en + ' – Episode ' + e[1]), featured: false,
+      description: c.description, duration: e[3], year: +e[4].slice(0, 4), date: e[4], orig: 'es', slide: SLIDE(c.section), video: '',
+      hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + e[2] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + e[2] + '/thumbnail.jpg',
+      dub: {}, subs: {}, collection: e[0], episode: e[1]
+    });
+  });
+
+  window.RGM_CATALOG = { sections: SECTIONS, categories: CATEGORIES, authors: AUTHORS, videos: videos, collections: COLLECTIONS };
 })();

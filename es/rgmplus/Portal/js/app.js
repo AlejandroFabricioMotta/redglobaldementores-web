@@ -38,6 +38,7 @@
     category: function (id) { return BASE + byId(CAT.categories, id).path + '/'; },
     watch: function (id) { return BASE + 'Watch/?v=' + id; },
     author: function (id) { return BASE + 'Author/?a=' + id; },
+    collection: function (id) { return BASE + 'Collection/?c=' + id; },
     faq: function () { return BASE + 'FAQ/'; }
   };
   var ICON = {
@@ -115,9 +116,19 @@
       '<span class="lang">' + v.orig.toUpperCase() + '</span>' +
       '<span class="cap">' + esc(title(v)) + '<small>' + esc(a.name) + ' · ' + esc(catName(v.category)) + '</small><span class="btn sm">' + t().watchNow + '</span></span></a>';
   }
-  function row(name, vids, allHref) {
+  // tarjeta vertical de una colección (portada en formato 9:16)
+  function collCard(c) {
+    var n = CAT.videos.filter(function (v) { return v.collection === c.id; }).length, a = author(c.author);
+    return '<a class="card coll" href="' + U.collection(c.id) + '" aria-label="' + esc(c.title[lang]) + '"><span class="art" style="background-image:url(\'' + res(c.cover) + '\')"></span>' +
+      '<span class="cap"><small>' + f(t().episodesN, { n: n }) + ' · ' + esc(a.name) + '</small><span class="btn sm">' + t().viewCollection + '</span></span></a>';
+  }
+  function collsWhere(fn) {
+    var n = (params.get('q') || '').toLowerCase().trim();
+    return CAT.collections.filter(fn).filter(function (c) { return !n || [c.title[lang], author(c.author).name, catName(c.category), secName(c.section)].join(' ').toLowerCase().indexOf(n) >= 0; });
+  }
+  function row(name, vids, allHref, fn) {
     return '<section class="row"><div class="wrap"><div class="top"><h3>' + esc(name) + '</h3><div class="nv"><button data-scroll="-1" aria-label="' + t().prev + '">' + ICON.l(14) + '</button><button data-scroll="1" aria-label="' + t().next + '">' + ICON.r(14) + '</button></div></div>' +
-      '<div class="rowbody' + (allHref ? '' : ' solo') + '"><div class="track">' + vids.map(card).join('') + '</div>' + (allHref ? '<a class="card all" href="' + allHref + '">' + t().viewAll + '</a>' : '') + '</div></div></section>';
+      '<div class="rowbody' + (allHref ? '' : ' solo') + '"><div class="track">' + vids.map(fn || card).join('') + '</div>' + (allHref ? '<a class="card all" href="' + allHref + '">' + t().viewAll + '</a>' : '') + '</div></div></section>';
   }
   function page(inner) { return statusBar() + header() + nav() + '<main>' + inner + '</main>' + footer(); }
   function grid(vids) {
@@ -165,6 +176,8 @@
     }).join('');
     var dots = feat.map(function (s, i) { return '<button data-slide="' + i + '" aria-label="' + f(T.slide, { n: i + 1 }) + '" aria-current="' + (i === 0) + '"></button>'; }).join('');
     var rows = '';
+    // primer carrusel: Eventos o Colecciones (portadas verticales)
+    if (CAT.collections.length) rows += row(T.collections, CAT.collections, '', collCard);
     if (saved.length) rows += row(T.myList, saved.map(function (id) { return byId(CAT.videos, id); }).filter(Boolean), '');
     CAT.sections.forEach(function (s) {
       var vids = CAT.videos.filter(function (v) { return v.section === s.id; });
@@ -175,13 +188,22 @@
       '<div class="dots">' + dots + '</div></section><div style="padding-top:22px">' + chips('') + '</div>' + rows);
   }
 
+  function collRow(fn) { var cs = collsWhere(fn); return cs.length ? row(t().collections, cs, '', collCard) : ''; }
   function viewSection(id) {
     var vids = filterQ(CAT.videos.filter(function (v) { return v.section === id; }));
-    return page('<div class="banner"><div class="pattern"></div><h1>' + esc(secName(id)) + '</h1></div><div style="padding-top:22px">' + chips('') + '</div><div class="wrap">' + searchBox() + grid(vids) + '</div>');
+    return page('<div class="banner"><div class="pattern"></div><h1>' + esc(secName(id)) + '</h1></div><div style="padding-top:22px">' + chips('') + '</div><div class="wrap">' + searchBox() + '</div>' + collRow(function (c) { return c.section === id; }) + '<div class="wrap">' + grid(vids) + '</div>');
   }
   function viewCategory(id) {
     var vids = filterQ(CAT.videos.filter(function (v) { return v.category === id; }));
-    return page('<div class="banner"><div class="pattern"></div><h1>' + esc(catName(id)) + '</h1></div><div style="padding-top:22px">' + chips(id) + '</div><div class="wrap">' + searchBox() + grid(vids) + '</div>');
+    return page('<div class="banner"><div class="pattern"></div><h1>' + esc(catName(id)) + '</h1></div><div style="padding-top:22px">' + chips(id) + '</div><div class="wrap">' + searchBox() + '</div>' + collRow(function (c) { return c.category === id; }) + '<div class="wrap">' + grid(vids) + '</div>');
+  }
+  function viewCollection(id) {
+    var c = byId(CAT.collections, id); if (!c) return viewHome();
+    var T = t(), a = author(c.author), eps = CAT.videos.filter(function (v) { return v.collection === id; }).sort(function (x, y) { return x.episode - y.episode; });
+    return page('<div class="banner"><div class="pattern"></div><h1>' + esc(c.title[lang]) + '</h1></div>' +
+      '<div class="wrap" style="padding-top:26px"><p class="where"><a href="' + U.section(c.section) + '">' + esc(secName(c.section)) + '</a> › <a href="' + U.category(c.category) + '">' + esc(catName(c.category)) + '</a></p>' +
+      '<p>' + esc(c.description[lang]) + '</p><p class="oth"><b>' + T.role + ':</b> <a href="' + U.author(a.id) + '">' + esc(a.name) + '</a> · ' + f(T.episodesN, { n: eps.length }) + '</p></div>' +
+      '<div class="wrap" style="padding-top:20px">' + grid(eps) + '</div>');
   }
   function viewAuthor(id) {
     var a = author(id); if (!a) return viewHome();
@@ -194,7 +216,9 @@
     var T = t(), a = author(v.author), ln = T.langName, isSaved = saved.indexOf(id) >= 0, isLiked = liked.indexOf(id) >= 0;
     var tags = v.tags.map(function (g) { return '<a href="' + U.category(v.category) + '?q=' + encodeURIComponent(I18N._tag[g][lang]) + '">#' + esc(I18N._tag[g][lang]) + '</a>'; }).join('');
     var dubs = Object.keys(v.dub).map(function (l) { return ln[l]; }).join(', ');
-    var more = CAT.videos.filter(function (x) { return x.section === v.section && x.id !== v.id; });
+    var coll = v.collection ? byId(CAT.collections, v.collection) : null;
+    var more = CAT.videos.filter(function (x) { return coll ? x.collection === v.collection && x.id !== v.id : x.section === v.section && x.id !== v.id; });
+    if (coll) more.sort(function (x, y) { return x.episode - y.episode; });
     var others = v.others.length ? '<p class="oth"><b>' + T.others + ':</b> ' + v.others.map(function (n) {
       var au = CAT.authors.filter(function (x) { return x.name === n; })[0]; return au ? '<a href="' + U.author(au.id) + '">' + esc(n) + '</a>' : esc(n); }).join(', ') + '</p>' : '';
     var inner = '<div class="wrap"><div class="watch"><div id="playerbox"></div>' +
@@ -207,7 +231,7 @@
       '<p><b>' + T.description + ':</b> ' + esc(v.description[lang]) + '</p>' + others + '<div class="tags">' + tags + '</div>' +
       '<p class="avail">' + f(T.availLangs, { o: ln[v.orig], s: 'ES, PT, EN', d: dubs }) + '</p></div>' +
       '<aside class="author-box"><small>' + T.role + '</small>' + avatar(a, 56) + '<b>' + esc(a.name) + '</b><p>' + esc(a.bio[lang]) + '</p><a href="' + U.author(a.id) + '">' + T.allByAuthor + ' &gt;</a></aside></div></div></div>' +
-      (more.length ? row(f(T.moreIn, { c: secName(v.section) }), more, U.section(v.section)) : '');
+      (more.length ? row(f(T.moreIn, { c: coll ? coll.title[lang] : secName(v.section) }), more, coll ? U.collection(coll.id) : U.section(v.section)) : '');
     return page(inner);
   }
   function viewFaq() {
@@ -228,6 +252,7 @@
     else if (PAGE === 'category' && byId(CAT.categories, KEY)) html = viewCategory(KEY);
     else if (PAGE === 'watch') html = viewWatch(params.get('v'));
     else if (PAGE === 'author') html = viewAuthor(params.get('a'));
+    else if (PAGE === 'collection') html = viewCollection(params.get('c'));
     else html = viewHome();
     $app.innerHTML = html;
     var h1 = $app.querySelector('h1'); document.title = 'RGM+ · ' + (h1 && PAGE !== 'home' ? h1.textContent + ' · ' : '') + t().tagline;
