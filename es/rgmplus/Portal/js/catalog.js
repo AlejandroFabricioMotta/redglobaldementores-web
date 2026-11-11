@@ -36,6 +36,44 @@
       bio: T('Mentor certificado y conferencista. Biografía provisoria.', 'Mentor certificado e orador. Biografia provisória.', 'Certified mentor and speaker. Provisional biography.') },
     { id: 'david', name: 'David Whitmore', photo: null,
       bio: T('Consultor y mentor en desarrollo organizacional. Biografía provisoria.', 'Consultor e mentor em desenvolvimento organizacional. Biografia provisória.', 'Consultant and mentor in organisational development. Provisional biography.') },
+    { id: 'alejandro-motta', name: "Alejandro Motta", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'aldo-tomas-pinero', name: "Aldo Tomás Piñero", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'alvaro-yair-pinilla-silva', name: "Alvaro Yair Pinilla Silva", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'daniel-rosales', name: "Daniel Rosales", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'ana-maria-bonotti', name: "Ana Maria Bonotti", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'adriana-gomez', name: "Adriana Gomez", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'angeles-diaz', name: "Angeles Diaz", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'angela-kohler', name: "Angela Kohler", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'cristina-mejias', name: "Cristina Mejias", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'barreto-navarro-zoila-beatriz', name: "Barreto Navarro Zoila Beatriz", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'diego-repetto', name: "Diego Repetto", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'dora-rozo', name: "Dora Rozo", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'edison-guerrero-quintero', name: "Edison Guerrero Quintero", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'elita-salinas', name: "Elita Salinas", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'gabriel-vazquez', name: "Gabriel Vazquez", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'daniel-tigani', name: "Daniel Tigani", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'blanca-llontop', name: "Blanca Llontop", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'daniela-algeri', name: "Daniela Algeri", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
+    { id: 'gina-lisset-garcia-cardoza', name: "Gina Lisset García Cardoza", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores. Biografía provisoria.', 'Mentor/a da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'lucia', name: 'Lucía Herrera', photo: null,
       bio: T('Docente mentora. Biografía provisoria.', 'Docente mentora. Biografia provisória.', 'Teacher and mentor. Provisional biography.') }
   ];
@@ -65,13 +103,7 @@
     ['i2','interviews-panels','sport','david',['Lucía Herrera'],['inspirador','liderazgo'],T('Entrevista: mentoría en el deporte','Entrevista: mentoria no desporto','Interview: mentoring in sport')],
     ['i3','interviews-panels','business','clara',['Mateus Faria'],['liderazgo','practica'],T('Entrevista: liderazgo empresarial','Entrevista: liderança empresarial','Interview: business leadership')],
     ['i4','interviews-panels','education','lucia',['Amarilis Vellon','Clara María'],['crecimiento','comunidad'],T('Panel: educar con mentoría','Painel: educar com mentoria','Panel: educating with mentoring')],
-    ['i5','interviews-panels','family','mateus',['Amarilis Vellon'],['familia','valores'],T('Entrevista: la familia como primera escuela','Entrevista: a família como primeira escola','Interview: the family as the first school')],
-
-    ['s1','storytelling','human','clara',[],['historia','emotivo'],T('Mi historia como mentora','A minha história como mentora','My story as a mentor'),1],
-    ['s2','storytelling','culture','mateus',[],['historia','comunidad'],T('Relatos de una comunidad','Relatos de uma comunidade','Stories from a community')],
-    ['s3','storytelling','health','lucia',[],['emotivo','inspirador'],T('Aprender a cuidarse','Aprender a cuidar de si','Learning to look after yourself')],
-    ['s4','storytelling','sport','david',[],['inspirador','crecimiento'],T('Lo que me enseñó el deporte','O que o desporto me ensinou','What sport taught me')],
-    ['s5','storytelling','skills','amarilis',[],['historia','practica'],T('Cómo aprendí a escuchar','Como aprendi a ouvir','How I learned to listen')]
+    ['i5','interviews-panels','family','mateus',['Amarilis Vellon'],['familia','valores'],T('Entrevista: la familia como primera escuela','Entrevista: a família como primeira escola','Interview: the family as the first school')]
   ];
 
   var videos = V.map(function (r) {
@@ -82,6 +114,38 @@
       dub: { pt: DEMO + 'audio-pt.mp3', en: DEMO + 'audio-en.mp3' },            // audio traducido (provisorio)
       subs: { es: DEMO + 'subs/es.vtt', pt: DEMO + 'subs/pt.vtt', en: DEMO + 'subs/en.vtt' } // subtítulos (provisorios)
     };
+  });
+
+  var REAL = [ // Storytelling reales (Bunny Stream). [autor, guid, segundos, título]
+    ["amarilis", 'ea117928-13c6-4698-b2f9-eb491bc44017', 107, "El valor de la Familia"],
+    ["alejandro-motta", '2374aeee-183e-4ca8-8a75-15c680676e4a', 332, "Propósito"],
+    ["aldo-tomas-pinero", 'ec1b38e6-413d-4607-809a-2c87d41782b4', 324, "Storytelling – Aldo Tomás Piñero"],
+    ["alvaro-yair-pinilla-silva", 'e34f20b7-c6a4-4195-88f7-ea3c62734d59', 286, "Storytelling – Alvaro Yair Pinilla Silva"],
+    ["daniel-rosales", '96e40a18-880e-44e2-9ba2-e0fc914bf8e5', 232, "Storytelling – Daniel Rosales"],
+    ["ana-maria-bonotti", '2727288c-5ddc-4949-9608-7b7f8d97601d', 545, "Storytelling – Ana Maria Bonotti"],
+    ["adriana-gomez", '3af54f8a-5b29-4f62-8654-37b246dd8e4b', 508, "Storytelling – Adriana Gomez"],
+    ["angeles-diaz", '56b4c480-887e-4289-9d01-9ca20431e64f', 461, "Storytelling – Angeles Diaz"],
+    ["angela-kohler", '256d8199-b670-4e74-96b7-c17de83281df', 544, "Storytelling – Angela Kohler"],
+    ["cristina-mejias", '1814d6a7-3283-48e6-aa1b-e585f101f429', 858, "Storytelling – Cristina Mejias"],
+    ["barreto-navarro-zoila-beatriz", '80d8e1c0-8da3-4e7b-b946-df1fe573fae7', 776, "Storytelling – Barreto Navarro Zoila Beatriz"],
+    ["diego-repetto", 'ad81c2d3-5fe5-42e1-81b1-b4e9b4dddde7', 230, "Madrugando un Sueño sobre Ruedas"],
+    ["dora-rozo", '950ee19e-58b8-4b66-b467-f969d99a1c77', 61, "Storytelling – Dora Rozo"],
+    ["edison-guerrero-quintero", '024b6451-337c-4c9d-b312-0c813e1522ee', 579, "Storytelling – Edison Guerrero Quintero"],
+    ["elita-salinas", '0b44ac4e-d44c-4736-b1e1-cce4bce59be5', 509, "Storytelling – Elita Salinas"],
+    ["gabriel-vazquez", 'b9fd8182-9914-4beb-b7da-6c205937cd93', 234, "Mi Regalo de Reyes"],
+    ["daniel-tigani", 'd1a37235-3131-41c9-8912-9abfe6bf8aae', 178, "Storytelling – Daniel Tigani"],
+    ["blanca-llontop", '0879d5dd-688b-4d54-bd73-7e3fcc6f5cef', 451, "Storytelling – Blanca Llontop"],
+    ["daniela-algeri", 'e8e83d14-c752-4704-b284-1bf74baad85d', 316, "Storytelling – Daniela Algeri"],
+    ["gina-lisset-garcia-cardoza", '297a2102-d0e4-4a0e-9db5-7091783a140d', 651, "Storytelling – Gina Lisset García Cardoza"],
+  ];
+
+  REAL.forEach(function (r, i) {
+    videos.push({
+      id: 'st' + (i + 1), section: 'storytelling', category: 'human', author: r[0], others: [], tags: [], title: T(r[3], r[3], r[3]), featured: i === 0,
+      description: DESC.storytelling, duration: r[2], year: 2025, date: '2025-11-' + (10 + (i % 18)),
+      orig: 'es', video: '', hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/thumbnail.jpg',
+      dub: {}, subs: {} // los subtítulos de Bunny se conectan en el siguiente paso
+    });
   });
 
   window.RGM_CATALOG = { sections: SECTIONS, categories: CATEGORIES, authors: AUTHORS, videos: videos };
