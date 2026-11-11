@@ -51,6 +51,7 @@ main{background:linear-gradient(180deg,#2a0046 0,#470073 45%,#650099 100%);min-h
 .slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .6s}
 .slide.on{opacity:1;visibility:visible}
 .slide .art{position:absolute;inset:0;background-color:#2a0046;background-size:contain;background-repeat:no-repeat;background-position:right center}
+.slide .art.bg{background-size:cover;background-position:right center}
 .slide .pattern{position:absolute;inset:0;opacity:.9}
 .slide .scrim{position:absolute;inset:0;background:linear-gradient(90deg,#2a0046 0,rgba(42,0,70,.92) 30%,rgba(42,0,70,.2) 58%,rgba(42,0,70,0) 100%)}
 .slide .txt{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:10px;max-width:640px}

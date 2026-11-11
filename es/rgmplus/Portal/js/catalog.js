@@ -16,6 +16,7 @@
   var HLS = 'https://vz-6a7af8bf-f99.b-cdn.net/ea117928-13c6-4698-b2f9-eb491bc44017/playlist.m3u8'; // Bunny Stream (biblioteca RGM+)
   var THUMB = 'assets/img/valor-de-la-familia.jpg';
   var DEMO = 'assets/demo/';
+  var SLIDE = function (s) { return 'assets/img/slide-' + s + '.jpg'; }; // imagen del slide de la portada (una por sección)
 
   // path = carpeta de la URL (distingue mayúsculas en GitHub Pages)
   var SECTIONS = [
@@ -110,7 +111,7 @@
     return {
       id: r[0], section: r[1], category: r[2], author: r[3], others: r[4], tags: r[5], title: r[6], featured: !!r[7],
       description: DESC[r[1]], duration: 107, year: 2025, date: '2025-11-0' + (1 + (r[0].charCodeAt(1) % 8)),
-      orig: 'es', video: VIDEO, hls: HLS, thumb: THUMB,
+      orig: 'es', video: VIDEO, hls: HLS, thumb: THUMB, slide: SLIDE(r[1]),
       dub: { pt: DEMO + 'audio-pt.mp3', en: DEMO + 'audio-en.mp3' },            // audio traducido (provisorio)
       subs: { es: DEMO + 'subs/es.vtt', pt: DEMO + 'subs/pt.vtt', en: DEMO + 'subs/en.vtt' } // subtítulos (provisorios)
     };
@@ -167,7 +168,7 @@
     videos.push({
       id: 'st' + (i + 1), section: 'storytelling', category: 'human', author: r[0], others: [], tags: [], title: T(r[3], r[3], r[3]), featured: i === 0,
       description: DESC.storytelling, duration: r[2], year: 2025, date: '2025-11-' + (10 + (i % 18)),
-      orig: 'es', video: '', hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/thumbnail.jpg',
+      orig: 'es', slide: SLIDE('storytelling'), video: '', hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/thumbnail.jpg',
       dub: {}, subs: cap
     });
   });

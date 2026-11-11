@@ -158,7 +158,7 @@
   function viewHome() {
     var T = t(), feat = CAT.videos.filter(function (v) { return v.featured; }).slice(0, 4);
     var slides = feat.map(function (v, i) {
-      return '<div class="slide' + (i ? '' : ' on') + '"><div class="art" style="' + art(v) + '"></div><div class="scrim"></div>' +
+      return '<div class="slide' + (i ? '' : ' on') + '"><div class="art' + (v.slide ? ' bg' : '') + '" style="' + (v.slide ? "background-image:url('" + res(v.slide) + "')" : art(v)) + '"></div><div class="scrim"></div>' +
         '<div class="wrap txt"><span class="kick">' + esc(secName(v.section)) + ' · ' + esc(catName(v.category)) + '</span><h2>' + esc(title(v)) + '</h2><span class="meta">' + esc(author(v.author).name) + ' · ' + dur(v.duration) + '</span>' +
         '<a class="btn" href="' + U.watch(v.id) + '">' + T.watchNow + '</a></div></div>';
     }).join('');
