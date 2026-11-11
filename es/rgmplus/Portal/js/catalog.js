@@ -139,12 +139,16 @@
     ["gina-lisset-garcia-cardoza", '297a2102-d0e4-4a0e-9db5-7091783a140d', 651, "Storytelling – Gina Lisset García Cardoza"],
   ];
 
+  // Videos con subtítulos ya cargados en Bunny (captions ES/PT/EN en el CDN)
+  var SUBBED = ['ea117928-13c6-4698-b2f9-eb491bc44017', '2374aeee-183e-4ca8-8a75-15c680676e4a'];
+  var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
   REAL.forEach(function (r, i) {
+    var cap = SUBBED.indexOf(r[1]) >= 0 ? { es: CDN + r[1] + '/captions/ES.vtt', pt: CDN + r[1] + '/captions/PT.vtt', en: CDN + r[1] + '/captions/EN.vtt' } : {};
     videos.push({
       id: 'st' + (i + 1), section: 'storytelling', category: 'human', author: r[0], others: [], tags: [], title: T(r[3], r[3], r[3]), featured: i === 0,
       description: DESC.storytelling, duration: r[2], year: 2025, date: '2025-11-' + (10 + (i % 18)),
       orig: 'es', video: '', hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/thumbnail.jpg',
-      dub: {}, subs: {} // los subtítulos de Bunny se conectan en el siguiente paso
+      dub: {}, subs: cap
     });
   });
 
