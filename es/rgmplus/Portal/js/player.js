@@ -24,7 +24,7 @@ window.RGMPlayer = (function () {
 
     box.innerHTML =
       '<div class="player" tabindex="-1">' +
-        '<video playsinline preload="metadata" ' + (o.poster ? 'poster="' + o.poster + '"' : '') + (item.hls ? '' : ' src="' + item.video + '"') + '></video>' +
+        '<video playsinline preload="metadata" ' + (item.hls ? 'crossorigin="anonymous" ' : '') + (o.poster ? 'poster="' + o.poster + '"' : '') + (item.hls ? '' : ' src="' + item.video + '"') + '></video>' +
         '<audio preload="auto" hidden></audio>' +
         '<button class="big" aria-label="' + t.play + '"><span>' + I.play.replace('20', '34').replace('20', '34') + '</span></button>' +
         '<div class="menu" role="menu"></div>' +
