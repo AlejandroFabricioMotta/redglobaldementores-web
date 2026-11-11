@@ -140,7 +140,9 @@
   ];
 
   // Videos con subtítulos ya cargados en Bunny (captions ES/PT/EN en el CDN)
-  var SUBBED = ['ea117928-13c6-4698-b2f9-eb491bc44017', '2374aeee-183e-4ca8-8a75-15c680676e4a',
+  var SUBBED = [
+    'ea117928-13c6-4698-b2f9-eb491bc44017',
+    '2374aeee-183e-4ca8-8a75-15c680676e4a',
     'ec1b38e6-413d-4607-809a-2c87d41782b4',
     'e34f20b7-c6a4-4195-88f7-ea3c62734d59',
     '96e40a18-880e-44e2-9ba2-e0fc914bf8e5',
@@ -149,7 +151,15 @@
     '56b4c480-887e-4289-9d01-9ca20431e64f',
     '256d8199-b670-4e74-96b7-c17de83281df',
     '1814d6a7-3283-48e6-aa1b-e585f101f429',
-    '80d8e1c0-8da3-4e7b-b946-df1fe573fae7'];
+    '80d8e1c0-8da3-4e7b-b946-df1fe573fae7',
+    'ad81c2d3-5fe5-42e1-81b1-b4e9b4dddde7',
+    '950ee19e-58b8-4b66-b467-f969d99a1c77',
+    '024b6451-337c-4c9d-b312-0c813e1522ee',
+    '0b44ac4e-d44c-4736-b1e1-cce4bce59be5',
+    'b9fd8182-9914-4beb-b7da-6c205937cd93',
+    'd1a37235-3131-41c9-8912-9abfe6bf8aae',
+    '0879d5dd-688b-4d54-bd73-7e3fcc6f5cef',
+    'e8e83d14-c752-4704-b284-1bf74baad85d'];
   var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
   REAL.forEach(function (r, i) {
     var cap = SUBBED.indexOf(r[1]) >= 0 ? { es: CDN + r[1] + '/captions/ES.vtt', pt: CDN + r[1] + '/captions/PT.vtt', en: CDN + r[1] + '/captions/EN.vtt' } : {};
