@@ -89,7 +89,10 @@ main{background:linear-gradient(180deg,#2a0046 0,#470073 45%,#650099 100%);min-h
 .card .cap small{font-weight:400;color:var(--soft);font-size:11px}
 .card .cap .btn{opacity:0;transform:translateY(4px);transition:.2s}
 .card:hover .cap .btn,.card:focus-visible .cap .btn{opacity:1;transform:none}
-.card.all{background:var(--lilac);color:var(--purple);display:grid;place-items:center;font-weight:700;font-size:16px;text-align:center}
+.rowbody{display:grid;grid-template-columns:8fr 1fr;gap:14px}
+.rowbody.solo{display:block}
+.rowbody>.track{min-width:0;padding-bottom:0}
+.card.all{aspect-ratio:auto;min-width:0;background:var(--lilac);color:var(--purple);display:grid;place-items:center;font-weight:700;font-size:16px;text-align:center}
 .card.all:hover{filter:brightness(1.06)}
 .card .lang{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.6);border-radius:6px;padding:1px 7px;font-size:10px;font-weight:700;letter-spacing:.08em}
 
@@ -197,7 +200,7 @@ main{background:linear-gradient(180deg,#2a0046 0,#470073 45%,#650099 100%);min-h
 .foot h2{margin:0 0 26px;text-align:center;font-size:clamp(17px,2.2vw,23px);font-weight:400;color:var(--soft)}
 .foot h2 b{color:#fff;font-weight:700}
 .sites{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
-.site{border-radius:10px;background:linear-gradient(180deg,#f4efd3,#e0d9aa);color:#26144a;text-align:center;padding:36px 12px;display:flex;flex-direction:column;gap:12px;transition:transform .15s,filter .15s}
+.site{border-radius:10px;background:linear-gradient(180deg,#f4efd3,#e0d9aa);color:#26144a;text-align:center;padding:18px 12px;display:flex;flex-direction:column;gap:8px;transition:transform .15s,filter .15s}
 .site:hover{transform:translateY(-3px);filter:brightness(1.04)}
 .site b{font:700 30px/1 'Barlow Condensed',sans-serif;letter-spacing:.01em}
 .site small{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500}
@@ -224,11 +227,11 @@ main{background:linear-gradient(180deg,#2a0046 0,#470073 45%,#650099 100%);min-h
   .head .logo img{height:34px}
   .card.wide{width:78%}
   .card.poster{width:42%}
-  .card.all.wide{width:34%;min-width:0}
-  .card.all.poster{width:30%;min-width:0}
+  .rowbody{grid-template-columns:1fr 74px}
+  .card.all{font-size:13px}
   .grid{grid-template-columns:1fr}
   .sites{grid-template-columns:1fr}
-  .site{padding:24px 12px}
+  .site{padding:14px 12px}
   .back{padding:16px 20px;font-size:15px}
   .panelbox{padding:30px 22px}
   .btns input[type=range]{display:none}

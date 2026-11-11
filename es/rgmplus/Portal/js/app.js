@@ -83,8 +83,7 @@
     var T = t();
     return '<div class="status"><div class="wrap"><div class="grp"><div class="langs" role="group" aria-label="Idioma / Language">' + langButtons() + '</div>' +
       (C.previewMode ? '<span class="chip">' + T.preview + '</span>' : '') + '</div><div class="grp">' +
-      (user ? '<span>' + T.hello + ' ' + esc(user.name) + ' · <button class="link" data-act="logout">' + T.logout + '</button></span><span>' + T.tokens + ': ' + user.tokens + '</span>' : '') +
-      '<a href="' + U.faq() + '">' + T.faq + '</a></div></div></div>';
+      '</div></div></div>';
   }
   function header() {
     return '<header class="head"><div class="wrap"><a class="logo" href="' + U.home() + '" aria-label="RGM+"><img src="' + BASE + 'assets/logo-white.svg" alt="RGM+"></a>' +
@@ -118,7 +117,7 @@
   }
   function row(name, vids, allHref) {
     return '<section class="row"><div class="wrap"><div class="top"><h3>' + esc(name) + '</h3><div class="nv"><button data-scroll="-1" aria-label="' + t().prev + '">' + ICON.l(14) + '</button><button data-scroll="1" aria-label="' + t().next + '">' + ICON.r(14) + '</button></div></div>' +
-      '<div class="track">' + (allHref ? '<a class="card all wide" href="' + allHref + '">' + t().viewAll + '</a>' : '') + vids.map(card).join('') + '</div></div></section>';
+      '<div class="rowbody' + (allHref ? '' : ' solo') + '"><div class="track">' + vids.map(card).join('') + '</div>' + (allHref ? '<a class="card all" href="' + allHref + '">' + t().viewAll + '</a>' : '') + '</div></div></section>';
   }
   function page(inner) { return statusBar() + header() + nav() + '<main>' + inner + '</main>' + footer(); }
   function grid(vids) {
