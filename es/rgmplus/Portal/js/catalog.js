@@ -473,6 +473,10 @@
     ['liderazgo-humanamente-efectivo', 14, '349dc3de-336b-41c8-bbc2-6fbfa9d032ef', 214, '2026-11-11', 'El modelo del Observador'],
     ['liderazgo-humanamente-efectivo', 15, '7b07bfd9-36ee-4ad3-893a-4fad65ec9ae0', 198, '2026-11-11', 'La rueda de la vida'],
     ['liderazgo-humanamente-efectivo', 16, '321f2625-7afa-43ec-b654-5f2853158561', 210, '2026-11-11', 'Insights de Comportamiento'],
+    ['liderazgo-humanamente-efectivo', 17, '22b4b16f-5fac-4721-93c8-129c35206bf4', 222, '2026-11-11', 'Comportamientos natural y adaptado'],
+    ['liderazgo-humanamente-efectivo', 18, 'e5be3a0f-410b-40e0-a672-969b022c5137', 206, '2026-11-11', 'Perfiles de comportamiento'],
+    ['liderazgo-humanamente-efectivo', 19, '6d20b26b-0446-4a24-b241-26379d7b5cd3', 234, '2026-11-11', 'Sabiduría y Legado'],
+    ['liderazgo-humanamente-efectivo', 20, 'e049c384-5451-422a-a44e-317bd7c2c7da', 289, '2026-11-11', 'Cierre Módulo Gestión del Ser'],
   ];
   EPISODES.forEach(function (e) {
     var c = COLLECTIONS.filter(function (x) { return x.id === e[0]; })[0];
