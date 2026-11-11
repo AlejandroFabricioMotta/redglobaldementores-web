@@ -423,7 +423,14 @@
     '7d357957-2878-4697-9c43-71b35dd9b2a5',
     '93433a5e-4cd5-4738-b17f-8533508838a5',
     '46a51698-61b3-4ed2-a1e2-d34706f68a97',
-    'c73b9881-3b8e-4e85-902e-d931ccf5ac53'];
+    'c73b9881-3b8e-4e85-902e-d931ccf5ac53',
+    '4642bdb1-1e1b-40bb-ae19-d34dc48c9ae5',
+    '91b97285-8d43-4af2-8ec8-8b73f6e69009',
+    'af1ca390-3f39-40a0-b78d-15f8ad42e5cc',
+    '9e25362a-8adf-447d-b405-ab53f02cb4b0',
+    '5846f9fc-06b4-499c-ae57-f575efce9d4b',
+    'c3a768b8-1e13-4aa2-a953-89ef88496849',
+    '7c545d5b-180f-4a1f-a40c-28650025aa1f'];
   var PTSRC = ['409c278c-c994-435b-960d-0852bc65d434', 'f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
   var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
   function capOf(g) { return SUBBED.indexOf(g) >= 0 ? { es: CDN + g + '/captions/ES.vtt', pt: CDN + g + '/captions/PT.vtt', en: CDN + g + '/captions/EN.vtt' } : {}; }
