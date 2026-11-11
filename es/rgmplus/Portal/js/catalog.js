@@ -159,7 +159,8 @@
     'b9fd8182-9914-4beb-b7da-6c205937cd93',
     'd1a37235-3131-41c9-8912-9abfe6bf8aae',
     '0879d5dd-688b-4d54-bd73-7e3fcc6f5cef',
-    'e8e83d14-c752-4704-b284-1bf74baad85d'];
+    'e8e83d14-c752-4704-b284-1bf74baad85d',
+    '297a2102-d0e4-4a0e-9db5-7091783a140d'];
   var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
   REAL.forEach(function (r, i) {
     var cap = SUBBED.indexOf(r[1]) >= 0 ? { es: CDN + r[1] + '/captions/ES.vtt', pt: CDN + r[1] + '/captions/PT.vtt', en: CDN + r[1] + '/captions/EN.vtt' } : {};
