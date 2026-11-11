@@ -257,3 +257,10 @@ main{background:linear-gradient(180deg,#2a0046 0,#470073 45%,#650099 100%);min-h
 .info .oth a{color:var(--gold)}
 .author-box small{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600}
 .card .art{background-color:#2a0046}
+
+/* slide de portada: el texto queda en la zona violeta de la imagen (izquierda) y no tapa a las personas */
+@media(min-width:901px){
+  .slide .txt{max-width:var(--wrap)}
+  .slide .txt>*{max-width:min(400px,34%)}
+  .slide .txt h2{font-size:clamp(24px,2.9vw,38px)}
+}
