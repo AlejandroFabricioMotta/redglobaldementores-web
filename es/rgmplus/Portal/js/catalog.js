@@ -459,6 +459,9 @@
     ,{ id: 'reflexiones-serafin-contreras', author: 'serafin-contreras-galeano', section: 'masterclass', category: 'family', cover: 'assets/img/coll-serafin.jpg',
       title: T('Reflexiones de Serafín Contreras', 'Reflexões de Serafín Contreras', 'Reflections by Serafín Contreras'),
       description: T('Serie de reflexiones de Serafín Contreras, especialista en salud mental y adicciones.', 'Série de reflexões de Serafín Contreras, especialista em saúde mental e dependências.', 'Series of reflections by Serafín Contreras, specialist in mental health and addictions.') }
+    ,{ id: 'mentoria-en-1-minuto', author: 'angela-lodono', section: 'masterclass', category: 'education', cover: 'assets/img/coll-mentoria-1-minuto.jpg',
+      title: T('Mentoría en 1 minuto', 'Mentoria em 1 minuto', 'Mentoring in 1 minute'),
+      description: T('40 cápsulas de alto contenido de mentoría de Ángela Mentora, de un minuto cada una.', '40 cápsulas de alto conteúdo de mentoria da Ángela Mentora, de um minuto cada uma.', '40 high-content mentoring capsules by Ángela Mentora, one minute each.') }
   ];
   var EPISODES = [ // [colección, n.º de episodio, guid de Bunny, segundos, fecha, título propio (opcional)]
     ['reflexiones', 1, 'a2002f51-ba2e-4b26-bbc1-9b269c1c7660', 242, '2024-02-25'],
@@ -494,6 +497,29 @@
     ['reflexiones-serafin-contreras', 1, 'cba8068b-5b76-4f52-8685-6b8e479c915f', 529, '2026-11-11', 'Mentor y Restauración'],
     ['reflexiones-serafin-contreras', 2, '946a3469-d3a3-466a-806e-c76b7386e247', 435, '2026-11-11', 'Replicando la Mentoría'],
     ['reflexiones-serafin-contreras', 3, '4d413367-2d9e-4c35-a6b7-7645d44ccbe5', 733, '2026-11-11', 'Historia y Vida'],
+    ['mentoria-en-1-minuto', 4, '3a25f89c-bdc6-43d6-95f8-42d9031a2d2a', 60, '2023-04-08', "3 niveles de formación de los mentores"],
+    ['mentoria-en-1-minuto', 6, '4ae48faf-714d-49be-8a78-8b114b056afc', 59, '2023-04-08', "Los mentores que me han inspirado"],
+    ['mentoria-en-1-minuto', 10, '4a631015-dafa-40ff-ace0-ef513acac59c', 56, '2023-04-08', "Por qué elegir un mentor"],
+    ['mentoria-en-1-minuto', 11, 'b5f45ce1-14e0-4f99-956d-bb4f5d3820bb', 60, '2023-04-08', "Dónde encontrar un mentor"],
+    ['mentoria-en-1-minuto', 12, '1be615ac-4e5f-4a84-aeb4-09315a252da8', 59, '2023-04-08', "Qué es la Red Global de Mentores"],
+    ['mentoria-en-1-minuto', 16, '54647b34-c445-4662-b214-13d324ab0929', 51, '2023-04-08', "10 virtudes de un mentor"],
+    ['mentoria-en-1-minuto', 17, '23d7902f-408a-475d-952e-d683a4bcc3a7', 57, '2023-04-08', "5 valores y cualidades de un mentor"],
+    ['mentoria-en-1-minuto', 18, '50038eb4-86e4-4c8b-9eb8-939caea49d24', 59, '2023-04-08', "9 habilidades de un mentor"],
+    ['mentoria-en-1-minuto', 19, 'f2a81fda-fa03-433a-9a1e-e32b80f9f88d', 61, '2023-04-08', "5 elementos para ser un mentor"],
+    ['mentoria-en-1-minuto', 20, '60be6915-f620-4d02-8c9f-96b284bec384', 45, '2023-04-08', "12 áreas donde estamos los mentores"],
+    ['mentoria-en-1-minuto', 24, 'a68a3e6f-1faf-4371-99d5-bc111fb3fda2', 59, '2023-04-08', "No te nombres mentor si no te has formado"],
+    ['mentoria-en-1-minuto', 25, 'f5fd833c-2a86-4cf0-acc6-365e6a191c20', 59, '2023-04-08', "¿Crees que solo por tener experiencia puedes ser mentor profesional?"],
+    ['mentoria-en-1-minuto', 26, '8596531d-8890-4702-9e08-83303255140f', 61, '2023-04-08', "3 claves para reconocer a un buen mentor"],
+    ['mentoria-en-1-minuto', 27, '697aa3a7-8745-4806-9b83-75257cd761bc', 57, '2023-04-08', "5 claves para ser un mentor de excelencia"],
+    ['mentoria-en-1-minuto', 28, '4e8a0f63-1900-4057-9720-baefd799eb8a', 59, '2023-04-08', "6 áreas donde utilizamos la mentoría – parte 1"],
+    ['mentoria-en-1-minuto', 29, '557aa7d9-4f34-46c0-bba2-acb204b9f63e', 60, '2023-04-08', "6 áreas donde utilizamos la mentoría – parte 2"],
+    ['mentoria-en-1-minuto', 30, 'a5a19ac1-a11a-4d89-8608-16537670b012', 59, '2023-04-08', "6 áreas donde utilizamos la mentoría – parte 3"],
+    ['mentoria-en-1-minuto', 35, '2253c248-c4f2-4072-8a13-6dc805a26e47', 60, '2023-04-08', "6 pasos en una sesión de mentoría"],
+    ['mentoria-en-1-minuto', 36, 'ed85cc9a-4193-450f-b558-e6284a92f04b', 59, '2023-04-08', "5 actividades que puedes hacer durante el primer encuentro con tu mentor"],
+    ['mentoria-en-1-minuto', 37, 'c942bb56-f8bc-4456-b8d9-0466ba38ccc1', 60, '2023-04-08', "5 actividades que hacemos los mentores"],
+    ['mentoria-en-1-minuto', 38, 'e8807bd9-01b4-49f3-8d9e-8989fde15a7a', 59, '2023-04-08', "5 cosas que no debemos hacer los mentores"],
+    ['mentoria-en-1-minuto', 39, 'd712a9b5-4b76-4197-b00b-95cae160f1d9', 57, '2023-04-08', "6 preguntas clave para hacerle a tu mentor"],
+    ['mentoria-en-1-minuto', 40, '1b1a3b37-6c09-40e8-8686-ba90c9c84064', 59, '2023-04-08', "El modelo 70/20/10 de la mentoría"],
   ];
   EPISODES.forEach(function (e) {
     var c = COLLECTIONS.filter(function (x) { return x.id === e[0]; })[0];
