@@ -3,6 +3,7 @@
    - Audio traducido: un archivo de audio por idioma que se sincroniza con el video
      (el video se silencia y suena el audio elegido). Más adelante se puede
      reemplazar por HLS con varias pistas de audio sin cambiar el resto del portal. */
+var RGM_PLAYER_SRC = (document.currentScript && document.currentScript.src) || '';
 window.RGMPlayer = (function () {
   var I = {
     play: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>',
@@ -23,7 +24,7 @@ window.RGMPlayer = (function () {
 
     box.innerHTML =
       '<div class="player" tabindex="-1">' +
-        '<video playsinline preload="metadata" ' + (o.poster ? 'poster="' + o.poster + '"' : '') + ' src="' + item.video + '"></video>' +
+        '<video playsinline preload="metadata" ' + (o.poster ? 'poster="' + o.poster + '"' : '') + (item.hls ? '' : ' src="' + item.video + '"') + '></video>' +
         '<audio preload="auto" hidden></audio>' +
         '<button class="big" aria-label="' + t.play + '"><span>' + I.play.replace('20', '34').replace('20', '34') + '</span></button>' +
         '<div class="menu" role="menu"></div>' +
@@ -39,6 +40,24 @@ window.RGMPlayer = (function () {
     var bar = box.querySelector('.bar'), fill = bar.querySelector('b'), knob = bar.querySelector('u');
     var pp = box.querySelector('.pp'), mu = box.querySelector('.mu'), vol = box.querySelector('input'), tm = box.querySelector('.time');
     var menu = box.querySelector('.menu'), muted = false, idleT;
+
+    // video HLS (Bunny Stream): calidades adaptativas; si falla, usa el mp4 local
+    if (item.hls) {
+      var useMp4 = function () { if (!V.getAttribute('src')) V.src = item.video; };
+      var startHls = function () {
+        if (window.Hls && Hls.isSupported()) {
+          var h = new Hls(); h.loadSource(item.hls); h.attachMedia(V);
+          h.on(Hls.Events.ERROR, function (e, d) { if (d.fatal) { h.destroy(); useMp4(); } });
+        } else if (V.canPlayType('application/vnd.apple.mpegurl')) { V.src = item.hls; }
+        else useMp4();
+      };
+      if (window.Hls) startHls();
+      else {
+        var sc = document.createElement('script');
+        sc.src = RGM_PLAYER_SRC.replace(/player\.js.*$/, 'vendor/hls.min.js');
+        sc.onload = startHls; sc.onerror = useMp4; document.head.appendChild(sc);
+      }
+    }
 
     // subtítulos: una pista por idioma
     langs.forEach(function (l) {
