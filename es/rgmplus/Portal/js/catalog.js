@@ -374,11 +374,22 @@
     'ee99e363-65e7-4714-a07f-2c34da4f900a',
     '5324326f-1bb6-4ae9-8432-ba07a7cc2537',
     '93d5b4e4-731f-4331-85e4-4b0907afead6',
-    '4fc39c56-79b2-4d4c-bc11-affaa0ec8452'];
-  var PTSRC = ['f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
+    '4fc39c56-79b2-4d4c-bc11-affaa0ec8452',
+    'a9e212e6-7738-4662-9ea0-8c6bb72b7f67',
+    '89faf76d-9546-455e-b2c6-365b4ca57fee',
+    '498cbfb4-e427-4c9a-9b23-062971994e3c',
+    '6f71545f-b8fb-4f37-acc8-cf05d1cdcd0a',
+    'f1406d13-58ae-472c-bd1f-59ba93d2f28e',
+    '6701fe90-e431-4f15-8751-1a6943a45e9d',
+    '7b770f3b-7298-4b05-ae17-ea23d8fa77b8',
+    '13e9a091-fa48-40be-9c94-0c39430d8cbb',
+    'b48e9f9f-7575-418f-840a-a476fef27e34',
+    '409c278c-c994-435b-960d-0852bc65d434'];
+  var PTSRC = ['409c278c-c994-435b-960d-0852bc65d434', 'f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
   var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
+  function capOf(g) { return SUBBED.indexOf(g) >= 0 ? { es: CDN + g + '/captions/ES.vtt', pt: CDN + g + '/captions/PT.vtt', en: CDN + g + '/captions/EN.vtt' } : {}; }
   REAL.forEach(function (r, i) {
-    var cap = SUBBED.indexOf(r[1]) >= 0 ? { es: CDN + r[1] + '/captions/ES.vtt', pt: CDN + r[1] + '/captions/PT.vtt', en: CDN + r[1] + '/captions/EN.vtt' } : {};
+    var cap = capOf(r[1]);
     videos.push({
       id: 'st' + (i + 1), section: 'storytelling', category: 'human', author: r[0], others: [], tags: [], title: T(r[3], r[3], r[3]), featured: i === 0,
       description: DESC.storytelling, duration: r[2], year: 2025, date: '2025-11-' + (10 + (i % 18)),
@@ -429,9 +440,9 @@
     videos.push({
       id: 'pr' + (i + 1), section: 'presentations', category: 'human', author: r[0], others: [], tags: [],
       title: T(k[0] + ' – ' + a.name, k[1] + ' – ' + a.name, k[2] + ' – ' + a.name), featured: false,
-      description: DESC.presentations, duration: r[2], year: 2026, date: '2026-11-11', orig: 'es', slide: SLIDE('presentations'), video: '',
+      description: DESC.presentations, duration: r[2], year: 2026, date: '2026-11-11', orig: PTSRC.indexOf(r[1]) >= 0 ? 'pt' : 'es', slide: SLIDE('presentations'), video: '',
       hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + r[1] + '/thumbnail.jpg',
-      dub: {}, subs: {}
+      dub: {}, subs: capOf(r[1])
     });
   });
 
@@ -491,7 +502,7 @@
       title: e[5] ? T(c.title.es + ' – ' + e[1] + '. ' + e[5], c.title.pt + ' – ' + e[1] + '. ' + e[5], c.title.en + ' – ' + e[1] + '. ' + e[5]) : T(c.title.es + ' – Episodio ' + e[1], c.title.pt + ' – Episódio ' + e[1], c.title.en + ' – Episode ' + e[1]), featured: false,
       description: c.description, duration: e[3], year: +e[4].slice(0, 4), date: e[4], orig: 'es', slide: SLIDE(c.section), video: '',
       hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + e[2] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + e[2] + '/thumbnail.jpg',
-      dub: {}, subs: {}, collection: e[0], episode: e[1]
+      dub: {}, subs: capOf(e[2]), collection: e[0], episode: e[1]
     });
   });
 
