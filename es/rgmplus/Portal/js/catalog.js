@@ -440,7 +440,27 @@
     '0ef9ef7a-20d5-44d6-929e-7e55b6cb652e',
     '0cccf890-380f-4419-9115-f5f4302aa9d7',
     'a418c7e9-881f-4f3e-9112-e64216550104',
-    '18ce9853-cee3-4aeb-96c0-7b7b3686421e'];
+    '18ce9853-cee3-4aeb-96c0-7b7b3686421e',
+    'da2d0e0a-9f64-40ca-8ebf-21a6b32191dc',
+    '4e67ee14-0a11-48ce-bd3c-c612dc2d8e46',
+    '93e1893c-1cc0-4294-9cd4-5e4de19c1afa',
+    'd0c6a261-1f80-418d-b3c1-0f1092796aad',
+    'ef4eab33-b932-4367-a661-3d15625d99b4',
+    'feedfdac-f8e8-43a3-b040-742c508fd8d0',
+    'ea1ac702-7fef-4269-b321-084cdd07a779',
+    '886447d3-ff39-4240-a4b3-c06accc33500',
+    'b2393a0f-453d-48fc-b2b1-c3df1b83c36d',
+    'c5d0869c-a76b-4d47-9099-a84f0f103452',
+    '1576d7b3-0aca-4ff8-80be-52cd61ab2f00',
+    '87c474e6-05be-426e-8a30-2b6ef9aee3a5',
+    'f8c3e3df-9913-4eaa-882b-3b15941e4f50',
+    '349dc3de-336b-41c8-bbc2-6fbfa9d032ef',
+    '7b07bfd9-36ee-4ad3-893a-4fad65ec9ae0',
+    '321f2625-7afa-43ec-b654-5f2853158561',
+    '22b4b16f-5fac-4721-93c8-129c35206bf4',
+    'e5be3a0f-410b-40e0-a672-969b022c5137',
+    '6d20b26b-0446-4a24-b241-26379d7b5cd3',
+    'e049c384-5451-422a-a44e-317bd7c2c7da'];
   var PTSRC = ['409c278c-c994-435b-960d-0852bc65d434', 'f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
   var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
   function capOf(g) { return SUBBED.indexOf(g) >= 0 ? { es: CDN + g + '/captions/ES.vtt', pt: CDN + g + '/captions/PT.vtt', en: CDN + g + '/captions/EN.vtt' } : {}; }
