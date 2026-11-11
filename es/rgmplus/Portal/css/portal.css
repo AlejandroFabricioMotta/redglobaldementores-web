@@ -268,3 +268,13 @@ main{background:linear-gradient(180deg,#2a0046 0,#470073 45%,#650099 100%);min-h
   .slide .txt>*{max-width:min(400px,34%)}
   .slide .txt h2{font-size:clamp(24px,2.9vw,38px)}
 }
+
+/* tarjetas limpias: info al pie de la imagen */
+.vi{flex:0 0 auto;width:calc((100% - 42px)/4);min-width:230px;scroll-snap-align:start}
+.vi .card{width:100%}
+.vi .t{margin-top:10px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;line-height:1.3}
+.vi .d{display:block;font-weight:400;color:var(--soft);margin-top:3px}
+.grid .item.vi{width:auto;min-width:0}
+.grid .item .t{text-align:left}
+@media(max-width:900px){.vi{width:calc((100% - 14px)/2)}}
+@media(max-width:560px){.vi{width:78%}}

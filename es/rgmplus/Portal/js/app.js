@@ -110,11 +110,15 @@
       '<div><b>Holding Mentors LLC</b> ' + esc(T.hmRole) + '<br>info@HoldingMentors.com · WApp +1 954 658 4206<br>40 SW 13th ST, Suite 102, Miami, Florida (33031), USA</div></div>' +
       '<p class="copy">' + esc(T.copyright) + '</p></div></footer>';
   }
+  function langFull(l) { return (I18N[l] && I18N[l].langName && I18N[l].langName[l] ? I18N[l].langName[l] : l).toUpperCase(); }
+  // tarjeta limpia (solo imagen + idioma); la información va al pie
   function card(v) {
-    var a = author(v.author);
     return '<a class="card wide" href="' + U.watch(v.id) + '" aria-label="' + esc(title(v)) + '"><span class="art" style="' + art(v) + '"></span>' +
-      '<span class="lang">' + v.orig.toUpperCase() + '</span>' +
-      '<span class="cap">' + esc(title(v)) + '<small>' + esc(a.name) + ' · ' + esc(catName(v.category)) + '</small><span class="btn sm">' + t().watchNow + '</span></span></a>';
+      '<span class="lang">' + langFull(v.orig) + '</span></a>';
+  }
+  function vitem(v) {
+    var a = author(v.author);
+    return '<div class="item vi">' + card(v) + '<div class="t">' + esc(title(v)) + '<span class="d">' + esc(a.name) + ' · ' + esc(secName(v.section)) + ' · ' + esc(dateFmt(v.date)) + '</span></div></div>';
   }
   // tarjeta vertical de una colección (portada en formato 9:16)
   function collCard(c) {
@@ -128,14 +132,12 @@
   }
   function row(name, vids, allHref, fn) {
     return '<section class="row"><div class="wrap"><div class="top"><h3>' + esc(name) + '</h3><div class="nv"><button data-scroll="-1" aria-label="' + t().prev + '">' + ICON.l(14) + '</button><button data-scroll="1" aria-label="' + t().next + '">' + ICON.r(14) + '</button></div></div>' +
-      '<div class="rowbody' + (allHref ? '' : ' solo') + '"><div class="track">' + vids.map(fn || card).join('') + '</div>' + (allHref ? '<a class="card all" href="' + allHref + '">' + t().viewAll + '</a>' : '') + '</div></div></section>';
+      '<div class="rowbody' + (allHref ? '' : ' solo') + '"><div class="track">' + vids.map(fn || vitem).join('') + '</div>' + (allHref ? '<a class="card all" href="' + allHref + '">' + t().viewAll + '</a>' : '') + '</div></div></section>';
   }
   function page(inner) { return statusBar() + header() + nav() + '<main>' + inner + '</main>' + footer(); }
   function grid(vids) {
     if (!vids.length) return '<p class="empty">' + t().noResults + '</p>';
-    return '<div class="grid">' + vids.map(function (v) {
-      return '<div class="item">' + card(v) + '<div class="t">' + esc(title(v)) + '<span class="d">' + esc(secName(v.section)) + ' · ' + esc(dateFmt(v.date)) + '</span></div></div>';
-    }).join('') + '</div>';
+    return '<div class="grid">' + vids.map(vitem).join('') + '</div>';
   }
   function searchBox() {
     var T = t(), q = params.get('q') || '';
