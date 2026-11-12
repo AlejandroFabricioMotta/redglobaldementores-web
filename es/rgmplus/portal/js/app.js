@@ -184,7 +184,8 @@
     if (saved.length) rows += row(T.myList, saved.map(function (id) { return byId(CAT.videos, id); }).filter(Boolean), '');
     CAT.sections.forEach(function (s) {
       var vids = CAT.videos.filter(function (v) { return v.section === s.id; });
-      if (vids.length) rows += row(secName(s.id), vids, U.section(s.id));
+      var rowTitle = s.id === 'masterclass' ? { es: 'MasterClass y más...', pt: 'MasterClass e mais...', en: 'MasterClass and more...' }[lang] : secName(s.id); // solo el título del carrusel, no el menú
+      if (vids.length) rows += row(rowTitle, vids, U.section(s.id));
     });
     return page('<section class="hero" aria-label="' + T.featured + '">' + slides +
       '<button class="arr l" data-slide-step="-1" aria-label="' + T.prev + '">' + ICON.l(18) + '</button><button class="arr r" data-slide-step="1" aria-label="' + T.next + '">' + ICON.r(18) + '</button>' +

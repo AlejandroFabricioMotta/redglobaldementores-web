@@ -100,6 +100,14 @@
       bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'laura-wollenmann', name: "Laura Wollenmann", photo: null,
       bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'ella-vergara', name: "Ella Patricia Vergara Payares", photo: 'assets/img/autores/ella-vergara.jpg',
+      bio: T('Barranquilla, Colombia', 'Barranquilla, Colombia', 'Barranquilla, Colombia') },
+    { id: 'aureleo-ortiz', name: "Aureleo Ortiz", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'fernando-manuel-moralez', name: "Fernando Manuel Moralez", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'angelica-estrada', name: "Angélica Estrada", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'amarilis', name: 'Amarilis Vellon', photo: 'assets/img/amarilis-vellon.jpg',
       bio: T('Mentora de la Red Global de Mentores. Biografía provisoria.', 'Mentora da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'clara', name: 'Clara María', photo: null,
@@ -343,6 +351,7 @@
     ["daniel-tigani", 'd1a37235-3131-41c9-8912-9abfe6bf8aae', 178, "Storytelling – Daniel Tigani"],
     ["blanca-llontop", '0879d5dd-688b-4d54-bd73-7e3fcc6f5cef', 451, "Storytelling – Blanca Llontop"],
     ["nelson-rueda", "9b7b4b33-fcdd-4996-8c63-f6a42bc9ad09", 2549, "", "", "2026-11-12", "es"],
+    ["alejandro-motta", "33ffa45b-cb61-4880-837b-972f5fa25b94", 150, "", "", "2026-11-12", "es"],
     ["daniela-algeri", 'e8e83d14-c752-4704-b284-1bf74baad85d', 316, "Storytelling – Daniela Algeri"],
     ["gina-lisset-garcia-cardoza", '297a2102-d0e4-4a0e-9db5-7091783a140d', 651, "Storytelling – Gina Lisset García Cardoza"],
     ["margarita-gibson", 'c6e31bf2-5683-43b4-a14d-c2294e7f5181', 860, "Storytelling – Margarita Gibson"],
@@ -396,6 +405,12 @@
 
   // Videos con subtítulos ya cargados en Bunny (captions ES/PT/EN en el CDN)
   var SUBBED = [
+    '680a456c-1870-4021-8ad2-e6b81da46bd8',
+    '516b953e-ca09-4885-89c5-ee3d27d583ad',
+    'f4094a03-a5ae-4364-91e5-83ed756fd2a1',
+    'f3f0bc71-1dd1-4ad3-bfec-3bbc8da30b91',
+    'e4a14c31-9c9b-40c0-bf72-c5fee9028546',
+    '33ffa45b-cb61-4880-837b-972f5fa25b94',
     'dd33203e-fe36-4033-a233-66fadcad840e',
     'ab924f57-a1fb-4724-98a6-55154564626a',
     '97f3a910-1f73-40f5-9082-161159f05537',
@@ -829,6 +844,21 @@
       id: 'dep' + r[0], section: 'testimonials', category: 'sport', author: r[3], others: [], tags: [], title: T(r[4], r[4], r[4]), featured: false,
       description: DESC.testimonials, duration: r[2], year: 2026, date: '2026-11-12', orig: 'es', slide: SLIDE('testimonials'), video: '',
       hls: CDN + r[1] + '/playlist.m3u8', thumb: CDN + r[1] + '/thumbnail.jpg', dub: {}, subs: capOf(r[1]), collection: 'el-mentor-y-el-deporte', episode: r[0]
+    });
+  });
+
+  var TES = [ // [guid, segundos, autor, título] — testimonios sueltos (sin colección)
+    ['680a456c-1870-4021-8ad2-e6b81da46bd8', 982, 'monico-carvajal', "Mónico Carvajal"],
+    ['516b953e-ca09-4885-89c5-ee3d27d583ad', 343, 'fernando-manuel-moralez', "Fernando Manuel Moralez"],
+    ['f4094a03-a5ae-4364-91e5-83ed756fd2a1', 213, 'ella-vergara', "Ella Vergara"],
+    ['f3f0bc71-1dd1-4ad3-bfec-3bbc8da30b91', 387, 'angelica-estrada', "Angélica Estrada"],
+    ['e4a14c31-9c9b-40c0-bf72-c5fee9028546', 331, 'aureleo-ortiz', "Aureleo Ortiz"]
+  ];
+  TES.forEach(function (r, i) {
+    videos.push({
+      id: 'tes' + (i + 1), section: 'testimonials', category: '', author: r[2], others: [], tags: [], title: T(r[3], r[3], r[3]), featured: false,
+      description: DESC.testimonials, duration: r[1], year: 2026, date: '2026-11-12', orig: 'es', slide: SLIDE('testimonials'), video: '',
+      hls: CDN + r[0] + '/playlist.m3u8', thumb: CDN + r[0] + '/thumbnail.jpg', dub: {}, subs: capOf(r[0])
     });
   });
 
