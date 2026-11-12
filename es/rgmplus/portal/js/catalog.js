@@ -116,6 +116,16 @@
       bio: T('Córdoba, Argentina', 'Córdoba, Argentina', 'Córdoba, Argentina') },
     { id: 'cecilia-rodriguez', name: "Ana Cecilia Rodriguez Gonzalez", photo: 'assets/img/autores/cecilia-rodriguez.jpg',
       bio: T('Indianápolis, Estados Unidos', 'Indianápolis, Estados Unidos', 'Indianápolis, Estados Unidos') },
+    { id: 'jirka-guerra', name: "Jirka Guerra", photo: 'assets/img/autores/jirka-guerra.jpg',
+      bio: T('Antofagasta, Chile', 'Antofagasta, Chile', 'Antofagasta, Chile') },
+    { id: 'paula-dinaro', name: "Paula Dinaro", photo: 'assets/img/autores/paula-dinaro.jpg',
+      bio: T('Miami, Estados Unidos', 'Miami, Estados Unidos', 'Miami, Estados Unidos') },
+    { id: 'nancy-bravo', name: "Nancy Bravo", photo: 'assets/img/autores/nancy-bravo.jpg',
+      bio: T('Hamburgo, Alemania', 'Hamburgo, Alemania', 'Hamburgo, Alemania') },
+    { id: 'laura-berrios', name: "Laura Berrios", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'tereza-egana', name: "Tereza Egaña", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'amarilis', name: 'Amarilis Vellon', photo: 'assets/img/amarilis-vellon.jpg',
       bio: T('Mentora de la Red Global de Mentores. Biografía provisoria.', 'Mentora da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'clara', name: 'Clara María', photo: null,
@@ -414,6 +424,16 @@
 
   // Videos con subtítulos ya cargados en Bunny (captions ES/PT/EN en el CDN)
   var SUBBED = [
+    '12221812-212b-49af-9423-d7c1b9d8d2ee',
+    '26f6750f-0006-4241-b35a-14e17d109ce0',
+    '4f13b870-95c0-4c06-96a2-babf31622b67',
+    '51181201-6269-42bf-bdeb-78179d73694a',
+    'ef0a0276-b903-4b32-85a5-bc97d55ce4c8',
+    '795428bb-22d2-4b2c-8ce4-ac4ede1cfe7c',
+    '7fc39c3c-0f8c-43e7-aa11-02072052626e',
+    'd3cc88a6-f946-4263-a33c-bfd70d4555e5',
+    '998cd6d7-68c9-4b57-aaf5-032ba8a44894',
+    '50b5ad93-58cc-4b5b-a0e6-bcaad7b0ad86',
     '404d7eb8-9fd9-4cd3-9ec2-fa6eb37b891c',
     '1ce6f231-c1db-4109-9fcc-bf4bc83ee22b',
     '36bb6414-275f-4950-a033-cd1d11073649',
@@ -904,7 +924,9 @@
     ['516430cc-ee8f-4853-af39-ddb5f53d48cd', 519, 'ines-gregorio', 'Metáforas Visuales'],
     ['76729ae0-b745-46d5-92bd-35bb32041f7c', 681, 'jaime-espana-eraso', 'Sus Obras'],
     ['5b59ffe8-d883-48f3-a300-5beb4df7245b', 2057, 'maribel-belaval', 'Secretos de Mi Bello Atardecer'],
-    ['99da9a16-e166-4212-9437-8a189f8e2247', 391, 'silvia-pasamonti', 'Yo Estuve ahí']
+    ['99da9a16-e166-4212-9437-8a189f8e2247', 391, 'silvia-pasamonti', 'Yo Estuve ahí'],
+    ['998cd6d7-68c9-4b57-aaf5-032ba8a44894', 679, 'nelson-rueda', "Tríada"],
+    ['50b5ad93-58cc-4b5b-a0e6-bcaad7b0ad86', 818, 'angela-kohler', "Sus Obras"]
   ];
   BOOKS.forEach(function (r, i) {
     var a = AUTHORS.filter(function (x) { return x.id === r[2]; })[0], ti = r[3] + ' – ' + a.name;
@@ -924,7 +946,15 @@
     ['9e769b04-64e9-4580-a731-82405cf471ef', 1367, 'cecilia-rodriguez', 'Ana Cecilia Rodriguez Gonzalez'],
     ['e523f8b8-db16-40ee-8e4c-5fa75dbb4a00', 1414, 'angela-kohler', 'Angela Kohler'],
     ['f3698c25-d90e-435a-9a42-1afd6777faca', 124, 'blanca-penafiel', 'Blanca Peñafiel'],
-    ['651bf532-fbe3-4f54-aa55-d5d81e12f313', 428, 'adriana-zambrano', 'Adriana Zambrano']
+    ['651bf532-fbe3-4f54-aa55-d5d81e12f313', 428, 'adriana-zambrano', 'Adriana Zambrano'],
+    ['12221812-212b-49af-9423-d7c1b9d8d2ee', 598, 'laura-berrios', "Laura Berrios"],
+    ['26f6750f-0006-4241-b35a-14e17d109ce0', 961, 'mariana-belzares', "Mariana Belzares"],
+    ['4f13b870-95c0-4c06-96a2-babf31622b67', 1143, 'tereza-egana', "Tereza Egaña"],
+    ['51181201-6269-42bf-bdeb-78179d73694a', 838, 'paula-dinaro', "Paula Dinaro"],
+    ['ef0a0276-b903-4b32-85a5-bc97d55ce4c8', 1400, 'layla-edward', "Layla Edward"],
+    ['795428bb-22d2-4b2c-8ce4-ac4ede1cfe7c', 252, 'layla-edward', "Layla Edward"],
+    ['7fc39c3c-0f8c-43e7-aa11-02072052626e', 574, 'jirka-guerra', "Jirka Guerra"],
+    ['d3cc88a6-f946-4263-a33c-bfd70d4555e5', 597, 'yenny-salazar', "Yenny Salazar"]
   ];
   FOROS.forEach(function (r, i) {
     videos.push({
