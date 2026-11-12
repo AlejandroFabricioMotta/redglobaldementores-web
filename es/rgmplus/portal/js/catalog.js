@@ -426,6 +426,7 @@
 
   // Videos con subtítulos ya cargados en Bunny (captions ES/PT/EN en el CDN)
   var SUBBED = [
+    '10aeff47-1ae1-4d62-bf78-0c8ea2e7fae6',
     'e35d9a23-7ec1-4392-af3e-2ab44d9ea04e',
     '26ec8d0c-4fa9-438f-b432-207e9b2d398d',
     'eed3510b-460d-4eab-946c-2c6b74aafb6a',
@@ -966,7 +967,8 @@
     ['26ec8d0c-4fa9-438f-b432-207e9b2d398d', 1184, 'rosa-de-vicentis', "Migración – Rosa De Vicentis"],
     ['eed3510b-460d-4eab-946c-2c6b74aafb6a', 942, 'rosa-de-vicentis', "Fraternidad – Rosa De Vicentis"],
     ['105d6573-61b3-47bd-a19e-891d2f8780ff', 942, 'solmahira', "Solmahira"],
-    ['e2b7ce99-789c-43bc-aef4-a0a7bfc4f1d1', 217, 'sonia-delgado', "Sonia Rojas Delgado"]
+    ['e2b7ce99-789c-43bc-aef4-a0a7bfc4f1d1', 217, 'sonia-delgado', "Sonia Rojas Delgado"],
+    ['10aeff47-1ae1-4d62-bf78-0c8ea2e7fae6', 571, 'nancy-bravo', "Fraternidad – Nancy Bravo"]
   ];
   FOROS.forEach(function (r, i) {
     videos.push({
