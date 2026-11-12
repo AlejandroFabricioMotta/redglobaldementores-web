@@ -108,6 +108,10 @@
       bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'angelica-estrada', name: "Angélica Estrada", photo: null,
       bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'etna-martinez', name: "Etna Martínez", photo: 'assets/img/autores/etna-martinez.jpg',
+      bio: T('Loja, Ecuador', 'Loja, Ecuador', 'Loja, Ecuador') },
+    { id: 'roberto-cerrada', name: "Roberto Cerrada", photo: 'assets/img/autores/roberto-cerrada.jpg',
+      bio: T('Andalucía, España', 'Andalucía, España', 'Andalucía, España') },
     { id: 'amarilis', name: 'Amarilis Vellon', photo: 'assets/img/amarilis-vellon.jpg',
       bio: T('Mentora de la Red Global de Mentores. Biografía provisoria.', 'Mentora da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'clara', name: 'Clara María', photo: null,
@@ -352,6 +356,7 @@
     ["blanca-llontop", '0879d5dd-688b-4d54-bd73-7e3fcc6f5cef', 451, "Storytelling – Blanca Llontop"],
     ["nelson-rueda", "9b7b4b33-fcdd-4996-8c63-f6a42bc9ad09", 2549, "", "", "2026-11-12", "es"],
     ["alejandro-motta", "33ffa45b-cb61-4880-837b-972f5fa25b94", 150, "", "", "2026-11-12", "es"],
+    ["nelson-rueda", "0232e45e-ad58-4d8b-bfb6-61c7f4937e29", 2549, "", "education", "2026-11-12", "es"],
     ["daniela-algeri", 'e8e83d14-c752-4704-b284-1bf74baad85d', 316, "Storytelling – Daniela Algeri"],
     ["gina-lisset-garcia-cardoza", '297a2102-d0e4-4a0e-9db5-7091783a140d', 651, "Storytelling – Gina Lisset García Cardoza"],
     ["margarita-gibson", 'c6e31bf2-5683-43b4-a14d-c2294e7f5181', 860, "Storytelling – Margarita Gibson"],
@@ -405,6 +410,17 @@
 
   // Videos con subtítulos ya cargados en Bunny (captions ES/PT/EN en el CDN)
   var SUBBED = [
+    '54b20e75-59fa-4f97-9912-a5325db9eec1',
+    '0232e45e-ad58-4d8b-bfb6-61c7f4937e29',
+    'afff0107-a33b-49a5-bfce-2f253242a6f0',
+    '0e8d5b2c-d27e-4cc8-8d82-4b5bf7e596f0',
+    '93926fc3-9d8c-4ece-b5e6-e4b4292a0772',
+    '79156c3d-506d-4d09-b645-bde6d5c62178',
+    'd6402860-e8f5-4106-87e0-fc1a1910e74b',
+    '516430cc-ee8f-4853-af39-ddb5f53d48cd',
+    '76729ae0-b745-46d5-92bd-35bb32041f7c',
+    '5b59ffe8-d883-48f3-a300-5beb4df7245b',
+    '99da9a16-e166-4212-9437-8a189f8e2247',
     '680a456c-1870-4021-8ad2-e6b81da46bd8',
     '516b953e-ca09-4885-89c5-ee3d27d583ad',
     'f4094a03-a5ae-4364-91e5-83ed756fd2a1',
@@ -852,12 +868,33 @@
     ['516b953e-ca09-4885-89c5-ee3d27d583ad', 343, 'fernando-manuel-moralez', "Fernando Manuel Moralez"],
     ['f4094a03-a5ae-4364-91e5-83ed756fd2a1', 213, 'ella-vergara', "Ella Vergara"],
     ['f3f0bc71-1dd1-4ad3-bfec-3bbc8da30b91', 387, 'angelica-estrada', "Angélica Estrada"],
-    ['e4a14c31-9c9b-40c0-bf72-c5fee9028546', 331, 'aureleo-ortiz', "Aureleo Ortiz"]
+    ['e4a14c31-9c9b-40c0-bf72-c5fee9028546', 331, 'aureleo-ortiz', "Aureleo Ortiz"],
+    ['54b20e75-59fa-4f97-9912-a5325db9eec1', 868, 'roberto-cerrada', "Roberto Cerrada"]
   ];
   TES.forEach(function (r, i) {
     videos.push({
       id: 'tes' + (i + 1), section: 'testimonials', category: '', author: r[2], others: [], tags: [], title: T(r[3], r[3], r[3]), featured: false,
       description: DESC.testimonials, duration: r[1], year: 2026, date: '2026-11-12', orig: 'es', slide: SLIDE('testimonials'), video: '',
+      hls: CDN + r[0] + '/playlist.m3u8', thumb: CDN + r[0] + '/thumbnail.jpg', dub: {}, subs: capOf(r[0])
+    });
+  });
+
+  var BOOKS = [ // [guid, segundos, autor, título] — presentaciones de libros
+    ['afff0107-a33b-49a5-bfce-2f253242a6f0', 1125, 'aldo-tomas-pinero', 'El Talento que Trasciende'],
+    ['0e8d5b2c-d27e-4cc8-8d82-4b5bf7e596f0', 564, 'alejandro-motta', 'Después de mí, ¿qué?'],
+    ['93926fc3-9d8c-4ece-b5e6-e4b4292a0772', 1896, 'alejandro-motta', 'Áreas de la Mentoría'],
+    ['79156c3d-506d-4d09-b645-bde6d5c62178', 833, 'esther-sadin', 'Cuando las Culturas se Encuentran'],
+    ['d6402860-e8f5-4106-87e0-fc1a1910e74b', 947, 'etna-martinez', 'Transforma tu Vida'],
+    ['516430cc-ee8f-4853-af39-ddb5f53d48cd', 519, 'ines-gregorio', 'Metáforas Visuales'],
+    ['76729ae0-b745-46d5-92bd-35bb32041f7c', 681, 'jaime-espana-eraso', 'Sus Obras'],
+    ['5b59ffe8-d883-48f3-a300-5beb4df7245b', 2057, 'maribel-belaval', 'Secretos de Mi Bello Atardecer'],
+    ['99da9a16-e166-4212-9437-8a189f8e2247', 391, 'silvia-pasamonti', 'Yo Estuve ahí']
+  ];
+  BOOKS.forEach(function (r, i) {
+    var a = AUTHORS.filter(function (x) { return x.id === r[2]; })[0], ti = r[3] + ' – ' + a.name;
+    videos.push({
+      id: 'bk' + (i + 1), section: 'presentations', category: '', author: r[2], others: [], tags: [], title: T(ti, ti, ti), featured: false,
+      description: DESC.presentations, duration: r[1], year: 2026, date: '2026-11-12', orig: 'es', slide: SLIDE('presentations'), video: '',
       hls: CDN + r[0] + '/playlist.m3u8', thumb: CDN + r[0] + '/thumbnail.jpg', dub: {}, subs: capOf(r[0])
     });
   });
