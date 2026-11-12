@@ -126,6 +126,8 @@
       bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'tereza-egana', name: "Tereza Egaña", photo: null,
       bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'solmahira', name: "Solmahira", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'amarilis', name: 'Amarilis Vellon', photo: 'assets/img/amarilis-vellon.jpg',
       bio: T('Mentora de la Red Global de Mentores. Biografía provisoria.', 'Mentora da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'clara', name: 'Clara María', photo: null,
@@ -424,6 +426,11 @@
 
   // Videos con subtítulos ya cargados en Bunny (captions ES/PT/EN en el CDN)
   var SUBBED = [
+    'e35d9a23-7ec1-4392-af3e-2ab44d9ea04e',
+    '26ec8d0c-4fa9-438f-b432-207e9b2d398d',
+    'eed3510b-460d-4eab-946c-2c6b74aafb6a',
+    '105d6573-61b3-47bd-a19e-891d2f8780ff',
+    'e2b7ce99-789c-43bc-aef4-a0a7bfc4f1d1',
     '12221812-212b-49af-9423-d7c1b9d8d2ee',
     '26f6750f-0006-4241-b35a-14e17d109ce0',
     '4f13b870-95c0-4c06-96a2-babf31622b67',
@@ -954,7 +961,12 @@
     ['ef0a0276-b903-4b32-85a5-bc97d55ce4c8', 1400, 'layla-edward', "Layla Edward"],
     ['795428bb-22d2-4b2c-8ce4-ac4ede1cfe7c', 252, 'layla-edward', "Layla Edward"],
     ['7fc39c3c-0f8c-43e7-aa11-02072052626e', 574, 'jirka-guerra', "Jirka Guerra"],
-    ['d3cc88a6-f946-4263-a33c-bfd70d4555e5', 597, 'yenny-salazar', "Yenny Salazar"]
+    ['d3cc88a6-f946-4263-a33c-bfd70d4555e5', 597, 'yenny-salazar', "Yenny Salazar"],
+    ['e35d9a23-7ec1-4392-af3e-2ab44d9ea04e', 1514, 'rosa-de-vicentis', "Rosa De Vicentis"],
+    ['26ec8d0c-4fa9-438f-b432-207e9b2d398d', 1184, 'rosa-de-vicentis', "Migración – Rosa De Vicentis"],
+    ['eed3510b-460d-4eab-946c-2c6b74aafb6a', 942, 'rosa-de-vicentis', "Fraternidad – Rosa De Vicentis"],
+    ['105d6573-61b3-47bd-a19e-891d2f8780ff', 942, 'solmahira', "Solmahira"],
+    ['e2b7ce99-789c-43bc-aef4-a0a7bfc4f1d1', 217, 'sonia-delgado', "Sonia Rojas Delgado"]
   ];
   FOROS.forEach(function (r, i) {
     videos.push({
