@@ -726,3 +726,11 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
   background: linear-gradient(160deg, rgba(122, 102, 82, .55), rgba(58, 49, 41, .85)); scroll-margin-top: 76px; }
 .tema-editorial .mc-bloque:has(.mc-banda) .mc-card.mc-card--aprobado{ background: #4a3e33; }
 .tema-editorial .llave{ flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; margin-left: 10px; border-radius: 8px; color: var(--color-arena); border: 1px solid rgba(191, 169, 138, .45); text-decoration: none; transition: background .2s, color .2s; }
+
+/* Miembro Activo: 6 beneficios y 5 cifras */
+.beneficios--6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.beneficio em { color: var(--color-arena); font-style: normal; font-weight: 600; }
+.venta-cifras--5 .contenedor { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 980px) { .beneficios--6 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 860px) { .venta-cifras--5 .contenedor { grid-template-columns: repeat(2, 1fr); } .venta-cifras--5 .contenedor > div:last-child { grid-column: 1 / -1; } }
+@media (max-width: 620px) { .beneficios--6 { grid-template-columns: 1fr; } }
