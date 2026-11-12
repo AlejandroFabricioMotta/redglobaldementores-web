@@ -44,3 +44,24 @@
 .ben-barra{background:rgba(167,151,56,.16);border-bottom:1px solid rgba(167,151,56,.5);font-size:14px;padding:10px 0}
 .ben-salir{background:none;border:0;color:var(--color-arena);text-decoration:underline;cursor:pointer;font:inherit;margin-left:12px}
 @media(max-width:900px){.ben-puerta__g{grid-template-columns:1fr}}
+
+/* Box «Templates para la práctica Mentoral» (68 templates en 7 grupos) */
+.tpl-pica{color:var(--color-dorado);font-weight:600;font-size:14px;margin:18px 0 0}
+.tpl-indice{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
+.tpl-indice a{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-size:14px;font-weight:500;color:var(--color-texto-2);border:1px solid rgba(167,151,56,.55);border-radius:999px;padding:7px 16px 7px 8px;background:rgba(52,62,140,.35);transition:background .15s}
+.tpl-indice a:hover{background:rgba(167,151,56,.22)}.tpl-indice a:focus-visible{outline:3px solid var(--color-arena);outline-offset:3px}
+.tpl-indice b{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--color-dorado);color:var(--color-fondo);font-size:13px;font-weight:800}
+.tpl-grupos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin-top:32px;align-items:start}
+.tpl-grupo{background:linear-gradient(160deg,rgba(52,62,140,.55),rgba(31,37,85,.85));border:1px solid rgba(167,151,56,.55);border-top:5px solid var(--color-dorado);border-radius:18px;padding:26px 24px 14px;scroll-margin-top:92px}
+.tpl-grupo header{display:flex;gap:16px;align-items:flex-start;margin-bottom:10px}
+.tpl-letra{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:2px solid var(--color-dorado);color:var(--color-dorado);font-size:22px;font-weight:800}
+.tpl-grupo .etiqueta{margin:2px 0 6px}.tpl-grupo h3{font-weight:700;font-size:19px;line-height:1.3;margin:0}
+.tpl-lista{list-style:none;margin:0;padding:0}
+.tpl-lista li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 14px;align-items:center;padding:11px 0;border-top:1px solid rgba(167,151,56,.28)}
+.tpl-n{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--color-arena);min-width:2.2em}
+.tpl-nom{font-size:15.5px;line-height:1.35;overflow-wrap:break-word}
+.ben-dl{display:inline-flex;align-items:center;gap:7px;font-size:13px;padding:7px 15px;white-space:nowrap}
+.ben-dl svg{flex:none}
+.ben-dl[aria-disabled="true"]{opacity:.5;cursor:default}.ben-dl[aria-disabled="true"]:hover{background:var(--color-dorado);transform:none}
+@media(max-width:900px){.tpl-grupos{grid-template-columns:1fr}}
+@media(max-width:480px){.tpl-lista li{grid-template-columns:auto minmax(0,1fr)}.tpl-lista .ben-dl{grid-column:2;justify-self:start}.tpl-grupo{padding:22px 18px 10px}}
