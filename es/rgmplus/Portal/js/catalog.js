@@ -90,6 +90,16 @@
       bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
     { id: 'mireille-toulekima', name: "Mireille Toulekima", photo: null,
       bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'sergio-cachito-vigil', name: "Sergio 'Cachito' Vigil", photo: 'assets/img/autores/sergio-cachito-vigil.jpg',
+      bio: T('Buenos Aires, Argentina', 'Buenos Aires, Argentina', 'Buenos Aires, Argentina') },
+    { id: 'maria-veronica-colmenares', name: "Maria Veronica Colmenares Castro", photo: null,
+      bio: T('Granada, España', 'Granada, España', 'Granada, España') },
+    { id: 'ricardo-figueroa', name: "Ricardo Figueroa", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'nicolas-abot', name: "Nicolas Abot", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'laura-wollenmann', name: "Laura Wollenmann", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'amarilis', name: 'Amarilis Vellon', photo: 'assets/img/amarilis-vellon.jpg',
       bio: T('Mentora de la Red Global de Mentores. Biografía provisoria.', 'Mentora da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'clara', name: 'Clara María', photo: null,
@@ -332,6 +342,7 @@
     ["gabriel-vazquez", 'b9fd8182-9914-4beb-b7da-6c205937cd93', 234, "Mi Regalo de Reyes"],
     ["daniel-tigani", 'd1a37235-3131-41c9-8912-9abfe6bf8aae', 178, "Storytelling – Daniel Tigani"],
     ["blanca-llontop", '0879d5dd-688b-4d54-bd73-7e3fcc6f5cef', 451, "Storytelling – Blanca Llontop"],
+    ["nelson-rueda", "9b7b4b33-fcdd-4996-8c63-f6a42bc9ad09", 2549, "", "", "2026-11-12", "es"],
     ["daniela-algeri", 'e8e83d14-c752-4704-b284-1bf74baad85d', 316, "Storytelling – Daniela Algeri"],
     ["gina-lisset-garcia-cardoza", '297a2102-d0e4-4a0e-9db5-7091783a140d', 651, "Storytelling – Gina Lisset García Cardoza"],
     ["margarita-gibson", 'c6e31bf2-5683-43b4-a14d-c2294e7f5181', 860, "Storytelling – Margarita Gibson"],
@@ -385,6 +396,14 @@
 
   // Videos con subtítulos ya cargados en Bunny (captions ES/PT/EN en el CDN)
   var SUBBED = [
+    'dd33203e-fe36-4033-a233-66fadcad840e',
+    'ab924f57-a1fb-4724-98a6-55154564626a',
+    '97f3a910-1f73-40f5-9082-161159f05537',
+    '1f1a0bb2-ad89-4978-99a0-82983d1aba4c',
+    'fcbc1a28-a440-44c1-9247-7057277c2bd7',
+    '9b7b4b33-fcdd-4996-8c63-f6a42bc9ad09',
+    '10e4c1c9-f966-406b-bc11-746c45cc1008',
+    'd5bf134a-ff7e-41e7-867f-44a876e0e0f0',
     '80925b53-e6f6-463d-8b61-68a03212cba8',
     'e5b619f5-3fcf-4f68-a7c2-40eb47e60c63',
     '87b16206-3e38-4cfd-8137-ca291c82b908',
@@ -690,6 +709,9 @@
     ,{ id: 'simposio-alianzas-2023', author: 'red-global-de-mentores', section: 'testimonials', category: '', cover: 'assets/img/coll-simposio-alianzas.jpg',
       title: T('Simposio de Alianzas RGM 2023', 'Simpósio de Alianças RGM 2023', 'RGM Alliances Symposium 2023'),
       description: T('Testimonios de mentores de todo el mundo presentados en el Simposio de Alianzas RGM 2023.', 'Testemunhos de mentores de todo o mundo apresentados no Simpósio de Alianças RGM 2023.', 'Testimonials from mentors around the world presented at the RGM Alliances Symposium 2023.') }
+    ,{ id: 'el-mentor-y-el-deporte', author: 'red-global-de-mentores', section: 'testimonials', category: 'sport', cover: 'assets/img/coll-mentor-deporte.jpg',
+      title: T('El Mentor y el Deporte', 'O Mentor e o Esporte', 'The Mentor and Sport'),
+      description: T('Testimonios de mentores y deportistas sobre el rol del mentor en el deporte.', 'Testemunhos de mentores e desportistas sobre o papel do mentor no esporte.', 'Testimonials from mentors and athletes about the role of the mentor in sport.') }
   ];
   var EPISODES = [ // [colección, n.º de episodio, guid de Bunny, segundos, fecha, título propio (opcional)]
     ['reflexiones', 1, 'a2002f51-ba2e-4b26-bbc1-9b269c1c7660', 242, '2024-02-25'],
@@ -725,6 +747,8 @@
     ['reflexiones-serafin-contreras', 1, 'cba8068b-5b76-4f52-8685-6b8e479c915f', 529, '2026-11-11', 'Mentor y Restauración'],
     ['reflexiones-serafin-contreras', 2, '946a3469-d3a3-466a-806e-c76b7386e247', 435, '2026-11-11', 'Replicando la Mentoría'],
     ['reflexiones-serafin-contreras', 3, '4d413367-2d9e-4c35-a6b7-7645d44ccbe5', 733, '2026-11-11', 'Historia y Vida'],
+    ['reflexiones-serafin-contreras', 4, '10e4c1c9-f966-406b-bc11-746c45cc1008', 1035, '2026-11-12', 'La Semilla de la Frustración'],
+    ['reflexiones-serafin-contreras', 5, 'd5bf134a-ff7e-41e7-867f-44a876e0e0f0', 350, '2026-11-12', 'Libro 365 Reflexiones'],
     ['mentoria-en-1-minuto', 4, '3a25f89c-bdc6-43d6-95f8-42d9031a2d2a', 60, '2023-04-08', "3 niveles de formación de los mentores"],
     ['mentoria-en-1-minuto', 6, '4ae48faf-714d-49be-8a78-8b114b056afc', 59, '2023-04-08', "Los mentores que me han inspirado"],
     ['mentoria-en-1-minuto', 10, '4a631015-dafa-40ff-ace0-ef513acac59c', 56, '2023-04-08', "Por qué elegir un mentor"],
@@ -790,6 +814,21 @@
       id: 'sim' + r[0], section: 'testimonials', category: '', author: r[3], others: [], tags: [], title: T(r[4], r[4], r[4]), featured: false,
       description: DESC.testimonials, duration: r[2], year: 2023, date: '2023-01-01', orig: 'en', slide: SLIDE('testimonials'), video: '',
       hls: CDN + r[1] + '/playlist.m3u8', thumb: CDN + r[1] + '/thumbnail.jpg', dub: {}, subs: capOf(r[1]), collection: 'simposio-alianzas-2023', episode: r[0]
+    });
+  });
+
+  var DEP = [ // [n.º, guid, segundos, autor, título] — colección El Mentor y el Deporte (Testimonios)
+    [1, 'dd33203e-fe36-4033-a233-66fadcad840e', 3033, 'sergio-cachito-vigil', "Sergio 'Cachito' Vigil"],
+    [2, 'ab924f57-a1fb-4724-98a6-55154564626a', 1452, 'maria-veronica-colmenares', "Maria Veronica Colmenares"],
+    [3, '97f3a910-1f73-40f5-9082-161159f05537', 480, 'ricardo-figueroa', "Ricardo Figueroa"],
+    [4, '1f1a0bb2-ad89-4978-99a0-82983d1aba4c', 598, 'laura-wollenmann', "Laura Wollenmann"],
+    [5, 'fcbc1a28-a440-44c1-9247-7057277c2bd7', 550, 'nicolas-abot', "Nicolas Abot"]
+  ];
+  DEP.forEach(function (r) {
+    videos.push({
+      id: 'dep' + r[0], section: 'testimonials', category: 'sport', author: r[3], others: [], tags: [], title: T(r[4], r[4], r[4]), featured: false,
+      description: DESC.testimonials, duration: r[2], year: 2026, date: '2026-11-12', orig: 'es', slide: SLIDE('testimonials'), video: '',
+      hls: CDN + r[1] + '/playlist.m3u8', thumb: CDN + r[1] + '/thumbnail.jpg', dub: {}, subs: capOf(r[1]), collection: 'el-mentor-y-el-deporte', episode: r[0]
     });
   });
 
