@@ -112,6 +112,10 @@
       bio: T('Loja, Ecuador', 'Loja, Ecuador', 'Loja, Ecuador') },
     { id: 'roberto-cerrada', name: "Roberto Cerrada", photo: 'assets/img/autores/roberto-cerrada.jpg',
       bio: T('Andalucía, España', 'Andalucía, España', 'Andalucía, España') },
+    { id: 'carolina-altamirano', name: "Carolina Altamirano", photo: 'assets/img/autores/carolina-altamirano.jpg',
+      bio: T('Córdoba, Argentina', 'Córdoba, Argentina', 'Córdoba, Argentina') },
+    { id: 'cecilia-rodriguez', name: "Ana Cecilia Rodriguez Gonzalez", photo: 'assets/img/autores/cecilia-rodriguez.jpg',
+      bio: T('Indianápolis, Estados Unidos', 'Indianápolis, Estados Unidos', 'Indianápolis, Estados Unidos') },
     { id: 'amarilis', name: 'Amarilis Vellon', photo: 'assets/img/amarilis-vellon.jpg',
       bio: T('Mentora de la Red Global de Mentores. Biografía provisoria.', 'Mentora da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'clara', name: 'Clara María', photo: null,
@@ -410,6 +414,15 @@
 
   // Videos con subtítulos ya cargados en Bunny (captions ES/PT/EN en el CDN)
   var SUBBED = [
+    '404d7eb8-9fd9-4cd3-9ec2-fa6eb37b891c',
+    '1ce6f231-c1db-4109-9fcc-bf4bc83ee22b',
+    '36bb6414-275f-4950-a033-cd1d11073649',
+    'f56feb7d-8b5d-4791-9152-3cfb3652824a',
+    '87c4f44b-9996-4107-a47c-744c507d0d7f',
+    '9e769b04-64e9-4580-a731-82405cf471ef',
+    'e523f8b8-db16-40ee-8e4c-5fa75dbb4a00',
+    'f3698c25-d90e-435a-9a42-1afd6777faca',
+    '651bf532-fbe3-4f54-aa55-d5d81e12f313',
     '54b20e75-59fa-4f97-9912-a5325db9eec1',
     '0232e45e-ad58-4d8b-bfb6-61c7f4937e29',
     'afff0107-a33b-49a5-bfce-2f253242a6f0',
@@ -743,6 +756,9 @@
     ,{ id: 'el-mentor-y-el-deporte', author: 'red-global-de-mentores', section: 'testimonials', category: 'sport', cover: 'assets/img/coll-mentor-deporte.jpg',
       title: T('El Mentor y el Deporte', 'O Mentor e o Esporte', 'The Mentor and Sport'),
       description: T('Testimonios de mentores y deportistas sobre el rol del mentor en el deporte.', 'Testemunhos de mentores e desportistas sobre o papel do mentor no esporte.', 'Testimonials from mentors and athletes about the role of the mentor in sport.') }
+    ,{ id: 'foros-de-mujeres', author: 'red-global-de-mentores', section: 'masterclass', category: 'human', cover: 'assets/img/coll-foros-mujeres.jpg',
+      title: T('Foros de Mujeres', 'Fóruns de Mulheres', 'Women\'s Forums'),
+      description: T('Charlas y reflexiones de mentoras en los Foros de Mujeres de la Red Global de Mentores.', 'Palestras e reflexões de mentoras nos Fóruns de Mulheres da Rede Global de Mentores.', 'Talks and reflections by women mentors at the Global Mentoring Network Women\'s Forums.') }
   ];
   var EPISODES = [ // [colección, n.º de episodio, guid de Bunny, segundos, fecha, título propio (opcional)]
     ['reflexiones', 1, 'a2002f51-ba2e-4b26-bbc1-9b269c1c7660', 242, '2024-02-25'],
@@ -896,6 +912,25 @@
       id: 'bk' + (i + 1), section: 'presentations', category: '', author: r[2], others: [], tags: [], title: T(ti, ti, ti), featured: false,
       description: DESC.presentations, duration: r[1], year: 2026, date: '2026-11-12', orig: 'es', slide: SLIDE('presentations'), video: '',
       hls: CDN + r[0] + '/playlist.m3u8', thumb: CDN + r[0] + '/thumbnail.jpg', dub: {}, subs: capOf(r[0])
+    });
+  });
+
+  var FOROS = [ // [guid, segundos, autor, título] — colección Foros de Mujeres (MasterClass · Humano)
+    ['404d7eb8-9fd9-4cd3-9ec2-fa6eb37b891c', 657, 'esther-sadin', 'Fraternidad – Esther Sadin'],
+    ['1ce6f231-c1db-4109-9fcc-bf4bc83ee22b', 5080, 'carolina-altamirano', 'Violencia – Carolina Altamirano'],
+    ['36bb6414-275f-4950-a033-cd1d11073649', 1052, 'ferran-tognetta', 'Ferran Tognetta'],
+    ['f56feb7d-8b5d-4791-9152-3cfb3652824a', 455, 'esther-sadin', 'Esther Sadin'],
+    ['87c4f44b-9996-4107-a47c-744c507d0d7f', 121, 'daniela-algeri', 'Cierre de Febrero – Daniela Algeri'],
+    ['9e769b04-64e9-4580-a731-82405cf471ef', 1367, 'cecilia-rodriguez', 'Ana Cecilia Rodriguez Gonzalez'],
+    ['e523f8b8-db16-40ee-8e4c-5fa75dbb4a00', 1414, 'angela-kohler', 'Angela Kohler'],
+    ['f3698c25-d90e-435a-9a42-1afd6777faca', 124, 'blanca-penafiel', 'Blanca Peñafiel'],
+    ['651bf532-fbe3-4f54-aa55-d5d81e12f313', 428, 'adriana-zambrano', 'Adriana Zambrano']
+  ];
+  FOROS.forEach(function (r, i) {
+    videos.push({
+      id: 'fm' + (i + 1), section: 'masterclass', category: 'human', author: r[2], others: [], tags: [], title: T(r[3], r[3], r[3]), featured: false,
+      description: DESC.masterclass, duration: r[1], year: 2026, date: '2026-11-12', orig: 'es', slide: SLIDE('masterclass'), video: '',
+      hls: CDN + r[0] + '/playlist.m3u8', thumb: CDN + r[0] + '/thumbnail.jpg', dub: {}, subs: capOf(r[0]), collection: 'foros-de-mujeres', episode: i + 1
     });
   });
 
