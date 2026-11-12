@@ -124,8 +124,8 @@
   // tarjeta vertical de una colección (portada en formato 9:16)
   function collCard(c) {
     var n = CAT.videos.filter(function (v) { return v.collection === c.id; }).length, a = author(c.author);
-    return '<a class="card coll" href="' + U.collection(c.id) + '" aria-label="' + esc(c.title[lang]) + '"><span class="art" style="background-image:url(\'' + res(c.cover) + '\')"></span>' +
-      '<span class="cap"><small>' + f(t().episodesN, { n: n }) + ' · ' + esc(a.name) + '</small><span class="btn sm">' + t().viewCollection + '</span></span></a>';
+    return '<div class="ci"><a class="card coll" href="' + U.collection(c.id) + '" aria-label="' + esc(c.title[lang]) + '"><span class="art" style="background-image:url(\'' + res(c.cover) + '\')"></span></a>' +
+      '<a class="t" href="' + U.collection(c.id) + '">' + esc(c.title[lang]) + '<span class="d">' + f(t().episodesN, { n: n }) + ' · ' + esc(a.name) + '</span></a></div>';
   }
   function collsWhere(fn) {
     var n = (params.get('q') || '').toLowerCase().trim();
