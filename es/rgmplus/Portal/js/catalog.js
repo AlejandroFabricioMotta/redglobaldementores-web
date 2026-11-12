@@ -43,8 +43,8 @@
       bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'silvia-pasamonti', name: "Silvia Pasamonti", photo: null,
       bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
-    { id: 'alejandro-de-mexico', name: "Alejandro (México)", photo: null,
-      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'alejandro-de-mexico', name: "Alejandro Burgueño", photo: null,
+      bio: T("Ciudad de México, México", "Ciudad de México, México", "Ciudad de México, México") },
     { id: 'amarilis', name: 'Amarilis Vellon', photo: 'assets/img/amarilis-vellon.jpg',
       bio: T('Mentora de la Red Global de Mentores. Biografía provisoria.', 'Mentora da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'clara', name: 'Clara María', photo: null,
@@ -490,8 +490,24 @@
     'c942bb56-f8bc-4456-b8d9-0466ba38ccc1',
     'e8807bd9-01b4-49f3-8d9e-8989fde15a7a',
     'd712a9b5-4b76-4197-b00b-95cae160f1d9',
-    '1b1a3b37-6c09-40e8-8686-ba90c9c84064'];
-  var PTSRC = ['409c278c-c994-435b-960d-0852bc65d434', 'f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
+    '1b1a3b37-6c09-40e8-8686-ba90c9c84064',
+    '692e622b-2189-4e15-8a19-1ac47a894dcd',
+    'f4607ed1-18e0-4e84-ace9-0d0afbbc3b74',
+    'dfed0fb1-9a8b-48da-9b9b-7865f513188a',
+    '2c420867-4fce-4d3c-8bb4-5ec87ca70261',
+    '47f5a4fa-8be2-4951-a5e7-6d8e0e5dbfbb',
+    'dd955ef1-743d-451a-bd43-b9935f8b566d',
+    '5245fd56-959f-48cc-9ab7-8d8318270ba2',
+    '7780cf7d-6840-4b58-8563-c4b14cedd712',
+    'b6e95016-54cf-45be-8d30-aab089457fde',
+    'd5a48fe5-4c50-42e2-8a65-2f4f8f3f0f31',
+    '326a7562-fe56-4b72-bdf2-91ee1a4a8cbc',
+    '0cb24d87-3211-4f71-91c2-ca4bd9f2a7d2',
+    '28054517-4f10-41f8-b6aa-a93bc2997e50',
+    '67102891-ef0d-4250-a0be-64e3bcb2b06e',
+    'ab2650b6-7684-4981-b69a-91923abcea85',
+    '2a9d7be8-9010-482f-bb39-b672c13937c7'];
+  var PTSRC = ['f4607ed1-18e0-4e84-ace9-0d0afbbc3b74', '409c278c-c994-435b-960d-0852bc65d434', 'f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
   var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
   function capOf(g) { return SUBBED.indexOf(g) >= 0 ? { es: CDN + g + '/captions/ES.vtt', pt: CDN + g + '/captions/PT.vtt', en: CDN + g + '/captions/EN.vtt' } : {}; }
   REAL.forEach(function (r, i) {
