@@ -192,7 +192,7 @@
       '<div class="dots">' + dots + '</div></section><div style="padding-top:22px">' + chips('') + '</div>' + rows);
   }
 
-  function collRow(fn) { var cs = collsWhere(fn); return cs.length ? row(t().collections, cs, '', collCard) : ''; }
+  function collRow(fn) { var cs = collsWhere(fn); return cs.length ? '<div style="margin-bottom:36px">' + row(t().collections, cs, '', collCard) + '</div>' : ''; }
   function viewSection(id) {
     var vids = filterQ(CAT.videos.filter(function (v) { return v.section === id; }));
     return page('<div class="banner"><div class="pattern"></div><h1>' + esc(secName(id)) + '</h1></div><div style="padding-top:22px">' + chips('') + '</div><div class="wrap">' + searchBox() + '</div>' + collRow(function (c) { return c.section === id; }) + '<div class="wrap">' + grid(vids) + '</div>');

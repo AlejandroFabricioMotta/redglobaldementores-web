@@ -356,11 +356,6 @@
   var V = [
 
 
-    ['i1','interviews-panels','public','mateus',['Clara María','David Whitmore'],['liderazgo','etica'],T('Panel: la mentoría en el sector público','Painel: a mentoria no setor público','Panel: mentoring in the public sector'),1],
-    ['i2','interviews-panels','sport','david',['Lucía Herrera'],['inspirador','liderazgo'],T('Entrevista: mentoría en el deporte','Entrevista: mentoria no desporto','Interview: mentoring in sport')],
-    ['i3','interviews-panels','business','clara',['Mateus Faria'],['liderazgo','practica'],T('Entrevista: liderazgo empresarial','Entrevista: liderança empresarial','Interview: business leadership')],
-    ['i4','interviews-panels','education','lucia',['Amarilis Vellon','Clara María'],['crecimiento','comunidad'],T('Panel: educar con mentoría','Painel: educar com mentoria','Panel: educating with mentoring')],
-    ['i5','interviews-panels','family','mateus',['Amarilis Vellon'],['familia','valores'],T('Entrevista: la familia como primera escuela','Entrevista: a família como primeira escola','Interview: the family as the first school')]
   ];
 
   var videos = V.map(function (r) {
