@@ -580,7 +580,7 @@
     ["alejandro-motta", "47f5a4fa-8be2-4951-a5e7-6d8e0e5dbfbb", 444, "Proceso Reflexivo", "human", "2026-11-11", "es"],
     ["marcela-barbita", "dd955ef1-743d-451a-bd43-b9935f8b566d", 623, "Celebraciones", "human", "2026-05-21", "es"],
     ["saxa-irizar", "5245fd56-959f-48cc-9ab7-8d8318270ba2", 764, "Salud", "health", "2026-11-11", "es"],
-    ["monico-carvajal", "7780cf7d-6840-4b58-8563-c4b14cedd712", 882, "MasterClass", "human", "2026-11-11", "es"],
+    ["monico-carvajal", "7780cf7d-6840-4b58-8563-c4b14cedd712", 882, "", "human", "2026-11-11", "es"],
     ["aura-narvaez", "b6e95016-54cf-45be-8d30-aab089457fde", 1097, "Celebraciones", "human", "2026-07-16", "es"],
     ["juan-carlos-valencia", "d5a48fe5-4c50-42e2-8a65-2f4f8f3f0f31", 1198, "Celebraciones", "human", "2026-07-16", "es"],
     ["rosana-navarro", "326a7562-fe56-4b72-bdf2-91ee1a4a8cbc", 1159, "Celebraciones", "human", "2026-07-16", "es"],
@@ -590,11 +590,11 @@
     ["alejandro-motta", "ab2650b6-7684-4981-b69a-91923abcea85", 3741, "Cómo determinar el precio", "business", "2026-11-11", "es"],
     ["alejandro-motta", "2a9d7be8-9010-482f-bb39-b672c13937c7", 3602, "Los Umbrales", "human", "2026-11-11", "es"],
     ["silvia-pasamonti", "804a4d42-ca58-47ce-aa03-33cc9d6e9ea7", 3842, "Mujeres Líderes", "human", "2026-03-05", "es"],
-    ["ferran-tognetta", "71333bfb-55e5-4ce4-bb03-e147558580aa", 4242, "MasterClass", "human", "2026-11-11", "es"],
+    ["ferran-tognetta", "71333bfb-55e5-4ce4-bb03-e147558580aa", 4242, "", "human", "2026-11-11", "es"],
     ["daniela-algeri", "3e19a331-d034-49c1-9906-ca67d3d3fcd9", 5929, "Mujeres Líderes", "human", "2026-04-02", "es"],
   ];
   MC.forEach(function (r, i) {
-    var a = AUTHORS.filter(function (x) { return x.id === r[0]; })[0], nm = a ? a.name : r[0], ti = r[3] + ' – ' + nm;
+    var a = AUTHORS.filter(function (x) { return x.id === r[0]; })[0], nm = a ? a.name : r[0], ti = r[3] ? r[3] + ' – ' + nm : nm;
     videos.push({
       id: 'mc' + (i + 1), section: 'masterclass', category: r[4], author: r[0], others: [], tags: [], title: T(ti, ti, ti), featured: false,
       description: DESC.masterclass, duration: r[2], year: +r[5].slice(0, 4), date: r[5], orig: PTSRC.indexOf(r[1]) >= 0 ? 'pt' : r[6], slide: SLIDE('masterclass'), video: '',
