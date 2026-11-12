@@ -63,5 +63,6 @@
 .ben-dl{display:inline-flex;align-items:center;gap:7px;font-size:13px;padding:7px 15px;white-space:nowrap}
 .ben-dl svg{flex:none}
 .ben-dl[aria-disabled="true"]{opacity:.5;cursor:default}.ben-dl[aria-disabled="true"]:hover{background:var(--color-dorado);transform:none}
+#templates{padding-bottom:26px}#templates .ben-pronto{margin:44px 0 0}
 @media(max-width:900px){.tpl-grupos{grid-template-columns:1fr}}
 @media(max-width:480px){.tpl-lista li{grid-template-columns:auto minmax(0,1fr)}.tpl-lista .ben-dl{grid-column:2;justify-self:start}.tpl-grupo{padding:22px 18px 10px}}
