@@ -23,7 +23,8 @@
     { id: 'presentations', path: 'Presentations' },
     { id: 'masterclass', path: 'MasterClass' },
     { id: 'interviews-panels', path: 'Interviews-Panels' },
-    { id: 'storytelling', path: 'Storytelling' }
+    { id: 'storytelling', path: 'Storytelling' },
+    { id: 'testimonials', path: 'Testimonials' }
   ];
   var CATEGORIES = ['human', 'business', 'education', 'sport', 'technology', 'public', 'family', 'culture', 'health', 'environment', 'workers', 'skills']
     .map(function (id) { return { id: id, path: id.charAt(0).toUpperCase() + id.slice(1) }; });
@@ -45,6 +46,50 @@
       bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'alejandro-de-mexico', name: "Alejandro Burgueño", photo: null,
       bio: T("Ciudad de México, México", "Ciudad de México, México", "Ciudad de México, México") },
+    { id: 'francesca-rubulotta', name: "Francesca Rubulotta", photo: null,
+      bio: T('Sicilia, Italia', 'Sicilia, Italia', 'Sicilia, Italia') },
+    { id: 'anna-sexton', name: "Anna Sexton", photo: 'assets/img/autores/anna-sexton.jpg',
+      bio: T('Liverpool, Reino Unido', 'Liverpool, Reino Unido', 'Liverpool, Reino Unido') },
+    { id: 'eline-pedersen', name: "Eline Pedersen", photo: null,
+      bio: T('Mentora de la Red Global de Mentores.', 'Mentora da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: 'ronke-ademiluyi', name: "HRH Queen Ade Ronke Ademiluyi Ogunwusi", photo: null,
+      bio: T('Lagos, Nigeria', 'Lagos, Nigeria', 'Lagos, Nigeria') },
+    { id: 'red-global-de-mentores', name: "Red Global de Mentores", photo: 'assets/rgm-rings.svg',
+      bio: T('Red Global de Mentores', 'Rede Global de Mentores', 'Global Mentoring Network') },
+    { id: 'alex-julia', name: "Alex Julia", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'ashley-cullen', name: "Ashley Cullen", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'miranda-tigris', name: "Miranda Tigris", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'ann-bost', name: "Ann Bost", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'lou-cox', name: "Lou Cox", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'kuiljeit-uppaal', name: "Kuiljeit Uppaal", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'kingshuk-ganguly', name: "Kingshuk Ganguly", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'dina-el-mofty', name: "Dina El Mofty", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'dana-nicholas-haselum', name: "Dana & Nicholas Haselum", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'joann-lowell', name: "JoAnn Lowell", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'binnie-dansby', name: "Binnie Dansby", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'daizy-gedeon', name: "Daizy Gedeon", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'taiwo-omilani', name: "Taiwo Omilani", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'stephen-dansiger', name: "Stephen Dansiger", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'paola-savva', name: "Paola Savva", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'natalie-forest', name: "Natalie Forest", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
+    { id: 'mireille-toulekima', name: "Mireille Toulekima", photo: null,
+      bio: T('Mentor Emérito', 'Mentor Emérito', 'Emeritus Mentor') },
     { id: 'amarilis', name: 'Amarilis Vellon', photo: 'assets/img/amarilis-vellon.jpg',
       bio: T('Mentora de la Red Global de Mentores. Biografía provisoria.', 'Mentora da Rede Global de Mentores. Biografia provisória.', 'Mentor of the Global Mentoring Network. Provisional biography.') },
     { id: 'clara', name: 'Clara María', photo: null,
@@ -243,6 +288,7 @@
     'presentations': T('Descripción provisoria: presentación registrada, disponible a demanda.', 'Descrição provisória: apresentação registada, disponível a pedido.', 'Provisional description: recorded presentation, available on demand.'),
     'masterclass': T('Descripción provisoria: clase magistral de un mentor de la comunidad.', 'Descrição provisória: aula magistral de um mentor da comunidade.', 'Provisional description: masterclass by a community mentor.'),
     'interviews-panels': T('Descripción provisoria: conversación o panel con mentores y referentes.', 'Descrição provisória: conversa ou painel com mentores e referências.', 'Provisional description: conversation or panel with mentors and leading figures.'),
+    'testimonials': T('Descripción provisoria: testimonio de un mentor del Simposio de Alianzas RGM 2023.', 'Descrição provisória: testemunho de um mentor do Simpósio de Alianças RGM 2023.', 'Provisional description: testimonial from a mentor at the RGM Alliances Symposium 2023.'),
     'storytelling': T('Descripción provisoria: un relato personal contado por su protagonista.', 'Descrição provisória: um relato pessoal contado pelo seu protagonista.', 'Provisional description: a personal story told by its protagonist.')
   };
 
@@ -339,6 +385,29 @@
 
   // Videos con subtítulos ya cargados en Bunny (captions ES/PT/EN en el CDN)
   var SUBBED = [
+    '80925b53-e6f6-463d-8b61-68a03212cba8',
+    'e5b619f5-3fcf-4f68-a7c2-40eb47e60c63',
+    '87b16206-3e38-4cfd-8137-ca291c82b908',
+    '4c991d37-a8dd-488d-a372-f794c013eabf',
+    'c6120599-7972-4783-9486-8dec84ce6b77',
+    '1652f771-14d4-42e2-a211-a62e93cedc92',
+    '13708001-d7fb-493f-95cb-64a8cf58ddeb',
+    '4772f053-3298-4054-9ec1-32afea3edcd2',
+    'd79ec58a-2dd4-409c-a402-3954a02f8e6a',
+    'daaa2cbd-1317-41e0-aaa7-f004d93a283a',
+    '96c4fb92-cd34-4a6f-a56c-57d1e2eb87d6',
+    'c1bc0ec1-440e-4f50-9e36-e5a731961633',
+    '6f61c359-f2cd-4a37-a36d-9d7f6f6782c8',
+    'd4342387-8fe9-4747-9e0b-95fb61390ea3',
+    '46f79d8b-ac7c-4f8b-bf87-2b3cd12910e2',
+    'e721fe1d-6df6-4398-8931-65a4c807fec9',
+    '3c8877f0-22da-49ea-bacf-af4816f7c94c',
+    '6900c1f4-bd66-4826-992b-65976b40ed05',
+    '772fe7ab-7f33-4418-8d41-6fd5210a2f71',
+    '8daeccfa-4378-4aef-8bae-c493bb5a48d9',
+    '3eeda9f8-d6a0-4b7c-9a7f-c956bb63f27d',
+    'c0c49243-a040-41af-a585-80b0a6f2dfa6',
+    'c5945fea-218b-4422-8137-700109eaba04',
     'ea117928-13c6-4698-b2f9-eb491bc44017',
     '2374aeee-183e-4ca8-8a75-15c680676e4a',
     'ec1b38e6-413d-4607-809a-2c87d41782b4',
@@ -618,6 +687,9 @@
     ,{ id: 'mentoria-en-1-minuto', author: 'angela-kohler', section: 'masterclass', category: 'education', cover: 'assets/img/coll-mentoria-1-minuto.jpg',
       title: T('Mentoría en 1 minuto', 'Mentoria em 1 minuto', 'Mentoring in 1 minute'),
       description: T('40 cápsulas de alto contenido de mentoría de Ángela Mentora, de un minuto cada una.', '40 cápsulas de alto conteúdo de mentoria da Ángela Mentora, de um minuto cada uma.', '40 high-content mentoring capsules by Ángela Mentora, one minute each.') }
+    ,{ id: 'simposio-alianzas-2023', author: 'red-global-de-mentores', section: 'testimonials', category: '', cover: 'assets/img/coll-simposio-alianzas.jpg',
+      title: T('Simposio de Alianzas RGM 2023', 'Simpósio de Alianças RGM 2023', 'RGM Alliances Symposium 2023'),
+      description: T('Testimonios de mentores de todo el mundo presentados en el Simposio de Alianzas RGM 2023.', 'Testemunhos de mentores de todo o mundo apresentados no Simpósio de Alianças RGM 2023.', 'Testimonials from mentors around the world presented at the RGM Alliances Symposium 2023.') }
   ];
   var EPISODES = [ // [colección, n.º de episodio, guid de Bunny, segundos, fecha, título propio (opcional)]
     ['reflexiones', 1, 'a2002f51-ba2e-4b26-bbc1-9b269c1c7660', 242, '2024-02-25'],
@@ -685,6 +757,39 @@
       description: c.description, duration: e[3], year: +e[4].slice(0, 4), date: e[4], orig: 'es', slide: SLIDE(c.section), video: '',
       hls: 'https://vz-6a7af8bf-f99.b-cdn.net/' + e[2] + '/playlist.m3u8', thumb: 'https://vz-6a7af8bf-f99.b-cdn.net/' + e[2] + '/thumbnail.jpg',
       dub: {}, subs: capOf(e[2]), collection: e[0], episode: e[1]
+    });
+  });
+
+  var SIM = [ // [n.º, guid, segundos, autor, título] — Simposio de Alianzas RGM 2023 (videos en inglés)
+    [1, '80925b53-e6f6-463d-8b61-68a03212cba8', 178, 'francesca-rubulotta', "Francesca Rubulotta"],
+    [2, 'e5b619f5-3fcf-4f68-a7c2-40eb47e60c63', 385, 'alex-julia', "Alex Julia – The New Earth"],
+    [3, '87b16206-3e38-4cfd-8137-ca291c82b908', 283, 'anna-sexton', "Anna Sexton"],
+    [4, '4c991d37-a8dd-488d-a372-f794c013eabf', 524, 'ashley-cullen', "Ashley Cullen"],
+    [5, 'c6120599-7972-4783-9486-8dec84ce6b77', 376, 'miranda-tigris', "Miranda Tigris"],
+    [6, '1652f771-14d4-42e2-a211-a62e93cedc92', 504, 'ann-bost', "Ann Bost"],
+    [7, '13708001-d7fb-493f-95cb-64a8cf58ddeb', 597, 'lou-cox', "Lou Cox"],
+    [8, '4772f053-3298-4054-9ec1-32afea3edcd2', 291, 'kuiljeit-uppaal', "Kuiljeit Uppaal"],
+    [9, 'd79ec58a-2dd4-409c-a402-3954a02f8e6a', 309, 'kingshuk-ganguly', "Kingshuk Ganguly"],
+    [10, 'daaa2cbd-1317-41e0-aaa7-f004d93a283a', 572, 'eline-pedersen', "Eline Pedersen"],
+    [11, '96c4fb92-cd34-4a6f-a56c-57d1e2eb87d6', 130, 'dina-el-mofty', "Dina El Mofty"],
+    [12, 'c1bc0ec1-440e-4f50-9e36-e5a731961633', 423, 'dana-nicholas-haselum', "Dana & Nicholas Haselum"],
+    [13, '6f61c359-f2cd-4a37-a36d-9d7f6f6782c8', 486, 'joann-lowell', "JoAnn Lowell"],
+    [14, 'd4342387-8fe9-4747-9e0b-95fb61390ea3', 432, 'binnie-dansby', "Binnie Dansby"],
+    [15, '46f79d8b-ac7c-4f8b-bf87-2b3cd12910e2', 572, 'daizy-gedeon', "Daizy Gedeon"],
+    [16, 'e721fe1d-6df6-4398-8931-65a4c807fec9', 601, 'red-global-de-mentores', "The Power of Alliances and Mentoring"],
+    [17, '3c8877f0-22da-49ea-bacf-af4816f7c94c', 484, 'taiwo-omilani', "Taiwo Omilani"],
+    [18, '6900c1f4-bd66-4826-992b-65976b40ed05', 578, 'stephen-dansiger', "Stephen Dansiger"],
+    [19, '772fe7ab-7f33-4418-8d41-6fd5210a2f71', 370, 'paola-savva', "Paola Savva"],
+    [20, '8daeccfa-4378-4aef-8bae-c493bb5a48d9', 599, 'natalie-forest', "Natalie Forest"],
+    [21, '3eeda9f8-d6a0-4b7c-9a7f-c956bb63f27d', 65, 'ronke-ademiluyi', "HRH Queen Ade Ronke Ademiluyi Ogunwusi"],
+    [22, 'c0c49243-a040-41af-a585-80b0a6f2dfa6', 217, 'chelsey-baker', "Chelsey Baker"],
+    [23, 'c5945fea-218b-4422-8137-700109eaba04', 497, 'mireille-toulekima', "Mireille Toulekima"],
+  ];
+  SIM.forEach(function (r) {
+    videos.push({
+      id: 'sim' + r[0], section: 'testimonials', category: '', author: r[3], others: [], tags: [], title: T(r[4], r[4], r[4]), featured: false,
+      description: DESC.testimonials, duration: r[2], year: 2023, date: '2023-01-01', orig: 'en', slide: SLIDE('testimonials'), video: '',
+      hls: CDN + r[1] + '/playlist.m3u8', thumb: CDN + r[1] + '/thumbnail.jpg', dub: {}, subs: capOf(r[1]), collection: 'simposio-alianzas-2023', episode: r[0]
     });
   });
 

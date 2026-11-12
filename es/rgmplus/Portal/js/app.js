@@ -26,7 +26,8 @@
   var byId = function (arr, id) { return arr.filter(function (x) { return x.id === id; })[0]; };
   var res = function (p) { return p && !/^(https?:|\/|data:)/.test(p) ? BASE + p : p; };
   var secName = function (id) { return I18N._sec[id][lang]; };
-  var catName = function (id) { return I18N._cat[id][lang]; };
+  var catName = function (id) { return id && I18N._cat[id] ? I18N._cat[id][lang] : ''; };
+  var catCrumb = function (id) { return id && I18N._cat[id] ? ' › <a href="' + U.category(id) + '">' + esc(catName(id)) + '</a>' : ''; };
   var author = function (id) { return byId(CAT.authors, id); };
   var title = function (v) { return v.title[lang] || v.title[v.orig]; };
   var url = function (u) { return u.replace('{lang}', lang); };
@@ -203,7 +204,7 @@
     var c = byId(CAT.collections, id); if (!c) return viewHome();
     var T = t(), a = author(c.author), eps = CAT.videos.filter(function (v) { return v.collection === id; }).sort(function (x, y) { return x.episode - y.episode; });
     return page('<div class="banner"><div class="pattern"></div><h1>' + esc(c.title[lang]) + '</h1></div>' +
-      '<div class="wrap" style="padding-top:26px"><p class="where"><a href="' + U.section(c.section) + '">' + esc(secName(c.section)) + '</a> › <a href="' + U.category(c.category) + '">' + esc(catName(c.category)) + '</a></p>' +
+      '<div class="wrap" style="padding-top:26px"><p class="where"><a href="' + U.section(c.section) + '">' + esc(secName(c.section)) + '</a>' + catCrumb(c.category) + '</p>' +
       '<p>' + esc(c.description[lang]) + '</p><p class="oth"><b>' + T.role + ':</b> <a href="' + U.author(a.id) + '">' + esc(a.name) + '</a> · ' + f(T.episodesN, { n: eps.length }) + '</p></div>' +
       '<div class="wrap" style="padding-top:20px">' + grid(eps) + '</div>');
   }
@@ -229,7 +230,7 @@
         '<button data-act="save" data-id="' + id + '" aria-pressed="' + isSaved + '" title="' + (isSaved ? T.saved : T.save) + '" aria-label="' + T.save + '">' + (isSaved ? ICON.check : ICON.plus) + '</button>' +
         '<button data-act="like" data-id="' + id + '" aria-pressed="' + isLiked + '" title="' + T.like + '" aria-label="' + T.like + '">' + ICON.like + '</button>' +
         '<button data-act="share" data-id="' + id + '" title="' + T.share + '" aria-label="' + T.share + '">' + ICON.share + '</button></span></div>' +
-      '<p class="where"><a href="' + U.section(v.section) + '">' + esc(secName(v.section)) + '</a> › <a href="' + U.category(v.category) + '">' + esc(catName(v.category)) + '</a></p>' +
+      '<p class="where"><a href="' + U.section(v.section) + '">' + esc(secName(v.section)) + '</a>' + catCrumb(v.category) + '</p>' +
       '<p><b>' + T.description + ':</b> ' + esc(v.description[lang]) + '</p>' + others + '<div class="tags">' + tags + '</div>' +
       '<p class="avail">' + f(T.availLangs, { o: ln[v.orig], s: 'ES, PT, EN', d: dubs }) + '</p></div>' +
       '<aside class="author-box"><small>' + T.role + '</small>' + avatar(a, 56) + '<b>' + esc(a.name) + '</b><p>' + esc(a.bio[lang]) + '</p><a href="' + U.author(a.id) + '">' + T.allByAuthor + ' &gt;</a></aside></div></div></div>' +

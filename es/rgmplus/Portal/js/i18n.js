@@ -135,13 +135,15 @@ window.RGM_I18N = {
     'presentations':     { es: 'Presentaciones', pt: 'Apresentações', en: 'Presentations' },
     'masterclass':       { es: 'MasterClass', pt: 'MasterClass', en: 'MasterClass' },
     'interviews-panels': { es: 'Entrevistas y Paneles', pt: 'Entrevistas e Painéis', en: 'Interviews & Panels' },
-    'storytelling':      { es: 'Storytelling', pt: 'Storytelling', en: 'Storytelling' }
+    'storytelling':      { es: 'Storytelling', pt: 'Storytelling', en: 'Storytelling' },
+    'testimonials':      { es: 'Testimonios', pt: 'Testemunhos', en: 'Testimonials' }
   },
   _secDesc: {
     'presentations':     { es: 'Presentaciones de mentores de la comunidad, disponibles cuando quieras.', pt: 'Apresentações de mentores da comunidade, disponíveis quando quiser.', en: 'Presentations by community mentors, available whenever you want.' },
     'masterclass':       { es: 'Clases magistrales para aprender de grandes mentores.', pt: 'Aulas magistrais para aprender com grandes mentores.', en: 'Masterclasses to learn from great mentors.' },
     'interviews-panels': { es: 'Conversaciones y paneles con mentores y referentes.', pt: 'Conversas e painéis com mentores e referências.', en: 'Conversations and panels with mentors and leading figures.' },
-    'storytelling':      { es: 'Historias personales contadas por sus protagonistas.', pt: 'Histórias pessoais contadas pelos seus protagonistas.', en: 'Personal stories told by the people who lived them.' }
+    'storytelling':      { es: 'Historias personales contadas por sus protagonistas.', pt: 'Histórias pessoais contadas pelos seus protagonistas.', en: 'Personal stories told by the people who lived them.' },
+    'testimonials':      { es: 'Testimonios de mentores y líderes sobre la fuerza de las alianzas.', pt: 'Testemunhos de mentores e líderes sobre a força das alianças.', en: 'Testimonials from mentors and leaders on the power of alliances.' }
   },
   _cat: {
     human:       { es: 'Humano', pt: 'Humano', en: 'Human' },
