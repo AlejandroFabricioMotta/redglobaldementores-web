@@ -54,6 +54,28 @@
       bio: T('Mentora de la Red Global de Mentores.', 'Mentora da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'ronke-ademiluyi', name: "HRH Queen Ade Ronke Ademiluyi Ogunwusi", photo: 'assets/img/autores/ronke-ademiluyi.jpg',
       bio: T('Lagos, Nigeria', 'Lagos, Nigeria', 'Lagos, Nigeria') },
+    { id: "beatriz-martinez", name: "Beatriz Martinez", photo: 'assets/img/autores/beatriz-martinez.jpg',
+      bio: T("Posadas, Argentina", "Posadas, Argentina", "Posadas, Argentina") },
+    { id: "alvaro-pinilla", name: "Alvaro Pinilla", photo: 'assets/img/autores/alvaro-pinilla.jpg',
+      bio: T("Bogotá, Colombia", "Bogotá, Colombia", "Bogotá, Colombia") },
+    { id: "diana-ospina", name: "Diana Patricia Ospina Campuzano", photo: 'assets/img/autores/diana-ospina.jpg',
+      bio: T("Bogotá, Colombia", "Bogotá, Colombia", "Bogotá, Colombia") },
+    { id: "sri-prem-baba", name: "Sri Prem Baba", photo: 'assets/img/autores/sri-prem-baba.jpg',
+      bio: T("São Paulo, Brasil", "São Paulo, Brasil", "São Paulo, Brasil") },
+    { id: "martin-rodriguez", name: "Martin Rodriguez", photo: null,
+      bio: T("Lanús, Argentina", "Lanús, Argentina", "Lanús, Argentina") },
+    { id: "gustavo-gariboldi", name: "Gustavo Adrián Gariboldi", photo: null,
+      bio: T("Benavidez, Argentina", "Benavidez, Argentina", "Benavidez, Argentina") },
+    { id: "jorge-arias", name: "Jorge Arias", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: "marisa-pineiro", name: "Marisa Piñeiro", photo: null,
+      bio: T("CABA, Argentina", "CABA, Argentina", "CABA, Argentina") },
+    { id: "nathalie-carrasco", name: "Nathalie Carrasco", photo: null,
+      bio: T("Toronto, Canadá", "Toronto, Canadá", "Toronto, Canadá") },
+    { id: "claudio-lamela", name: "Claudio Lamela", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
+    { id: "william-canduri", name: "William Canduri", photo: null,
+      bio: T('Mentor/a de la Red Global de Mentores.', 'Mentor/a da Rede Global de Mentores.', 'Mentor of the Global Mentoring Network.') },
     { id: 'red-global-de-mentores', name: "Red Global de Mentores", photo: 'assets/rgm-rings.svg',
       bio: T('Red Global de Mentores', 'Rede Global de Mentores', 'Global Mentoring Network') },
     { id: 'alex-julia', name: "Alex Julia", photo: null,
@@ -669,8 +691,10 @@
     '2a9d7be8-9010-482f-bb39-b672c13937c7',
     '804a4d42-ca58-47ce-aa03-33cc9d6e9ea7',
     '71333bfb-55e5-4ce4-bb03-e147558580aa',
-    '3e19a331-d034-49c1-9906-ca67d3d3fcd9'];
-  var PTSRC = ['f4607ed1-18e0-4e84-ace9-0d0afbbc3b74', '409c278c-c994-435b-960d-0852bc65d434', 'f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
+    '3e19a331-d034-49c1-9906-ca67d3d3fcd9',
+    'fc0e85a6-454c-43cc-a900-eb6f54390058', '9b24d11e-2711-4314-948b-b520cb1adff8', '2e888d07-c576-4220-8ef8-0f696deacc22', 'c3b63caf-2511-4f3e-889e-76256d3dcb75', '3887913a-8858-4be0-93b4-1bfddf090967', '8cf3b74b-595e-4fa3-af5c-f7c90a10b504', 'd25c64a3-65bc-450c-bfd9-780da92f500e', '31a83f15-9705-4d8a-884c-9add119d29d5', 'b2254f48-4725-432c-8e18-29268be6dc8e', 'd143bb41-58d3-429d-a8a9-d315c86def29', '745852ce-7485-43eb-9fec-7022f7eb699a', '0adb7d08-0812-461b-bba3-d30bd45eda03', 'ca5e0cf1-6eb7-4c75-bc78-17e8f64608e6', '1426e10a-4b79-4035-8eaf-57389930aeaa', '74395092-f976-4729-9386-ec05f1dad860', '0a7f14b1-05f8-4c67-a23d-02499be22929', 'e74faf8c-c2e0-40a4-88c1-ef0b26db09f6', '739333c7-895c-4270-b608-4a5d45c65d5f', 'ecec5a56-c37e-42e4-af5d-7ff4a0279dd9', 'd867f980-2e50-4188-b602-7d9e0936520e', 'ef6e601d-e54c-41e3-8d45-864184811e51', 'ccb483e4-3006-4b2d-b646-177d36ab8d70', '37669536-e057-4fed-977b-c7d0373569b5', '7f773eeb-e197-4cb1-ae47-62230ae4e7c0', '0f217090-a637-4e3c-b39c-bf7a6a6260d3', 'e1cd4aef-949d-40e0-84b6-109551f26639', '94506b0b-29f9-4dc9-983d-bd6b3a386341'
+  ];
+  var PTSRC = ['fc0e85a6-454c-43cc-a900-eb6f54390058', '9b24d11e-2711-4314-948b-b520cb1adff8', '2e888d07-c576-4220-8ef8-0f696deacc22', 'c3b63caf-2511-4f3e-889e-76256d3dcb75', '1426e10a-4b79-4035-8eaf-57389930aeaa', 'f4607ed1-18e0-4e84-ace9-0d0afbbc3b74', '409c278c-c994-435b-960d-0852bc65d434', 'f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
   var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
   function capOf(g) { return SUBBED.indexOf(g) >= 0 ? { es: CDN + g + '/captions/ES.vtt', pt: CDN + g + '/captions/PT.vtt', en: CDN + g + '/captions/EN.vtt' } : {}; }
   REAL.forEach(function (r, i) {
@@ -752,6 +776,7 @@
     ["silvia-pasamonti", "804a4d42-ca58-47ce-aa03-33cc9d6e9ea7", 3842, "Mujeres Líderes", "human", "2026-03-05", "es"],
     ["ferran-tognetta", "71333bfb-55e5-4ce4-bb03-e147558580aa", 4242, "", "human", "2026-11-11", "es"],
     ["daniela-algeri", "3e19a331-d034-49c1-9906-ca67d3d3fcd9", 5929, "Mujeres Líderes", "human", "2026-04-02", "es"],
+    ["alejandro-motta", "94506b0b-29f9-4dc9-983d-bd6b3a386341", 118, "La Mentoría a ser la profesión más importante de la 3era y 4ta edad", "", "2026-11-12", "es"],
   ];
   MC.forEach(function (r, i) {
     var a = AUTHORS.filter(function (x) { return x.id === r[0]; })[0], nm = a ? a.name : r[0], ti = r[3] ? r[3] + ' – ' + nm : nm;
@@ -787,6 +812,12 @@
     ,{ id: 'foros-de-mujeres', author: 'red-global-de-mentores', section: 'masterclass', category: 'human', cover: 'assets/img/coll-foros-mujeres.jpg',
       title: T('Foros de Mujeres', 'Fóruns de Mulheres', 'Women\'s Forums'),
       description: T('Charlas y reflexiones de mentoras en los Foros de Mujeres de la Red Global de Mentores.', 'Palestras e reflexões de mentoras nos Fóruns de Mulheres da Rede Global de Mentores.', 'Talks and reflections by women mentors at the Global Mentoring Network Women\'s Forums.') }
+    ,{ id: 'mentoria-y-espiritualidad', author: 'sri-prem-baba', section: 'interviews-panels', category: 'human', cover: 'assets/img/coll-mentoria-espiritualidad.jpg',
+      title: T('Mentoría y Espiritualidad', 'Mentoria e Espiritualidade', 'Mentoring and Spirituality'),
+      description: T('Serie de entrevistas con Sri Prem Baba sobre mentoría, espiritualidad y transformación.', 'Série de entrevistas com Sri Prem Baba sobre mentoria, espiritualidade e transformação.', 'Interview series with Sri Prem Baba on mentoring, spirituality and transformation.') }
+    ,{ id: 'maraton-de-mentores', author: 'red-global-de-mentores', section: 'interviews-panels', category: '', cover: 'assets/img/coll-maraton-mentores.jpg',
+      title: T('Maratón de Mentores', 'Maratona de Mentores', 'Mentors Marathon'),
+      description: T('Entrevistas a mentores de la Red Global de Mentores que comparten su experiencia y su camino.', 'Entrevistas com mentores da Rede Global de Mentores que compartilham sua experiência e seu caminho.', 'Interviews with mentors of the Global Mentoring Network sharing their experience and journey.') }
   ];
   var EPISODES = [ // [colección, n.º de episodio, guid de Bunny, segundos, fecha, título propio (opcional)]
     ['reflexiones', 1, 'a2002f51-ba2e-4b26-bbc1-9b269c1c7660', 242, '2024-02-25'],
@@ -975,6 +1006,42 @@
       id: 'fm' + (i + 1), section: 'masterclass', category: 'human', author: r[2], others: [], tags: [], title: T(r[3], r[3], r[3]), featured: false,
       description: DESC.masterclass, duration: r[1], year: 2026, date: '2026-11-12', orig: 'es', slide: SLIDE('masterclass'), video: '',
       hls: CDN + r[0] + '/playlist.m3u8', thumb: CDN + r[0] + '/thumbnail.jpg', dub: {}, subs: capOf(r[0]), collection: 'foros-de-mujeres', episode: i + 1
+    });
+  });
+
+  var INT = [ // [guid, segundos, autor, título, colección, episodio, categoría, otros] — Entrevistas
+    ['fc0e85a6-454c-43cc-a900-eb6f54390058', 777, 'sri-prem-baba', T("Diferencia entre un Gurú y un Mentor","Diferencia entre un Gurú y un Mentor","Diferencia entre un Gurú y un Mentor"), 'mentoria-y-espiritualidad', 1, 'human', []],
+    ['9b24d11e-2711-4314-948b-b520cb1adff8', 706, 'sri-prem-baba', T("Más Amor, Por Favor","Más Amor, Por Favor","Más Amor, Por Favor"), 'mentoria-y-espiritualidad', 2, 'human', []],
+    ['2e888d07-c576-4220-8ef8-0f696deacc22', 1799, 'sri-prem-baba', T("Los 5 Axiomas para la transformación","Los 5 Axiomas para la transformación","Los 5 Axiomas para la transformación"), 'mentoria-y-espiritualidad', 3, 'human', []],
+    ['c3b63caf-2511-4f3e-889e-76256d3dcb75', 612, 'sri-prem-baba', T("La Pandemia","La Pandemia","La Pandemia"), 'mentoria-y-espiritualidad', 4, 'human', []],
+    ['3887913a-8858-4be0-93b4-1bfddf090967', 1037, 'beatriz-martinez', T('Entrevista a Beatriz Martinez','Entrevista com Beatriz Martinez','Interview with Beatriz Martinez'), 'maraton-de-mentores', 1, '', []],
+    ['8cf3b74b-595e-4fa3-af5c-f7c90a10b504', 1093, 'jaime-espana-eraso', T('Entrevista a Jaime España','Entrevista com Jaime España','Interview with Jaime España'), 'maraton-de-mentores', 2, '', []],
+    ['d25c64a3-65bc-450c-bfd9-780da92f500e', 1139, 'martin-rodriguez', T('Entrevista a Martin Rodriguez','Entrevista com Martin Rodriguez','Interview with Martin Rodriguez'), 'maraton-de-mentores', 3, '', []],
+    ['31a83f15-9705-4d8a-884c-9add119d29d5', 1110, 'leticia-centurion', T('Entrevista a Leticia Centurion','Entrevista com Leticia Centurion','Interview with Leticia Centurion'), 'maraton-de-mentores', 4, '', []],
+    ['b2254f48-4725-432c-8e18-29268be6dc8e', 1485, 'adriana-gomez', T('Entrevista a Adriana Gomez','Entrevista com Adriana Gomez','Interview with Adriana Gomez'), 'maraton-de-mentores', 5, '', []],
+    ['d143bb41-58d3-429d-a8a9-d315c86def29', 2118, 'alejandro-motta', T('Entrevista a Alejandro Motta','Entrevista com Alejandro Motta','Interview with Alejandro Motta'), 'maraton-de-mentores', 6, '', []],
+    ['745852ce-7485-43eb-9fec-7022f7eb699a', 1733, 'claudio-lamela', T('Entrevista a Claudio Lamela','Entrevista com Claudio Lamela','Interview with Claudio Lamela'), 'maraton-de-mentores', 7, '', []],
+    ['0adb7d08-0812-461b-bba3-d30bd45eda03', 2034, 'alvaro-pinilla', T('Entrevista a Alvaro Pinilla','Entrevista com Alvaro Pinilla','Interview with Alvaro Pinilla'), 'maraton-de-mentores', 8, '', []],
+    ['ca5e0cf1-6eb7-4c75-bc78-17e8f64608e6', 1430, 'gustavo-gariboldi', T('Entrevista a Gustavo Gariboldi','Entrevista com Gustavo Gariboldi','Interview with Gustavo Gariboldi'), 'maraton-de-mentores', 9, '', []],
+    ['1426e10a-4b79-4035-8eaf-57389930aeaa', 1307, 'kleber-rodrigues', T('Entrevista a Kleber Rodrigues','Entrevista com Kleber Rodrigues','Interview with Kleber Rodrigues'), 'maraton-de-mentores', 10, '', []],
+    ['74395092-f976-4729-9386-ec05f1dad860', 1415, 'jorge-arias', T('Entrevista a Jorge Arias','Entrevista com Jorge Arias','Interview with Jorge Arias'), 'maraton-de-mentores', 11, '', []],
+    ['0a7f14b1-05f8-4c67-a23d-02499be22929', 1080, 'margarita-gibson', T('Entrevista a Margarita Gibson','Entrevista com Margarita Gibson','Interview with Margarita Gibson'), 'maraton-de-mentores', 12, '', []],
+    ['e74faf8c-c2e0-40a4-88c1-ef0b26db09f6', 1438, 'maribel-belaval', T('Entrevista a Maribel Belaval','Entrevista com Maribel Belaval','Interview with Maribel Belaval'), 'maraton-de-mentores', 13, '', []],
+    ['739333c7-895c-4270-b608-4a5d45c65d5f', 1222, 'marisa-pineiro', T('Entrevista a Marisa Piñeiro','Entrevista com Marisa Piñeiro','Interview with Marisa Piñeiro'), 'maraton-de-mentores', 14, '', []],
+    ['ecec5a56-c37e-42e4-af5d-7ff4a0279dd9', 2389, 'lasca-ducas', T('Entrevista a Lasca Ducas','Entrevista com Lasca Ducas','Interview with Lasca Ducas'), 'maraton-de-mentores', 15, '', []],
+    ['d867f980-2e50-4188-b602-7d9e0936520e', 1043, 'nathalie-carrasco', T('Entrevista a Nathalie Carrasco','Entrevista com Nathalie Carrasco','Interview with Nathalie Carrasco'), 'maraton-de-mentores', 16, '', []],
+    ['ef6e601d-e54c-41e3-8d45-864184811e51', 2565, 'nelson-rueda', T('Entrevista a Nelson Rueda','Entrevista com Nelson Rueda','Interview with Nelson Rueda'), 'maraton-de-mentores', 17, '', []],
+    ['ccb483e4-3006-4b2d-b646-177d36ab8d70', 1715, 'rafael-guillermo-hernandez-molina', T('Entrevista a Rafael Hernandez','Entrevista com Rafael Hernandez','Interview with Rafael Hernandez'), 'maraton-de-mentores', 18, '', []],
+    ['37669536-e057-4fed-977b-c7d0373569b5', 1479, 'roberto-cerrada', T('Entrevista a Roberto Cerrada','Entrevista com Roberto Cerrada','Interview with Roberto Cerrada'), 'maraton-de-mentores', 19, '', []],
+    ['7f773eeb-e197-4cb1-ae47-62230ae4e7c0', 1812, 'rosalinda-pizarro', T('Entrevista a Rosalinda Pizarro','Entrevista com Rosalinda Pizarro','Interview with Rosalinda Pizarro'), 'maraton-de-mentores', 20, '', []],
+    ['0f217090-a637-4e3c-b39c-bf7a6a6260d3', 1358, 'william-canduri', T('Entrevista a William Canduri','Entrevista com William Canduri','Interview with William Canduri'), 'maraton-de-mentores', 21, '', []],
+    ['e1cd4aef-949d-40e0-84b6-109551f26639', 1928, 'diana-ospina', T('Entrevista a Diana Ospina y Oscar Rodriguez – Signos vitales de la felicidad organizacional','Entrevista com Diana Ospina e Oscar Rodriguez – Signos vitales de la felicidad organizacional','Interview with Diana Ospina and Oscar Rodriguez – Signos vitales de la felicidad organizacional'), 'maraton-de-mentores', 22, '', ['Oscar Rodriguez Lemus']]
+  ];
+  INT.forEach(function (r, i) {
+    videos.push({
+      id: 'int' + (i + 1), section: 'interviews-panels', category: r[6], author: r[2], others: r[7], tags: [], title: r[3], featured: false,
+      description: DESC['interviews-panels'], duration: r[1], year: 2026, date: '2026-11-12', orig: PTSRC.indexOf(r[0]) >= 0 ? 'pt' : 'es', slide: SLIDE('interviews-panels'), video: '',
+      hls: CDN + r[0] + '/playlist.m3u8', thumb: CDN + r[0] + '/thumbnail.jpg', dub: {}, subs: capOf(r[0]), collection: r[4], episode: r[5]
     });
   });
 
