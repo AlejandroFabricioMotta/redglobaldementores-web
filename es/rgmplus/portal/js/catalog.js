@@ -1130,8 +1130,8 @@
     '8daeccfa': 'assets/img/thumbs/simposio-natalie-forest.jpg',
     'c0c49243': 'assets/img/thumbs/simposio-chelsey-baker.jpg',
     'c5945fea': 'assets/img/thumbs/simposio-mireille-toulekima.jpg',
-    'e721fe1d': 'assets/img/thumbs/simposio-poder-de-las-alianzas.jpg',
     'f1406d13': 'assets/img/thumbs/simposio-alex-roseman.jpg',
+    'e5b619f5': 'assets/img/thumbs/simposio-alex-roseman.jpg',
     '13e9a091': 'assets/img/thumbs/simposio-michael-butler.jpg'
   };
   videos.forEach(function (v) { var k = (v.hls || '').split('/')[3]; if (k && MIN_POR_VIDEO[k.slice(0, 8)]) v.thumb = MIN_POR_VIDEO[k.slice(0, 8)]; });
