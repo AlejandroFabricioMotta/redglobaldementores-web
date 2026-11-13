@@ -275,7 +275,17 @@
       if (v) destroyPlayer = RGMPlayer.mount(document.getElementById('playerbox'), resolved(v), { t: t(), prefs: prefs, savePrefs: function () { LS.set('rgm.prefs', prefs); }, poster: res(v.thumb) });
     }
     if (user && PAGE === 'home') startSlides();
+    ajustarVerTodos();
   }
+  // "Ver todos" con la misma altura que la imagen de los videos de su fila (no la de toda la tarjeta con texto)
+  function ajustarVerTodos() {
+    Array.prototype.forEach.call(document.querySelectorAll('.rowbody'), function (rb) {
+      var all = rb.querySelector('.card.all'), im = rb.querySelector('.track .card'); if (!all || !im) return;
+      all.style.height = im.getBoundingClientRect().height + 'px';
+    });
+  }
+  window.addEventListener('resize', ajustarVerTodos);
+  window.addEventListener('load', ajustarVerTodos);
   function rerender() { var y = window.scrollY; var q = document.activeElement && document.activeElement.name === 'q' ? document.activeElement.value : null; render(); window.scrollTo(0, y); }
 
   // ---------- slide principal ----------
