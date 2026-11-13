@@ -96,3 +96,5 @@ a:focus-visible,.boton:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .plus-msg{text-align:center;margin:16px auto 0;max-width:560px;font-size:15px}
 @media(max-width:520px){.planes__g{grid-template-columns:1fr}}
 .ingreso-form[hidden],.plus-msg[hidden]{display:none}
+
+.zocalo__g{text-align:center;margin:14px 0 0;font-size:12px}.zocalo__g a{color:#b9a9d6;text-decoration:underline}.zocalo__g a:hover{color:#fff}

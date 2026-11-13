@@ -55,12 +55,12 @@
     var f=d.vence?new Date(d.vence*1000).toLocaleDateString(C.lang):"";
     var caja=$(".planes"); if(!caja)return;
     var p=document.createElement("div");p.className="planes planes--ya";
-    p.innerHTML='<p class="planes__t"></p><p class="planes__d"></p><p><a class="boton boton--dorado"></a></p><p class="planes__g2"></p>';
+    p.innerHTML='<p class="planes__t"></p><p class="planes__d"></p><p><a class="boton boton--dorado"></a></p>';
     p.querySelector(".planes__t").textContent=C.ya;
     p.querySelector(".planes__d").textContent=C.plan+": "+(C[d.plan]||d.plan)+(f?" · "+C.vence+" "+f:"");
     var a=p.querySelector("a");a.href=C.portal;a.textContent=C.entrar;
     if(d.plan!=="miembro"){var b=document.createElement("a");b.href="#";b.textContent=C.gest;b.addEventListener("click",function(e){e.preventDefault();
-      post("/api/plus/gestionar",{},tk).then(function(r){if(r.d&&r.d.url)location.href=r.d.url;else msg(C.err,true)}).catch(function(){msg(C.err,true)})});p.querySelector(".planes__g2").appendChild(b)}
+      post("/api/plus/gestionar",{},tk).then(function(r){if(r.d&&r.d.url)location.href=r.d.url;else msg(C.err,true)}).catch(function(){msg(C.err,true)})});var z=$(".zocalo__c");if(z){var g=document.createElement("p");g.className="zocalo__g";g.appendChild(b);z.parentNode.insertBefore(g,z.nextSibling)}}
     caja.parentNode.replaceChild(p,caja);
     $$(".portada__cuenta,.ingreso-form").forEach(function(x){x.hidden=true});
     $$("a[href='#planes']").forEach(function(x){x.href=C.portal;x.textContent=C.entrar});
