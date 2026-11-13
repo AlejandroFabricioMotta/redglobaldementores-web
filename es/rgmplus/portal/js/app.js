@@ -183,7 +183,7 @@
     var T = t(), feat = CAT.sections;
     // un slide por sección: promociona la sección y el botón lleva a ella (no a un video en particular)
     var slides = feat.map(function (s, i) {
-      return '<div class="slide' + (i ? '' : ' on') + '"><div class="art bg" style="background-image:url(\'' + res('assets/img/slide-' + s.id + '.jpg') + '\')"></div><div class="scrim"></div>' +
+      return '<div class="slide' + (i ? '' : ' on') + '"><div class="art bg" style="background-image:url(\'' + res('assets/img/slide-' + s.id + '.jpg') + '?v=2' + '\')"></div><div class="scrim"></div>' +
         '<div class="wrap txt"><span class="kick">RGM+</span><h2>' + esc(secName(s.id)) + '</h2><span class="meta">' + esc(I18N._secDesc[s.id][lang]) + '</span>' +
         '<a class="btn" href="' + U.section(s.id) + '">' + T.explore + '</a></div></div>';
     }).join('');
