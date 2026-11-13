@@ -288,7 +288,7 @@
     if (el.dataset.slideStep) { showSlide(cur + +el.dataset.slideStep); startSlides(); return; }
     var act = el.dataset.act;
     if (act === 'signin') { e.preventDefault(); openModal(); }
-    if (act === 'logout') { user = null; LS.set('rgm.user', null); rerender(); }
+    if (act === 'logout') { user = null; LS.set('rgm.user', null); if (C.gateActivo) { try { localStorage.removeItem('rgm_plus'); localStorage.removeItem('rgm_acceso'); } catch (x) {} location.href = C.landingUrl; return; } rerender(); }
     if (act === 'save') { toggle(saved, el.dataset.id); LS.set('rgm.saved', saved); rerender(); }
     if (act === 'like') { toggle(liked, el.dataset.id); LS.set('rgm.liked', liked); el.setAttribute('aria-pressed', liked.indexOf(el.dataset.id) >= 0); }
     if (act === 'share') {

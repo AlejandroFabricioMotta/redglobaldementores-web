@@ -81,3 +81,18 @@ a:focus-visible,.boton:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .zocalo__datos p{margin:0}.zocalo__datos b{color:#fff}
 .zocalo__c{text-align:center;font-size:12.8px;color:#d9ccec;margin:28px 0 0}
 @media (max-width:760px){.zocalo__datos{grid-template-columns:1fr}}
+
+/* Planes y compra (Stripe) */
+.planes{max-width:560px;margin:30px auto 0;text-align:center}
+.planes .compra-chk{display:flex;gap:10px;align-items:flex-start;justify-content:center;text-align:left;font-size:15px;margin-bottom:16px;cursor:pointer}
+.planes .compra-chk input{margin-top:3px;width:18px;height:18px;flex:none}
+.planes__g{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.planes__g .boton{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:100%;text-align:center}
+.planes__g .boton small{font-weight:500;font-size:12.5px;opacity:.85}
+.planes--ya p{margin:10px 0}.planes__t{font-size:22px;font-weight:700}.planes__g2 a{color:inherit;text-decoration:underline;font-size:14px}
+.ingreso-form{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;max-width:520px;margin:16px auto 0}
+.ingreso-form input{flex:1 1 220px;padding:12px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.1);color:#fff;font:inherit}
+.ingreso-form input::placeholder{color:rgba(255,255,255,.7)}
+.plus-msg{text-align:center;margin:16px auto 0;max-width:560px;font-size:15px}
+@media(max-width:520px){.planes__g{grid-template-columns:1fr}}
+.ingreso-form[hidden],.plus-msg[hidden]{display:none}

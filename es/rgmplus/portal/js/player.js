@@ -15,7 +15,7 @@ window.RGMPlayer = (function () {
   };
   var fmt = function (s) { s = Math.max(0, Math.floor(s || 0)); var m = Math.floor(s / 60), r = s % 60; return m + ':' + (r < 10 ? '0' : '') + r; };
 
-  function mount(box, item, o) {
+  function mountReal(box, item, o) {
     var t = o.t, prefs = o.prefs, savePrefs = o.savePrefs;
     var langs = ['es', 'pt', 'en'], names = t.langName;
     var st = { audio: item.orig, sub: 'off' };
@@ -133,6 +133,27 @@ window.RGMPlayer = (function () {
 
     applySub(); applyAudio();
     return function destroy() { document.removeEventListener('click', onDoc); V.pause(); A.pause(); V.removeAttribute('src'); A.removeAttribute('src'); };
+  }
+
+  // Videos protegidos (Bunny Token Authentication): el Worker entrega una firma temporal solo a quien tiene acceso vigente.
+  function mount(box, item, o) {
+    var C = window.RGM_CONFIG || {}, m = (item.hls || '').match(/b-cdn\.net\/([0-9a-f-]{36})\//i), tk = null, off = false, inner = null;
+    try { tk = localStorage.getItem('rgm_plus') || localStorage.getItem('rgm_acceso'); } catch (e) {}
+    if (!(C.gateActivo && C.videoFirma && m && tk)) return mountReal(box, item, o);
+    var g = m[1];
+    fetch(C.api + '/api/plus/video', { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + tk }, body: JSON.stringify({ v: g }) })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (off) return;
+        if (!d || !d.firmar) { inner = mountReal(box, item, o); return; }
+        var pre = 'b-cdn.net/bcdn_token=' + d.token + '&expires=' + d.expires + '&token_path=' + encodeURIComponent(d.path) + '/' + g + '/';
+        var sg = function (u) { return typeof u === 'string' ? u.replace('b-cdn.net/' + g + '/', pre) : u; };
+        var mapObj = function (x) { var y = {}; for (var k in x) y[k] = sg(x[k]); return y; };
+        var it = {}; for (var k in item) it[k] = item[k];
+        it.hls = sg(item.hls); it.video = sg(item.video); it.subs = mapObj(item.subs || {}); it.dub = mapObj(item.dub || {});
+        inner = mountReal(box, it, o);
+      }).catch(function () { if (!off) inner = mountReal(box, item, o); });
+    return function () { off = true; if (inner) inner(); };
   }
   return { mount: mount };
 })();

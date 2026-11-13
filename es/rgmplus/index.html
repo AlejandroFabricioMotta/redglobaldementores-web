@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="canonical" href="https://www.redglobaldementores.org/es/rgmplus/">
-  <link rel="stylesheet" href="rgmplus.css">
+  <link rel="stylesheet" href="rgmplus.css?v=p1">
 </head>
 <body>
 
@@ -31,7 +31,7 @@
       <a href="#inicio">Inicio</a>
       <a href="#contenido">Qué encontrarás</a>
       <a href="#pasos">Cómo suscribirte</a>
-      <a class="cab__cta" href="https://www.holdingmentors.com/rgmplus" target="_blank" rel="noopener">Ingresar al portal</a>
+      <a class="cab__cta" href="portal/" data-portal>Ingresar al portal</a>
     </nav>
   </div>
 </header>
@@ -45,10 +45,7 @@
     <img class="portada__logo" src="img/logo-rgmplus-blanco.png" width="367" height="121" alt="">
     <h1>Suscríbete por <em>USD 5</em> por <em>mes</em> para disfrutar de todo el contenido exclusivo e ilimitado</h1>
     <p class="portada__sub">Miles de horas de material audiovisual creado por mentores y para mentores. Masterclass, documentales, entrevistas y más.</p>
-    <p class="portada__anual">También puedes elegir una suscripción <strong>anual</strong> por <strong>USD 50.-</strong></p>
-    <p><a class="boton boton--dorado" href="https://www.holdingmentors.com/rgmplus" target="_blank" rel="noopener">Elige aquí</a></p>
-    <p class="portada__paypal">Usted ingresará a una Galería de Pagos en <span>PayPal</span></p>
-    <p class="portada__cuenta">¿Ya tienes una cuenta? <a href="https://www.holdingmentors.com/rgmplus" target="_blank" rel="noopener">Ingresa aquí</a></p>
+    <div class="planes" id="planes"><label class="compra-chk"><input type="checkbox" class="plus-ok"> <span>Entiendo que los contenidos están solo en español.</span></label><div class="planes__g"><button type="button" class="boton boton--dorado js-plan" data-plan="mensual">Mensual · USD 5 por mes</button><button type="button" class="boton boton--dorado js-plan" data-plan="anual">Anual · USD 50 por año<small>Ahorras USD 10 al año</small></button></div><p class="portada__paypal">Pago seguro con tarjeta en la galería de pagos de Stripe. Cancelas cuando quieras.</p></div><p class="portada__cuenta" id="cuenta">¿Ya tienes una cuenta? <a href="#" class="js-ingreso">Ingresa aquí</a></p><form class="ingreso-form" hidden novalidate><input type="email" autocomplete="email" required placeholder="Tu email" aria-label="Tu email"><button type="submit" class="boton boton--dorado">Enviarme el enlace</button></form><p class="plus-msg" role="status" hidden></p>
   </div>
 </section>
 
@@ -77,15 +74,15 @@
       <p class="volanta">Cómo suscribirte</p>
       <h2>En tres pasos</h2>
       <ol class="pasos">
-        <li><strong>Elige tu suscripción.</strong> Mensual por USD 5 o anual por USD 50.</li>
-        <li><strong>Paga en la Galería de Pagos.</strong> Ingresarás a una galería de pagos en PayPal.</li>
-        <li><strong>Ingresa al portal.</strong> Con tu cuenta, o con Google, y disfruta de todo el contenido.</li>
+        <li><strong>Elige tu suscripción.</strong> Mensual por USD 5 o anual por USD 50. Marca que entiendes que los contenidos están solo en español.</li>
+<li><strong>Paga en la galería segura de Stripe.</strong> Se abre aquí mismo; pagas con tarjeta y la suscripción se renueva sola. Puedes cancelarla cuando quieras.</li>
+<li><strong>Ingresa al portal.</strong> Al terminar el pago entras directo. Otro día, pide un enlace a tu email desde «Ingresa aquí».</li>
       </ol>
-      <p><a class="boton boton--dorado" href="https://www.holdingmentors.com/rgmplus" target="_blank" rel="noopener">Elige aquí</a></p>
+      <p><a class="boton boton--dorado" href="#planes">Elegir mi suscripción</a></p>
     </div>
     <aside class="aviso">
-      <h3>¿Por qué el portal está en Holding Mentors?</h3>
-      <p>Porque allí está la galería de pagos. Holding Mentors LLC es el representante legal, administrativo, contable y financiero del ecosistema RGM, y por eso el portal RGM+ se administra desde holdingmentors.com.</p>
+      <h3>Pago seguro y sin ataduras</h3>
+      <p>Pagas en una galería segura de Stripe, sin salir de redglobaldementores.org, y puedes cancelar en cualquier momento. Si ya eres Miembro Activo, RGM+ está incluido: entras sin pagar. Holding Mentors LLC administra legal, contable y financieramente el ecosistema RGM.</p>
     </aside>
   </div>
 </section>
@@ -103,5 +100,7 @@
 </footer>
 
 <script>(function(){var b=document.querySelector('.cab__btn'),n=document.getElementById('cabNav');b.addEventListener('click',function(){var a=n.classList.toggle('abierto');b.setAttribute('aria-expanded',a?'true':'false')});})();</script>
+<script>window.RGM_PLUS={"aviso": "Marca la casilla para continuar.", "err": "No pudimos abrir el pago. Inténtalo de nuevo.", "ya": "Ya tienes acceso a RGM+", "plan": "Plan", "vence": "vigente hasta", "entrar": "Entrar al portal", "gest": "Gestionar o cancelar mi suscripción", "ok": "¡Listo! Tu suscripción está activa. Te llevamos al portal…", "verif": "Confirmando tu pago…", "envio": "Si ese email tiene acceso, te enviamos un enlace (vale 15 minutos).", "venc": "El enlace venció. Pide uno nuevo.", "canc": "Pago cancelado. Cuando quieras, puedes elegir tu plan.", "requ": "Para entrar al portal necesitas una suscripción a RGM+ o ser Miembro Activo.", "mensual": "Mensual", "anual": "Anual", "miembro": "Miembro Activo (incluye RGM+)", "lang": "es-AR", "portal": "portal/"};</script>
+<script src="plus.js?v=1"></script>
 </body>
 </html>
