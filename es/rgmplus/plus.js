@@ -15,7 +15,6 @@
 
   // 1) Elegir plan -> galería de pagos de Stripe
   $$(".js-plan").forEach(function(b){b.addEventListener("click",function(){
-    var ok=$(".plus-ok"); if(!ok.checked){msg(C.aviso,true);ok.focus();return}
     msg("");$$(".js-plan").forEach(function(x){x.disabled=true});
     post("/api/plus/checkout",{plan:b.getAttribute("data-plan"),consentimiento:true},token()).then(function(r){
       if(r.s===409||(r.d&&r.d.yaMiembro)){irPortal();return}
