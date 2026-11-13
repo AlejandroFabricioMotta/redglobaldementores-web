@@ -388,7 +388,7 @@
     'presentations': T('Descripción provisoria: presentación registrada, disponible a demanda.', 'Descrição provisória: apresentação registada, disponível a pedido.', 'Provisional description: recorded presentation, available on demand.'),
     'masterclass': T('Descripción provisoria: clase magistral de un mentor de la comunidad.', 'Descrição provisória: aula magistral de um mentor da comunidade.', 'Provisional description: masterclass by a community mentor.'),
     'interviews-panels': T('Descripción provisoria: conversación o panel con mentores y referentes.', 'Descrição provisória: conversa ou painel com mentores e referências.', 'Provisional description: conversation or panel with mentors and leading figures.'),
-    'testimonials': T('Descripción provisoria: testimonio de un mentor del Simposio de Alianzas RGM 2024.', 'Descrição provisória: testemunho de um mentor do Simpósio de Alianças RGM 2024.', 'Provisional description: testimonial from a mentor at the RGM Alliances Symposium 2023.'),
+    'testimonials': T('Descripción provisoria: testimonio de un mentor del Simposio de Alianzas RGM 2024.', 'Descrição provisória: testemunho de um mentor do Simpósio de Alianças RGM 2024.', 'Provisional description: testimonial from a mentor at the RGM Alliances Symposium 2024.'),
     'storytelling': T('Descripción provisoria: un relato personal contado por su protagonista.', 'Descrição provisória: um relato pessoal contado pelo seu protagonista.', 'Provisional description: a personal story told by its protagonist.')
   };
 
@@ -871,7 +871,7 @@
       description: T('40 cápsulas de alto contenido de mentoría de Ángela Mentora, de un minuto cada una.', '40 cápsulas de alto conteúdo de mentoria da Ángela Mentora, de um minuto cada uma.', '40 high-content mentoring capsules by Ángela Mentora, one minute each.') }
     ,{ id: 'simposio-alianzas-2023', author: 'red-global-de-mentores', section: 'testimonials', category: '', cover: 'assets/img/coll-simposio-alianzas.jpg',
       title: T('Simposio de Alianzas RGM 2024', 'Simpósio de Alianças RGM 2024', 'RGM Alliances Symposium 2024'),
-      description: T('Testimonios de mentores de todo el mundo presentados en el Simposio de Alianzas RGM 2024.', 'Testemunhos de mentores de todo o mundo apresentados no Simpósio de Alianças RGM 2024.', 'Testimonials from mentors around the world presented at the RGM Alliances Symposium 2023.') }
+      description: T('Testimonios de mentores de todo el mundo presentados en el Simposio de Alianzas RGM 2024.', 'Testemunhos de mentores de todo o mundo apresentados no Simpósio de Alianças RGM 2024.', 'Testimonials from mentors around the world presented at the RGM Alliances Symposium 2024.') }
     ,{ id: 'el-mentor-y-el-deporte', author: 'red-global-de-mentores', section: 'testimonials', category: 'sport', cover: 'assets/img/coll-mentor-deporte.jpg',
       title: T('El Mentor y el Deporte', 'O Mentor e o Esporte', 'The Mentor and Sport'),
       description: T('Testimonios de mentores y deportistas sobre el rol del mentor en el deporte.', 'Testemunhos de mentores e desportistas sobre o papel do mentor no esporte.', 'Testimonials from mentors and athletes about the role of the mentor in sport.') }
