@@ -3,9 +3,10 @@
   var API = "https://miembro-activo.alejandrofabriciomotta.workers.dev";
   var K = "rgm_acceso";
   var $ = function (i) { return document.getElementById(i); };
-  var leer = function () { try { return localStorage.getItem(K) || ""; } catch (e) { return ""; } };
+  var leer = function () { try { return localStorage.getItem(K) || localStorage.getItem("rgm_plus") || ""; } catch (e) { return ""; } };
   var guardar = function (t) { try { localStorage.setItem(K, t); } catch (e) {} };
   var borrar = function () { try { localStorage.removeItem(K); } catch (e) {} };
+  var salir = function () { try { localStorage.removeItem(K); localStorage.removeItem("rgm_plus"); localStorage.removeItem("rgm.user"); } catch (e) {} };
   var fecha = function (seg) { return new Date(seg * 1000).toLocaleDateString("es-AR", { day: "numeric", month: "long", year: "numeric" }); };
 
   function aviso(txt) { var a = $("ben-aviso"); a.textContent = txt; a.hidden = !txt; }
@@ -76,6 +77,6 @@
     } catch (e) { ok.textContent = "No pudimos enviar el enlace. Probá de nuevo."; }
   });
 
-  $("ben-salir").addEventListener("click", function () { borrar(); location.reload(); });
+  $("ben-salir").addEventListener("click", function () { salir(); location.reload(); });
   iniciar();
 })();
