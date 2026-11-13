@@ -958,7 +958,7 @@
 
   var SIM = [ // [n.º, guid, segundos, autor, título] — Simposio de Alianzas RGM 2023 (videos en inglés)
     [1, '80925b53-e6f6-463d-8b61-68a03212cba8', 178, 'francesca-rubulotta', "Francesca Rubulotta"],
-    [2, 'e5b619f5-3fcf-4f68-a7c2-40eb47e60c63', 385, 'alex-julia', "Alex Julia – The New Earth"],
+    [2, 'e5b619f5-3fcf-4f68-a7c2-40eb47e60c63', 385, 'alex-roseman', "Alex Roseman – The New Earth"],
     [3, '87b16206-3e38-4cfd-8137-ca291c82b908', 283, 'anna-sexton', "Anna Sexton"],
     [4, '4c991d37-a8dd-488d-a372-f794c013eabf', 524, 'ashley-cullen', "Ashley Cullen"],
     [5, 'c6120599-7972-4783-9486-8dec84ce6b77', 376, 'miranda-tigris', "Miranda Tigris"],
