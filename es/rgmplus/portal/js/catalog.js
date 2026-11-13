@@ -1112,5 +1112,29 @@
     });
   });
 
+  // Miniaturas propias por video (clave = primeros 8 caracteres del GUID de Bunny); si no hay, se usa la de Bunny
+  var MIN_POR_VIDEO = {
+    '80925b53': 'assets/img/thumbs/simposio-francesca-rubulotta.jpg',
+    '87b16206': 'assets/img/thumbs/simposio-anna-sexton.jpg',
+    '4c991d37': 'assets/img/thumbs/simposio-ashley-cullen.jpg',
+    'c6120599': 'assets/img/thumbs/simposio-miranda-tigris.jpg',
+    '1652f771': 'assets/img/thumbs/simposio-ann-bost.jpg',
+    '4772f053': 'assets/img/thumbs/simposio-kuiljeit-uppaal.jpg',
+    '96c4fb92': 'assets/img/thumbs/simposio-dina-el-mofty.jpg',
+    'c1bc0ec1': 'assets/img/thumbs/simposio-dana-nicholas-haselum.jpg',
+    '6f61c359': 'assets/img/thumbs/simposio-joann-lowell.jpg',
+    'd4342387': 'assets/img/thumbs/simposio-binnie-dansby.jpg',
+    '3c8877f0': 'assets/img/thumbs/simposio-taiwo-omilani.jpg',
+    '6900c1f4': 'assets/img/thumbs/simposio-stephen-dansiger.jpg',
+    '772fe7ab': 'assets/img/thumbs/simposio-paola-savva.jpg',
+    '8daeccfa': 'assets/img/thumbs/simposio-natalie-forest.jpg',
+    'c0c49243': 'assets/img/thumbs/simposio-chelsey-baker.jpg',
+    'c5945fea': 'assets/img/thumbs/simposio-mireille-toulekima.jpg',
+    'e721fe1d': 'assets/img/thumbs/simposio-poder-de-las-alianzas.jpg',
+    'f1406d13': 'assets/img/thumbs/simposio-alex-roseman.jpg',
+    '13e9a091': 'assets/img/thumbs/simposio-michael-butler.jpg'
+  };
+  videos.forEach(function (v) { var k = (v.hls || '').split('/')[3]; if (k && MIN_POR_VIDEO[k.slice(0, 8)]) v.thumb = MIN_POR_VIDEO[k.slice(0, 8)]; });
+
   window.RGM_CATALOG = { sections: SECTIONS, categories: CATEGORIES, authors: AUTHORS, videos: videos, collections: COLLECTIONS };
 })();
