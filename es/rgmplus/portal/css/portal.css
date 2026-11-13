@@ -28,6 +28,8 @@ img,svg,video{max-width:100%}
 .status .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:34px;flex-wrap:wrap;padding-top:4px;padding-bottom:4px}
 .status .grp{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .status a:hover,.status button:hover{color:var(--gold)}
+.status .estado{gap:14px;color:var(--soft)}
+.status .estado button.link{text-decoration:underline}
 .status .gold{color:var(--gold)}
 .status button.link{background:none;border:0;padding:0;color:var(--gold)}
 .langs{display:flex;gap:2px}

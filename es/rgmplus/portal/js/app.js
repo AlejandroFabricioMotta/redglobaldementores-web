@@ -84,9 +84,19 @@
   function statusBar() {
     var T = t();
     return '<div class="status"><div class="wrap"><div class="grp"><div class="langs" role="group" aria-label="Idioma / Language">' + langButtons() + '</div>' +
-      (C.previewMode ? '<span class="chip">' + T.preview + '</span>' : '') + '</div><div class="grp">' +
-      '</div></div></div>';
+      (C.previewMode && !C.gateActivo ? '<span class="chip">' + T.preview + '</span>' : '') + '</div><div class="grp estado" id="estado-cuenta"></div></div></div>';
   }
+  // Estado de la cuenta (plan y fecha), solo con el acceso real activo. Lo completa el bloque de config.js.
+  function pintarEstado() {
+    var el = document.getElementById('estado-cuenta'), E = window.RGM_ESTADO;
+    if (!el || !C.gateActivo || !E || !E.vence) return;
+    var T = t(), d = new Date(E.vence * 1000).toLocaleDateString(T.locale, { day: 'numeric', month: 'long', year: 'numeric' }), txt;
+    if (E.plan === 'miembro') txt = T.estMiembro;
+    else if (E.renueva === false) txt = T.estCancelada.replace('{p}', E.plan === 'anual' ? T.planAnual : T.planMensual);
+    else txt = E.plan === 'anual' ? T.estAnual : T.estMensual;
+    el.innerHTML = '<span>' + esc(txt.replace('{d}', d)) + '</span><button type="button" class="link" data-act="logout">' + esc(T.cerrarSesion) + '</button>';
+  }
+  window.addEventListener('rgm-estado', pintarEstado);
   function header() {
     return '<header class="head"><div class="wrap"><a class="logo" href="' + U.home() + '" aria-label="RGM+"><img src="' + BASE + 'assets/logo-white.svg" alt="RGM+"></a>' +
       '<div class="tag"><b>RGM Plus</b> · ' + esc(t().tagline) + '</div></div></header>';
@@ -258,7 +268,7 @@
     else if (PAGE === 'author') html = viewAuthor(params.get('a'));
     else if (PAGE === 'collection') html = viewCollection(params.get('c'));
     else html = viewHome();
-    $app.innerHTML = html;
+    $app.innerHTML = html; pintarEstado();
     var h1 = $app.querySelector('h1'); document.title = 'RGM+ · ' + (h1 && PAGE !== 'home' ? h1.textContent + ' · ' : '') + t().tagline;
     if (user && PAGE === 'watch') {
       var v = byId(CAT.videos, params.get('v'));

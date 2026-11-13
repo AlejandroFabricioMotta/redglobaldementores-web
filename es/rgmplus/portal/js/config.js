@@ -56,5 +56,6 @@ window.RGM_CONFIG = {
   fetch(C.api + '/api/plus/yo', { headers: { Authorization: 'Bearer ' + tk } }).then(function (r) {
     if (r.status === 401) { del(KP); if (g(KA) === tk) del(KA); fuera(); return; }
     clearTimeout(t); H.style.visibility = '';
+    return r.json().then(function (d) { window.RGM_ESTADO = d; try { window.dispatchEvent(new Event('rgm-estado')); } catch (e) {} }).catch(function () {});
   }).catch(function () { clearTimeout(t); H.style.visibility = ''; });   // si el servicio no responde, no se expulsa a un suscriptor
 })();
