@@ -2,7 +2,7 @@
    Todo lo que Ale pueda querer cambiar sin tocar el código está aquí. */
 window.RGM_CONFIG = {
   // ACCESO REAL (Stripe). false = portal abierto como hoy. Pasar a true solo cuando el Worker esté desplegado.
-  gateActivo: false,
+  gateActivo: true,
   // Firma de videos con Bunny Token Authentication. Activar solo después de configurar la clave en el Worker y en Bunny.
   videoFirma: false,
   api: 'https://miembro-activo.alejandrofabriciomotta.workers.dev',
