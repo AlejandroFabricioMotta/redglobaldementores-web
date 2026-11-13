@@ -1075,6 +1075,7 @@
     });
   });
 
+  var MIN_PROPIAS = ['beatriz-martinez', 'jaime-espana-eraso', 'martin-rodriguez']; // miniaturas propias (assets/img/thumbs/maraton-<autor>.jpg)
   var INT = [ // [guid, segundos, autor, título, colección, episodio, categoría, otros] — Entrevistas
     ['fc0e85a6-454c-43cc-a900-eb6f54390058', 777, 'sri-prem-baba', T("Diferencia entre un Gurú y un Mentor","Diferencia entre un Gurú y un Mentor","Diferencia entre un Gurú y un Mentor"), 'mentoria-y-espiritualidad', 1, 'human', []],
     ['9b24d11e-2711-4314-948b-b520cb1adff8', 706, 'sri-prem-baba', T("Más Amor, Por Favor","Más Amor, Por Favor","Más Amor, Por Favor"), 'mentoria-y-espiritualidad', 2, 'human', []],
@@ -1107,7 +1108,7 @@
     videos.push({
       id: 'int' + (i + 1), section: 'interviews-panels', category: r[6], author: r[2], others: r[7], tags: [], title: r[3], featured: false,
       description: DESC['interviews-panels'], duration: r[1], year: 2026, date: '2026-11-12', orig: PTSRC.indexOf(r[0]) >= 0 ? 'pt' : 'es', slide: SLIDE('interviews-panels'), video: '',
-      hls: CDN + r[0] + '/playlist.m3u8', thumb: CDN + r[0] + '/thumbnail.jpg', dub: {}, subs: capOf(r[0]), collection: r[4], episode: r[5]
+      hls: CDN + r[0] + '/playlist.m3u8', thumb: MIN_PROPIAS.indexOf(r[2]) >= 0 ? 'assets/img/thumbs/maraton-' + r[2] + '.jpg' : CDN + r[0] + '/thumbnail.jpg', dub: {}, subs: capOf(r[0]), collection: r[4], episode: r[5]
     });
   });
 
