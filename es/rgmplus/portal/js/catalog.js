@@ -1075,7 +1075,7 @@
     });
   });
 
-  var MIN_PROPIAS = ['beatriz-martinez', 'jaime-espana-eraso', 'martin-rodriguez']; // miniaturas propias (assets/img/thumbs/maraton-<autor>.jpg)
+  var MIN_PROPIAS = ['adriana-gomez', 'alejandro-motta', 'alvaro-pinilla', 'beatriz-martinez', 'claudio-lamela', 'gustavo-gariboldi', 'jaime-espana-eraso', 'jorge-arias', 'kleber-rodrigues', 'lasca-ducas', 'leticia-centurion', 'margarita-gibson', 'maribel-belaval', 'marisa-pineiro', 'martin-rodriguez', 'nathalie-carrasco', 'nelson-rueda', 'rafael-guillermo-hernandez-molina', 'roberto-cerrada', 'rosalinda-pizarro', 'william-canduri']; // miniaturas propias (assets/img/thumbs/maraton-<autor>.jpg)
   var INT = [ // [guid, segundos, autor, título, colección, episodio, categoría, otros] — Entrevistas
     ['fc0e85a6-454c-43cc-a900-eb6f54390058', 777, 'sri-prem-baba', T("Diferencia entre un Gurú y un Mentor","Diferencia entre un Gurú y un Mentor","Diferencia entre un Gurú y un Mentor"), 'mentoria-y-espiritualidad', 1, 'human', []],
     ['9b24d11e-2711-4314-948b-b520cb1adff8', 706, 'sri-prem-baba', T("Más Amor, Por Favor","Más Amor, Por Favor","Más Amor, Por Favor"), 'mentoria-y-espiritualidad', 2, 'human', []],
