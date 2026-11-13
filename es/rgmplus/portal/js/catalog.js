@@ -388,7 +388,7 @@
     'presentations': T('Descripción provisoria: presentación registrada, disponible a demanda.', 'Descrição provisória: apresentação registada, disponível a pedido.', 'Provisional description: recorded presentation, available on demand.'),
     'masterclass': T('Descripción provisoria: clase magistral de un mentor de la comunidad.', 'Descrição provisória: aula magistral de um mentor da comunidade.', 'Provisional description: masterclass by a community mentor.'),
     'interviews-panels': T('Descripción provisoria: conversación o panel con mentores y referentes.', 'Descrição provisória: conversa ou painel com mentores e referências.', 'Provisional description: conversation or panel with mentors and leading figures.'),
-    'testimonials': T('Descripción provisoria: testimonio de un mentor del Simposio de Alianzas RGM 2023.', 'Descrição provisória: testemunho de um mentor do Simpósio de Alianças RGM 2023.', 'Provisional description: testimonial from a mentor at the RGM Alliances Symposium 2023.'),
+    'testimonials': T('Descripción provisoria: testimonio de un mentor del Simposio de Alianzas RGM 2024.', 'Descrição provisória: testemunho de um mentor do Simpósio de Alianças RGM 2024.', 'Provisional description: testimonial from a mentor at the RGM Alliances Symposium 2023.'),
     'storytelling': T('Descripción provisoria: un relato personal contado por su protagonista.', 'Descrição provisória: um relato pessoal contado pelo seu protagonista.', 'Provisional description: a personal story told by its protagonist.')
   };
 
@@ -870,8 +870,8 @@
       title: T('Mentoría en 1 minuto', 'Mentoria em 1 minuto', 'Mentoring in 1 minute'),
       description: T('40 cápsulas de alto contenido de mentoría de Ángela Mentora, de un minuto cada una.', '40 cápsulas de alto conteúdo de mentoria da Ángela Mentora, de um minuto cada uma.', '40 high-content mentoring capsules by Ángela Mentora, one minute each.') }
     ,{ id: 'simposio-alianzas-2023', author: 'red-global-de-mentores', section: 'testimonials', category: '', cover: 'assets/img/coll-simposio-alianzas.jpg',
-      title: T('Simposio de Alianzas RGM 2023', 'Simpósio de Alianças RGM 2023', 'RGM Alliances Symposium 2023'),
-      description: T('Testimonios de mentores de todo el mundo presentados en el Simposio de Alianzas RGM 2023.', 'Testemunhos de mentores de todo o mundo apresentados no Simpósio de Alianças RGM 2023.', 'Testimonials from mentors around the world presented at the RGM Alliances Symposium 2023.') }
+      title: T('Simposio de Alianzas RGM 2024', 'Simpósio de Alianças RGM 2024', 'RGM Alliances Symposium 2024'),
+      description: T('Testimonios de mentores de todo el mundo presentados en el Simposio de Alianzas RGM 2024.', 'Testemunhos de mentores de todo o mundo apresentados no Simpósio de Alianças RGM 2024.', 'Testimonials from mentors around the world presented at the RGM Alliances Symposium 2023.') }
     ,{ id: 'el-mentor-y-el-deporte', author: 'red-global-de-mentores', section: 'testimonials', category: 'sport', cover: 'assets/img/coll-mentor-deporte.jpg',
       title: T('El Mentor y el Deporte', 'O Mentor e o Esporte', 'The Mentor and Sport'),
       description: T('Testimonios de mentores y deportistas sobre el rol del mentor en el deporte.', 'Testemunhos de mentores e desportistas sobre o papel do mentor no esporte.', 'Testimonials from mentors and athletes about the role of the mentor in sport.') }
@@ -956,7 +956,7 @@
     });
   });
 
-  var SIM = [ // [n.º, guid, segundos, autor, título] — Simposio de Alianzas RGM 2023 (videos en inglés)
+  var SIM = [ // [n.º, guid, segundos, autor, título] — Simposio de Alianzas RGM 2024 (videos en inglés)
     [1, '80925b53-e6f6-463d-8b61-68a03212cba8', 178, 'francesca-rubulotta', "Francesca Rubulotta"],
     [2, 'e5b619f5-3fcf-4f68-a7c2-40eb47e60c63', 385, 'alex-roseman', "Alex Roseman – The New Earth"],
     [3, '87b16206-3e38-4cfd-8137-ca291c82b908', 283, 'anna-sexton', "Anna Sexton"],
@@ -984,7 +984,7 @@
   SIM.forEach(function (r) {
     videos.push({
       id: 'sim' + r[0], section: 'testimonials', category: '', author: r[3], others: [], tags: [], title: T(r[4], r[4], r[4]), featured: false,
-      description: DESC.testimonials, duration: r[2], year: 2023, date: '2023-01-01', orig: 'en', slide: SLIDE('testimonials'), video: '',
+      description: DESC.testimonials, duration: r[2], year: 2024, date: '2024-01-01', orig: 'en', slide: SLIDE('testimonials'), video: '',
       hls: CDN + r[1] + '/playlist.m3u8', thumb: CDN + r[1] + '/thumbnail.jpg', dub: {}, subs: capOf(r[1]), collection: 'simposio-alianzas-2023', episode: r[0]
     });
   });
