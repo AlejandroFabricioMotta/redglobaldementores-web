@@ -734,3 +734,11 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
 @media (max-width: 980px) { .beneficios--6 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 860px) { .venta-cifras--5 .contenedor { grid-template-columns: repeat(2, 1fr); } .venta-cifras--5 .contenedor > div:last-child { grid-column: 1 / -1; } }
 @media (max-width: 620px) { .beneficios--6 { grid-template-columns: 1fr; } }
+
+/* Compra directa (Stripe) en la landing de Miembro Activo */
+.compra { margin: 22px auto 0; max-width: 460px; text-align: center; }
+.compra-chk { display: flex; gap: 10px; align-items: flex-start; justify-content: center; text-align: left; font-size: 14.5px; margin-bottom: 14px; cursor: pointer; }
+.compra-chk input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--color-dorado); flex: none; }
+.compra .boton { width: 100%; justify-content: center; }
+.compra-msg { margin: 10px 0 0; color: #ffb4b4; font-size: 14px; }
+.compra--miembro p { margin: 8px 0; }

@@ -726,3 +726,11 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
   background: linear-gradient(160deg, rgba(122, 102, 82, .55), rgba(58, 49, 41, .85)); scroll-margin-top: 76px; }
 .tema-editorial .mc-bloque:has(.mc-banda) .mc-card.mc-card--aprobado{ background: #4a3e33; }
 .tema-editorial .llave{ flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; margin-left: 10px; border-radius: 8px; color: var(--color-arena); border: 1px solid rgba(191, 169, 138, .45); text-decoration: none; transition: background .2s, color .2s; }
+
+/* Compra directa (Stripe) en la landing de Miembro Activo */
+.compra { margin: 22px auto 0; max-width: 460px; text-align: center; }
+.compra-chk { display: flex; gap: 10px; align-items: flex-start; justify-content: center; text-align: left; font-size: 14.5px; margin-bottom: 14px; cursor: pointer; }
+.compra-chk input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--color-dorado); flex: none; }
+.compra .boton { width: 100%; justify-content: center; }
+.compra-msg { margin: 10px 0 0; color: #ffb4b4; font-size: 14px; }
+.compra--miembro p { margin: 8px 0; }
