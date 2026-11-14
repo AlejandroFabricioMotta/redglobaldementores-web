@@ -560,7 +560,6 @@
     '97f3a910-1f73-40f5-9082-161159f05537',
     '1f1a0bb2-ad89-4978-99a0-82983d1aba4c',
     'fcbc1a28-a440-44c1-9247-7057277c2bd7',
-    '9b7b4b33-fcdd-4996-8c63-f6a42bc9ad09',
     '10e4c1c9-f966-406b-bc11-746c45cc1008',
     'd5bf134a-ff7e-41e7-867f-44a876e0e0f0',
     '80925b53-e6f6-463d-8b61-68a03212cba8',
@@ -763,7 +762,9 @@
   var PTSRC = ['fc0e85a6-454c-43cc-a900-eb6f54390058', '9b24d11e-2711-4314-948b-b520cb1adff8', '2e888d07-c576-4220-8ef8-0f696deacc22', 'c3b63caf-2511-4f3e-889e-76256d3dcb75', '1426e10a-4b79-4035-8eaf-57389930aeaa', 'f4607ed1-18e0-4e84-ace9-0d0afbbc3b74', '409c278c-c994-435b-960d-0852bc65d434', 'f9ed632e-384c-4cbe-9738-c3abab15252f', '93d5b4e4-731f-4331-85e4-4b0907afead6', '4fc39c56-79b2-4d4c-bc11-affaa0ec8452']; // idioma original portugués
   var CDN = 'https://vz-6a7af8bf-f99.b-cdn.net/';
   function capOf(g) { return SUBBED.indexOf(g) >= 0 ? { es: CDN + g + '/captions/ES.vtt', pt: CDN + g + '/captions/PT.vtt', en: CDN + g + '/captions/EN.vtt' } : {}; }
+  var BAJAS = ['9b7b4b33-fcdd-4996-8c63-f6a42bc9ad09']; // duplicado de Nelson Rueda (se conserva 0232e45e); se omite sin cambiar los ids de los demás
   REAL.forEach(function (r, i) {
+    if (BAJAS.indexOf(r[1]) >= 0) return;
     var cap = capOf(r[1]);
     videos.push({
       id: 'st' + (i + 1), section: 'storytelling', category: 'human', author: r[0], others: [], tags: [], title: T(r[3], r[3], r[3]), featured: i === 0,
