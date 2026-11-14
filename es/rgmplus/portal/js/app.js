@@ -155,12 +155,32 @@
     var T = t(), q = params.get('q') || '';
     return '<form class="search" method="get" role="search"><input name="q" value="' + esc(q) + '" placeholder="' + esc(T.search) + '" aria-label="' + esc(T.search) + '"><button type="submit">' + T.searchBtn + '</button></form>';
   }
+  // búsqueda sin distinguir mayúsculas ni tildes
+  function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim(); }
+  function tagUrl(v, tag) { return U.section(v.section) + '?tag=' + encodeURIComponent(tag); }
   function filterQ(vids) {
-    var n = (params.get('q') || '').toLowerCase().trim(); if (!n) return vids;
+    var n = norm(params.get('q')), tg = norm(params.get('tag'));
     return vids.filter(function (v) {
-      var hay = [title(v), author(v.author).name, v.others.join(' '), catName(v.category), secName(v.section), v.tags.map(function (g) { return I18N._tag[g][lang]; }).join(' ')].join(' ').toLowerCase();
+      if (tg && (v.hashtags || []).map(norm).indexOf(tg) < 0) return false;
+      if (!n) return true;
+      var hay = norm([title(v), author(v.author).name, v.others.join(' '), catName(v.category), secName(v.section), (v.hashtags || []).join(' '), v.tags.map(function (g) { return I18N._tag[g][lang]; }).join(' ')].join(' '));
       return hay.indexOf(n) >= 0;
     });
+  }
+  // nube de temas: los más usados primero (hasta 18) y el resto en "Ver más temas"; clic = filtra por ese TAG
+  function topicsBar(vids) {
+    var T = t(), cur = norm(params.get('tag')), cnt = {}, base = location.pathname;
+    vids.forEach(function (v) { (v.hashtags || []).forEach(function (g) { cnt[g] = (cnt[g] || 0) + 1; }); });
+    var list = Object.keys(cnt).sort(function (x, y) { return cnt[y] - cnt[x] || x.localeCompare(y, lang); });
+    if (!list.length) return '';
+    function chip(g) {
+      var on = norm(g) === cur;
+      return '<a href="' + (on ? base : base + '?tag=' + encodeURIComponent(g)) + '"' + (on ? ' aria-current="page" title="' + esc(T.clearTopic) + '"' : '') + '>#' + esc(g) + ' <small>' + cnt[g] + '</small></a>';
+    }
+    var cur0 = list.filter(function (g) { return norm(g) === cur; }), top = list.slice(0, 18), rest = list.slice(18);
+    cur0.forEach(function (g) { if (top.indexOf(g) < 0) { top.push(g); rest.splice(rest.indexOf(g), 1); } });
+    return '<div class="wrap"><div class="topics" aria-label="' + esc(T.topics) + '"><span class="lbl">' + esc(T.topics) + '</span>' + top.map(chip).join('') +
+      (rest.length ? '<details><summary data-more="' + esc(T.moreTopics) + ' (' + rest.length + ')" data-less="' + esc(T.lessTopics) + '"></summary><div class="more">' + rest.map(chip).join('') + '</div></details>' : '') + '</div></div>';
   }
 
   // ---------- vistas ----------
@@ -205,12 +225,12 @@
 
   function collRow(fn) { var cs = collsWhere(fn); return cs.length ? '<div style="margin-bottom:36px">' + row(t().collections, cs, '', collCard) + '</div>' : ''; }
   function viewSection(id) {
-    var vids = filterQ(CAT.videos.filter(function (v) { return v.section === id; }));
-    return page('<div class="banner"><div class="pattern"></div><h1>' + esc(secName(id)) + '</h1></div><div style="padding-top:22px">' + chips('') + '</div><div class="wrap">' + searchBox() + '</div>' + collRow(function (c) { return c.section === id; }) + '<div class="wrap">' + grid(vids) + '</div>');
+    var all = CAT.videos.filter(function (v) { return v.section === id; }), vids = filterQ(all);
+    return page('<div class="banner"><div class="pattern"></div><h1>' + esc(secName(id)) + '</h1></div><div style="padding-top:22px">' + chips('') + '</div><div class="wrap">' + searchBox() + '</div>' + topicsBar(all) + collRow(function (c) { return c.section === id; }) + '<div class="wrap">' + grid(vids) + '</div>');
   }
   function viewCategory(id) {
-    var vids = filterQ(CAT.videos.filter(function (v) { return v.category === id; }));
-    return page('<div class="banner"><div class="pattern"></div><h1>' + esc(catName(id)) + '</h1></div><div style="padding-top:22px">' + chips(id) + '</div><div class="wrap">' + searchBox() + '</div>' + collRow(function (c) { return c.category === id; }) + '<div class="wrap">' + grid(vids) + '</div>');
+    var all = CAT.videos.filter(function (v) { return v.category === id; }), vids = filterQ(all);
+    return page('<div class="banner"><div class="pattern"></div><h1>' + esc(catName(id)) + '</h1></div><div style="padding-top:22px">' + chips(id) + '</div><div class="wrap">' + searchBox() + '</div>' + topicsBar(all) + collRow(function (c) { return c.category === id; }) + '<div class="wrap">' + grid(vids) + '</div>');
   }
   function viewCollection(id) {
     var c = byId(CAT.collections, id); if (!c) return viewHome();
@@ -229,7 +249,7 @@
   function viewWatch(id) {
     var v = byId(CAT.videos, id); if (!v) return viewHome();
     var T = t(), a = author(v.author), ln = T.langName, isSaved = saved.indexOf(id) >= 0, isLiked = liked.indexOf(id) >= 0;
-    var tags = v.tags.map(function (g) { return '<a href="' + U.category(v.category) + '?q=' + encodeURIComponent(I18N._tag[g][lang]) + '">#' + esc(I18N._tag[g][lang]) + '</a>'; }).join('');
+    var tags = (v.hashtags || []).map(function (g) { return '<a href="' + tagUrl(v, g) + '">#' + esc(g) + '</a>'; }).join('') + v.tags.map(function (g) { return '<a href="' + U.category(v.category) + '?q=' + encodeURIComponent(I18N._tag[g][lang]) + '">#' + esc(I18N._tag[g][lang]) + '</a>'; }).join('');
     var dubs = Object.keys(v.dub).map(function (l) { return ln[l]; }).join(', ');
     var coll = v.collection ? byId(CAT.collections, v.collection) : null;
     var more = CAT.videos.filter(function (x) { return coll ? x.collection === v.collection && x.id !== v.id : x.section === v.section && x.id !== v.id; });

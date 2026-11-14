@@ -285,3 +285,18 @@ main{background:linear-gradient(180deg,#2a0046 0,#470073 45%,#650099 100%);min-h
 
 .av-logo{background:#2a0046;border:1px solid rgba(212,187,98,.35)}
 .av-logo img{width:58%;height:58%;object-fit:contain}
+
+/* Temas (TAGs): filtro por hashtag en secciones y categorías */
+.topics{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;max-width:960px;margin:18px auto 6px}
+.topics .lbl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-right:6px}
+.topics a{border:1.5px solid rgba(210,182,100,.7);border-radius:99px;padding:2px 12px;font-size:13px;font-weight:500;color:#fff}
+.topics a small{opacity:.65;font-size:11px;margin-left:2px}
+.topics a:hover{background:rgba(255,255,255,.12)}
+.topics a[aria-current=page]{background:var(--gold);border-color:var(--gold);color:var(--deep);font-weight:700}
+.topics summary{list-style:none;cursor:pointer;border:1.5px dashed rgba(230,217,245,.55);border-radius:99px;padding:2px 14px;font-size:13px}
+.topics summary::-webkit-details-marker{display:none}
+.topics summary::before{content:attr(data-more)}
+.topics details[open] summary::before{content:attr(data-less)}
+.topics details{flex-basis:100%;text-align:center}
+.topics summary{display:inline-block}
+.topics .more{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px}
