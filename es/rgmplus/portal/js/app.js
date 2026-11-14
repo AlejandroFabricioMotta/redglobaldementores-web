@@ -157,25 +157,34 @@
   }
   // búsqueda sin distinguir mayúsculas ni tildes
   function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim(); }
+  // nombre del TAG según idioma (la clave y la URL ?tag= siguen en español)
+  function tagName(g) { var m = (CAT.tagNames || {})[g]; return lang === 'pt' && m ? m[0] : lang === 'en' && m ? m[1] : g; }
+  // clave en español a partir de lo que llegue en ?tag= (admite también el nombre PT/EN)
+  function tagKey(s) {
+    var n = norm(s), k = (CAT.tagNames || {}), r = '';
+    if (!n) return '';
+    Object.keys(k).some(function (g) { if (norm(g) === n || norm(k[g][0]) === n || norm(k[g][1]) === n) { r = g; return true; } });
+    return norm(r || s);
+  }
   function tagUrl(v, tag) { return U.section(v.section) + '?tag=' + encodeURIComponent(tag); }
   function filterQ(vids) {
-    var n = norm(params.get('q')), tg = norm(params.get('tag'));
+    var n = norm(params.get('q')), tg = tagKey(params.get('tag'));
     return vids.filter(function (v) {
       if (tg && (v.hashtags || []).map(norm).indexOf(tg) < 0) return false;
       if (!n) return true;
-      var hay = norm([title(v), author(v.author).name, v.others.join(' '), catName(v.category), secName(v.section), (v.hashtags || []).join(' '), v.tags.map(function (g) { return I18N._tag[g][lang]; }).join(' ')].join(' '));
+      var hay = norm([title(v), author(v.author).name, v.others.join(' '), catName(v.category), secName(v.section), (v.hashtags || []).map(function (g) { var m = (CAT.tagNames || {})[g]; return m ? g + ' ' + m.join(' ') : g; }).join(' '), v.tags.map(function (g) { return I18N._tag[g][lang]; }).join(' ')].join(' '));
       return hay.indexOf(n) >= 0;
     });
   }
   // nube de temas: los más usados primero (hasta 18) y el resto en "Ver más temas"; clic = filtra por ese TAG
   function topicsBar(vids) {
-    var T = t(), cur = norm(params.get('tag')), cnt = {}, base = location.pathname;
+    var T = t(), cur = tagKey(params.get('tag')), cnt = {}, base = location.pathname;
     vids.forEach(function (v) { (v.hashtags || []).forEach(function (g) { cnt[g] = (cnt[g] || 0) + 1; }); });
-    var list = Object.keys(cnt).sort(function (x, y) { return cnt[y] - cnt[x] || x.localeCompare(y, lang); });
+    var list = Object.keys(cnt).sort(function (x, y) { return cnt[y] - cnt[x] || tagName(x).localeCompare(tagName(y), lang); });
     if (!list.length) return '';
     function chip(g) {
       var on = norm(g) === cur;
-      return '<a href="' + (on ? base : base + '?tag=' + encodeURIComponent(g)) + '"' + (on ? ' aria-current="page" title="' + esc(T.clearTopic) + '"' : '') + '>#' + esc(g) + ' <small>' + cnt[g] + '</small></a>';
+      return '<a href="' + (on ? base : base + '?tag=' + encodeURIComponent(g)) + '"' + (on ? ' aria-current="page" title="' + esc(T.clearTopic) + '"' : '') + '>#' + esc(tagName(g)) + ' <small>' + cnt[g] + '</small></a>';
     }
     var cur0 = list.filter(function (g) { return norm(g) === cur; }), top = list.slice(0, 18), rest = list.slice(18);
     cur0.forEach(function (g) { if (top.indexOf(g) < 0) { top.push(g); rest.splice(rest.indexOf(g), 1); } });
@@ -249,7 +258,7 @@
   function viewWatch(id) {
     var v = byId(CAT.videos, id); if (!v) return viewHome();
     var T = t(), a = author(v.author), ln = T.langName, isSaved = saved.indexOf(id) >= 0, isLiked = liked.indexOf(id) >= 0;
-    var tags = (v.hashtags || []).map(function (g) { return '<a href="' + tagUrl(v, g) + '">#' + esc(g) + '</a>'; }).join('') + v.tags.map(function (g) { return '<a href="' + U.category(v.category) + '?q=' + encodeURIComponent(I18N._tag[g][lang]) + '">#' + esc(I18N._tag[g][lang]) + '</a>'; }).join('');
+    var tags = (v.hashtags || []).map(function (g) { return '<a href="' + tagUrl(v, g) + '">#' + esc(tagName(g)) + '</a>'; }).join('') + v.tags.map(function (g) { return '<a href="' + U.category(v.category) + '?q=' + encodeURIComponent(I18N._tag[g][lang]) + '">#' + esc(I18N._tag[g][lang]) + '</a>'; }).join('');
     var dubs = Object.keys(v.dub).map(function (l) { return ln[l]; }).join(', ');
     var coll = v.collection ? byId(CAT.collections, v.collection) : null;
     var more = CAT.videos.filter(function (x) { return coll ? x.collection === v.collection && x.id !== v.id : x.section === v.section && x.id !== v.id; });
