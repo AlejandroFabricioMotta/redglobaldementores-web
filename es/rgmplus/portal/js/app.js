@@ -128,8 +128,9 @@
       '<span class="lang">' + langFull(v.orig) + '</span></a>';
   }
   function vitem(v) {
-    var a = author(v.author);
-    return '<div class="item vi">' + card(v) + '<div class="t">' + esc(title(v)) + '<span class="d">' + esc(a.name) + ' · ' + esc(secName(v.section)) + ' · ' + esc(dateFmt(v.date)) + '</span></div></div>';
+    var a = author(v.author), sep = lang === 'pt' ? ' e ' : lang === 'en' ? ' and ' : ' y ',
+      nombres = [a.name].concat(v.others || []).join(sep); // entrevista a dos personas: van los dos nombres
+    return '<div class="item vi">' + card(v) + '<div class="t">' + esc(title(v)) + '<span class="d">' + esc(nombres) + ' · ' + esc(secName(v.section)) + ' · ' + esc(dateFmt(v.date)) + '</span></div></div>';
   }
   // tarjeta vertical de una colección (portada en formato 9:16)
   function collCard(c) {
