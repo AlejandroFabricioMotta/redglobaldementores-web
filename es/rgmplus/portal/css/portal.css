@@ -101,6 +101,7 @@ main{background:linear-gradient(180deg,#2a0046 0,#470073 45%,#650099 100%);min-h
 .rowbody>.track{min-width:0;padding-bottom:0}
 .card.all{aspect-ratio:auto;min-width:0;background:var(--lilac);color:var(--purple);display:grid;place-items:center;font-weight:700;font-size:16px;text-align:center}
 .card.all:hover{filter:brightness(1.06)}
+.card.all .cnt{font-size:calc(1em - 2px);font-weight:600;white-space:nowrap}
 .card .lang{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.6);border-radius:6px;padding:1px 7px;font-size:10px;font-weight:700;letter-spacing:.08em}
 
 /* ---------- páginas internas ---------- */

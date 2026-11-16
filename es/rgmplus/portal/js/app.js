@@ -144,7 +144,7 @@
   }
   function row(name, vids, allHref, fn) {
     return '<section class="row"><div class="wrap"><div class="top"><h3>' + esc(name) + '</h3><div class="nv"><button data-scroll="-1" aria-label="' + t().prev + '">' + ICON.l(14) + '</button><button data-scroll="1" aria-label="' + t().next + '">' + ICON.r(14) + '</button></div></div>' +
-      '<div class="rowbody' + (allHref ? '' : ' solo') + '"><div class="track">' + vids.map(fn || vitem).join('') + '</div>' + (allHref ? '<a class="card all" href="' + allHref + '">' + t().viewAll + '</a>' : '') + '</div></div></section>';
+      '<div class="rowbody' + (allHref ? '' : ' solo') + '"><div class="track">' + vids.map(fn || vitem).join('') + '</div>' + (allHref ? '<a class="card all" href="' + allHref + '"><span>' + t().viewAll + ' <span class="cnt">(' + vids.length + ')</span></span></a>' : '') + '</div></div></section>';
   }
   function page(inner) { return statusBar() + header() + nav() + '<main>' + inner + '</main>' + footer(); }
   function grid(vids) {
