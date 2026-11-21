@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Podcast RGM | Red Global de Mentores</title>
+  <meta name="description" content="Podcast RGM: contenido de alto valor para escuchar en momentos especiales.">
+  <link rel="canonical" href="https://www.redglobaldementores.org/es/podcast/">
+  <link rel="alternate" hreflang="es" href="https://www.redglobaldementores.org/es/podcast/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Podcast RGM | Red Global de Mentores">
+  <meta property="og:description" content="Podcast RGM: contenido de alto valor para escuchar en momentos especiales.">
+  <meta property="og:url" content="https://www.redglobaldementores.org/es/podcast/">
+  <meta name="theme-color" content="#1f2555">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+body{font-size:20px;line-height:1.7}
+.hub-main h2{font-weight:800;font-size:clamp(30px,4.4vw,44px);line-height:1.15}
+.hub-main .intro{font-size:21px;color:var(--color-texto-2);max-width:60ch}
+.hub-top{display:inline-block;margin-top:22px}
+.hub-idx{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px}
+.hub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:28px}
+.hub-card{display:flex;flex-direction:column;gap:12px;padding:28px;border-radius:18px;border:2px solid rgba(167,151,56,.7);border-top:6px solid var(--color-dorado);background:linear-gradient(160deg,rgba(52,62,140,.55),rgba(31,37,85,.9))}
+.hub-card h3{font-weight:800;font-size:26px;line-height:1.2}
+.hub-card p{margin:0;font-size:19px;color:var(--color-texto-2);line-height:1.55}
+.hub-card.ancha{grid-column:1/-1}
+.hub-btn{display:flex;align-items:center;justify-content:center;gap:10px;text-align:center;min-height:62px;padding:14px 22px;border-radius:14px;border:3px solid var(--color-dorado);background:var(--color-dorado);color:var(--color-fondo);font-family:inherit;font-weight:700;font-size:19px;line-height:1.25;text-decoration:none;transition:background .15s,transform .15s}
+a.hub-btn:hover{background:#c4b34a;transform:translateY(-2px)}
+a.hub-btn:focus-visible{outline:4px solid #fff;outline-offset:3px}
+.hub-btn.sec{background:rgba(31,37,85,.7);color:#fff}
+a.hub-btn.sec:hover{background:rgba(167,151,56,.35)}
+.hub-btn.off{background:#3b4172;border:3px dashed #8c93bd;color:#b6bbd9;cursor:not-allowed;flex-direction:column;gap:2px}
+.hub-btn.off small{font-size:15px;font-weight:500}
+.hub-btn .fl{font-size:22px}
+.hub-nota{display:block;font-size:15px;color:var(--color-arena);margin-top:-4px;text-align:center}
+.hub-subs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:6px}
+.hub-subs.tres{grid-template-columns:repeat(3,1fr)}
+.hub-pw{display:inline-block;align-self:flex-start;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;border:1.5px solid var(--color-arena);color:var(--color-arena)}
+.hub-paises{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.hub-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:6px}.hub-sc{display:flex;flex-direction:column;gap:10px;justify-content:space-between}.hub-card h3,.hub-btn{overflow-wrap:anywhere}.hub-sub{font-size:26px;font-weight:700;margin:34px 0 0}
+.hub-com{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}
+.hub-com .hub-card{align-items:center;text-align:center}
+.hub-com img{width:96px;height:auto;border-radius:6px}
+.hub-com strong{font-size:30px;line-height:1}
+.hub-com .hub-btn{width:100%}
+.hub-com .hub-card[aria-current=true]{background:rgba(52,62,140,.9)}
+.hub-up{display:inline-block;margin-top:30px;font-size:18px;font-weight:600;color:var(--color-arena)}
+.seccion{scroll-margin-top:80px;padding:60px 0}
+.idiomas a{font-size:15px;padding:6px 10px}
+@media(max-width:900px){.hub-card h3{font-size:23px}.hub-trio,.hub-idx,.hub-grid,.hub-subs,.hub-subs.tres,.hub-com{grid-template-columns:1fr}.hub-paises{grid-template-columns:repeat(2,1fr)}}
+
+:root{--color-fondo:#ffffff;--color-fondo-2:#eef0fa;--color-texto:#1f2555;--color-texto-2:#343e8c;--color-arena:#8a7a1f}
+body{background:#fff;color:#1f2555}
+.encabezado{background:#1f2555}
+.encabezado .idiomas a{color:#d9c7a5}.encabezado .idiomas a[aria-current=true]{background:#a79738;color:#1f2555}
+.heroe{background:radial-gradient(900px 420px at 80% 0%,rgba(75,91,219,.10),transparent 70%),#fff}
+.heroe::after{opacity:.10}
+h1,h2,h3,.hub-main h2{color:#1f2555}
+.volanta,.valores{color:#8a7a1f}
+.bajada,.hub-main .intro{color:#343e8c}
+.seccion.alterna{background:#f3f4fb}
+.hub-card{background:#fff;border:2px solid rgba(167,151,56,.8);border-top:6px solid #a79738;box-shadow:0 4px 14px rgba(31,37,85,.10)}
+.hub-card h3{color:#1f2555}.hub-card p{color:#343e8c}.hub-card p b{color:#1f2555}
+.hub-btn{background:#a79738;border-color:#a79738;color:#1f2555}
+a.hub-btn:hover{background:#bfae45}
+a.hub-btn:focus-visible{outline:4px solid #1f2555}
+.hub-btn.sec{background:#fff;color:#1f2555;border-color:#a79738}
+a.hub-btn.sec:hover{background:#f6f1d6}
+.hub-btn.off{background:#eceef7;border:3px dashed #a8aed0;color:#6b719c}
+.hub-nota,.hub-up{color:#6b5f1e}
+.hub-pw{border-color:#8a7a1f;color:#6b5f1e}
+.hub-com .hub-card[aria-current=true]{background:#eef0fa}
+.hub-sub{color:#1f2555}
+.linea-dorada{background:#a79738}
+
+.pod-lista{display:grid;gap:18px;margin-top:28px}
+.pod-ep{display:flex;gap:18px;align-items:center;padding:22px;border-radius:18px;border:2px solid rgba(167,151,56,.7);border-left:8px solid var(--color-dorado);background:#fff;box-shadow:0 4px 14px rgba(31,37,85,.10)}
+.pod-n{flex:0 0 54px;height:54px;border-radius:50%;background:var(--color-dorado);color:#1f2555;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center}
+.pod-b{flex:1;min-width:0}
+.pod-b h3{margin:0 0 4px;font-size:24px;line-height:1.25;color:#1f2555;font-weight:800}
+.pod-m{margin:0 0 12px;font-size:18px;color:#343e8c}
+.pod-b audio{width:100%;height:54px}
+.pod-aviso{margin-top:36px;padding:26px;border-radius:18px;border:2px dashed rgba(167,151,56,.9);background:#f3f4fb;font-size:19px;line-height:1.6;color:#1f2555}
+.pod-aviso p{margin:0 0 10px}
+@media(max-width:600px){.pod-ep{flex-direction:column;align-items:flex-start;padding:18px}.pod-b{width:100%}.pod-b h3{font-size:21px}}
+</style>
+</head>
+<body>
+<header class="encabezado">
+  <div class="contenedor">
+    <a class="marca" href="../" aria-label="Ir a la página principal"><img class="marca-logo" src="../img/logo-rgm-horizontal.png" width="576" height="220" alt="Red Global de Mentores"></a>
+    <div class="idiomas" aria-label="Idioma"><a href="../../es/podcast/" hreflang="es" lang="es" aria-current="true">ES</a></div>
+  </div>
+</header>
+<main class="hub-main" id="inicio">
+<section class="heroe"><div class="contenedor">
+<p class="volanta">Red Global de Mentores</p>
+<h1>Podcast RGM</h1>
+<p class="bajada">Contenido de alto valor para escuchar en momentos especiales.</p>
+<hr class="linea-dorada">
+<a class="hub-btn sec hub-top" href="../hub/"><span aria-hidden="true">←</span><span>Volver al Hub</span></a>
+</div></section>
+<section class="seccion" id="episodios"><div class="contenedor">
+<h2>Episodios</h2>
+<p class="intro">Toque el botón de reproducir (▶) de cada episodio para escucharlo. Hay 21 episodios disponibles.</p>
+<div class="pod-lista">
+<!-- PARA AGREGAR UN EPISODIO: copiar un bloque <article class="pod-ep"> y cambiar número, título, duración y src del audio -->
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">1</div><div class="pod-b"><h3>Alzheimer, Parte I</h3><p class="pod-m">Rafael Hernández · Duración 28:44</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_2b9e90c7276b4706b8e5914993808270.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">2</div><div class="pod-b"><h3>Alzheimer, Parte II</h3><p class="pod-m">Rafael Hernández · Duración 25:42</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_9dac5dd54a1e46f9baeacdb126c047b9.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">3</div><div class="pod-b"><h3>Autoestima, Parte 1</h3><p class="pod-m">Rafael Hernández · Duración 27:59</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_7e250f4c4fc44c3f95d041a89b5f5312.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">4</div><div class="pod-b"><h3>Autoestima, Parte 2</h3><p class="pod-m">Rafael Hernández · Duración 26:31</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_8218660da860433280c5eb9585ee19c5.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">5</div><div class="pod-b"><h3>El Duelo, Parte 1</h3><p class="pod-m">Rafael Hernández · Duración 25:18</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_bcefe38fb4ac40799f95f6f95d7c44d7.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">6</div><div class="pod-b"><h3>El Duelo, Parte 2</h3><p class="pod-m">Rafael Hernández · Duración 30:35</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_a3e4196cdd744c3a934d774543041bd8.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">7</div><div class="pod-b"><h3>El Parkinson, Parte I</h3><p class="pod-m">Rafael Hernández · Duración 27:14</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_2cb2ccb61264459da7692f1bf43b14ae.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">8</div><div class="pod-b"><h3>El Parkinson, Parte II</h3><p class="pod-m">Rafael Hernández · Duración 27:32</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_ff96d24ba6914821a7d211c664c3480b.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">9</div><div class="pod-b"><h3>La Angustia, Parte I</h3><p class="pod-m">Rafael Hernández · Duración 26:32</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_df87f48238ca450bbd2c8181ad51ee83.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">10</div><div class="pod-b"><h3>La Angustia, Parte II</h3><p class="pod-m">Rafael Hernández · Duración 28:40</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_211ec6e069654b07bdef26cefc87d4c1.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">11</div><div class="pod-b"><h3>La Depresión I, Parte 1</h3><p class="pod-m">Rafael Hernández · Duración 28:23</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_8762588110774d3fa37cb39a9328088d.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">12</div><div class="pod-b"><h3>La Depresión I, Parte 2</h3><p class="pod-m">Rafael Hernández · Duración 26:33</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_eafb2a78394748c88fb65b17c20dc81f.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">13</div><div class="pod-b"><h3>La Depresión II, Parte 1</h3><p class="pod-m">Rafael Hernández · Duración 27:29</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_e7d118362b9b4075bf61ce41598e7727.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">14</div><div class="pod-b"><h3>La Depresión II, Parte 2</h3><p class="pod-m">Rafael Hernández · Duración 27:14</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_85e10399b67c4047b222bd3e9ba4fd79.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">15</div><div class="pod-b"><h3>Introducción al Mindfulness I, Parte 1</h3><p class="pod-m">Rafael Hernández · Duración 28:34</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_aebf1fe9af044dd49e19e46b9d6ca32d.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">16</div><div class="pod-b"><h3>Introducción al Mindfulness I, Parte 2</h3><p class="pod-m">Rafael Hernández · Duración 27:13</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_ad9475ea5be74bff957c9d7aadc3e68f.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">17</div><div class="pod-b"><h3>Introducción al Mindfulness II, Parte I</h3><p class="pod-m">Rafael Hernández · Duración 28:31</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_043bdd543dc2441d9d58e424d6c42af8.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">18</div><div class="pod-b"><h3>Introducción al Mindfulness II, Parte II</h3><p class="pod-m">Rafael Hernández · Duración 27:07</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_b363070aea9a45e78bba4f169ec9d7fd.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">19</div><div class="pod-b"><h3>Volver a Empezar, Parte I</h3><p class="pod-m">Rafael Hernández · Duración 27:22</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_9b225429e0284095986f850affef88d0.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">20</div><div class="pod-b"><h3>Volver a Empezar, Parte II</h3><p class="pod-m">Rafael Hernández · Duración 26:31</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_1e61597be02b48c5933ae95dffad08f6.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+<article class="pod-ep"><div class="pod-n" aria-hidden="true">21</div><div class="pod-b"><h3>Entrevista a Kleber Rodríguez</h3><p class="pod-m">Rafael Hernández · Duración 25:24</p><audio controls preload="none" src="https://music.wixstatic.com/mp3/0e53f7_b9b1684f51f04e06936db47209b2209b.mp3">Su navegador no puede reproducir audio.</audio></div></article>
+</div>
+<div class="pod-aviso"><p><strong>Una invitación a escuchar con mente abierta.</strong></p>
+<p>Estos audios contienen reflexiones de alto valor formativo. Recomendamos su escucha atenta como estímulo para ampliar la mirada, confrontar ideas y enriquecer el pensamiento crítico.</p>
+<p>Pueden resonar con sus convicciones o generar desacuerdo, pero justamente ese es el efecto que buscamos desde la RGM: fomentar la reflexión profunda que nutre el desarrollo intelectual y ético de cada Mentor.</p></div>
+</div></section>
+<section class="seccion alterna" id="radio"><div class="contenedor">
+<h2>MENTORES Radio</h2>
+<p class="intro">Estamos trabajando para lanzar una emisora propia.</p>
+<article class="hub-card"><h3>¿Quiere tener su propio programa?</h3><p>Si desea sumarse con un programa propio en esta emisora, escriba a info@HoldingMentors.com con el asunto: «Me gustaría comprar un espacio para tener mi propio programa de radio».</p>
+<a class="hub-btn" href="mailto:info@HoldingMentors.com?subject=Me%20gustar%C3%ADa%20comprar%20un%20espacio%20para%20tener%20mi%20propio%20programa%20de%20radio"><span>Escribir a info@HoldingMentors.com</span><span class="fl" aria-hidden="true">→</span></a></article>
+<a class="hub-up" href="../hub/">← Volver al Hub</a>
+</div></section>
+</main>
+<footer class="pie pie--zocalo"><div class="contenedor"><p class="zocalo__c">© 2011 – 2026 Red Global de Mentores</p></div></footer>
+</body>
+</html>
