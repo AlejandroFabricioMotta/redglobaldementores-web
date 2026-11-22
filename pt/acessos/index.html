@@ -121,6 +121,27 @@ a.hub-btn.sec:hover{background:#f6f1d6}
 .hub-idx a[class*="i-"]:focus-visible{outline:4px solid #a79738}
 @media(max-width:900px){.u-cab{gap:16px}.u-sello{width:84px;height:84px}}
 </style>
+<style>
+/* Zona de WhatsApp (verde agua) y Zona privada (rojo pastel) */
+#whatsapp .hub-card{background:#d6f2ed;border:2px solid #4fb3a1;border-top:6px solid #4fb3a1;box-shadow:0 4px 14px rgba(13,59,54,.14)}
+#whatsapp .hub-card h3,#whatsapp .hub-card p,#whatsapp .hub-card p b{color:#0d3b36}
+#whatsapp .hub-btn{background:#4fb3a1;border-color:#4fb3a1;color:#06312c}
+#whatsapp a.hub-btn:hover{background:#6cc5b5}
+#whatsapp .hub-btn.sec{background:#fff;color:#0d3b36;border-color:#4fb3a1}
+#whatsapp a.hub-btn.sec:hover{background:#eafaf7}
+#whatsapp .hub-nota{color:#1d6b5f}
+#whatsapp a.hub-btn:focus-visible{outline-color:#0d3b36}
+#privado .hub-card{background:#fbe0de;border:2px solid #de8a85;border-top:6px solid #de8a85;box-shadow:0 4px 14px rgba(110,30,26,.14)}
+#privado .hub-card h3,#privado .hub-card p{color:#4a1816}
+#privado .hub-btn{background:#de8a85;border-color:#de8a85;color:#3d100e}
+#privado a.hub-btn:hover{background:#e8a09b}
+#privado .hub-btn.off{background:#f3d3d1;border-color:#c99a97;color:#7a4a47}
+#privado .hub-pw{border-color:#a8433e;color:#7a2b27;background:#fff5f4}
+#privado a.hub-btn:focus-visible{outline-color:#4a1816}
+.hub-idx a.i-wapp{background:#d6f2ed;border-color:#4fb3a1;color:#0d3b36}
+.hub-idx a.i-priv{background:#fbe0de;border-color:#de8a85;color:#4a1816}
+.hub-idx a.i-wapp:hover{background:#bfe9e1}.hub-idx a.i-priv:hover{background:#f6cbc8}
+</style>
 </head>
 <body>
 <header class="encabezado">
@@ -139,7 +160,7 @@ a.hub-btn.sec:hover{background:#f6f1d6}
     <a class="hub-btn sec hub-top" href="../"><span aria-hidden="true">←</span><span>Ir para a página principal</span></a>
     <h2 style="margin-top:44px">O que deseja fazer?</h2>
     <p class="intro">Toque num botão para ir direto a essa parte.</p>
-    <nav class="hub-idx" aria-label="O que deseja fazer?"><a class="hub-btn sec" href="#comunidad"><span>Comunidades</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec" href="#whatsapp"><span>Canais de WhatsApp</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec" href="#redes"><span>Redes sociais</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec" href="#conocer"><span>Conhecer a Rede</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec i-academia" href="#formacion"><span>Formação e estudo</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec i-editorial" href="#libros"><span>Livros e publicações</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec i-rgmplus" href="#videos"><span>Conteúdos multimédia</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec i-encuentros" href="#encuentros"><span>Encontros</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec" href="#privado"><span>Zona privada</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec" href="#contacto"><span>Contacto</span><span class="fl" aria-hidden="true">↓</span></a></nav>
+    <nav class="hub-idx" aria-label="O que deseja fazer?"><a class="hub-btn sec" href="#comunidad"><span>Comunidades</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec i-wapp" href="#whatsapp"><span>Canais de WhatsApp</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec" href="#redes"><span>Redes sociais</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec" href="#conocer"><span>Conhecer a Rede</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec i-academia" href="#formacion"><span>Formação e estudo</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec i-editorial" href="#libros"><span>Livros e publicações</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec i-rgmplus" href="#videos"><span>Conteúdos multimédia</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec i-encuentros" href="#encuentros"><span>Encontros</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec i-priv" href="#privado"><span>Zona privada</span><span class="fl" aria-hidden="true">↓</span></a><a class="hub-btn sec" href="#contacto"><span>Contacto</span><span class="fl" aria-hidden="true">↓</span></a></nav>
   </div>
 </section>
 <section class="seccion" id="comunidad"><div class="contenedor"><h2>Comunidades</h2><p class="intro">Três comunidades por idioma</p><div class="hub-com"><article class="hub-card" ><img src="../img/bandera-es.png" width="196" height="132" alt="ES"><strong>RGM</strong><span>Red Global de Mentores</span><a class="hub-btn" href="../../es/"><span>Ir para a RGM</span><span class="fl" aria-hidden="true">→</span></a></article><article class="hub-card" aria-current=true><img src="../img/bandera-pt.png" width="196" height="132" alt="PT"><strong>ReGM</strong><span>Rede Global de Mentores</span><a class="hub-btn" href="../../pt/"><span>Ir para a ReGM</span><span class="fl" aria-hidden="true">→</span></a></article><article class="hub-card" ><img src="../img/bandera-gb.png" width="196" height="132" alt="EN"><strong>GMN</strong><span>Global Mentoring Network</span><a class="hub-btn" href="../../en/"><span>Ir para a GMN</span><span class="fl" aria-hidden="true">→</span></a></article></div><a class="hub-up" href="#inicio">↑ Voltar ao início</a></div></section>
