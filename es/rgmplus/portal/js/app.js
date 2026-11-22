@@ -115,7 +115,10 @@
   function footer() {
     var T = t();
     var sites = C.sites.map(function (s) { var x = T.sites[s.key]; return '<a class="site" href="' + esc(url(s.url)) + '" target="_blank" rel="noopener"><b>' + esc(x[0]) + '</b><small>' + esc(x[1]) + '</small></a>'; }).join('');
-    return '<footer class="foot"><div class="wrap"><h2>' + esc(T.rgmName) + ' · <b>' + T.sitesTitle + '</b></h2><div class="sites">' + sites + '</div>' +
+    var AQ = { es: ['/es/accesos/', 'Accesos rápidos'], pt: ['/pt/acessos/', 'Acessos rápidos'], en: ['/en/access/', 'Quick Access'] }[lang] || ['/es/accesos/', 'Accesos rápidos'];
+    var quick = PAGE === 'home' ? '<div class="rgm-accesos" style="text-align:center;margin:0 0 30px"><style>.rgm-accesos a{display:inline-flex;align-items:center;gap:10px;padding:13px 28px;border-radius:999px;background:#c9b64a;color:#141a42;font:600 15px/1.2 Poppins,system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.35)}.rgm-accesos a:hover,.rgm-accesos a:focus-visible{background:#e0cd63;outline:2px solid #fff;outline-offset:2px}</style>' +
+      '<a href="' + AQ[0] + '"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" style="flex:none"><path fill="currentColor" d="M1 1h6v6H1zM9 1h6v6H9zM1 9h6v6H1zM9 9h6v6H9z"/></svg>' + AQ[1] + '</a></div>' : '';
+    return '<footer class="foot"><div class="wrap">' + quick + '<h2>' + esc(T.rgmName) + ' · <b>' + T.sitesTitle + '</b></h2><div class="sites">' + sites + '</div>' +
       '<a class="back" href="' + esc(url(C.backUrl)) + '">← ' + esc(T.back) + '</a>' +
       '<div class="contact"><div><b>' + esc(T.rgmName) + '</b><br>info@RGMentores.ORG · WApp +54 9 341 5421624<br>Av. Fuerza Aérea 3104, Rosario, Santa Fe, Argentina</div>' +
       '<div><b>Holding Mentors LLC</b> ' + esc(T.hmRole) + '<br>info@HoldingMentors.com · WApp +1 954 658 4206<br>40 SW 13th ST, Suite 102, Miami, Florida (33031), USA</div></div>' +
