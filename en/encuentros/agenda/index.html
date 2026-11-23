@@ -91,49 +91,49 @@ const EVENTOS=[
   "titulo": "The Month's Certified Expert Mentors",
   "inicio": "2026-11-28T11:00:00-03:00",
   "desc": "Every day, new Mentors progress in their training and earn their Certification as Expert Mentors. At this meeting we present their diploma and have the chance to learn a little more about them and their journey.",
-  "flyer": "/es/encuentros/agenda/img/nuevos-mentores.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-03-mujeres-lideres",
   "titulo": "Women Leaders",
   "inicio": "2026-12-03T15:00:00-03:00",
   "desc": "A forum on the challenges and contributions of women's leadership. A space of resonance, leadership and collective empowerment.",
-  "flyer": "/es/encuentros/agenda/img/foro-mujeres.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-07-consultas",
   "titulo": "Open Q&A sessions",
   "inicio": "2026-12-07T15:00:00-03:00",
   "desc": "If you are going through a \"Training Process for your International Mentoring Certification\", join these meetings to ask specific questions. You can also meet other Mentors on the same path and exchange experiences.",
-  "flyer": "/es/encuentros/agenda/img/consultoria-intensiva.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-10-laboratorio",
   "titulo": "Mentoring Tools Lab",
   "inicio": "2026-12-10T15:00:00-03:00",
   "desc": "\"Expanding your toolbox for limitless mastery\". In this space, Expert Mentors share their experience of using these tools.",
-  "flyer": "/es/encuentros/agenda/img/herramientas-mentoria.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-14-consultas",
   "titulo": "Open Q&A sessions",
   "inicio": "2026-12-14T15:00:00-03:00",
   "desc": "If you are going through a \"Training Process for your International Mentoring Certification\", join these meetings to ask specific questions. You can also meet other Mentors on the same path and exchange experiences.",
-  "flyer": "/es/encuentros/agenda/img/consultoria-intensiva.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-17-fin-de-anio",
   "titulo": "Global Mentoring Network Year-End Meeting – 2026 Close",
   "inicio": "2026-12-17T15:00:00-03:00",
   "desc": "",
-  "flyer": "/es/encuentros/agenda/img/cierre-2026.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-19-neurociencia",
   "titulo": "Neuroscience Masterclass with Néstor Braidot",
   "inicio": "2026-12-19T11:00:00-03:00",
   "desc": "",
-  "flyer": "/es/encuentros/agenda/img/masterclass-neurociencia.webp"
+  "flyer": ""
  }
 ];
 const ABIERTA=!!WEB3FORMS_KEY;
@@ -173,7 +173,7 @@ function confirmacion(ev,d){
       h('div',{},h('dt',{},S.idl),h('dd',{},ZOOM.id),h('button',{class:'boton boton--borde ag-mini',type:'button',onclick:e=>copiar(ZOOM.id.replace(/ /g,''),e.currentTarget)},S.copy)),
       h('div',{},h('dt',{},S.code),h('dd',{},ZOOM.codigo),h('button',{class:'boton boton--borde ag-mini',type:'button',onclick:e=>copiar(ZOOM.codigo,e.currentTarget)},S.copy))));
 }
-function tile(d){return h('div',{class:'ag-tile','aria-hidden':'true'},h('span',{class:'wd'},fWd.format(d)),h('span',{class:'d'},fD.format(d)),h('span',{class:'m'},fM.format(d)))}
+function tile(d){return h('div',{class:'ag-tile','aria-hidden':'true'},h('span',{class:'wd'},fWd.format(d)),h('span',{class:'d'},fD.format(d)),h('span',{class:'m'},fM.format(d)),h('span',{class:'h'},fH.format(d)+' '+S.tz))}
 function flyer(ev,d){
   const img=h('img',{class:'ag-flyer',src:ev.flyer,alt:S.flyeralt+ev.titulo,loading:'lazy',decoding:'async'});
   img.addEventListener('error',()=>img.replaceWith(tile(d)));

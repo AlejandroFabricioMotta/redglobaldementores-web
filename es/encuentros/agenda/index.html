@@ -91,49 +91,49 @@ const EVENTOS=[
   "titulo": "Los Mentores Expertos Certificados del Mes",
   "inicio": "2026-11-28T11:00:00-03:00",
   "desc": "Cada día, nuevos Mentores avanzan en su formación y alcanzan su Certificación como Mentores Expertos. En este encuentro les entregamos su diploma y tenemos la oportunidad de conocer un poco más de ellos y de su proceso.",
-  "flyer": "/es/encuentros/agenda/img/nuevos-mentores.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-03-mujeres-lideres",
   "titulo": "Mujeres Líderes",
   "inicio": "2026-12-03T15:00:00-03:00",
   "desc": "Foro sobre los desafíos y aportes del liderazgo femenino. Un espacio de resonancia, liderazgo y empoderamiento colectivo.",
-  "flyer": "/es/encuentros/agenda/img/foro-mujeres.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-07-consultas",
   "titulo": "Espacios para hacer consultas",
   "inicio": "2026-12-07T15:00:00-03:00",
   "desc": "Si estás transitando un \"Proceso de Formación para tu Certificación Internacional de Mentoría\", asiste a estos encuentros para realizar consultas específicas. También podrás encontrarte con otros Mentores que están transitando este camino y quieras intercambiar experiencias.",
-  "flyer": "/es/encuentros/agenda/img/consultoria-intensiva.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-10-laboratorio",
   "titulo": "Laboratorio de Herramientas de Mentoría",
   "inicio": "2026-12-10T15:00:00-03:00",
   "desc": "\"Expandiendo tu caja de recursos para una maestría sin límites\". En este espacio Mentores Expertos nos cuentan cómo es su experiencia en el uso de estas herramientas.",
-  "flyer": "/es/encuentros/agenda/img/herramientas-mentoria.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-14-consultas",
   "titulo": "Espacios para hacer consultas",
   "inicio": "2026-12-14T15:00:00-03:00",
   "desc": "Si estás transitando un \"Proceso de Formación para tu Certificación Internacional de Mentoría\", asiste a estos encuentros para realizar consultas específicas. También podrás encontrarte con otros Mentores que están transitando este camino y quieras intercambiar experiencias.",
-  "flyer": "/es/encuentros/agenda/img/consultoria-intensiva.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-17-fin-de-anio",
   "titulo": "Reunión de Fin de Año de la Red Global de Mentores – Cierre 2026",
   "inicio": "2026-12-17T15:00:00-03:00",
   "desc": "",
-  "flyer": "/es/encuentros/agenda/img/cierre-2026.webp"
+  "flyer": ""
  },
  {
   "id": "2026-12-19-neurociencia",
   "titulo": "Masterclass de Neurociencia con Néstor Braidot",
   "inicio": "2026-12-19T11:00:00-03:00",
   "desc": "",
-  "flyer": "/es/encuentros/agenda/img/masterclass-neurociencia.webp"
+  "flyer": ""
  }
 ];
 const ABIERTA=!!WEB3FORMS_KEY;
@@ -173,7 +173,7 @@ function confirmacion(ev,d){
       h('div',{},h('dt',{},S.idl),h('dd',{},ZOOM.id),h('button',{class:'boton boton--borde ag-mini',type:'button',onclick:e=>copiar(ZOOM.id.replace(/ /g,''),e.currentTarget)},S.copy)),
       h('div',{},h('dt',{},S.code),h('dd',{},ZOOM.codigo),h('button',{class:'boton boton--borde ag-mini',type:'button',onclick:e=>copiar(ZOOM.codigo,e.currentTarget)},S.copy))));
 }
-function tile(d){return h('div',{class:'ag-tile','aria-hidden':'true'},h('span',{class:'wd'},fWd.format(d)),h('span',{class:'d'},fD.format(d)),h('span',{class:'m'},fM.format(d)))}
+function tile(d){return h('div',{class:'ag-tile','aria-hidden':'true'},h('span',{class:'wd'},fWd.format(d)),h('span',{class:'d'},fD.format(d)),h('span',{class:'m'},fM.format(d)),h('span',{class:'h'},fH.format(d)+' '+S.tz))}
 function flyer(ev,d){
   const img=h('img',{class:'ag-flyer',src:ev.flyer,alt:S.flyeralt+ev.titulo,loading:'lazy',decoding:'async'});
   img.addEventListener('error',()=>img.replaceWith(tile(d)));
