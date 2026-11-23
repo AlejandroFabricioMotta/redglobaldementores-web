@@ -8,7 +8,7 @@
 .ag-link{background:none;border:0;padding:4px 0;font:inherit;color:var(--oro-claro);text-decoration:underline;cursor:pointer}
 .ag-mes{margin:0 0 2.6rem}
 .ag-mes>h2{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--oro-claro);font-weight:600;margin:0 0 1rem}
-.ag-evento{display:grid;grid-template-columns:128px minmax(0,1fr);gap:22px;background:rgba(255,255,255,.05);border:1px solid var(--linea);border-radius:var(--radio);padding:18px;margin:0 0 16px}
+.ag-evento{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;background:rgba(255,255,255,.05);border:1px solid var(--linea);border-radius:var(--radio);padding:18px;margin:0 0 16px}
 .ag-tile{aspect-ratio:4/5;background:var(--azul-oscuro);border:1px solid var(--oro);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
 .ag-tile .wd{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-claro);font-weight:600}
 .ag-tile .d{font-size:3.2rem;font-weight:800;line-height:1.05;color:#fff}
@@ -47,3 +47,6 @@ dialog.ag-dlg::backdrop{background:rgba(20,5,12,.7)}
 .ag-trampa{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .ag-dlg :is(button,input):focus-visible{outline:3px solid var(--oro-claro);outline-offset:2px}
 @media(max-width:620px){.ag-hero{padding:48px 0 20px}.ag-evento{grid-template-columns:1fr}.ag-tile{aspect-ratio:auto;flex-direction:row;gap:12px;padding:10px 14px;justify-content:flex-start}.ag-tile .d{font-size:2.1rem}}
+
+.ag-flyer{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--oro);align-self:start}
+@media(max-width:620px){.ag-flyer{max-width:260px}}

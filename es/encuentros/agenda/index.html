@@ -83,50 +83,57 @@
 const WEB3FORMS_KEY='';
 const TZ='America/Argentina/Buenos_Aires';
 const ZOOM={id:'884 066 0626',url:'https://zoom.us/j/8840660626',codigo:'RGM'};
-const S={"loc": "es-AR", "btn": "Inscribirme", "btnsoon": "Inscripción disponible próximamente", "confirmed": "Tu inscripción está confirmada", "enter": "Ingresa el {when} con este enlace.", "open": "Abrir sala de Zoom", "idl": "ID de la reunión", "code": "Código de acceso", "copy": "Copiar", "copied": "Copiado", "manual": "Selecciona y copia", "yourtime": "Tu hora: ", "notyou": "No soy yo", "regas": "Inscripción a nombre de ", "err": "Completa todos los campos y marca la casilla para continuar.", "senderr": "No pudimos registrar tu inscripción. Revisa tu conexión e inténtalo de nuevo.", "sending": "Enviando…", "none": "No hay encuentros programados por ahora.", "tz": "hs (Argentina)", "soon": "La inscripción en línea se habilita en los próximos días. Mientras tanto, puedes ver las fechas y los horarios de cada encuentro."};
+const S={"flyeralt": "Flyer del encuentro: ", "loc": "es-AR", "btn": "Inscribirme", "btnsoon": "Inscripción disponible próximamente", "confirmed": "Tu inscripción está confirmada", "enter": "Ingresa el {when} con este enlace.", "open": "Abrir sala de Zoom", "idl": "ID de la reunión", "code": "Código de acceso", "copy": "Copiar", "copied": "Copiado", "manual": "Selecciona y copia", "yourtime": "Tu hora: ", "notyou": "No soy yo", "regas": "Inscripción a nombre de ", "err": "Completa todos los campos y marca la casilla para continuar.", "senderr": "No pudimos registrar tu inscripción. Revisa tu conexión e inténtalo de nuevo.", "sending": "Enviando…", "none": "No hay encuentros programados por ahora.", "tz": "hs (Argentina)", "soon": "La inscripción en línea se habilita en los próximos días. Mientras tanto, puedes ver las fechas y los horarios de cada encuentro."};
 const LANG="es";
 const EVENTOS=[
  {
   "id": "2026-11-28-certificados",
   "titulo": "Los Mentores Expertos Certificados del Mes",
   "inicio": "2026-11-28T11:00:00-03:00",
-  "desc": "Cada día, nuevos Mentores avanzan en su formación y alcanzan su Certificación como Mentores Expertos. En este encuentro les entregamos su diploma y tenemos la oportunidad de conocer un poco más de ellos y de su proceso."
+  "desc": "Cada día, nuevos Mentores avanzan en su formación y alcanzan su Certificación como Mentores Expertos. En este encuentro les entregamos su diploma y tenemos la oportunidad de conocer un poco más de ellos y de su proceso.",
+  "flyer": "/es/encuentros/agenda/img/nuevos-mentores.webp"
  },
  {
   "id": "2026-12-03-mujeres-lideres",
   "titulo": "Mujeres Líderes",
   "inicio": "2026-12-03T15:00:00-03:00",
-  "desc": "Foro sobre los desafíos y aportes del liderazgo femenino. Un espacio de resonancia, liderazgo y empoderamiento colectivo."
+  "desc": "Foro sobre los desafíos y aportes del liderazgo femenino. Un espacio de resonancia, liderazgo y empoderamiento colectivo.",
+  "flyer": ""
  },
  {
   "id": "2026-12-07-consultas",
   "titulo": "Espacios para hacer consultas",
   "inicio": "2026-12-07T15:00:00-03:00",
-  "desc": "Si estás transitando un \"Proceso de Formación para tu Certificación Internacional de Mentoría\", asiste a estos encuentros para realizar consultas específicas. También podrás encontrarte con otros Mentores que están transitando este camino y quieras intercambiar experiencias."
+  "desc": "Si estás transitando un \"Proceso de Formación para tu Certificación Internacional de Mentoría\", asiste a estos encuentros para realizar consultas específicas. También podrás encontrarte con otros Mentores que están transitando este camino y quieras intercambiar experiencias.",
+  "flyer": "/es/encuentros/agenda/img/consultoria-intensiva.webp"
  },
  {
   "id": "2026-12-10-laboratorio",
   "titulo": "Laboratorio de Herramientas de Mentoría",
   "inicio": "2026-12-10T15:00:00-03:00",
-  "desc": "\"Expandiendo tu caja de recursos para una maestría sin límites\". En este espacio Mentores Expertos nos cuentan cómo es su experiencia en el uso de estas herramientas."
+  "desc": "\"Expandiendo tu caja de recursos para una maestría sin límites\". En este espacio Mentores Expertos nos cuentan cómo es su experiencia en el uso de estas herramientas.",
+  "flyer": ""
  },
  {
   "id": "2026-12-14-consultas",
   "titulo": "Espacios para hacer consultas",
   "inicio": "2026-12-14T15:00:00-03:00",
-  "desc": "Si estás transitando un \"Proceso de Formación para tu Certificación Internacional de Mentoría\", asiste a estos encuentros para realizar consultas específicas. También podrás encontrarte con otros Mentores que están transitando este camino y quieras intercambiar experiencias."
+  "desc": "Si estás transitando un \"Proceso de Formación para tu Certificación Internacional de Mentoría\", asiste a estos encuentros para realizar consultas específicas. También podrás encontrarte con otros Mentores que están transitando este camino y quieras intercambiar experiencias.",
+  "flyer": "/es/encuentros/agenda/img/consultoria-intensiva.webp"
  },
  {
   "id": "2026-12-17-fin-de-anio",
   "titulo": "Reunión de Fin de Año de la Red Global de Mentores – Cierre 2026",
   "inicio": "2026-12-17T15:00:00-03:00",
-  "desc": ""
+  "desc": "",
+  "flyer": "/es/encuentros/agenda/img/cierre-2026.webp"
  },
  {
   "id": "2026-12-19-neurociencia",
   "titulo": "Masterclass de Neurociencia con Néstor Braidot",
   "inicio": "2026-12-19T11:00:00-03:00",
-  "desc": ""
+  "desc": "",
+  "flyer": "/es/encuentros/agenda/img/masterclass-neurociencia.webp"
  }
 ];
 const ABIERTA=!!WEB3FORMS_KEY;
@@ -166,6 +173,12 @@ function confirmacion(ev,d){
       h('div',{},h('dt',{},S.idl),h('dd',{},ZOOM.id),h('button',{class:'boton boton--borde ag-mini',type:'button',onclick:e=>copiar(ZOOM.id.replace(/ /g,''),e.currentTarget)},S.copy)),
       h('div',{},h('dt',{},S.code),h('dd',{},ZOOM.codigo),h('button',{class:'boton boton--borde ag-mini',type:'button',onclick:e=>copiar(ZOOM.codigo,e.currentTarget)},S.copy))));
 }
+function tile(d){return h('div',{class:'ag-tile','aria-hidden':'true'},h('span',{class:'wd'},fWd.format(d)),h('span',{class:'d'},fD.format(d)),h('span',{class:'m'},fM.format(d)))}
+function flyer(ev,d){
+  const img=h('img',{class:'ag-flyer',src:ev.flyer,alt:S.flyeralt+ev.titulo,loading:'lazy',decoding:'async'});
+  img.addEventListener('error',()=>img.replaceWith(tile(d)));
+  return img;
+}
 function tarjeta(ev){
   const d=new Date(ev.inicio),ok=ABIERTA&&inscriptos.includes(ev.id),loc=horaLocal(d);
   let acc;
@@ -173,7 +186,7 @@ function tarjeta(ev){
   else if(ABIERTA)acc=h('button',{type:'button',class:'boton boton--oro',onclick:()=>inscribir(ev.id)},S.btn);
   else acc=h('button',{type:'button',class:'boton',disabled:true},S.btnsoon);
   return h('article',{class:'ag-evento'},
-    h('div',{class:'ag-tile','aria-hidden':'true'},h('span',{class:'wd'},fWd.format(d)),h('span',{class:'d'},fD.format(d)),h('span',{class:'m'},fM.format(d))),
+    ev.flyer?flyer(ev,d):tile(d),
     h('div',{class:'ag-cuerpo'},
       h('h3',{},ev.titulo),
       h('p',{class:'ag-cuando'},cap(cuando(d))),

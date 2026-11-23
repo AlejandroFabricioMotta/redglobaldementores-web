@@ -83,50 +83,57 @@
 const WEB3FORMS_KEY='';
 const TZ='America/Argentina/Buenos_Aires';
 const ZOOM={id:'884 066 0626',url:'https://zoom.us/j/8840660626',codigo:'RGM'};
-const S={"loc": "en-GB", "btn": "Register", "btnsoon": "Registration opening soon", "confirmed": "Your registration is confirmed", "enter": "Join {when} using this link.", "open": "Open Zoom room", "idl": "Meeting ID", "code": "Passcode", "copy": "Copy", "copied": "Copied", "manual": "Select and copy", "yourtime": "Your time: ", "notyou": "Not me", "regas": "Registered as ", "err": "Please fill in every field and tick the box to continue.", "senderr": "We could not record your registration. Check your connection and try again.", "sending": "Sending…", "none": "There are no meetings scheduled at the moment.", "tz": "(Argentina time)", "soon": "Online registration will open in the coming days. In the meantime, you can see the dates and times of each meeting."};
+const S={"flyeralt": "Meeting flyer: ", "loc": "en-GB", "btn": "Register", "btnsoon": "Registration opening soon", "confirmed": "Your registration is confirmed", "enter": "Join {when} using this link.", "open": "Open Zoom room", "idl": "Meeting ID", "code": "Passcode", "copy": "Copy", "copied": "Copied", "manual": "Select and copy", "yourtime": "Your time: ", "notyou": "Not me", "regas": "Registered as ", "err": "Please fill in every field and tick the box to continue.", "senderr": "We could not record your registration. Check your connection and try again.", "sending": "Sending…", "none": "There are no meetings scheduled at the moment.", "tz": "(Argentina time)", "soon": "Online registration will open in the coming days. In the meantime, you can see the dates and times of each meeting."};
 const LANG="en";
 const EVENTOS=[
  {
   "id": "2026-11-28-certificados",
   "titulo": "The Month's Certified Expert Mentors",
   "inicio": "2026-11-28T11:00:00-03:00",
-  "desc": "Every day, new Mentors progress in their training and earn their Certification as Expert Mentors. At this meeting we present their diploma and have the chance to learn a little more about them and their journey."
+  "desc": "Every day, new Mentors progress in their training and earn their Certification as Expert Mentors. At this meeting we present their diploma and have the chance to learn a little more about them and their journey.",
+  "flyer": "/es/encuentros/agenda/img/nuevos-mentores.webp"
  },
  {
   "id": "2026-12-03-mujeres-lideres",
   "titulo": "Women Leaders",
   "inicio": "2026-12-03T15:00:00-03:00",
-  "desc": "A forum on the challenges and contributions of women's leadership. A space of resonance, leadership and collective empowerment."
+  "desc": "A forum on the challenges and contributions of women's leadership. A space of resonance, leadership and collective empowerment.",
+  "flyer": ""
  },
  {
   "id": "2026-12-07-consultas",
   "titulo": "Open Q&A sessions",
   "inicio": "2026-12-07T15:00:00-03:00",
-  "desc": "If you are going through a \"Training Process for your International Mentoring Certification\", join these meetings to ask specific questions. You can also meet other Mentors on the same path and exchange experiences."
+  "desc": "If you are going through a \"Training Process for your International Mentoring Certification\", join these meetings to ask specific questions. You can also meet other Mentors on the same path and exchange experiences.",
+  "flyer": "/es/encuentros/agenda/img/consultoria-intensiva.webp"
  },
  {
   "id": "2026-12-10-laboratorio",
   "titulo": "Mentoring Tools Lab",
   "inicio": "2026-12-10T15:00:00-03:00",
-  "desc": "\"Expanding your toolbox for limitless mastery\". In this space, Expert Mentors share their experience of using these tools."
+  "desc": "\"Expanding your toolbox for limitless mastery\". In this space, Expert Mentors share their experience of using these tools.",
+  "flyer": ""
  },
  {
   "id": "2026-12-14-consultas",
   "titulo": "Open Q&A sessions",
   "inicio": "2026-12-14T15:00:00-03:00",
-  "desc": "If you are going through a \"Training Process for your International Mentoring Certification\", join these meetings to ask specific questions. You can also meet other Mentors on the same path and exchange experiences."
+  "desc": "If you are going through a \"Training Process for your International Mentoring Certification\", join these meetings to ask specific questions. You can also meet other Mentors on the same path and exchange experiences.",
+  "flyer": "/es/encuentros/agenda/img/consultoria-intensiva.webp"
  },
  {
   "id": "2026-12-17-fin-de-anio",
   "titulo": "Global Mentoring Network Year-End Meeting – 2026 Close",
   "inicio": "2026-12-17T15:00:00-03:00",
-  "desc": ""
+  "desc": "",
+  "flyer": "/es/encuentros/agenda/img/cierre-2026.webp"
  },
  {
   "id": "2026-12-19-neurociencia",
   "titulo": "Neuroscience Masterclass with Néstor Braidot",
   "inicio": "2026-12-19T11:00:00-03:00",
-  "desc": ""
+  "desc": "",
+  "flyer": "/es/encuentros/agenda/img/masterclass-neurociencia.webp"
  }
 ];
 const ABIERTA=!!WEB3FORMS_KEY;
@@ -166,6 +173,12 @@ function confirmacion(ev,d){
       h('div',{},h('dt',{},S.idl),h('dd',{},ZOOM.id),h('button',{class:'boton boton--borde ag-mini',type:'button',onclick:e=>copiar(ZOOM.id.replace(/ /g,''),e.currentTarget)},S.copy)),
       h('div',{},h('dt',{},S.code),h('dd',{},ZOOM.codigo),h('button',{class:'boton boton--borde ag-mini',type:'button',onclick:e=>copiar(ZOOM.codigo,e.currentTarget)},S.copy))));
 }
+function tile(d){return h('div',{class:'ag-tile','aria-hidden':'true'},h('span',{class:'wd'},fWd.format(d)),h('span',{class:'d'},fD.format(d)),h('span',{class:'m'},fM.format(d)))}
+function flyer(ev,d){
+  const img=h('img',{class:'ag-flyer',src:ev.flyer,alt:S.flyeralt+ev.titulo,loading:'lazy',decoding:'async'});
+  img.addEventListener('error',()=>img.replaceWith(tile(d)));
+  return img;
+}
 function tarjeta(ev){
   const d=new Date(ev.inicio),ok=ABIERTA&&inscriptos.includes(ev.id),loc=horaLocal(d);
   let acc;
@@ -173,7 +186,7 @@ function tarjeta(ev){
   else if(ABIERTA)acc=h('button',{type:'button',class:'boton boton--oro',onclick:()=>inscribir(ev.id)},S.btn);
   else acc=h('button',{type:'button',class:'boton',disabled:true},S.btnsoon);
   return h('article',{class:'ag-evento'},
-    h('div',{class:'ag-tile','aria-hidden':'true'},h('span',{class:'wd'},fWd.format(d)),h('span',{class:'d'},fD.format(d)),h('span',{class:'m'},fM.format(d))),
+    ev.flyer?flyer(ev,d):tile(d),
     h('div',{class:'ag-cuerpo'},
       h('h3',{},ev.titulo),
       h('p',{class:'ag-cuando'},cap(cuando(d))),
