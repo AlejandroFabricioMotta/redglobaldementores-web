@@ -122,48 +122,57 @@ a.hub-btn.sec:hover{background:#f6f1d6}
 @media(max-width:900px){.u-cab{gap:16px}.u-sello{width:84px;height:84px}}
 </style>
 <style>
-/* Zona de WhatsApp (verde agua) y Zona privada (rojo pastel) */
-#whatsapp .hub-card{background:#d6f2ed;border:2px solid #4fb3a1;border-top:6px solid #4fb3a1;box-shadow:0 4px 14px rgba(13,59,54,.14)}
-#whatsapp .hub-card h3,#whatsapp .hub-card p,#whatsapp .hub-card p b{color:#0d3b36}
-#whatsapp .hub-btn{background:#4fb3a1;border-color:#4fb3a1;color:#06312c}
-#whatsapp a.hub-btn:hover{background:#6cc5b5}
-#whatsapp .hub-btn.sec{background:#fff;color:#0d3b36;border-color:#4fb3a1}
-#whatsapp a.hub-btn.sec:hover{background:#eafaf7}
-#whatsapp .hub-nota{color:#1d6b5f}
-#whatsapp a.hub-btn:focus-visible{outline-color:#0d3b36}
-#privado .hub-card{background:#fbe0de;border:2px solid #de8a85;border-top:6px solid #de8a85;box-shadow:0 4px 14px rgba(110,30,26,.14)}
-#privado .hub-card h3,#privado .hub-card p{color:#4a1816}
-#privado .hub-btn{background:#de8a85;border-color:#de8a85;color:#3d100e}
-#privado a.hub-btn:hover{background:#e8a09b}
-#privado .hub-btn.off{background:#f3d3d1;border-color:#c99a97;color:#7a4a47}
-#privado .hub-pw{border-color:#a8433e;color:#7a2b27;background:#fff5f4}
-#privado a.hub-btn:focus-visible{outline-color:#4a1816}
-.hub-idx a.i-wapp{background:#d6f2ed;border-color:#4fb3a1;color:#0d3b36}
-.hub-idx a.i-priv{background:#fbe0de;border-color:#de8a85;color:#4a1816}
-.hub-idx a.i-wapp:hover{background:#bfe9e1}.hub-idx a.i-priv:hover{background:#f6cbc8}
-</style>
-<style>
-/* Paleta ajustada: Zona privada (pizarra + salmón), Redes (azul cielo), Contacto (durazno) */
-#privado .hub-card{background:#444c54;border:2px solid #f6a48f;border-top:6px solid #f6a48f;box-shadow:0 6px 18px rgba(31,37,45,.28)}
-#privado .hub-card h3{color:#fff}#privado .hub-card p{color:#e6e9ec}
-#privado .hub-btn{background:#f6a48f;border-color:#f6a48f;color:#2b1610}
-#privado a.hub-btn:hover{background:#f9b8a7}
-#privado .hub-btn.off{background:#59626b;border-color:#8c969f;color:#c9cfd4}
-#privado .hub-pw{border-color:#f6a48f;color:#ffd9cf;background:rgba(246,164,143,.12)}
-#privado a.hub-btn:focus-visible{outline-color:#fff}
-#redes .hub-subs{background:#e2f2fa;border:2px solid #2e9bd0;border-top:6px solid #2e9bd0;border-radius:18px;padding:24px;box-shadow:0 4px 14px rgba(14,60,90,.14)}
-#redes .hub-btn{background:#2e9bd0;border-color:#2e9bd0;color:#06263a}
-#redes a.hub-btn:hover{background:#5bb4de}
-#redes a.hub-btn:focus-visible{outline-color:#06263a}
-#contacto .hub-card{background:#ffefd9;border:2px solid #f6a48f;border-top:6px solid #f6a48f;box-shadow:0 4px 14px rgba(110,50,20,.14)}
-#contacto .hub-card h3{color:#4a2412}#contacto .hub-card p{color:#5e3520}
-#contacto .hub-btn{background:#f6a48f;border-color:#f6a48f;color:#2b1610}
-#contacto a.hub-btn:hover{background:#f9b8a7}
-#contacto .hub-nota{color:#8a4a2e}
-#contacto a.hub-btn:focus-visible{outline-color:#4a2412}
-.hub-idx a.i-priv{background:#444c54;border-color:#f6a48f;color:#fff}.hub-idx a.i-priv:hover{background:#5a646d}
-.hub-idx a.i-redes{background:#e2f2fa;border-color:#2e9bd0;color:#06263a}.hub-idx a.i-redes:hover{background:#c8e6f5}
-.hub-idx a.i-contacto{background:#ffefd9;border-color:#f6a48f;color:#4a2412}.hub-idx a.i-contacto:hover{background:#ffe0bd}
+/* Zona privada (rojo), WApp (verde), Redes (naranja), Contacto (gris): tonos profundos como las unidades */
+#privado{--u-bg:#5C1219;--u-ac:#E5706A;--u-tx:#F8E3E1;--u-bt:#3A0A0E}
+#privado .hub-card,#privado .hub-subs{background:#5C1219;border:2px solid #E5706A;border-top:6px solid #E5706A;box-shadow:0 8px 22px rgba(0,0,0,.24)}
+#privado .hub-card h3{color:#fff}#privado .hub-card p,#privado .hub-card p b{color:#F8E3E1}
+#privado .hub-nota{color:#E5706A}
+#privado .hub-btn{background:#E5706A;border-color:#E5706A;color:#3A0A0E}
+#privado a.hub-btn:hover{background:#ee8a85}
+#privado .hub-btn.sec{background:transparent;color:#fff;border-color:#E5706A}
+#privado a.hub-btn.sec:hover{background:rgba(255,255,255,.14)}
+#privado .hub-btn.off{background:rgba(255,255,255,.12);border-color:#E5706A;color:#F8E3E1}
+#privado .hub-pw{border-color:#E5706A;color:#F8E3E1;background:rgba(255,255,255,.1)}
+#privado a.hub-btn:focus-visible{outline:4px solid #fff;outline-offset:3px}
+#whatsapp{--u-bg:#124A36;--u-ac:#5ED39A;--u-tx:#DDF4EA;--u-bt:#06281C}
+#whatsapp .hub-card,#whatsapp .hub-subs{background:#124A36;border:2px solid #5ED39A;border-top:6px solid #5ED39A;box-shadow:0 8px 22px rgba(0,0,0,.24)}
+#whatsapp .hub-card h3{color:#fff}#whatsapp .hub-card p,#whatsapp .hub-card p b{color:#DDF4EA}
+#whatsapp .hub-nota{color:#5ED39A}
+#whatsapp .hub-btn{background:#5ED39A;border-color:#5ED39A;color:#06281C}
+#whatsapp a.hub-btn:hover{background:#7fe0b0}
+#whatsapp .hub-btn.sec{background:transparent;color:#fff;border-color:#5ED39A}
+#whatsapp a.hub-btn.sec:hover{background:rgba(255,255,255,.14)}
+#whatsapp .hub-btn.off{background:rgba(255,255,255,.12);border-color:#5ED39A;color:#DDF4EA}
+#whatsapp .hub-pw{border-color:#5ED39A;color:#DDF4EA;background:rgba(255,255,255,.1)}
+#whatsapp a.hub-btn:focus-visible{outline:4px solid #fff;outline-offset:3px}
+#redes{--u-bg:#A94F0B;--u-ac:#FFB15C;--u-tx:#FFF0E0;--u-bt:#3A1A02}
+#redes .hub-card,#redes .hub-subs{background:#A94F0B;border:2px solid #FFB15C;border-top:6px solid #FFB15C;box-shadow:0 8px 22px rgba(0,0,0,.24)}
+#redes .hub-card h3{color:#fff}#redes .hub-card p,#redes .hub-card p b{color:#FFF0E0}
+#redes .hub-nota{color:#FFB15C}
+#redes .hub-btn{background:#FFB15C;border-color:#FFB15C;color:#3A1A02}
+#redes a.hub-btn:hover{background:#ffc27f}
+#redes .hub-btn.sec{background:transparent;color:#fff;border-color:#FFB15C}
+#redes a.hub-btn.sec:hover{background:rgba(255,255,255,.14)}
+#redes .hub-btn.off{background:rgba(255,255,255,.12);border-color:#FFB15C;color:#FFF0E0}
+#redes .hub-pw{border-color:#FFB15C;color:#FFF0E0;background:rgba(255,255,255,.1)}
+#redes a.hub-btn:focus-visible{outline:4px solid #fff;outline-offset:3px}
+#contacto{--u-bg:#3F444B;--u-ac:#C3CAD2;--u-tx:#E8EBEE;--u-bt:#1F2327}
+#contacto .hub-card,#contacto .hub-subs{background:#3F444B;border:2px solid #C3CAD2;border-top:6px solid #C3CAD2;box-shadow:0 8px 22px rgba(0,0,0,.24)}
+#contacto .hub-card h3{color:#fff}#contacto .hub-card p,#contacto .hub-card p b{color:#E8EBEE}
+#contacto .hub-nota{color:#C3CAD2}
+#contacto .hub-btn{background:#C3CAD2;border-color:#C3CAD2;color:#1F2327}
+#contacto a.hub-btn:hover{background:#d9dee4}
+#contacto .hub-btn.sec{background:transparent;color:#fff;border-color:#C3CAD2}
+#contacto a.hub-btn.sec:hover{background:rgba(255,255,255,.14)}
+#contacto .hub-btn.off{background:rgba(255,255,255,.12);border-color:#C3CAD2;color:#E8EBEE}
+#contacto .hub-pw{border-color:#C3CAD2;color:#E8EBEE;background:rgba(255,255,255,.1)}
+#contacto a.hub-btn:focus-visible{outline:4px solid #fff;outline-offset:3px}
+#redes .hub-subs{border-radius:18px;padding:24px}
+#contacto .hub-card h3{color:#fff}
+.hub-idx a.i-priv{background:#5C1219;border-color:#E5706A;color:#fff}.hub-idx a.i-priv:hover{filter:brightness(1.25)}
+.hub-idx a.i-wapp{background:#124A36;border-color:#5ED39A;color:#fff}.hub-idx a.i-wapp:hover{filter:brightness(1.25)}
+.hub-idx a.i-redes{background:#A94F0B;border-color:#FFB15C;color:#fff}.hub-idx a.i-redes:hover{filter:brightness(1.25)}
+.hub-idx a.i-contacto{background:#3F444B;border-color:#C3CAD2;color:#fff}.hub-idx a.i-contacto:hover{filter:brightness(1.25)}
 </style>
 </head>
 <body>
