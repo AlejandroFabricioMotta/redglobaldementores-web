@@ -734,3 +734,14 @@ body.tema-editorial .zocalo__datos, body.tema-editorial .zocalo__c { color: #EFE
 .compra .boton { width: 100%; justify-content: center; }
 .compra-msg { margin: 10px 0 0; color: #ffb4b4; font-size: 14px; }
 .compra--miembro p { margin: 8px 0; }
+
+/* Encabezado: el logo/marca nunca se comprime ni se deforma (celular, tableta y notebook) */
+.marca { flex: none; }
+.marca img { flex: none; max-width: none; }
+.marca img.marca-logo { width: auto; height: 48px; }
+.encabezado .contenedor { gap: 12px; }
+.menu { gap: 4px 12px; }
+@media (max-width: 1400px) { .marca span { white-space: normal; max-width: 118px; } }
+@media (max-width: 860px) { .marca img.marca-logo { height: 44px; } .encabezado .contenedor { gap: 8px; } }
+@media (max-width: 420px) { .marca img.marca-logo { height: 36px; } .marca { gap: 8px; } .marca span { font-size: 12px; max-width: 96px; } .encabezado .contenedor { gap: 6px; } .menu-boton { padding: 7px 10px; } .llave { margin-left: 4px; width: 34px; height: 34px; } }
+@media (max-width: 340px) { .llave { display: none; } .marca img.marca-logo { height: 32px; } .marca span { font-size: 11px; max-width: 84px; } }
