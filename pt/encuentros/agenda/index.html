@@ -212,6 +212,7 @@ async function enviar(id,p){
   const ev=EVENTOS.find(e=>e.id===id);
   const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
     body:JSON.stringify({access_key:WEB3FORMS_KEY,subject:'Inscripción RGM: '+ev.titulo,from_name:'Agenda RGM',
+      aviso:'Hola, se recibió una nueva inscripción en la agenda de encuentros de tu sitio web. Detalles a continuación. / Olá, foi recebida uma nova inscrição na agenda de encontros do seu site. Detalhes abaixo.',
       encuentro_id:ev.id,encuentro:ev.titulo,fecha_inicio:ev.inicio,nombre:p.nombre,email:p.email,pais:p.pais,idioma_pagina:LANG,consentimiento:'Sí',botcheck:''})});
   const j=await r.json();
   if(!r.ok||!j.success)throw new Error('envio');
