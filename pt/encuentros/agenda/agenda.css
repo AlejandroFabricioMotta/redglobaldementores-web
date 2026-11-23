@@ -1,0 +1,49 @@
+/* Agenda de encuentros RGM. Usa las variables de ../encuentros.css (vino y dorado). */
+.ag-hero{padding:72px 0 28px;background:radial-gradient(1000px 500px at 90% 0,rgba(255,255,255,.07),transparent 60%),linear-gradient(170deg,#561433 0%,#7A2149 100%)}
+.ag-hero h1{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:.4em}
+.ag-hero .bajada{max-width:62ch}
+.ag-aviso{margin:1.6rem 0 0;max-width:66ch;border-left:4px solid var(--oro);background:rgba(255,255,255,.07);padding:12px 16px;border-radius:0 10px 10px 0;font-size:.92rem;color:var(--texto)}
+.ag-persona{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-size:.9rem;color:var(--texto-suave);margin:0 0 1.6rem}
+.ag-persona b{color:#fff;font-weight:600}
+.ag-link{background:none;border:0;padding:4px 0;font:inherit;color:var(--oro-claro);text-decoration:underline;cursor:pointer}
+.ag-mes{margin:0 0 2.6rem}
+.ag-mes>h2{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--oro-claro);font-weight:600;margin:0 0 1rem}
+.ag-evento{display:grid;grid-template-columns:128px minmax(0,1fr);gap:22px;background:rgba(255,255,255,.05);border:1px solid var(--linea);border-radius:var(--radio);padding:18px;margin:0 0 16px}
+.ag-tile{aspect-ratio:4/5;background:var(--azul-oscuro);border:1px solid var(--oro);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.ag-tile .wd{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-claro);font-weight:600}
+.ag-tile .d{font-size:3.2rem;font-weight:800;line-height:1.05;color:#fff}
+.ag-tile .m{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--oro-claro)}
+.ag-cuerpo{display:flex;flex-direction:column;gap:10px;min-width:0}
+.ag-cuerpo h3{font-size:1.3rem;margin:0;text-wrap:balance}
+.ag-cuando{font-weight:600;margin:0}
+.ag-local{font-size:.9rem;color:var(--texto-suave);margin:0}
+.ag-desc{color:var(--texto-suave);font-size:.95rem;max-width:62ch;margin:0}
+.ag-acc{margin-top:6px}
+.ag-evento button.boton{font-family:var(--fuente)}
+.ag-evento .boton[disabled]{background:transparent;color:var(--texto-suave);border-color:var(--linea);cursor:not-allowed}
+.ag-evento .boton[disabled]::after{content:""}
+.ag-conf{background:rgba(255,255,255,.08);border:1px solid var(--oro);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:12px}
+.ag-conf h4{margin:0;font-size:1.05rem;color:#fff}
+.ag-conf h4:focus{outline:none}
+.ag-conf p{margin:0}
+.ag-sala{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:0}
+.ag-sala div{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.ag-sala dt{width:100%;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--oro-claro)}
+.ag-sala dd{margin:0;font-weight:700;font-size:1.15rem;font-variant-numeric:tabular-nums}
+.ag-mini{padding:5px 12px;font-size:.78rem}
+.ag-mini::after{content:""}
+.ag-nota{font-size:.85rem;color:var(--texto-suave);max-width:66ch}
+dialog.ag-dlg{border:1px solid var(--oro);border-radius:16px;background:var(--azul-oscuro);color:var(--texto);padding:26px;width:min(480px,calc(100vw - 32px))}
+dialog.ag-dlg::backdrop{background:rgba(20,5,12,.7)}
+.ag-dlg h2{font-size:1.35rem;margin:0}
+.ag-dlg .sub{color:var(--texto-suave);font-size:.95rem;margin:4px 0 0}
+.ag-dlg form{display:flex;flex-direction:column;gap:14px;margin-top:16px}
+.ag-dlg label{display:flex;flex-direction:column;gap:4px;font-size:.88rem;font-weight:600}
+.ag-dlg input[type=text],.ag-dlg input[type=email]{font:1rem var(--fuente);padding:10px 12px;border-radius:8px;border:1px solid var(--linea);background:#fff;color:#1b1b1b}
+.ag-dlg label.chk{flex-direction:row;gap:10px;align-items:flex-start;font-weight:400;line-height:1.45}
+.ag-dlg label.chk input{margin-top:4px;flex:none}
+.ag-dlg .fila{display:flex;flex-wrap:wrap;gap:10px}
+.ag-dlg .err{color:var(--oro-claro);font-size:.9rem;margin:0}
+.ag-trampa{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.ag-dlg :is(button,input):focus-visible{outline:3px solid var(--oro-claro);outline-offset:2px}
+@media(max-width:620px){.ag-hero{padding:48px 0 20px}.ag-evento{grid-template-columns:1fr}.ag-tile{aspect-ratio:auto;flex-direction:row;gap:12px;padding:10px 14px;justify-content:flex-start}.ag-tile .d{font-size:2.1rem}}

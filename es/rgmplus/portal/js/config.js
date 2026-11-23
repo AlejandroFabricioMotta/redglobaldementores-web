@@ -30,7 +30,7 @@ window.RGM_CONFIG = {
     { key: 'academia',  url: 'https://www.academiaglobalrgm.com/' },                    // provisional
     { key: 'editorial', url: 'https://www.editorialrgm.com/' },                         // provisional
     { key: 'directorio', url: 'https://www.redglobaldementores.org/{lang}/' },          // provisional (ajustar a la sección Directorio)
-    { key: 'encuentros', url: 'https://www.holdingmentors.com/proximosencuentros' }
+    { key: 'encuentros', url: 'https://www.redglobaldementores.org/es/encuentros/agenda/' }
   ],
   backUrl: 'https://www.redglobaldementores.org/{lang}/',
 
