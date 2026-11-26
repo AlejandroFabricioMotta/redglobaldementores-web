@@ -677,7 +677,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-25-diciembre-2025",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-25.webp"
  },
  {
   "titulo": "Magazine 24 - Junio 2025",
@@ -691,7 +692,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-24-junio-2025",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-24.webp"
  },
  {
   "titulo": "Magazine 23 - Mayo 2025",
@@ -705,7 +707,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-23-mayo-2025",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-23.webp"
  },
  {
   "titulo": "Magazine 22 - Abril 2025",
@@ -719,7 +722,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-22-abril-2025",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-22.webp"
  },
  {
   "titulo": "Magazine 21 - Marzo 2025",
@@ -733,7 +737,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-21-marzo-2025",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-21.webp"
  },
  {
   "titulo": "Magazine 20 - Julio 2022",
