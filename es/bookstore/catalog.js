@@ -747,7 +747,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-20-julio-2022",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-20.webp"
  },
  {
   "titulo": "Magazine 19 - Junho 2022",
@@ -761,7 +762,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-19-junho-2022",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-19.webp"
  },
  {
   "titulo": "Magazine 18 - Mayo 2022",
@@ -775,7 +777,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-18-mayo-2022",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-18.webp"
  },
  {
   "titulo": "Magazine 17 - Abril 2022",
@@ -789,7 +792,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-17-abril-2022",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-17.webp"
  },
  {
   "titulo": "Magazine 16 - Março 2022",
@@ -803,7 +807,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-16-marco-2022",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-16.webp"
  },
  {
   "titulo": "Magazine 15 - Enero 2022",
@@ -817,7 +822,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-15-enero-2022",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-15.webp"
  },
  {
   "titulo": "Magazine 14 - Diciembre 2021",
@@ -831,7 +837,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-14-diciembre-2021",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-14.webp"
  },
  {
   "titulo": "Magazine 13 - Noviembre 2021",
@@ -845,7 +852,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-13-noviembre-2021",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-13.webp"
  },
  {
   "titulo": "Magazine 12 - Septiembre 2021",
@@ -859,7 +867,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-12-septiembre-2021",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-12.webp"
  },
  {
   "titulo": "Magazine 11 - Agosto 2021",
@@ -873,7 +882,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-11-agosto-2021",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-11.webp"
  },
  {
   "titulo": "Magazine 10 - Julio 2021",
