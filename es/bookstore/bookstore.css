@@ -102,3 +102,13 @@
 .bk-bloque span{font-size:.85rem;color:#7A6652}
 .bk-explorar .bk-chips a small{opacity:.7}
 @media (max-width:720px){.bk-obra,.bk-dos{grid-template-columns:1fr}.bk-obra__portada .bk-portada{max-width:220px}}
+
+/* Menú del BookStore siempre horizontal (anula el menú vertical de la Editorial en pantallas medianas/chicas) */
+.bk .ed-cab__nav.bk-nav { display: flex; position: static; flex-direction: row; align-items: center; gap: 22px; padding: 0; background: none; border: 0; flex-wrap: wrap; justify-content: flex-end; }
+.bk .ed-cab__nav.bk-nav a { padding: 6px 0; border-bottom: 2px solid transparent; }
+.bk .ed-cab__nav.bk-nav a[aria-current="page"] { border-bottom-color: #BFA98A; color: #fff; }
+@media (max-width: 640px) {
+  .bk .ed-cab__in { flex-direction: column; align-items: flex-start; padding-block: 10px; }
+  .bk .ed-cab__nav.bk-nav { gap: 6px 16px; justify-content: flex-start; }
+  .bk .ed-cab__nav.bk-nav a { font-size: .85rem; }
+}
