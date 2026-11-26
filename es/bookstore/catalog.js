@@ -1624,7 +1624,8 @@ window.BOOKSTORE_CATALOG = [
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
-  "id": "el-camino-del-mentor"
+  "id": "el-camino-del-mentor",
+  "portada": "../img/editorial/bk-el-camino-del-mentor.webp"
  },
  {
   "titulo": "Magazine 01 - Septiembre 2020",
@@ -1637,7 +1638,8 @@ window.BOOKSTORE_CATALOG = [
    "Magazines"
   ],
   "autor": "Editorial RGM",
-  "id": "magazine-01-septiembre-2020"
+  "id": "magazine-01-septiembre-2020",
+  "portada": "../img/editorial/bk-magazine-01.webp"
  },
  {
   "titulo": "Historias de Migración - Vol 02",
@@ -1650,6 +1652,7 @@ window.BOOKSTORE_CATALOG = [
    "Antologías"
   ],
   "autor": null,
-  "id": "historias-de-migracion-vol-02"
+  "id": "historias-de-migracion-vol-02",
+  "portada": "../img/editorial/bk-antologia-07-vol02.webp"
  }
 ];
