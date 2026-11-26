@@ -27,6 +27,18 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-neuroliderazgo-habitable.webp"
  },
  {
+  "titulo": "Pensamientos y Reflexiones para la Vida Plena",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "es",
+  "confirmado": true,
+  "tags": [],
+  "autor": "Serafín Contreras Galeano",
+  "id": "pensamientos-y-reflexiones-para-la-vida-plena",
+  "ventas": 0,
+  "portada": "../img/editorial/bk-pensamientos-y-reflexiones-para-la-vida-plena.webp"
+ },
+ {
   "titulo": "Gobernar Éticamente el Poder",
   "precio": 5,
   "oferta": null,
