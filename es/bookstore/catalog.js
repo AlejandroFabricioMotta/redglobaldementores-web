@@ -12,7 +12,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Nelson de J. Rueda",
   "id": "la-conciencia-que-transforma-de-comprender-la-vida-a-aprende",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-la-conciencia-que-transforma-de-comprender-la-vida-a-aprende.webp"
  },
  {
   "titulo": "Neuroliderazgo Habitable",
@@ -24,7 +25,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Nelson de J. Rueda",
   "id": "neuroliderazgo-habitable",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-neuroliderazgo-habitable.webp"
  },
  {
   "titulo": "Pensamientos y Reflexiones para la Vida Plena",
@@ -36,7 +38,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Serafín Contreras Galeano",
   "id": "pensamientos-y-reflexiones-para-la-vida-plena",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-pensamientos-y-reflexiones-para-la-vida-plena.webp"
  },
  {
   "titulo": "Mentoria Habitable",
@@ -48,7 +51,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Nelson de J. Rueda",
   "id": "mentoria-habitable",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-mentoria-habitable.webp"
  },
  {
   "titulo": "Gobernar Éticamente el Poder",
@@ -60,7 +64,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Nelson de J. Rueda",
   "id": "gobernar-eticamente-el-poder",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-gobernar-eticamente-el-poder.webp"
  },
  {
   "titulo": "Después del Umbral",
@@ -72,7 +77,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "despues-del-umbral",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-despues-del-umbral.webp"
  },
  {
   "titulo": "Resumen Cierre Simposio de Mentoria 2026",
@@ -86,7 +92,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "resumen-cierre-simposio-de-mentoria-2026",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-resumen-cierre-simposio-de-mentoria-2026.webp"
  },
  {
   "titulo": "Estándar Profesional de Competencias Mentorales",
@@ -114,7 +121,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "guia-essencial-para-a-mentoria",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-guia-essencial-para-a-mentoria.webp"
  },
  {
   "titulo": "Guia Profissional para a Práctica de Mentoria",
@@ -156,7 +164,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Nelson de J. Rueda",
   "id": "conversaciones-habitables",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-conversaciones-habitables.webp"
  },
  {
   "titulo": "Manual del Mentor Experto en Educación Continua",
@@ -170,7 +179,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "manual-del-mentor-experto-en-educacion-continua",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-manual-del-mentor-experto-en-educacion-continua.webp"
  },
  {
   "titulo": "Manual del Mentor Experto en Gestión de Proyectos",
@@ -184,7 +194,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "manual-del-mentor-experto-en-gestion-de-proyectos",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-manual-del-mentor-experto-en-gestion-de-proyectos.webp"
  },
  {
   "titulo": "Manual del Mentor Experto en Acompañamiento de Enfermedades Críticas",
@@ -198,7 +209,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "manual-del-mentor-experto-en-acompanamiento-de-enfermedades-",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-manual-del-mentor-experto-en-acompanamiento-de-enfermedades-.webp"
  },
  {
   "titulo": "Manual del Mentor Experto en Gestión y Liderazgo Corporativo",
@@ -212,7 +224,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "manual-del-mentor-experto-en-gestion-y-liderazgo-corporativo",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-manual-del-mentor-experto-en-gestion-y-liderazgo-corporativo.webp"
  },
  {
   "titulo": "Cuadernos de Acompañamiento Catástrofe",
@@ -226,7 +239,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "cuadernos-de-acompanamiento-catastrofe",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-cuadernos-de-acompanamiento-catastrofe.webp"
  },
  {
   "titulo": "15 Metacompetencias del Mentor",
@@ -270,7 +284,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Etna Martínez",
   "id": "transforma-tu-vida",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-transforma-tu-vida.webp"
  },
  {
   "titulo": "Áreas de Especialización en Mentoría",
@@ -284,7 +299,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Alejandro Motta",
   "id": "areas-de-especializacion-en-mentoria",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-areas-de-especializacion-en-mentoria.webp"
  },
  {
   "titulo": "Guía Diferencial en el Arte de Preguntar",
@@ -298,7 +314,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Nelson de J. Rueda",
   "id": "guia-diferencial-en-el-arte-de-preguntar",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-guia-diferencial-en-el-arte-de-preguntar.webp"
  },
  {
   "titulo": "El Talento que Trasciende",
@@ -312,7 +329,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Aldo Piñero",
   "id": "el-talento-que-trasciende",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-el-talento-que-trasciende.webp"
  },
  {
   "titulo": "Metáforas Visuales, Disparadores y Algo Más",
@@ -326,7 +344,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Inés Cinacchi",
   "id": "metaforas-visuales-disparadores-y-algo-mas",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-metaforas-visuales-disparadores-y-algo-mas.webp"
  },
  {
   "titulo": "Manual Profesional para el Ejercicio Mentoral",
@@ -460,7 +479,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "essential-guide-to-mentoring",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-essential-guide-to-mentoring.webp"
  },
  {
   "titulo": "Guía Esencial de la Mentoria",
@@ -993,7 +1013,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Alejandro Motta",
   "id": "mi-lectura-estrategica",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-mi-lectura-estrategica.webp"
  },
  {
   "titulo": "El Espejo del Guía",
@@ -1007,7 +1028,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Alejandro Motta",
   "id": "el-espejo-del-guia",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-el-espejo-del-guia.webp"
  },
  {
   "titulo": "Mentoria en Gestión de Proyectos",
@@ -1021,7 +1043,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Alejandro Motta",
   "id": "mentoria-en-gestion-de-proyectos",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-mentoria-en-gestion-de-proyectos.webp"
  },
  {
   "titulo": "El Origen de la Mentoria",
@@ -1035,7 +1058,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Alejandro Motta",
   "id": "el-origen-de-la-mentoria",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-el-origen-de-la-mentoria.webp"
  },
  {
   "titulo": "Escapando del laberinto del ego",
@@ -1049,7 +1073,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Nelson de J. Rueda",
   "id": "escapando-del-laberinto-del-ego",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-escapando-del-laberinto-del-ego.webp"
  },
  {
   "titulo": "Como soltar el nudo",
@@ -1063,7 +1088,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Nelson de J. Rueda",
   "id": "como-soltar-el-nudo",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-como-soltar-el-nudo.webp"
  },
  {
   "titulo": "Humanos Habitables",
@@ -1077,7 +1103,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Nelson de J. Rueda",
   "id": "humanos-habitables",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-humanos-habitables.webp"
  },
  {
   "titulo": "Equipos Habitables",
@@ -1091,7 +1118,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Nelson de J. Rueda",
   "id": "equipos-habitables",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-equipos-habitables.webp"
  },
  {
   "titulo": "Cuando las Culturas se Encuentran",
@@ -1105,7 +1133,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Esther Sadin",
   "id": "cuando-las-culturas-se-encuentran",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-cuando-las-culturas-se-encuentran.webp"
  },
  {
   "titulo": "El Inicio del Viaje",
@@ -1119,7 +1148,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Nelson de J. Rueda",
   "id": "el-inicio-del-viaje",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-el-inicio-del-viaje.webp"
  },
  {
   "titulo": "Organizaciones Habitables",
@@ -1133,7 +1163,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Nelson de J. Rueda",
   "id": "organizaciones-habitables",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-organizaciones-habitables.webp"
  },
  {
   "titulo": "Renacer Comercial",
@@ -1147,7 +1178,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Jaime España",
   "id": "renacer-comercial",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-renacer-comercial.webp"
  },
  {
   "titulo": "Ojos para lo invisible",
@@ -1161,7 +1193,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Jaime España",
   "id": "ojos-para-lo-invisible",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-ojos-para-lo-invisible.webp"
  },
  {
   "titulo": "Mas Humanos",
@@ -1175,7 +1208,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Jaime España",
   "id": "mas-humanos",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-mas-humanos.webp"
  },
  {
   "titulo": "Legado en Llamas",
@@ -1189,7 +1223,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Jaime España",
   "id": "legado-en-llamas",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-legado-en-llamas.webp"
  },
  {
   "titulo": "Maestria de la Transformación",
@@ -1203,7 +1238,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Nelson de J. Rueda",
   "id": "maestria-de-la-transformacion",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-maestria-de-la-transformacion.webp"
  },
  {
   "titulo": "Emprender después de los 50 años",
@@ -1217,7 +1253,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Alejandro Motta",
   "id": "emprender-despues-de-los-50-anos",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-emprender-despues-de-los-50-anos.webp"
  },
  {
   "titulo": "PENSARME",
@@ -1231,7 +1268,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Alejandro Motta",
   "id": "pensarme",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-pensarme.webp"
  },
  {
   "titulo": "La Nueva Gobernanza",
@@ -1243,7 +1281,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "la-nueva-gobernanza",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-la-nueva-gobernanza.webp"
  },
  {
   "titulo": "Sesiones de Mentoria",
@@ -1255,7 +1294,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "sesiones-de-mentoria",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-sesiones-de-mentoria.webp"
  },
  {
   "titulo": "Herramientas de Mentoria",
@@ -1267,7 +1307,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "herramientas-de-mentoria",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-herramientas-de-mentoria.webp"
  },
  {
   "titulo": "10 Enseñanzas Universales del Despertar de la Consciencia",
@@ -1279,7 +1320,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "10-ensenanzas-universales-del-despertar-de-la-consciencia",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-10-ensenanzas-universales-del-despertar-de-la-consciencia.webp"
  },
  {
   "titulo": "Cómo determinar el precio de tus servicios profesionales",
@@ -1291,7 +1333,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "como-determinar-el-precio-de-tus-servicios-profesionales",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-como-determinar-el-precio-de-tus-servicios-profesionales.webp"
  },
  {
   "titulo": "Disciplinas del Desarrollo Humano",
@@ -1303,7 +1346,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "disciplinas-del-desarrollo-humano",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-disciplinas-del-desarrollo-humano.webp"
  },
  {
   "titulo": "Después de Mi, Que?",
@@ -1315,7 +1359,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "despues-de-mi-que",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-despues-de-mi-que.webp"
  },
  {
   "titulo": "Los 8 Dominios del Emprendedor",
@@ -1327,7 +1372,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "los-8-dominios-del-emprendedor",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-los-8-dominios-del-emprendedor.webp"
  },
  {
   "titulo": "EMPRENDER CON METODO",
@@ -1339,7 +1385,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "emprender-con-metodo",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-emprender-con-metodo.webp"
  },
  {
   "titulo": "Reflexiones de un Emprendedor Serial",
@@ -1351,7 +1398,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "reflexiones-de-un-emprendedor-serial",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-reflexiones-de-un-emprendedor-serial.webp"
  },
  {
   "titulo": "Transfiriendo Sabiduría",
@@ -1363,7 +1411,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "transfiriendo-sabiduria",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-transfiriendo-sabiduria.webp"
  },
  {
   "titulo": "Mentor & Gurú",
@@ -1375,7 +1424,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "mentor-guru",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-mentor-guru.webp"
  },
  {
   "titulo": "Cómo armar Modelos de Mentoria",
@@ -1387,7 +1437,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "como-armar-modelos-de-mentoria",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-como-armar-modelos-de-mentoria.webp"
  },
  {
   "titulo": "El Mentor Experto",
@@ -1399,7 +1450,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "el-mentor-experto",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-el-mentor-experto.webp"
  },
  {
   "titulo": "El Exito de un Mentor Profesional",
@@ -1411,7 +1463,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "el-exito-de-un-mentor-profesional",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-el-exito-de-un-mentor-profesional.webp"
  },
  {
   "titulo": "La Edad Espiritual",
@@ -1423,7 +1476,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "la-edad-espiritual",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-la-edad-espiritual.webp"
  },
  {
   "titulo": "Implementación DAO en la Red Global de Mentores",
@@ -1435,7 +1489,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "implementacion-dao-en-la-red-global-de-mentores",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-implementacion-dao-en-la-red-global-de-mentores.webp"
  },
  {
   "titulo": "El Gran Misterio de la Vida",
@@ -1447,7 +1502,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Nelson de J. Rueda",
   "id": "el-gran-misterio-de-la-vida",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-el-gran-misterio-de-la-vida.webp"
  },
  {
   "titulo": "FORJAR CAMINOS",
@@ -1459,7 +1515,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Nelson de J. Rueda",
   "id": "forjar-caminos",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-forjar-caminos.webp"
  },
  {
   "titulo": "En Pareja, Un viaje hacia la individualidad.",
@@ -1471,7 +1528,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Nelson de J. Rueda",
   "id": "en-pareja-un-viaje-hacia-la-individualidad",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-en-pareja-un-viaje-hacia-la-individualidad.webp"
  },
  {
   "titulo": "Mapa Evolutivo del Ser",
@@ -1483,7 +1541,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Nelson de J. Rueda",
   "id": "mapa-evolutivo-del-ser",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-mapa-evolutivo-del-ser.webp"
  },
  {
   "titulo": "Coaching Transicional Trascendente",
@@ -1495,7 +1554,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Nelson de J. Rueda",
   "id": "coaching-transicional-trascendente",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-coaching-transicional-trascendente.webp"
  },
  {
   "titulo": "El Murmullo del Poder",
@@ -1507,7 +1567,8 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Jaime España",
   "id": "el-murmullo-del-poder",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-el-murmullo-del-poder.webp"
  },
  {
   "titulo": "El Latido del Servicio",
@@ -1519,6 +1580,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Jaime España",
   "id": "el-latido-del-servicio",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-el-latido-del-servicio.webp"
  }
 ];
