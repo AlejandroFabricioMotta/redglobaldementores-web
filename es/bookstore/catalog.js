@@ -1529,5 +1529,16 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Silvia Passamonti",
   "id": "yo-estuve-ahi",
   "portada": "../img/editorial/bk-yo-estuve-ahi.webp"
+ },
+ {
+  "titulo": "O Mentor em Ação",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "pt",
+  "confirmado": false,
+  "tags": [],
+  "autor": "Fernanda Ferreira",
+  "id": "o-mentor-em-acao",
+  "portada": "../img/editorial/bk-o-mentor-em-acao.webp"
  }
 ];
