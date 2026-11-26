@@ -1507,5 +1507,26 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Editorial RGM",
   "id": "magazine-01-septiembre-2020",
   "portada": "../img/editorial/bk-magazine-01.webp"
+ },
+ {
+  "titulo": "Secretos de mi Bello Atardecer",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "es",
+  "confirmado": false,
+  "tags": [],
+  "autor": "Maribel Belaval",
+  "id": "secretos-de-mi-bello-atardecer",
+  "portada": "../img/editorial/bk-secretos-de-mi-bello-atardecer.webp"
+ },
+ {
+  "titulo": "Yo estuve ahí",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "es",
+  "confirmado": false,
+  "tags": [],
+  "autor": "Silvia Passamonti",
+  "id": "yo-estuve-ahi"
  }
 ];
