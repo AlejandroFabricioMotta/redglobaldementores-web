@@ -569,6 +569,21 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-antologia-experiencias.webp"
  },
  {
+  "titulo": "Historias de Migración - Vol 02",
+  "precio": 2,
+  "oferta": null,
+  "idioma": "es",
+  "url": null,
+  "confirmado": false,
+  "tags": [
+   "Antologías"
+  ],
+  "autor": "Editorial RGM",
+  "id": "historias-de-migracion-vol-02",
+  "ventas": 0,
+  "portada": "../img/editorial/bk-antologia-07-vol02.webp"
+ },
+ {
   "titulo": "Historias de Migración - Vol 01",
   "precio": 2,
   "oferta": null,
@@ -1640,19 +1655,5 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Editorial RGM",
   "id": "magazine-01-septiembre-2020",
   "portada": "../img/editorial/bk-magazine-01.webp"
- },
- {
-  "titulo": "Historias de Migración - Vol 02",
-  "precio": 2,
-  "oferta": null,
-  "idioma": "es",
-  "url": null,
-  "confirmado": false,
-  "tags": [
-   "Antologías"
-  ],
-  "autor": "Editorial RGM",
-  "id": "historias-de-migracion-vol-02",
-  "portada": "../img/editorial/bk-antologia-07-vol02.webp"
  }
 ];
