@@ -117,3 +117,5 @@
   .bk .bk-heroe { padding: 22px 0 18px; }
   .bk .bk-heroe p { font-size: 1rem; }
 }
+
+.bk-meta + .bk-meta { margin-top: 2px; }

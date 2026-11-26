@@ -49,7 +49,7 @@
   }
   function card(w) {
     return '<a class="bk-card" href="' + esc(url(w)) + '" data-id="' + esc(w.id) + '">' + portada(w, true) + '<h3 class="bk-titulo">' + esc(w.titulo) + '</h3>' +
-      '<p class="bk-meta">' + esc(w.autor || 'Autoría por confirmar') + ' · ' + esc(IDI[w.idioma]) + '</p>' + precioHtml(w) + '</a>';
+      '<p class="bk-meta">' + esc(w.autor || 'Autoría por confirmar') + '</p><p class="bk-meta">' + esc(IDI[w.idioma]) + '</p>' + precioHtml(w) + '</a>';
   }
   function seeOne(id) { S.seen = [id].concat(S.seen.filter(function (x) { return x !== id; })).slice(0, 12); set('bk_vistos', S.seen); }
   function buy(id) { if (!isOwned(id)) S.owned.push(id); set('bk_owned', S.owned); }
