@@ -1582,5 +1582,16 @@ window.BOOKSTORE_CATALOG = [
   "id": "el-latido-del-servicio",
   "ventas": 0,
   "portada": "../img/editorial/bk-el-latido-del-servicio.webp"
+ },
+ {
+  "titulo": "El Camino del Mentor",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "es",
+  "url": null,
+  "confirmado": false,
+  "tags": [],
+  "autor": "Alejandro Motta",
+  "id": "el-camino-del-mentor"
  }
 ];
