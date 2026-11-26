@@ -137,4 +137,4 @@
 /* foto sutil del autor en el bloque de la lista de Autores */
 .bk-bloque--foto{position:relative;overflow:hidden;min-height:92px}
 .bk-bloque--foto b,.bk-bloque--foto span{position:relative;z-index:1}
-.bk-bloque__foto{position:absolute;right:0;bottom:0;height:100%;width:auto;max-width:55%;object-fit:contain;object-position:right bottom;opacity:.5;pointer-events:none;user-select:none;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 55%);mask-image:linear-gradient(to right,transparent 0%,#000 55%)}
+.bk-bloque__foto{position:absolute;right:0;bottom:0;height:100%;width:auto;max-width:55%;object-fit:contain;object-position:right bottom;opacity:.7;pointer-events:none;user-select:none;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 55%);mask-image:linear-gradient(to right,transparent 0%,#000 55%)}
