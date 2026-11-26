@@ -119,3 +119,17 @@
 }
 
 .bk-meta + .bk-meta { margin-top: 2px; }
+
+/* Autor con silueta (sin fondo) a la derecha, que se esfuma hacia el centro de la pantalla */
+.bk .bk-heroe--foto { min-height: 340px; }
+.bk .bk-heroe--foto .bk-heroe__foto {
+  position: absolute; right: 0; bottom: 0; z-index: 0;
+  height: 100%; width: auto; max-width: 60%; object-fit: contain; object-position: right bottom;
+  pointer-events: none; user-select: none;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.55) 30%, #000 62%);
+          mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.55) 30%, #000 62%);
+}
+@media (max-width: 640px) {
+  .bk .bk-heroe--foto { min-height: 0; }
+  .bk .bk-heroe--foto .bk-heroe__foto { max-width: 70%; opacity: .35; object-position: right top; }
+}
