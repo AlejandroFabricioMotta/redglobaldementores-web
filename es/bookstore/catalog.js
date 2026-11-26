@@ -1547,6 +1547,19 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-implementacion-dao-en-la-red-global-de-mentores.webp"
  },
  {
+  "titulo": "La consciencia que integra",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "es",
+  "url": null,
+  "confirmado": false,
+  "tags": [],
+  "autor": "Nelson de J. Rueda",
+  "id": "la-consciencia-que-integra",
+  "ventas": 0,
+  "portada": "../img/editorial/bk-la-consciencia-que-integra.webp"
+ },
+ {
   "titulo": "El Gran Misterio de la Vida",
   "precio": 5,
   "oferta": null,
