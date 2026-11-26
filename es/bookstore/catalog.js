@@ -887,7 +887,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-10-julio-2021",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-10.webp"
  },
  {
   "titulo": "Magazine 09 - Junio 2021",
@@ -901,7 +902,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-09-junio-2021",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-09.webp"
  },
  {
   "titulo": "Magazine 08 - Mayo 2021",
@@ -915,7 +917,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-08-mayo-2021",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-08.webp"
  },
  {
   "titulo": "Magazine 07 - Abril 2021",
@@ -929,7 +932,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-07-abril-2021",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-07.webp"
  },
  {
   "titulo": "Magazine 06 - Marzo 2021",
@@ -943,7 +947,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-06-marzo-2021",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-06.webp"
  },
  {
   "titulo": "Magazine 05 - Febrero 2021",
@@ -957,7 +962,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-05-febrero-2021",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-05.webp"
  },
  {
   "titulo": "Magazine 04 - Diciembre 2020",
@@ -971,7 +977,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-04-diciembre-2020",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-04.webp"
  },
  {
   "titulo": "Magazine 03 - Noviembre 2020",
@@ -985,7 +992,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-03-noviembre-2020",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-03.webp"
  },
  {
   "titulo": "Magazine 02 - Octubre 2020",
@@ -999,7 +1007,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-02-octubre-2020",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-magazine-02.webp"
  },
  {
   "titulo": "Mi lectura estratégica",
@@ -1593,5 +1602,18 @@ window.BOOKSTORE_CATALOG = [
   "tags": [],
   "autor": "Alejandro Motta",
   "id": "el-camino-del-mentor"
+ },
+ {
+  "titulo": "Magazine 01 - Septiembre 2020",
+  "precio": 1,
+  "oferta": null,
+  "idioma": "es",
+  "url": null,
+  "confirmado": false,
+  "tags": [
+   "Magazines"
+  ],
+  "autor": "Editorial RGM",
+  "id": "magazine-01-septiembre-2020"
  }
 ];
