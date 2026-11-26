@@ -563,7 +563,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Antologías"
   ],
-  "autor": null,
+  "autor": "Editorial RGM",
   "id": "experiencias-compartidas",
   "ventas": 0,
   "portada": "../img/editorial/bk-antologia-experiencias.webp"
@@ -578,7 +578,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Antologías"
   ],
-  "autor": null,
+  "autor": "Editorial RGM",
   "id": "historias-de-migracion-vol-01",
   "ventas": 0,
   "portada": "../img/editorial/bk-antologia-07-vol01.webp"
@@ -593,7 +593,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Antologías"
   ],
-  "autor": null,
+  "autor": "Editorial RGM",
   "id": "empresas-economia-y-negocios",
   "ventas": 0,
   "portada": "../img/editorial/bk-antologia-06.webp"
@@ -608,7 +608,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Antologías"
   ],
-  "autor": null,
+  "autor": "Editorial RGM",
   "id": "desarrollo-humano-y-espiritualidad",
   "ventas": 0,
   "portada": "../img/editorial/bk-antologia-05.webp"
@@ -623,7 +623,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Antologías"
   ],
-  "autor": null,
+  "autor": "Editorial RGM",
   "id": "mentoras",
   "ventas": 0,
   "portada": "../img/editorial/bk-antologia-04.webp"
@@ -638,7 +638,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Antologías"
   ],
-  "autor": null,
+  "autor": "Editorial RGM",
   "id": "storytelling",
   "ventas": 0,
   "portada": "../img/editorial/bk-antologia-03.webp"
@@ -653,7 +653,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Antologías"
   ],
-  "autor": null,
+  "autor": "Editorial RGM",
   "id": "el-mentoring-latinoamericano",
   "ventas": 0,
   "portada": "../img/editorial/bk-antologia-02.webp"
@@ -668,7 +668,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Antologías"
   ],
-  "autor": null,
+  "autor": "Editorial RGM",
   "id": "el-management-latinoamericano",
   "ventas": 0,
   "portada": "../img/editorial/bk-antologia-01.webp"
@@ -1651,7 +1651,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Antologías"
   ],
-  "autor": null,
+  "autor": "Editorial RGM",
   "id": "historias-de-migracion-vol-02",
   "portada": "../img/editorial/bk-antologia-07-vol02.webp"
  }
