@@ -1527,6 +1527,7 @@ window.BOOKSTORE_CATALOG = [
   "confirmado": false,
   "tags": [],
   "autor": "Silvia Passamonti",
-  "id": "yo-estuve-ahi"
+  "id": "yo-estuve-ahi",
+  "portada": "../img/editorial/bk-yo-estuve-ahi.webp"
  }
 ];
