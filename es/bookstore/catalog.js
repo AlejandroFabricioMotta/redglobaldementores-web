@@ -544,7 +544,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "Guía Maestra de la Mentoria - 2025 Español",
-  "precio": 10,
+  "precio": 25,
   "oferta": null,
   "idioma": "es",
   "url": null,
