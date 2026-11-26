@@ -667,7 +667,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "Magazine 25 - Diciembre 2025",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -675,13 +675,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-25-diciembre-2025",
   "ventas": 0
  },
  {
   "titulo": "Magazine 24 - Junio 2025",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -689,13 +689,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-24-junio-2025",
   "ventas": 0
  },
  {
   "titulo": "Magazine 23 - Mayo 2025",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -703,13 +703,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-23-mayo-2025",
   "ventas": 0
  },
  {
   "titulo": "Magazine 22 - Abril 2025",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -717,13 +717,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-22-abril-2025",
   "ventas": 0
  },
  {
   "titulo": "Magazine 21 - Marzo 2025",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -731,13 +731,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-21-marzo-2025",
   "ventas": 0
  },
  {
   "titulo": "Magazine 20 - Julio 2022",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -745,13 +745,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-20-julio-2022",
   "ventas": 0
  },
  {
   "titulo": "Magazine 19 - Junho 2022",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "pt",
   "url": null,
@@ -759,13 +759,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-19-junho-2022",
   "ventas": 0
  },
  {
   "titulo": "Magazine 18 - Mayo 2022",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -773,13 +773,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-18-mayo-2022",
   "ventas": 0
  },
  {
   "titulo": "Magazine 17 - Abril 2022",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -787,13 +787,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-17-abril-2022",
   "ventas": 0
  },
  {
   "titulo": "Magazine 16 - Março 2022",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "pt",
   "url": null,
@@ -801,13 +801,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-16-marco-2022",
   "ventas": 0
  },
  {
   "titulo": "Magazine 15 - Enero 2022",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -815,13 +815,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-15-enero-2022",
   "ventas": 0
  },
  {
   "titulo": "Magazine 14 - Diciembre 2021",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -829,13 +829,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-14-diciembre-2021",
   "ventas": 0
  },
  {
   "titulo": "Magazine 13 - Noviembre 2021",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -843,13 +843,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-13-noviembre-2021",
   "ventas": 0
  },
  {
   "titulo": "Magazine 12 - Septiembre 2021",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -857,13 +857,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-12-septiembre-2021",
   "ventas": 0
  },
  {
   "titulo": "Magazine 11 - Agosto 2021",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -871,13 +871,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-11-agosto-2021",
   "ventas": 0
  },
  {
   "titulo": "Magazine 10 - Julio 2021",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -885,13 +885,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-10-julio-2021",
   "ventas": 0
  },
  {
   "titulo": "Magazine 09 - Junio 2021",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -899,13 +899,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-09-junio-2021",
   "ventas": 0
  },
  {
   "titulo": "Magazine 08 - Mayo 2021",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -913,13 +913,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-08-mayo-2021",
   "ventas": 0
  },
  {
   "titulo": "Magazine 07 - Abril 2021",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -927,13 +927,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-07-abril-2021",
   "ventas": 0
  },
  {
   "titulo": "Magazine 06 - Marzo 2021",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -941,13 +941,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-06-marzo-2021",
   "ventas": 0
  },
  {
   "titulo": "Magazine 05 - Febrero 2021",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -955,13 +955,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-05-febrero-2021",
   "ventas": 0
  },
  {
   "titulo": "Magazine 04 - Diciembre 2020",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -969,13 +969,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-04-diciembre-2020",
   "ventas": 0
  },
  {
   "titulo": "Magazine 03 - Noviembre 2020",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -983,13 +983,13 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-03-noviembre-2020",
   "ventas": 0
  },
  {
   "titulo": "Magazine 02 - Octubre 2020",
-  "precio": null,
+  "precio": 1,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -997,7 +997,7 @@ window.BOOKSTORE_CATALOG = [
   "tags": [
    "Magazines"
   ],
-  "autor": "Red Global de Mentores",
+  "autor": "Editorial RGM",
   "id": "magazine-02-octubre-2020",
   "ventas": 0
  },
