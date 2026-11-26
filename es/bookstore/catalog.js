@@ -107,7 +107,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "estandar-profesional-de-competencias-mentorales",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-estandar-profesional.webp"
  },
  {
   "titulo": "Guia Essencial para a Mentoria",
@@ -136,7 +137,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "guia-profissional-para-a-practica-de-mentoria",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-guia-profissional.webp"
  },
  {
   "titulo": "Guia Das Disciplinas",
@@ -150,7 +152,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "guia-das-disciplinas",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-guia-das-disciplinas.webp"
  },
  {
   "titulo": "Conversaciones Habitables",
