@@ -7,7 +7,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/la-conciencia-que-transforma-de-comprender-la-vida-a-aprender-a-vivirla",
   "confirmado": true,
   "tags": [],
   "autor": "Nelson de J. Rueda",
@@ -20,7 +19,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/neuroliderazgo-habitable",
   "confirmado": true,
   "tags": [],
   "autor": "Nelson de J. Rueda",
@@ -33,7 +31,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": 0,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/pensamientos-y-reflexiones-para-la-vida-plena",
   "confirmado": true,
   "tags": [],
   "autor": "Serafín Contreras Galeano",
@@ -46,7 +43,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": 0,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/mentoria-habitable",
   "confirmado": true,
   "tags": [],
   "autor": "Nelson de J. Rueda",
@@ -59,7 +55,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/gobernar-éticamente-el-poder",
   "confirmado": true,
   "tags": [],
   "autor": "Nelson de J. Rueda",
@@ -72,7 +67,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": 0,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/después-del-umbral",
   "confirmado": true,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -85,7 +79,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "multi",
-  "url": "https://www.holdingmentors.com/product-page/resumen-cierre-simposio-de-mentoria-2026",
   "confirmado": true,
   "tags": [
    "Boletines"
@@ -100,7 +93,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/estándar-profesional-de-competencias-mentorales",
   "confirmado": true,
   "tags": [
    "Manuales y Guías"
@@ -115,7 +107,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": 5,
   "idioma": "pt",
-  "url": "https://www.holdingmentors.com/product-page/guia-essencial-para-a-mentoria-1",
   "confirmado": true,
   "tags": [
    "Manuales y Guías"
@@ -130,7 +121,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": 0,
   "idioma": "pt",
-  "url": "https://www.holdingmentors.com/product-page/guia-profissional-para-a-práctica-de-mentoria",
   "confirmado": true,
   "tags": [
    "Manuales y Guías"
@@ -145,7 +135,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": 0,
   "idioma": "pt",
-  "url": "https://www.holdingmentors.com/product-page/guia-das-disciplinas",
   "confirmado": true,
   "tags": [
    "Manuales y Guías"
@@ -160,7 +149,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/conversaciones-habitables",
   "confirmado": true,
   "tags": [
    "Mentores Expertos"
@@ -175,7 +163,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/manual-del-mentor-experto-en-educación-continua",
   "confirmado": true,
   "tags": [
    "Manuales y Guías"
@@ -190,7 +177,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/manual-del-mentor-experto-en-gestión-de-proyectos",
   "confirmado": true,
   "tags": [
    "Manuales y Guías"
@@ -205,7 +191,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/manual-del-mentor-experto-en-acompañamiento-de-enfermedades-críticas",
   "confirmado": true,
   "tags": [
    "Manuales y Guías"
@@ -220,7 +205,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/manual-del-mentor-experto-en-gestión-y-liderazgo-corporativo",
   "confirmado": true,
   "tags": [
    "Manuales y Guías"
@@ -235,7 +219,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/cuadernos-de-acompan-amiento-cata-strofe",
   "confirmado": true,
   "tags": [
    "Boletines"
@@ -250,7 +233,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/15-metacompetencias-del-mentor",
   "confirmado": true,
   "tags": [
    "Manuales y Guías"
@@ -265,7 +247,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/arquitectura-doctrinal-de-la-mentoria",
   "confirmado": true,
   "tags": [
    "Manuales y Guías"
@@ -280,7 +261,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/transforma-tu-vida",
   "confirmado": true,
   "tags": [
    "Mentores Expertos"
@@ -295,7 +275,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/áreas-de-especialización-en-mentoría",
   "confirmado": true,
   "tags": [
    "Mentores Expertos"
@@ -310,7 +289,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/guía-diferencial-en-el-arte-de-preguntar",
   "confirmado": true,
   "tags": [
    "Mentores Expertos"
@@ -325,7 +303,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/el-talento-que-trasciende",
   "confirmado": true,
   "tags": [
    "Mentores Expertos"
@@ -340,7 +317,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": "https://www.holdingmentors.com/product-page/metáforas-visuales-disparadores-y-algo-más",
   "confirmado": true,
   "tags": [
    "Mentores Expertos"
@@ -355,7 +331,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -370,7 +345,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -385,7 +359,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -400,7 +373,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -415,7 +387,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -430,7 +401,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -445,7 +415,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -460,7 +429,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -475,7 +443,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "en",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -490,7 +457,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -505,7 +471,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -520,7 +485,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -535,7 +499,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 10,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -550,7 +513,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 25,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Manuales y Guías"
@@ -565,7 +527,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 2,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Antologías"
@@ -580,7 +541,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 2,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Antologías"
@@ -595,7 +555,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 2,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Antologías"
@@ -610,7 +569,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 2,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Antologías"
@@ -625,7 +583,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 2,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Antologías"
@@ -640,7 +597,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 2,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Antologías"
@@ -655,7 +611,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 2,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Antologías"
@@ -670,7 +625,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 2,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Antologías"
@@ -685,7 +639,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 2,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Antologías"
@@ -700,7 +653,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -715,7 +667,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -730,7 +681,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -745,7 +695,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -760,7 +709,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -775,7 +723,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -790,7 +737,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "pt",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -805,7 +751,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -820,7 +765,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -835,7 +779,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "pt",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -850,7 +793,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -865,7 +807,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -880,7 +821,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -895,7 +835,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -910,7 +849,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -925,7 +863,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -940,7 +877,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -955,7 +891,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -970,7 +905,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -985,7 +919,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -1000,7 +933,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -1015,7 +947,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -1030,7 +961,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -1045,7 +975,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"
@@ -1060,7 +989,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1075,7 +1003,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1090,7 +1017,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1105,7 +1031,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1120,7 +1045,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1135,7 +1059,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1150,7 +1073,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1165,7 +1087,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1180,7 +1101,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1195,7 +1115,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1210,7 +1129,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1225,7 +1143,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1240,7 +1157,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1255,7 +1171,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1270,7 +1185,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1285,7 +1199,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1300,7 +1213,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1315,7 +1227,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Mentores Expertos"
@@ -1330,7 +1241,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1343,7 +1253,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1356,7 +1265,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1369,7 +1277,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1382,7 +1289,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1395,7 +1301,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1408,7 +1313,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1421,7 +1325,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1434,7 +1337,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1447,7 +1349,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1460,7 +1361,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1473,7 +1373,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1486,7 +1385,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1499,7 +1397,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1512,7 +1409,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1525,7 +1421,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1538,7 +1433,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1551,7 +1445,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Nelson de J. Rueda",
@@ -1564,7 +1457,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Nelson de J. Rueda",
@@ -1577,7 +1469,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Nelson de J. Rueda",
@@ -1590,7 +1481,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Nelson de J. Rueda",
@@ -1603,7 +1493,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Nelson de J. Rueda",
@@ -1616,7 +1505,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Nelson de J. Rueda",
@@ -1629,7 +1517,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Jaime España",
@@ -1642,7 +1529,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Jaime España",
@@ -1655,7 +1541,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [],
   "autor": "Alejandro Motta",
@@ -1667,7 +1552,6 @@ window.BOOKSTORE_CATALOG = [
   "precio": 1,
   "oferta": null,
   "idioma": "es",
-  "url": null,
   "confirmado": false,
   "tags": [
    "Magazines"

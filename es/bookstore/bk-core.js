@@ -7,10 +7,10 @@
   var CAT = (window.BOOKSTORE_CATALOG || []).slice();
   var DEMO = new URLSearchParams(location.search).get('demo') === '1' || (function () { try { return localStorage.getItem('bk_demo') === '1'; } catch (e) { return false; } })();
   try { if (new URLSearchParams(location.search).get('demo') === '1') localStorage.setItem('bk_demo', '1'); } catch (e) {}
-  // ----- compra real (Stripe + Worker). Oculta: se activa con ?compra=1 y se apaga con ?compra=0 -----
+  // ----- compra real (Stripe + Worker). Activa por defecto; ?compra=0 la apaga en ese navegador y ?compra=1 la vuelve a encender -----
   var API = 'https://claude-rgm.alejandrofabriciomotta.workers.dev';
-  (function () { try { var c = new URLSearchParams(location.search).get('compra'); if (c === '1') localStorage.setItem('bk_compra', '1'); if (c === '0') localStorage.removeItem('bk_compra'); } catch (e) {} })();
-  var LIVE = (function () { try { return localStorage.getItem('bk_compra') === '1'; } catch (e) { return false; } })();
+  (function () { try { var c = new URLSearchParams(location.search).get('compra'); if (c === '0') localStorage.setItem('bk_compra', '0'); if (c === '1') localStorage.removeItem('bk_compra'); } catch (e) {} })();
+  var LIVE = (function () { try { return localStorage.getItem('bk_compra') !== '0'; } catch (e) { return true; } })();
   (function () { var m = /#acceso=([^&]+)/.exec(location.hash); if (m) { try { localStorage.setItem('bk_sesion', m[1]); } catch (e) {} try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} } })();
   function token() { try { return localStorage.getItem('bk_sesion') || ''; } catch (e) { return ''; } }
   function api(path, o) { o = o || {}; o.headers = o.headers || {}; var t = token(); if (t && !o.headers.Authorization) o.headers.Authorization = 'Bearer ' + t; return fetch(API + path, o); }

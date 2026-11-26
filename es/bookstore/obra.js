@@ -5,13 +5,13 @@
   var K = window.BK, $ = K.$, esc = K.esc, id = document.body.getAttribute('data-obra'), w = K.byId[id];
   if (!w) return;
   K.seeOne(id);
-  var DEFAULT = 'https://www.holdingmentors.com/category/all-products';
+  var PDF = document.body.getAttribute('data-pdf') === '1';   // el PDF ya está en el bucket privado
   function pintar() {
     var mio = K.isOwned(id), acc = '';
     if (mio) acc = '<button type="button" class="boton" data-leer="' + esc(id) + '">Leer ahora</button>';
     else {
-      if (K.LIVE && w.precio > 0 && !K.esGratis(w)) acc = '<button type="button" class="boton" data-comprar="' + esc(id) + '">Comprar · US$ ' + K.precioFinal(w) + '</button>';
-      else acc = '<a class="boton" href="' + esc(w.url || DEFAULT) + '" target="_blank" rel="noopener">' + (K.esGratis(w) ? 'Obtener gratis' : 'Comprar') + '</a>';
+      if (K.LIVE && PDF && w.precio > 0 && !K.esGratis(w)) acc = '<button type="button" class="boton" data-comprar="' + esc(id) + '">Comprar · US$ ' + K.precioFinal(w) + '</button>';
+      else acc = '<button type="button" class="boton" disabled title="Esta obra se habilita en breve">Próximamente</button>';
       if (K.DEMO) acc += '<button type="button" class="boton secundario" data-simular>Simular compra (demo)</button>';
     }
     if (mio && K.DEMO) acc += '<button type="button" class="boton secundario" data-quitar>Quitar de mi biblioteca (demo)</button>';
