@@ -555,7 +555,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "Experiencias Compartidas",
-  "precio": null,
+  "precio": 2,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -570,7 +570,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "Historias de Migración - Vol 01",
-  "precio": null,
+  "precio": 2,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -585,7 +585,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "EMPRESAS, ECONOMIA Y NEGOCIOS",
-  "precio": null,
+  "precio": 2,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -600,7 +600,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "DESARROLLO HUMANO Y ESPIRITUALIDAD",
-  "precio": null,
+  "precio": 2,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -615,7 +615,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "MENTORAS",
-  "precio": null,
+  "precio": 2,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -630,7 +630,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "STORYTELLING",
-  "precio": null,
+  "precio": 2,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -645,7 +645,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "El Mentoring Latinoamericano",
-  "precio": null,
+  "precio": 2,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -660,7 +660,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "El Management Latinoamericano",
-  "precio": null,
+  "precio": 2,
   "oferta": null,
   "idioma": "es",
   "url": null,
@@ -1643,7 +1643,7 @@ window.BOOKSTORE_CATALOG = [
  },
  {
   "titulo": "Historias de Migración - Vol 02",
-  "precio": null,
+  "precio": 2,
   "oferta": null,
   "idioma": "es",
   "url": null,
