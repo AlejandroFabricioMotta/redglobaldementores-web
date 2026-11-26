@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookStore | Editorial RGM</title>
+  <meta name="description" content="BookStore de la Editorial RGM: manuales, guías, antologías y magazines de la Red Global de Mentores.">
+  <meta name="robots" content="noindex, nofollow"><!-- prototipo oculto: quitar al publicar -->
+  <link rel="canonical" href="https://www.redglobaldementores.org/es/bookstore/">
+  <meta property="og:type" content="website"><meta property="og:title" content="BookStore | Editorial RGM"><meta property="og:description" content="BookStore de la Editorial RGM: manuales, guías, antologías y magazines de la Red Global de Mentores."><meta property="og:url" content="https://www.redglobaldementores.org/es/bookstore/">
+  <meta name="theme-color" content="#3A3129">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=b2620790">
+  <link rel="stylesheet" href="bookstore.css">
+</head>
+<body class="tema-editorial bk" data-base="">
+<div class="ed-barra"><a href="../">← Editorial RGM</a><span>BookStore · Pagos y administración: Holding Mentors LLC</span></div>
+<header class="ed-cab">
+  <div class="ed-cab__in">
+    <a class="ed-cab__marca" href="" aria-label="BookStore, inicio"><img src="../img/sellos/editorial.webp" width="56" height="56" alt=""><span><b>BookStore</b><small>Editorial RGM</small></span></a>
+    <nav class="ed-cab__nav bk-nav" aria-label="BookStore"><a href="" aria-current="page">Todas las obras</a><a href="autores/">Autores</a><a href="colecciones/">Colecciones</a><a href="mis-libros/">Mis libros <span id="bkMisN" class="bk-n">0</span></a></nav>
+  </div>
+</header>
+<main>
+<section class="heroe bk-heroe"><div class="contenedor"><p class="migas"><a href="../">Inicio</a> / <a href="../editorial/">Editorial RGM</a> / BookStore / BookStore</p><h1>BookStore</h1><p class="bajada">Manuales, guías, antologías y magazines de la Red Global de Mentores. Se leen en línea, dentro de la web.</p></div></section>
+<section class="seccion bk-rec" aria-labelledby="bkRecT"><div class="contenedor">
+  <div class="bk-rec__cab"><div><p class="volanta" id="bkRecVol">Recomendados</p><h2 class="ed-h2" id="bkRecT">Para empezar</h2></div>
+  <div class="bk-flechas"><button type="button" id="bkPrev" aria-label="Anteriores">‹</button><button type="button" id="bkNext" aria-label="Siguientes">›</button></div></div>
+  <div class="bk-carrusel" id="bkCarrusel" tabindex="0" aria-label="Carrusel de recomendados"></div>
+</div></section>
+<section class="seccion bk-explorar" aria-label="Explorar"><div class="contenedor"><div class="bk-dos"><div><p class="volanta">Explorar por autor</p><div class="bk-chips"><a href="autor/academia-global/">Academia Global <small>26</small></a><a href="autor/aldo-pinero/">Aldo Piñero <small>1</small></a><a href="autor/alejandro-motta/">Alejandro Motta <small>25</small></a><a href="autor/esther-sadin/">Esther Sadin <small>1</small></a><a href="autor/etna-martinez/">Etna Martínez <small>1</small></a><a href="autor/ines-cinacchi/">Inés Cinacchi <small>1</small></a><a href="autor/jaime-espana/">Jaime España <small>6</small></a><a href="autor/nelson-de-j-rueda/">Nelson de J. Rueda <small>18</small></a><a href="autor/red-global-de-mentores/">Red Global de Mentores <small>24</small></a><a href="autor/serafin-contreras-galeano/">Serafín Contreras Galeano <small>1</small></a></div></div><div><p class="volanta">Colecciones y series</p><div class="bk-chips"><a href="coleccion/magazines/">Magazines <small>24</small></a><a href="coleccion/camino-humano/">La Mentoría como Camino Humano <small>3</small></a><a href="coleccion/mentoria-en-accion/">Mentoría en Acción <small>3</small></a><a href="coleccion/guia-maestra/">Guía Maestra de la Mentoría <small>4</small></a><a href="coleccion/manuales-mentor-experto/">Manuales del Mentor Experto <small>4</small></a><a href="coleccion/boletines/">Boletines <small>2</small></a><a href="coleccion/antologias/">Antologías <small>8</small></a></div></div></div></div></section>
+<section class="seccion alterna bk-filtros" aria-label="Buscar y filtrar"><div class="contenedor">
+  <form class="bk-barra" id="bkForm" role="search" onsubmit="return false">
+    <label class="bk-campo bk-campo--q"><span>Buscar</span><input type="search" id="bkQ" placeholder="Título, autor o tema…" autocomplete="off"></label>
+    <label class="bk-campo"><span>Autor</span><select id="bkAutor"></select></label>
+    <label class="bk-campo"><span>Idioma</span><select id="bkIdioma"></select></label>
+    <label class="bk-campo"><span>Ordenar por</span><select id="bkOrden"><option value="recomendados">Recomendados</option><option value="ranking">Ranking (más vendidos)</option><option value="az">Alfabético A–Z</option><option value="za">Alfabético Z–A</option></select></label>
+  </form>
+  <div class="bk-nube" id="bkNube" aria-label="Filtrar por etiqueta"></div>
+  <p class="bk-estado"><span id="bkCuenta" aria-live="polite"></span> <button type="button" id="bkLimpiar" class="bk-link" hidden>Limpiar filtros</button></p>
+</div></section>
+<section class="seccion" aria-label="Obras"><div class="contenedor"><div class="bk-grilla" id="bkGrilla"></div><p class="bk-vacio" id="bkVacio" hidden>No encontramos obras con esos filtros. Prueba con menos filtros o con otra palabra.</p></div></section>
+<section class="seccion alterna"><div class="contenedor"><p class="bk-nota"><b>Prototipo.</b> Catálogo parcial: las obras con “Precio a confirmar” se detectaron por categoría y falta completar su ficha. Autor, temas y ranking se completan con la base de datos definitiva. Esta página no está enlazada ni indexada.</p></div></section>
+</main>
+<footer class="pie pie--zocalo">
+  <div class="contenedor">
+    <div class="zocalo__datos">
+      <p><b>Red Global de Mentores</b><br>info@RGMentores.ORG · WApp +54 9 341 5421624<br>Av. Fuerza Aérea 3104, Rosario, Santa Fe, Argentina</p>
+      <p><b>Holding Mentors LLC</b> (administración legal, contable y financiera)<br>info@HoldingMentors.com · WApp +1 954 658 4206<br>40 SW 13th ST, Suite 102, Miami, Florida (33031), USA</p>
+    </div>
+    <p class="zocalo__c">© 2011 – 2026 Red Global de Mentores · Editorial RGM</p>
+  </div>
+</footer>
+<script src="catalog.js"></script>
+<script src="bk-core.js"></script>
+<script src="bookstore.js"></script>
+</body>
+</html>
