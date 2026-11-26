@@ -565,7 +565,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": null,
   "id": "experiencias-compartidas",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-antologia-experiencias.webp"
  },
  {
   "titulo": "Historias de Migración - Vol 01",
@@ -579,7 +580,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": null,
   "id": "historias-de-migracion-vol-01",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-antologia-07-vol01.webp"
  },
  {
   "titulo": "EMPRESAS, ECONOMIA Y NEGOCIOS",
@@ -593,7 +595,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": null,
   "id": "empresas-economia-y-negocios",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-antologia-06.webp"
  },
  {
   "titulo": "DESARROLLO HUMANO Y ESPIRITUALIDAD",
@@ -607,7 +610,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": null,
   "id": "desarrollo-humano-y-espiritualidad",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-antologia-05.webp"
  },
  {
   "titulo": "MENTORAS",
@@ -621,7 +625,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": null,
   "id": "mentoras",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-antologia-04.webp"
  },
  {
   "titulo": "STORYTELLING",
@@ -635,7 +640,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": null,
   "id": "storytelling",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-antologia-03.webp"
  },
  {
   "titulo": "El Mentoring Latinoamericano",
@@ -649,7 +655,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": null,
   "id": "el-mentoring-latinoamericano",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-antologia-02.webp"
  },
  {
   "titulo": "El Management Latinoamericano",
@@ -663,7 +670,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": null,
   "id": "el-management-latinoamericano",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-antologia-01.webp"
  },
  {
   "titulo": "Magazine 25 - Diciembre 2025",
@@ -1630,5 +1638,18 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Editorial RGM",
   "id": "magazine-01-septiembre-2020"
+ },
+ {
+  "titulo": "Historias de Migración - Vol 02",
+  "precio": null,
+  "oferta": null,
+  "idioma": "es",
+  "url": null,
+  "confirmado": false,
+  "tags": [
+   "Antologías"
+  ],
+  "autor": null,
+  "id": "historias-de-migracion-vol-02"
  }
 ];
