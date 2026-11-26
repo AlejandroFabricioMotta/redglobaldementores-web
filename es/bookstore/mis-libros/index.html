@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css?v=b2620790">
-  <link rel="stylesheet" href="../bookstore.css?v=202611260906">
+  <link rel="stylesheet" href="../bookstore.css?v=202611261324">
 </head>
 <body class="tema-editorial bk" data-base="../">
 <div class="ed-barra"><a href="../../">← Editorial RGM</a><span>BookStore · Pagos y administración: Holding Mentors LLC</span></div>
@@ -37,10 +37,21 @@
     <p class="zocalo__c">© 2011 – 2026 Red Global de Mentores · Editorial RGM</p>
   </div>
 </footer>
-<script src="../catalog.js?v=202611260906"></script>
-<script src="../bk-core.js?v=202611260906"></script>
-<script>(function(){var K=window.BK,m=K.S.owned.map(function(i){return K.byId[i]}).filter(Boolean);
-K.$('bkMisIntro').textContent=m.length?'Tienes '+m.length+(m.length===1?' obra':' obras')+' en tu biblioteca.':(K.DEMO?'Todavía no tienes obras. Abre una ficha y usa “Simular compra (demo)”.':'Inicia sesión para ver las obras que compraste. (El acceso real se conecta en la siguiente etapa.)');
-K.$('bkMisGrilla').innerHTML=m.map(K.card).join('');})();</script>
+<script src="../catalog.js?v=202611261324"></script>
+<script src="../bk-core.js?v=202611261324"></script>
+<script>(function(){var K=window.BK,$=K.$,q=new URLSearchParams(location.search);
+function viejo(){var m=K.S.owned.map(function(i){return K.byId[i]}).filter(Boolean);
+$('bkMisIntro').textContent=m.length?'Tienes '+m.length+(m.length===1?' obra':' obras')+' en tu biblioteca.':(K.DEMO?'Todavía no tienes obras. Abre una ficha y usa “Simular compra (demo)”.':'Inicia sesión para ver las obras que compraste. (El acceso real se conecta en la siguiente etapa.)');
+$('bkMisGrilla').innerHTML=m.map(K.card).join('');}
+if(!K.LIVE){viejo();return;}
+var gracias=q.get('pago')==='ok', vencido=q.get('acceso')==='vencido', enviado=false;
+function render(){var m=K.S.owned.map(function(i){return K.byId[i]}).filter(Boolean), g=$('bkMisGrilla');
+ if(K.token()&&m.length){$('bkMisIntro').innerHTML=(gracias?'<b>¡Gracias por tu compra!</b> ':'')+'Tienes '+m.length+(m.length===1?' obra':' obras')+' en tu biblioteca. <a href="#" id="bkSalir">Cerrar sesión</a>';g.innerHTML=m.map(K.card).join('');var s=$('bkSalir');if(s)s.onclick=function(e){e.preventDefault();try{localStorage.removeItem('bk_sesion')}catch(x){}location.href=location.pathname+'?compra=1';};return;}
+ g.innerHTML='';$('bkMisIntro').innerHTML=(vencido?'<b>El enlace venció.</b> Pide uno nuevo. ':'')+(enviado?'Si ese email tiene compras, te enviamos un enlace de acceso (vale 15 minutos). Revisa también el correo no deseado.':'Escribe el email con el que compraste y te enviamos un enlace para entrar.')+(enviado?'':'<form id="bkIng" style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap"><input type="email" id="bkMail" required placeholder="tu@email.com" style="flex:1;min-width:220px;padding:12px;border:1px solid #BFA98A;border-radius:8px;font:inherit"><button class="boton" type="submit">Enviarme el enlace</button></form>');
+ var f=$('bkIng');if(f)f.onsubmit=function(e){e.preventDefault();var b=f.querySelector('button');b.disabled=true;fetch(K.API+'/api/libros/ingresar',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:$('bkMail').value})}).then(function(){enviado=true;render();}).catch(function(){b.disabled=false;alert('No se pudo enviar. Intenta de nuevo.');});};}
+document.addEventListener('bk-mis',render);
+var p=Promise.resolve();
+if(gracias&&q.get('sid'))p=fetch(K.API+'/api/libros/confirmar?sid='+encodeURIComponent(q.get('sid'))).then(function(r){return r.json()}).then(function(j){if(j&&j.ok){try{localStorage.setItem('bk_sesion',j.token)}catch(x){}history.replaceState(null,'',location.pathname+'?compra=1&pago=ok');}}).catch(function(){});
+p.then(function(){return K.cargarMis()}).then(render);})();</script>
 </body>
 </html>

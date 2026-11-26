@@ -10,7 +10,8 @@
     var mio = K.isOwned(id), acc = '';
     if (mio) acc = '<button type="button" class="boton" data-leer="' + esc(id) + '">Leer ahora</button>';
     else {
-      acc = '<a class="boton" href="' + esc(w.url || DEFAULT) + '" target="_blank" rel="noopener">' + (K.esGratis(w) ? 'Obtener gratis' : 'Comprar') + '</a>';
+      if (K.LIVE && w.precio > 0 && !K.esGratis(w)) acc = '<button type="button" class="boton" data-comprar="' + esc(id) + '">Comprar · US$ ' + K.precioFinal(w) + '</button>';
+      else acc = '<a class="boton" href="' + esc(w.url || DEFAULT) + '" target="_blank" rel="noopener">' + (K.esGratis(w) ? 'Obtener gratis' : 'Comprar') + '</a>';
       if (K.DEMO) acc += '<button type="button" class="boton secundario" data-simular>Simular compra (demo)</button>';
     }
     if (mio && K.DEMO) acc += '<button type="button" class="boton secundario" data-quitar>Quitar de mi biblioteca (demo)</button>';
@@ -25,10 +26,12 @@
     K.misCount();
   }
   document.addEventListener('click', function (e) {
-    if (e.target.closest('[data-simular]')) { K.buy(id); pintar(); }
+    if (e.target.closest('[data-comprar]')) { e.target.closest('[data-comprar]').disabled = true; K.comprar(id); }
+    else if (e.target.closest('[data-simular]')) { K.buy(id); pintar(); }
     else if (e.target.closest('[data-quitar]')) { K.unbuy(id); pintar(); }
   });
   pintar();
+  document.addEventListener('bk-mis', pintar);
   // relacionadas: mismo autor, mismas etiquetas o mismo idioma (sin repetir la obra)
   var rel = K.CAT.filter(function (x) { return x.id !== id; }).map(function (x) {
     var s = 0; x.tags.forEach(function (t) { if (w.tags.indexOf(t) >= 0) s += 2; }); if (w.autor && x.autor === w.autor) s += 3; if (x.idioma === w.idioma) s += 0.5; return { x: x, s: s };

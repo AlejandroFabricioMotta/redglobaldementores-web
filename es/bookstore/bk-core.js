@@ -7,6 +7,13 @@
   var CAT = (window.BOOKSTORE_CATALOG || []).slice();
   var DEMO = new URLSearchParams(location.search).get('demo') === '1' || (function () { try { return localStorage.getItem('bk_demo') === '1'; } catch (e) { return false; } })();
   try { if (new URLSearchParams(location.search).get('demo') === '1') localStorage.setItem('bk_demo', '1'); } catch (e) {}
+  // ----- compra real (Stripe + Worker). Oculta: se activa con ?compra=1 y se apaga con ?compra=0 -----
+  var API = 'https://claude-rgm.alejandrofabriciomotta.workers.dev';
+  (function () { try { var c = new URLSearchParams(location.search).get('compra'); if (c === '1') localStorage.setItem('bk_compra', '1'); if (c === '0') localStorage.removeItem('bk_compra'); } catch (e) {} })();
+  var LIVE = (function () { try { return localStorage.getItem('bk_compra') === '1'; } catch (e) { return false; } })();
+  (function () { var m = /#acceso=([^&]+)/.exec(location.hash); if (m) { try { localStorage.setItem('bk_sesion', m[1]); } catch (e) {} try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} } })();
+  function token() { try { return localStorage.getItem('bk_sesion') || ''; } catch (e) { return ''; } }
+  function api(path, o) { o = o || {}; o.headers = o.headers || {}; var t = token(); if (t && !o.headers.Authorization) o.headers.Authorization = 'Bearer ' + t; return fetch(API + path, o); }
   var IDI = { es: 'Español', pt: 'Português', en: 'English', multi: 'Multi-idioma' };
   var TIPOS = ['Manuales y Guías', 'Antologías', 'Magazines', 'Mentores Expertos'];
   var LBL = { 'Manuales y Guías': 'Manual o Guía', 'Antologías': 'Antología', 'Magazines': 'Magazine', 'Mentores Expertos': 'Libro · Mentor Experto', 'Libros': 'Libro' };
@@ -79,13 +86,50 @@
     document.addEventListener('keydown', function (e) { if (d.open && (e.ctrlKey || e.metaKey) && /^[ps]$/i.test(e.key)) e.preventDefault(); });
   }
   function leer(id) {
-    var w = byId[id]; if (!w || !isOwned(id)) return; ensureLector();
+    var w = byId[id]; if (!w || !isOwned(id)) return; if (LIVE) return leerReal(w); ensureLector();
     var user = DEMO ? 'lector.demo@rgm.org' : 'lector@rgm.org', m = [];
     for (var i = 0; i < 59; i++) m.push('<span>' + esc(user) + '</span>');
     var pag = function (n) { return '<article class="bk-pag"><div class="bk-marca" aria-hidden="true">' + m.join('') + '</div><h3>' + esc(w.titulo) + '</h3><p><b>Página ' + n + '</b></p><p>Vista de demostración del lector. En la versión real, las páginas se entregan una a una desde el servidor, solo a quien compró la obra, con la marca de agua del lector y sin enlace ni botón de descarga.</p><p>Se desactivan el menú contextual, la selección de texto y la impresión. Ningún navegador puede impedir al 100% una captura de pantalla, pero la marca de agua deja identificado a quien la haga.</p></article>'; };
     $('bkLectorT').textContent = w.titulo; $('bkLectorHoja').innerHTML = pag(1) + pag(2) + pag(3); $('bkLector').showModal();
   }
   document.addEventListener('click', function (e) { var c = e.target.closest && e.target.closest('[data-leer]'); if (c) leer(c.getAttribute('data-leer')); });
+
+  // ----- compra real -----
+  var EMAIL = '';
+  function cargarMis() {
+    if (!LIVE || !token()) return Promise.resolve();
+    return api('/api/libros/mis').then(function (r) { if (r.status === 401) { try { localStorage.removeItem('bk_sesion'); } catch (e) {} return null; } return r.json(); })
+      .then(function (j) { if (j && j.ok) { S.owned = j.obras; EMAIL = j.email; } misCount(); document.dispatchEvent(new Event('bk-mis')); }).catch(function () {});
+  }
+  function comprar(id) {
+    return api('/api/libros/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: id }) }).then(function (r) { return r.json(); })
+      .then(function (j) { if (j && j.ok && j.url) location.href = j.url; else alert('No se pudo iniciar el pago. Intenta de nuevo en unos minutos.'); }).catch(function () { alert('No se pudo iniciar el pago. Intenta de nuevo en unos minutos.'); });
+  }
+  function pdfjs() {
+    if (window.pdfjsLib) return Promise.resolve(window.pdfjsLib);
+    return new Promise(function (ok, ko) { var s = document.createElement('script'); s.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+      s.onload = function () { window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'; ok(window.pdfjsLib); }; s.onerror = ko; document.head.appendChild(s); });
+  }
+  function leerReal(w) {
+    ensureLector(); var hoja = $('bkLectorHoja'); $('bkLectorT').textContent = w.titulo; hoja.innerHTML = '<p class="bk-cargando">Cargando…</p>'; $('bkLector').showModal();
+    Promise.all([pdfjs(), api('/api/libros/archivo?id=' + encodeURIComponent(w.id)).then(function (r) { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); })])
+      .then(function (x) { return x[0].getDocument({ data: x[1] }).promise; })
+      .then(function (doc) {
+        hoja.innerHTML = ''; var ancho = Math.min(hoja.clientWidth - 24 || 800, 900), mk = [];
+        for (var i = 0; i < 40; i++) mk.push('<span>' + esc(EMAIL) + '</span>');
+        function pagina(n) {
+          if (n > doc.numPages) return;
+          doc.getPage(n).then(function (pg) {
+            var v0 = pg.getViewport({ scale: 1 }), sc = ancho / v0.width, v = pg.getViewport({ scale: sc * (window.devicePixelRatio || 1) });
+            var d = document.createElement('div'); d.className = 'bk-pdfpag'; d.style.width = ancho + 'px';
+            var c = document.createElement('canvas'); c.width = v.width; c.height = v.height; c.style.width = ancho + 'px'; c.style.height = (v.height / (window.devicePixelRatio || 1)) + 'px';
+            d.appendChild(c); var m = document.createElement('div'); m.className = 'bk-marca'; m.setAttribute('aria-hidden', 'true'); m.innerHTML = mk.join(''); d.appendChild(m); hoja.appendChild(d);
+            return pg.render({ canvasContext: c.getContext('2d'), viewport: v }).promise.then(function () { pagina(n + 1); });
+          });
+        }
+        pagina(1);
+      }).catch(function () { hoja.innerHTML = '<p class="bk-cargando">No se pudo abrir el libro. Si recién lo compraste, intenta de nuevo en un momento.</p>'; });
+  }
 
   // ----- grillas generadas por las páginas estáticas: <div class="bk-grilla" data-ids="a,b,c"> -----
   function hidratarGrillas() {
@@ -95,8 +139,8 @@
   }
   function misCount() { var n = $('bkMisN'); if (n) n.textContent = S.owned.filter(function (id) { return byId[id]; }).length; }
 
-  window.BK = { BASE: BASE, CAT: CAT, byId: byId, DEMO: DEMO, S: S, IDI: IDI, LBL: LBL, $: $, esc: esc, norm: norm, cmp: cmp, slug: slug, precioHtml: precioHtml, esGratis: esGratis, precioFinal: precioFinal,
+  window.BK = { LIVE: LIVE, API: API, api: api, token: token, cargarMis: cargarMis, comprar: comprar, BASE: BASE, CAT: CAT, byId: byId, DEMO: DEMO, S: S, IDI: IDI, LBL: LBL, $: $, esc: esc, norm: norm, cmp: cmp, slug: slug, precioHtml: precioHtml, esGratis: esGratis, precioFinal: precioFinal,
     tipoDe: tipoDe, isOwned: isOwned, url: url, autorUrl: autorUrl, portada: portada, card: card, seeOne: seeOne, buy: buy, unbuy: unbuy, recomendar: recomendar, masVendidas: masVendidas, leer: leer, hidratarGrillas: hidratarGrillas, misCount: misCount };
-  document.addEventListener('DOMContentLoaded', function () { hidratarGrillas(); misCount(); });
-  if (document.readyState !== 'loading') { hidratarGrillas(); misCount(); }
+  document.addEventListener('DOMContentLoaded', function () { hidratarGrillas(); misCount(); cargarMis(); });
+  if (document.readyState !== 'loading') { hidratarGrillas(); misCount(); cargarMis(); }
 })();
