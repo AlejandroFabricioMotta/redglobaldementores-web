@@ -27,30 +27,6 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-neuroliderazgo-habitable.webp"
  },
  {
-  "titulo": "Pensamientos y Reflexiones para la Vida Plena",
-  "precio": 5,
-  "oferta": 0,
-  "idioma": "es",
-  "confirmado": true,
-  "tags": [],
-  "autor": "Serafín Contreras Galeano",
-  "id": "pensamientos-y-reflexiones-para-la-vida-plena",
-  "ventas": 0,
-  "portada": "../img/editorial/bk-pensamientos-y-reflexiones-para-la-vida-plena.webp"
- },
- {
-  "titulo": "Mentoria Habitable",
-  "precio": 5,
-  "oferta": 0,
-  "idioma": "es",
-  "confirmado": true,
-  "tags": [],
-  "autor": "Nelson de J. Rueda",
-  "id": "mentoria-habitable",
-  "ventas": 0,
-  "portada": "../img/editorial/bk-mentoria-habitable.webp"
- },
- {
   "titulo": "Gobernar Éticamente el Poder",
   "precio": 5,
   "oferta": null,
@@ -61,18 +37,6 @@ window.BOOKSTORE_CATALOG = [
   "id": "gobernar-eticamente-el-poder",
   "ventas": 0,
   "portada": "../img/editorial/bk-gobernar-eticamente-el-poder.webp"
- },
- {
-  "titulo": "Después del Umbral",
-  "precio": 5,
-  "oferta": 0,
-  "idioma": "es",
-  "confirmado": true,
-  "tags": [],
-  "autor": "Alejandro Motta",
-  "id": "despues-del-umbral",
-  "ventas": 0,
-  "portada": "../img/editorial/bk-despues-del-umbral.webp"
  },
  {
   "titulo": "Resumen Cierre Simposio de Mentoria 2026",
@@ -115,34 +79,6 @@ window.BOOKSTORE_CATALOG = [
   "id": "guia-essencial-para-a-mentoria",
   "ventas": 0,
   "portada": "../img/editorial/bk-guia-essencial-para-a-mentoria.webp"
- },
- {
-  "titulo": "Guia Profissional para a Práctica de Mentoria",
-  "precio": 10,
-  "oferta": 0,
-  "idioma": "pt",
-  "confirmado": true,
-  "tags": [
-   "Manuales y Guías"
-  ],
-  "autor": "Academia Global",
-  "id": "guia-profissional-para-a-practica-de-mentoria",
-  "ventas": 0,
-  "portada": "../img/editorial/bk-guia-profissional.webp"
- },
- {
-  "titulo": "Guia Das Disciplinas",
-  "precio": 10,
-  "oferta": 0,
-  "idioma": "pt",
-  "confirmado": true,
-  "tags": [
-   "Manuales y Guías"
-  ],
-  "autor": "Academia Global",
-  "id": "guia-das-disciplinas",
-  "ventas": 0,
-  "portada": "../img/editorial/bk-guia-das-disciplinas.webp"
  },
  {
   "titulo": "Conversaciones Habitables",
