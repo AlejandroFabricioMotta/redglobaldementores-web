@@ -509,7 +509,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "guia-maestra-de-la-mentoria-cxpm-2025-espanol",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-guia-maestra-cxpm.webp"
  },
  {
   "titulo": "Guía Maestra de la Mentoria CPM - 2025 Español",
@@ -523,7 +524,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "guia-maestra-de-la-mentoria-cpm-2025-espanol",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-guia-maestra-cpm.webp"
  },
  {
   "titulo": "Guía Maestra de la Mentoria BPM - 2025 Español",
@@ -537,7 +539,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "guia-maestra-de-la-mentoria-bpm-2025-espanol",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-guia-maestra-bpm.webp"
  },
  {
   "titulo": "Guía Maestra de la Mentoria - 2025 Español",
@@ -551,7 +554,8 @@ window.BOOKSTORE_CATALOG = [
   ],
   "autor": "Academia Global",
   "id": "guia-maestra-de-la-mentoria-2025-espanol",
-  "ventas": 0
+  "ventas": 0,
+  "portada": "../img/editorial/bk-guia-maestra-completa.webp"
  },
  {
   "titulo": "Experiencias Compartidas",
