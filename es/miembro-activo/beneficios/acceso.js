@@ -77,6 +77,22 @@
     } catch (e) { ok.textContent = "No pudimos enviar el enlace. Probá de nuevo."; }
   });
 
+
+  // Libros de Beneficios: se piden al servidor con el token de socio; sin membresía vigente no se entregan.
+  document.addEventListener("click", async function (e) {
+    var a = e.target.closest && e.target.closest("a[data-bf]"); if (!a) return;
+    e.preventDefault();
+    var t = leer(); if (!t) { location.reload(); return; }
+    var w = window.open("", "_blank");
+    try {
+      var r = await fetch("https://claude-rgm.alejandrofabriciomotta.workers.dev/api/beneficio?f=" + encodeURIComponent(a.getAttribute("data-bf")), { headers: { Authorization: "Bearer " + t } });
+      if (r.status === 401) { if (w) w.close(); borrar(); location.reload(); return; }
+      if (!r.ok) throw new Error("x");
+      var u = URL.createObjectURL(await r.blob());
+      if (w) { w.location = u; } else { location.href = u; }
+    } catch (err) { if (w) w.close(); aviso("No pudimos abrir el libro. Probá de nuevo en unos minutos."); window.scrollTo(0, 0); }
+  });
+
   $("ben-salir").addEventListener("click", function () { salir(); location.reload(); });
   iniciar();
 })();
