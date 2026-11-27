@@ -301,3 +301,15 @@ p{margin:0 0 1em}
 @media(max-width:1200px){.g5{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:1060px){.g5{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.g5{grid-template-columns:1fr}}
+
+/* ---- Pago y acceso a cursos (eLearning) ---- */
+.cur-form{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center;margin:14px auto 0;max-width:520px}
+.cur-form input{flex:1 1 240px;min-width:0;padding:13px 16px;border-radius:999px;border:1px solid #c9b64a;background:#fff;color:#141a42;font:500 15px Poppins,system-ui,sans-serif}
+.cur-form .btn{cursor:pointer;border:0}
+.cur-form .btn:disabled{opacity:.6;cursor:wait}
+.cur-msg{flex:1 1 100%;margin:4px 0 0;font-size:14px;text-align:center;color:inherit}
+.cur-beca{flex:1 1 100%;margin:0;font-size:13px;text-align:center;opacity:.85}
+.cur-ya{margin:26px 0 0;font-size:15px;opacity:.9}
+.cur-puerta{padding:10px 0}
+.cur-barra{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;padding:10px 16px;background:#141a42;color:#e0cd63;font:500 14px Poppins,system-ui,sans-serif}
+.cur-salir{background:none;border:1px solid #e0cd63;color:#e0cd63;border-radius:999px;padding:4px 14px;cursor:pointer;font:inherit}
