@@ -121,7 +121,7 @@
     return '<footer class="foot"><div class="wrap">' + quick + '<h2>' + esc(T.rgmName) + ' · <b>' + T.sitesTitle + '</b></h2><div class="sites">' + sites + '</div>' +
       '<a class="back" href="' + esc(url(C.backUrl)) + '">← ' + esc(T.back) + '</a>' +
       '<div class="contact"><div><b>' + esc(T.rgmName) + '</b><br>info@RGMentores.ORG · WApp +54 9 341 5421624<br>Av. Fuerza Aérea 3104, Rosario, Santa Fe, Argentina</div>' +
-      '<div><b>Holding Mentors LLC</b> ' + esc(T.hmRole) + '<br>info@RGMentores.org · WApp +1 954 658 4206<br>40 SW 13th ST, Suite 102, Miami, Florida (33031), USA</div></div>' +
+      '<div><b>Holding Mentors LLC</b> ' + esc(T.hmRole) + '<br>www.HoldingMentors.com · WApp +1 954 658 4206<br>40 SW 13th ST, Suite 102, Miami, Florida (33031), USA</div></div>' +
       '<p class="copy">' + esc(T.copyright) + '</p></div></footer>';
   }
   function langFull(l) { return (I18N[l] && I18N[l].langName && I18N[l].langName[l] ? I18N[l].langName[l] : l).toUpperCase(); }
