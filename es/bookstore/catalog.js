@@ -3,28 +3,27 @@
    autor:null = pendiente. tags de tema = provisorios. ventas = 0 hasta conectar Stripe. */
 window.BOOKSTORE_CATALOG = [
  {
-  "titulo": "La conciencia que transforma. De comprender la vida a aprender a vivirla",
+  "titulo": "Humanización en los servicios asistenciales en salud",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "confirmado": true,
+  "confirmado": false,
   "tags": [],
   "autor": "Nelson de J. Rueda",
-  "id": "la-conciencia-que-transforma-de-comprender-la-vida-a-aprende",
-  "ventas": 0,
-  "portada": "../img/editorial/bk-la-conciencia-que-transforma-de-comprender-la-vida-a-aprende.webp"
+  "id": "humanizacion-en-los-servicios-asistenciales-en-salud",
+  "portada": "../img/editorial/bk-humanizacion-en-los-servicios-asistenciales-en-salud.webp"
  },
  {
-  "titulo": "Neuroliderazgo Habitable",
+  "titulo": "El Gran Misterio de la Vida",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "confirmado": true,
+  "confirmado": false,
   "tags": [],
   "autor": "Nelson de J. Rueda",
-  "id": "neuroliderazgo-habitable",
+  "id": "el-gran-misterio-de-la-vida",
   "ventas": 0,
-  "portada": "../img/editorial/bk-neuroliderazgo-habitable.webp"
+  "portada": "../img/editorial/bk-el-gran-misterio-de-la-vida.webp"
  },
  {
   "titulo": "Pensamientos y Reflexiones para la Vida Plena",
@@ -39,28 +38,28 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-pensamientos-y-reflexiones-para-la-vida-plena.webp"
  },
  {
-  "titulo": "Mentoria Habitable",
+  "titulo": "En Pareja, Un viaje hacia la individualidad.",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "confirmado": true,
+  "confirmado": false,
   "tags": [],
   "autor": "Nelson de J. Rueda",
-  "id": "mentoria-habitable",
+  "id": "en-pareja-un-viaje-hacia-la-individualidad",
   "ventas": 0,
-  "portada": "../img/editorial/bk-mentoria-habitable.webp"
+  "portada": "../img/editorial/bk-en-pareja-un-viaje-hacia-la-individualidad.webp"
  },
  {
-  "titulo": "Gobernar Éticamente el Poder",
+  "titulo": "La consciencia que integra",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "confirmado": true,
+  "confirmado": false,
   "tags": [],
   "autor": "Nelson de J. Rueda",
-  "id": "gobernar-eticamente-el-poder",
+  "id": "la-consciencia-que-integra",
   "ventas": 0,
-  "portada": "../img/editorial/bk-gobernar-eticamente-el-poder.webp"
+  "portada": "../img/editorial/bk-la-consciencia-que-integra.webp"
  },
  {
   "titulo": "Resumen Cierre Simposio de Mentoria 2026",
@@ -105,18 +104,16 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-guia-essencial-para-a-mentoria.webp"
  },
  {
-  "titulo": "Conversaciones Habitables",
+  "titulo": "La conciencia que transforma. De comprender la vida a aprender a vivirla",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
   "confirmado": true,
-  "tags": [
-   "Mentores Expertos"
-  ],
+  "tags": [],
   "autor": "Nelson de J. Rueda",
-  "id": "conversaciones-habitables",
+  "id": "la-conciencia-que-transforma-de-comprender-la-vida-a-aprende",
   "ventas": 0,
-  "portada": "../img/editorial/bk-conversaciones-habitables.webp"
+  "portada": "../img/editorial/bk-la-conciencia-que-transforma-de-comprender-la-vida-a-aprende.webp"
  },
  {
   "titulo": "Manual del Mentor Experto en Educación Continua",
@@ -245,18 +242,16 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-areas-de-especializacion-en-mentoria.webp"
  },
  {
-  "titulo": "Guía Diferencial en el Arte de Preguntar",
+  "titulo": "Coaching Transicional Trascendente",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "confirmado": true,
-  "tags": [
-   "Mentores Expertos"
-  ],
+  "confirmado": false,
+  "tags": [],
   "autor": "Nelson de J. Rueda",
-  "id": "guia-diferencial-en-el-arte-de-preguntar",
+  "id": "coaching-transicional-trascendente",
   "ventas": 0,
-  "portada": "../img/editorial/bk-guia-diferencial-en-el-arte-de-preguntar.webp"
+  "portada": "../img/editorial/bk-coaching-transicional-trascendente.webp"
  },
  {
   "titulo": "El Talento que Trasciende",
@@ -1001,60 +996,51 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-el-origen-de-la-mentoria.webp"
  },
  {
-  "titulo": "Escapando del laberinto del ego",
+  "titulo": "Neuroliderazgo Habitable",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "confirmado": false,
-  "tags": [
-   "Mentores Expertos"
-  ],
+  "confirmado": true,
+  "tags": [],
   "autor": "Nelson de J. Rueda",
-  "id": "escapando-del-laberinto-del-ego",
+  "id": "neuroliderazgo-habitable",
   "ventas": 0,
-  "portada": "../img/editorial/bk-escapando-del-laberinto-del-ego.webp"
+  "portada": "../img/editorial/bk-neuroliderazgo-habitable.webp"
  },
  {
-  "titulo": "Como soltar el nudo",
+  "titulo": "Medir la Cultura",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
   "confirmado": false,
-  "tags": [
-   "Mentores Expertos"
-  ],
+  "tags": [],
   "autor": "Nelson de J. Rueda",
-  "id": "como-soltar-el-nudo",
-  "ventas": 0,
-  "portada": "../img/editorial/bk-como-soltar-el-nudo.webp"
+  "id": "medir-la-cultura",
+  "portada": "../img/editorial/bk-medir-la-cultura.webp"
  },
  {
-  "titulo": "Humanos Habitables",
+  "titulo": "Mentoria Habitable",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "confirmado": false,
-  "tags": [
-   "Mentores Expertos"
-  ],
+  "confirmado": true,
+  "tags": [],
   "autor": "Nelson de J. Rueda",
-  "id": "humanos-habitables",
+  "id": "mentoria-habitable",
   "ventas": 0,
-  "portada": "../img/editorial/bk-humanos-habitables.webp"
+  "portada": "../img/editorial/bk-mentoria-habitable.webp"
  },
  {
-  "titulo": "Equipos Habitables",
+  "titulo": "Gobernar Éticamente el Poder",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "confirmado": false,
-  "tags": [
-   "Mentores Expertos"
-  ],
+  "confirmado": true,
+  "tags": [],
   "autor": "Nelson de J. Rueda",
-  "id": "equipos-habitables",
+  "id": "gobernar-eticamente-el-poder",
   "ventas": 0,
-  "portada": "../img/editorial/bk-equipos-habitables.webp"
+  "portada": "../img/editorial/bk-gobernar-eticamente-el-poder.webp"
  },
  {
   "titulo": "Cuando las Culturas se Encuentran",
@@ -1071,32 +1057,32 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-cuando-las-culturas-se-encuentran.webp"
  },
  {
-  "titulo": "El Inicio del Viaje",
+  "titulo": "Conversaciones Habitables",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "confirmado": false,
+  "confirmado": true,
   "tags": [
    "Mentores Expertos"
   ],
   "autor": "Nelson de J. Rueda",
-  "id": "el-inicio-del-viaje",
+  "id": "conversaciones-habitables",
   "ventas": 0,
-  "portada": "../img/editorial/bk-el-inicio-del-viaje.webp"
+  "portada": "../img/editorial/bk-conversaciones-habitables.webp"
  },
  {
-  "titulo": "Organizaciones Habitables",
+  "titulo": "Guía Diferencial en el Arte de Preguntar",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
-  "confirmado": false,
+  "confirmado": true,
   "tags": [
    "Mentores Expertos"
   ],
   "autor": "Nelson de J. Rueda",
-  "id": "organizaciones-habitables",
+  "id": "guia-diferencial-en-el-arte-de-preguntar",
   "ventas": 0,
-  "portada": "../img/editorial/bk-organizaciones-habitables.webp"
+  "portada": "../img/editorial/bk-guia-diferencial-en-el-arte-de-preguntar.webp"
  },
  {
   "titulo": "Renacer Comercial",
@@ -1155,7 +1141,7 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-legado-en-llamas.webp"
  },
  {
-  "titulo": "Maestria de la Transformación",
+  "titulo": "Organizaciones Habitables",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
@@ -1164,9 +1150,9 @@ window.BOOKSTORE_CATALOG = [
    "Mentores Expertos"
   ],
   "autor": "Nelson de J. Rueda",
-  "id": "maestria-de-la-transformacion",
+  "id": "organizaciones-habitables",
   "ventas": 0,
-  "portada": "../img/editorial/bk-maestria-de-la-transformacion.webp"
+  "portada": "../img/editorial/bk-organizaciones-habitables.webp"
  },
  {
   "titulo": "Emprender después de los 50 años",
@@ -1401,28 +1387,46 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-implementacion-dao-en-la-red-global-de-mentores.webp"
  },
  {
-  "titulo": "La consciencia que integra",
+  "titulo": "Equipos Habitables",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
   "confirmado": false,
-  "tags": [],
+  "tags": [
+   "Mentores Expertos"
+  ],
   "autor": "Nelson de J. Rueda",
-  "id": "la-consciencia-que-integra",
+  "id": "equipos-habitables",
   "ventas": 0,
-  "portada": "../img/editorial/bk-la-consciencia-que-integra.webp"
+  "portada": "../img/editorial/bk-equipos-habitables.webp"
  },
  {
-  "titulo": "El Gran Misterio de la Vida",
+  "titulo": "Humanos Habitables",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
   "confirmado": false,
-  "tags": [],
+  "tags": [
+   "Mentores Expertos"
+  ],
   "autor": "Nelson de J. Rueda",
-  "id": "el-gran-misterio-de-la-vida",
+  "id": "humanos-habitables",
   "ventas": 0,
-  "portada": "../img/editorial/bk-el-gran-misterio-de-la-vida.webp"
+  "portada": "../img/editorial/bk-humanos-habitables.webp"
+ },
+ {
+  "titulo": "Maestria de la Transformación",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "es",
+  "confirmado": false,
+  "tags": [
+   "Mentores Expertos"
+  ],
+  "autor": "Nelson de J. Rueda",
+  "id": "maestria-de-la-transformacion",
+  "ventas": 0,
+  "portada": "../img/editorial/bk-maestria-de-la-transformacion.webp"
  },
  {
   "titulo": "FORJAR CAMINOS",
@@ -1437,16 +1441,18 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-forjar-caminos.webp"
  },
  {
-  "titulo": "En Pareja, Un viaje hacia la individualidad.",
+  "titulo": "El Inicio del Viaje",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
   "confirmado": false,
-  "tags": [],
+  "tags": [
+   "Mentores Expertos"
+  ],
   "autor": "Nelson de J. Rueda",
-  "id": "en-pareja-un-viaje-hacia-la-individualidad",
+  "id": "el-inicio-del-viaje",
   "ventas": 0,
-  "portada": "../img/editorial/bk-en-pareja-un-viaje-hacia-la-individualidad.webp"
+  "portada": "../img/editorial/bk-el-inicio-del-viaje.webp"
  },
  {
   "titulo": "Mapa Evolutivo del Ser",
@@ -1459,18 +1465,6 @@ window.BOOKSTORE_CATALOG = [
   "id": "mapa-evolutivo-del-ser",
   "ventas": 0,
   "portada": "../img/editorial/bk-mapa-evolutivo-del-ser.webp"
- },
- {
-  "titulo": "Coaching Transicional Trascendente",
-  "precio": 5,
-  "oferta": null,
-  "idioma": "es",
-  "confirmado": false,
-  "tags": [],
-  "autor": "Nelson de J. Rueda",
-  "id": "coaching-transicional-trascendente",
-  "ventas": 0,
-  "portada": "../img/editorial/bk-coaching-transicional-trascendente.webp"
  },
  {
   "titulo": "El Murmullo del Poder",
@@ -1565,25 +1559,31 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-a-arquitetura-da-mentoria.webp"
  },
  {
-  "titulo": "Medir la Cultura",
+  "titulo": "Escapando del laberinto del ego",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
   "confirmado": false,
-  "tags": [],
+  "tags": [
+   "Mentores Expertos"
+  ],
   "autor": "Nelson de J. Rueda",
-  "id": "medir-la-cultura",
-  "portada": "../img/editorial/bk-medir-la-cultura.webp"
+  "id": "escapando-del-laberinto-del-ego",
+  "ventas": 0,
+  "portada": "../img/editorial/bk-escapando-del-laberinto-del-ego.webp"
  },
  {
-  "titulo": "Humanización en los servicios asistenciales en salud",
+  "titulo": "Como soltar el nudo",
   "precio": 5,
   "oferta": null,
   "idioma": "es",
   "confirmado": false,
-  "tags": [],
+  "tags": [
+   "Mentores Expertos"
+  ],
   "autor": "Nelson de J. Rueda",
-  "id": "humanizacion-en-los-servicios-asistenciales-en-salud",
-  "portada": "../img/editorial/bk-humanizacion-en-los-servicios-asistenciales-en-salud.webp"
+  "id": "como-soltar-el-nudo",
+  "ventas": 0,
+  "portada": "../img/editorial/bk-como-soltar-el-nudo.webp"
  }
 ];
