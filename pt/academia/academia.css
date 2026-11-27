@@ -289,3 +289,11 @@ p{margin:0 0 1em}
 .col-der{display:flex;flex-direction:column;gap:1.6rem}
 .infograma{margin:0}
 .infograma img{display:block;width:100%;height:auto}
+
+/* eLearning: combo y repositorios */
+.g1{grid-template-columns:minmax(0,520px);justify-content:center}
+.precios--combo{grid-template-columns:minmax(0,420px);justify-content:center}
+.nota-combo{text-align:center;font-size:.92rem;margin:0 0 1.4rem}
+.repo{padding:20px 22px}
+.repo h3{font-size:1.1rem}
+.repo p{font-size:.9rem}
