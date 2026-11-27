@@ -62,3 +62,9 @@
 .hm-langs{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.hm-lang{display:flex;align-items:center;gap:10px;padding:10px 18px;border-radius:999px;background:#f6f2e8;color:#1f2555;font-weight:600;font-size:15px;text-decoration:none}.hm-lang:hover{background:#fff}.hm-lang img{width:28px;height:auto;border-radius:3px}
 @media (max-width:720px){.hm-slide.activo{grid-template-columns:1fr}.hm-hero{padding:40px 0 110px;min-height:0}.hm-accesos-caja{padding:26px 20px}.hm-sec{padding:64px 0 60px}.hm-slide-img{order:-1}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Slides del Home: la imagen va a la derecha al 70 % y se esfuma en degradé hacia el centro (mismo criterio que el BookStore) */
+.hm-hero .hm-slide-img{position:absolute;right:0;top:0;bottom:0;width:64%;z-index:0;pointer-events:none}
+.hm-hero .hm-slide-img img{position:absolute;inset:0;width:100%;height:100%;max-width:none;aspect-ratio:auto;margin:0;border:0;border-radius:0;box-shadow:none;opacity:.7;object-fit:cover;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.55) 30%,#000 62%),linear-gradient(to bottom,#000 78%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.55) 30%,#000 62%),linear-gradient(to bottom,#000 78%,transparent 100%);mask-composite:intersect}
+.hm-hero .hm-slide-txt,.hm-hero .hm-ctl{position:relative;z-index:1}
+@media (max-width:720px){.hm-hero .hm-slide-img{width:100%;order:0}.hm-hero .hm-slide-img img{opacity:.35}}
