@@ -23,7 +23,7 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "el-gran-misterio-de-la-vida",
   "ventas": 0,
-  "portada": "../img/editorial/bk-el-gran-misterio-de-la-vida.webp"
+  "portada": "../img/editorial/bk-el-gran-misterio-de-la-vida-v2.webp"
  },
  {
   "titulo": "Pensamientos y Reflexiones para la Vida Plena",
@@ -47,7 +47,7 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "en-pareja-un-viaje-hacia-la-individualidad",
   "ventas": 0,
-  "portada": "../img/editorial/bk-en-pareja-un-viaje-hacia-la-individualidad.webp"
+  "portada": "../img/editorial/bk-en-pareja-un-viaje-hacia-la-individualidad-v2.webp"
  },
  {
   "titulo": "La consciencia que integra",
@@ -251,7 +251,7 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "coaching-transicional-trascendente",
   "ventas": 0,
-  "portada": "../img/editorial/bk-coaching-transicional-trascendente.webp"
+  "portada": "../img/editorial/bk-coaching-transicional-trascendente-v2.webp"
  },
  {
   "titulo": "El Talento que Trasciende",
@@ -1068,7 +1068,7 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "conversaciones-habitables",
   "ventas": 0,
-  "portada": "../img/editorial/bk-conversaciones-habitables.webp"
+  "portada": "../img/editorial/bk-conversaciones-habitables-v2.webp"
  },
  {
   "titulo": "Guía Diferencial en el Arte de Preguntar",
@@ -1082,7 +1082,7 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "guia-diferencial-en-el-arte-de-preguntar",
   "ventas": 0,
-  "portada": "../img/editorial/bk-guia-diferencial-en-el-arte-de-preguntar.webp"
+  "portada": "../img/editorial/bk-guia-diferencial-en-el-arte-de-preguntar-v2.webp"
  },
  {
   "titulo": "Renacer Comercial",
@@ -1426,7 +1426,7 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "maestria-de-la-transformacion",
   "ventas": 0,
-  "portada": "../img/editorial/bk-maestria-de-la-transformacion.webp"
+  "portada": "../img/editorial/bk-maestria-de-la-transformacion-v2.webp"
  },
  {
   "titulo": "FORJAR CAMINOS",
@@ -1438,7 +1438,7 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "forjar-caminos",
   "ventas": 0,
-  "portada": "../img/editorial/bk-forjar-caminos.webp"
+  "portada": "../img/editorial/bk-forjar-caminos-v2.webp"
  },
  {
   "titulo": "El Inicio del Viaje",
@@ -1452,7 +1452,7 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "el-inicio-del-viaje",
   "ventas": 0,
-  "portada": "../img/editorial/bk-el-inicio-del-viaje.webp"
+  "portada": "../img/editorial/bk-el-inicio-del-viaje-v2.webp"
  },
  {
   "titulo": "Mapa Evolutivo del Ser",
@@ -1464,7 +1464,7 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "mapa-evolutivo-del-ser",
   "ventas": 0,
-  "portada": "../img/editorial/bk-mapa-evolutivo-del-ser.webp"
+  "portada": "../img/editorial/bk-mapa-evolutivo-del-ser-v2.webp"
  },
  {
   "titulo": "El Murmullo del Poder",
@@ -1570,7 +1570,7 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "escapando-del-laberinto-del-ego",
   "ventas": 0,
-  "portada": "../img/editorial/bk-escapando-del-laberinto-del-ego.webp"
+  "portada": "../img/editorial/bk-escapando-del-laberinto-del-ego-v2.webp"
  },
  {
   "titulo": "Como soltar el nudo",
@@ -1584,6 +1584,6 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "como-soltar-el-nudo",
   "ventas": 0,
-  "portada": "../img/editorial/bk-como-soltar-el-nudo.webp"
+  "portada": "../img/editorial/bk-como-soltar-el-nudo-v2.webp"
  }
 ];
