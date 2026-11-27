@@ -1540,5 +1540,16 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Fernanda Ferreira",
   "id": "o-mentor-em-acao",
   "portada": "../img/editorial/bk-o-mentor-em-acao.webp"
+ },
+ {
+  "titulo": "A Arquitetura da Mentoria",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "pt",
+  "confirmado": false,
+  "tags": [],
+  "autor": "Fernanda Ferreira",
+  "id": "a-arquitetura-da-mentoria",
+  "portada": "../img/editorial/bk-a-arquitetura-da-mentoria.webp"
  }
 ];
