@@ -297,3 +297,7 @@ p{margin:0 0 1em}
 .repo{padding:20px 22px}
 .repo h3{font-size:1.1rem}
 .repo p{font-size:.9rem}
+.g5{grid-template-columns:repeat(5,1fr)}
+@media(max-width:1200px){.g5{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1060px){.g5{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.g5{grid-template-columns:1fr}}
