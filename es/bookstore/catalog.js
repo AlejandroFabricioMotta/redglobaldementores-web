@@ -39,6 +39,18 @@ window.BOOKSTORE_CATALOG = [
   "portada": "../img/editorial/bk-pensamientos-y-reflexiones-para-la-vida-plena.webp"
  },
  {
+  "titulo": "Mentoria Habitable",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "es",
+  "confirmado": true,
+  "tags": [],
+  "autor": "Nelson de J. Rueda",
+  "id": "mentoria-habitable",
+  "ventas": 0,
+  "portada": "../img/editorial/bk-mentoria-habitable.webp"
+ },
+ {
   "titulo": "Gobernar Éticamente el Poder",
   "precio": 5,
   "oferta": null,
@@ -1551,5 +1563,16 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Fernanda Ferreira",
   "id": "a-arquitetura-da-mentoria",
   "portada": "../img/editorial/bk-a-arquitetura-da-mentoria.webp"
+ },
+ {
+  "titulo": "Medir la Cultura",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "es",
+  "confirmado": false,
+  "tags": [],
+  "autor": "Nelson de J. Rueda",
+  "id": "medir-la-cultura",
+  "portada": "../img/editorial/bk-medir-la-cultura.webp"
  }
 ];
