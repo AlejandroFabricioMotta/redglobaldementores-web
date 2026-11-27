@@ -1574,5 +1574,16 @@ window.BOOKSTORE_CATALOG = [
   "autor": "Nelson de J. Rueda",
   "id": "medir-la-cultura",
   "portada": "../img/editorial/bk-medir-la-cultura.webp"
+ },
+ {
+  "titulo": "Humanización en los servicios asistenciales en salud",
+  "precio": 5,
+  "oferta": null,
+  "idioma": "es",
+  "confirmado": false,
+  "tags": [],
+  "autor": "Nelson de J. Rueda",
+  "id": "humanizacion-en-los-servicios-asistenciales-en-salud",
+  "portada": "../img/editorial/bk-humanizacion-en-los-servicios-asistenciales-en-salud.webp"
  }
 ];
