@@ -1,92 +1,41 @@
 <!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accesos privados | Red Global de Mentores</title>
-<meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="theme-color" content="#1f2555">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+<html lang="es"><head><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
 <style>
-:root{--fondo:#1f2555;--fondo2:#343e8c;--dorado:#a79738;--arena:#d9c7a5;--texto:#fff;--texto2:#eaecf7;--linea:rgba(167,151,56,.45)}
+:root{--bg:#f3f5f7;--surface:#fff;--fg:#14212b;--muted:#53626f;--line:#d5dde4;--navy:#16324a;--teal:#0f7b78;--err:#a32a2a}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1820;--surface:#16232d;--fg:#e6edf2;--muted:#9db0bf;--line:#2c3d4a;--navy:#8fb8dc;--teal:#4cc2bd;--err:#ff8a8a;color-scheme:dark}}
 *{box-sizing:border-box}
-body{margin:0;background:radial-gradient(900px 420px at 80% 0%,rgba(75,91,219,.28),transparent 70%),var(--fondo);color:var(--texto);font:16px/1.6 "Poppins","Helvetica Neue",Arial,sans-serif;min-height:100vh}
-.contenedor{max-width:1040px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px))}
-.barra{border-bottom:1px solid var(--linea);padding-block:16px}
-.barra .contenedor{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.barra img{height:46px;width:auto;display:block}
-.volver{color:var(--arena);text-decoration:none;font-size:14px;font-weight:500}
-.volver:hover{color:var(--texto)}
-main{padding-block:clamp(40px,7vw,80px) 80px}
-.volanta{margin:0 0 14px;font-size:12.5px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--arena)}
-h1{margin:0;font-size:clamp(30px,5vw,48px);line-height:1.15;font-weight:700;text-wrap:balance}
-.bajada{margin:16px 0 0;max-width:58ch;color:var(--texto2);font-size:17px}
-.linea{width:120px;height:3px;background:var(--dorado);margin:28px 0 40px}
-.grilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
-.tarjeta{display:flex;flex-direction:column;gap:10px;padding:24px;border:1px solid var(--linea);border-radius:14px;background:rgba(255,255,255,.04);color:inherit;text-decoration:none;min-width:0}
-.tarjeta h2{margin:0;font-size:19px;line-height:1.3;font-weight:600}
-.tarjeta p{margin:0;font-size:14.5px;color:var(--texto2)}
-.etiqueta{align-self:flex-start;font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
-.activo{background:var(--dorado);color:var(--fondo)}
-.pronto{border:1px solid var(--linea);color:var(--arena)}
-a.tarjeta:hover,a.tarjeta:focus-visible{background:rgba(255,255,255,.09);border-color:var(--dorado)}
-a.tarjeta:focus-visible{outline:3px solid var(--dorado);outline-offset:3px}
-.tarjeta.ancha{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 22px;padding:16px 24px;background:#5b1a2e;border-color:#9c3a56}
-.tarjeta.ancha .etiqueta{align-self:center}.tarjeta.ancha h2{flex:0 1 auto}.tarjeta.ancha p{flex:1 1 320px}
-a.tarjeta.ancha:hover,a.tarjeta.ancha:focus-visible{background:#74213a;border-color:#c9607e}
-.tarjeta.inactiva{opacity:.78}
-.sub{margin:48px 0 16px;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--arena)}
-.grilla.menor{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.grilla.menor .tarjeta{padding:16px;gap:8px;background:rgba(0,0,0,.22);border-style:dashed}
-.grilla.menor .tarjeta h2{font-size:15px;font-weight:500}
-.nota{margin:36px 0 0;color:var(--arena);font-size:14px;max-width:62ch}
-</style>
-</head>
-<body>
-<div class="barra"><div class="contenedor">
-  <a href="/es/" aria-label="Red Global de Mentores - inicio"><img src="/es/img/logo-rgm-horizontal.png" width="576" height="220" alt="Red Global de Mentores"></a>
-  <a class="volver" href="/es/">← Volver a la Red Global de Mentores</a>
-</div></div>
-<main><div class="contenedor">
-  <p class="volanta">Zona privada</p>
-  <h1>Accesos privados</h1>
-  <p class="bajada">Documentos y tableros internos del ecosistema. Cada uno se abre con su propia contraseña.</p>
-  <div class="linea"></div>
-  <div class="grilla">
-    <a class="tarjeta" href="/MapaTecnico-EcosistemaRGM/">
-      <span class="etiqueta activo">Con contraseña</span>
-      <h2>Arquitectura Tecnológica del Ecosistema RGM</h2>
-      <p>Herramientas, conexiones y recorridos del sistema, para quien lo mantiene.</p>
-    </a>
-    <a class="tarjeta" href="/Organigrama-UnidadesProductivas/">
-      <span class="etiqueta activo">Con contraseña</span>
-      <h2>Organigrama Mixto de Unidades Productivas</h2>
-      <p>Página en preparación: el contenido se arma en conjunto.</p>
-    </a>
-    <a class="tarjeta" href="/seguimiento-unidadesproductivas/">
-      <span class="etiqueta activo">Con contraseña</span>
-      <h2>Información para inversores</h2>
-      <p>En esta sección se muestra lo hecho y lo por hacer en cada Unidad Productiva (Academia Global RGM, RGM+, Editorial RGM, Directorio RGM, Encuentros RGM).</p>
-    </a>
-    <a class="tarjeta ancha" href="/Avances-NuevaGobernanza/">
-      <span class="etiqueta activo">Con contraseña</span>
-      <h2>Avances de la Nueva Gobernanza</h2>
-      <p>En esta sección se muestran los avances realizados en las diferentes tareas listadas por la Carta Magna de la Nueva Gobernanza.</p>
-    </a>
-  </div>
-  <h3 class="sub">Otros tableros de progreso</h3>
-  <div class="grilla menor">
-    <a class="tarjeta" href="/UnidadProductiva-Academia/"><span class="etiqueta activo">Con contraseña</span><h2>Academia Global RGM (e-Learning)</h2></a>
-    <a class="tarjeta" href="/UnidadProductiva-RGMPlus/"><span class="etiqueta activo">Con contraseña</span><h2>RGM Plus (Channel TV y PodCast)</h2></a>
-    <a class="tarjeta" href="/UnidadProductiva-Editorial/"><span class="etiqueta activo">Con contraseña</span><h2>Editorial RGM (BookStore)</h2></a>
-    <a class="tarjeta" href="/UnidadProductiva-Encuentros/"><span class="etiqueta activo">Con contraseña</span><h2>Encuentros (Agenda de Foros, Simposios y Congresos)</h2></a>
-    <a class="tarjeta" href="/UnidadProductiva-MiembrosActivos/"><span class="etiqueta activo">Con contraseña</span><h2>Miembros Activos</h2></a>
-    <a class="tarjeta" href="/UnidadProductiva-Directorio/"><span class="etiqueta activo">Con contraseña</span><h2>Directorio de Mentores Expertos (Ventas de Servicios de Mentoría)</h2></a>
-  </div>
-</div></main>
-<footer style="background:#141a42;border-top:4px solid #a79738;padding:34px 0;margin-top:48px"><div class="rgm-accesos" style="text-align:center;padding:0 16px"><style>.rgm-accesos a{display:inline-flex;align-items:center;gap:10px;padding:13px 28px;border-radius:999px;background:#c9b64a;color:#141a42;font:600 15px/1.2 Poppins,system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.35)}.rgm-accesos a:hover,.rgm-accesos a:focus-visible{background:#e0cd63;outline:2px solid #fff;outline-offset:2px}</style><a href="/es/accesos/"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" style="flex:none"><path fill="currentColor" d="M1 1h6v6H1zM9 1h6v6H9zM1 9h6v6H1zM9 9h6v6H9z"/></svg>Accesos rápidos</a></div></footer>
-</body>
-</html>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;padding:16px}
+form{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;width:min(380px,100%);display:flex;flex-direction:column;gap:14px}
+h1{font:700 22px/1.25 Georgia,serif;color:var(--navy);margin:0}
+p{margin:0;color:var(--muted);font-size:14.5px}
+input{font:inherit;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+input:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+button{font:600 15px inherit;font-family:inherit;padding:10px;border-radius:8px;border:0;background:var(--teal);color:var(--surface);cursor:pointer}
+#e{color:var(--err);font-size:14px;min-height:1.3em}
+</style></head><body>
+<form id="f" autocomplete="off"><h1>Accesos privados</h1><p>Documento de acceso restringido. Ingresá la contraseña para verlo.</p>
+<label for="p" style="font-size:14px">Contraseña</label><input id="p" type="password" inputmode="numeric" autocomplete="off" required autofocus>
+<button id="b" type="submit">Ingresar</button><div id="e" role="alert"></div></form>
+<script>
+var S="9QbdWVQq+LgOWRQDxTGe0w==",I="ukcpDUnmN5muAtCx",C="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",N=600000;
+
+function d(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)})}
+var K="rgm_priv";
+async function abrir(pw){
+  var m=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
+  var k=await crypto.subtle.deriveKey({name:"PBKDF2",salt:d(S),iterations:N,hash:"SHA-256"},m,{name:"AES-GCM",length:256},false,["decrypt"]);
+  var t=await crypto.subtle.decrypt({name:"AES-GCM",iv:d(I)},k,d(C));
+  var x=await new Response(new Blob([t]).stream().pipeThrough(new DecompressionStream("gzip"))).text();
+  document.open();document.write(x);document.close();
+}
+var f=document.getElementById("f"),e=document.getElementById("e"),b=document.getElementById("b");
+var g=null;try{g=sessionStorage.getItem(K)}catch(z){}
+if(g){f.style.visibility="hidden";abrir(g).catch(function(){try{sessionStorage.removeItem(K)}catch(z){}f.style.visibility="visible"})}
+f.addEventListener("submit",async function(ev){
+  ev.preventDefault();e.textContent="";b.disabled=true;b.textContent="Verificando…";
+  var v=document.getElementById("p").value;
+  try{await abrir(v);try{sessionStorage.setItem(K,v)}catch(z){}}
+  catch(x){e.textContent="Contraseña incorrecta.";b.disabled=false;b.textContent="Ingresar"}
+});
+</script></body></html>

@@ -19,15 +19,23 @@ button{font:600 15px inherit;font-family:inherit;padding:10px;border-radius:8px;
 <button id="b" type="submit">Ingresar</button><div id="e" role="alert"></div></form>
 <script>
 var S="+NsuKOGP8+Jx9VDBsAFbZg==",I="9OAklXE/nJlf9seu",C="dUfGk8+yDnbBGBT2eWGNJh3SikJ1LROvZFaP4YZ4+W2aAvlMgXfcluGr5jH9Kg4A6kDaF3mCXIMDtd27/JSYDLYbCRgdCjOSYpDbficXrUNU+SUZP5/43zbOIvAOAJ359rjKLEZxDq88Vz5W1dJpjafkgxI44C9lBqRxJNIHjb4EmZbOkS+if3qd47gHtAl/nXNHtnwU+1Beo5oVSjtGW5EWwPOSC6Q/th+SH85fZU24xYd/TWUcJ5Fuk2UCKd2zmKodBqUGoIuRTYgx41MIuycNbHnntChHvKLV9GvEscL2cde1kVZDrcGq5LglbgmgUOqsSbdQuDtHHoFmrWSDn3TIQk3K8crZTHo0vF/HvThfUeFVJEk+AEGvadmhaSB9+wZkFZcAy/AYhMU+Qj+AVB6PfKp18Cx/Gz/hhi3TpVXah7wryp8ZOgl4Lvdf0K8FxYTpG8G+o8fyA0NkeZ1lAi0jRRuTmFKrXtbRnjGAtQSvfh3M7CqCpOhLwhrzzT/Q+L4enRgm7oU0VcfMFUaL41IOYIR0WrbViW0gFwMASd1vqwMscofWaVubQU779z/Gsv5PKts3FEoLOhDl5ACEY6kPxvlJmw5W235ghuLqmPr/3BYAkloCiE4DxXANeSHr6qOLc+hNJFc8EzPiysDdnAliOYASLksn5xIFE4lwLMcemMfZIaT77aYtgZiSkvEktkttlBQl23/OoRS8gY2NZI3oQB1WSk4TZOWlnqyaft8y/arvnRGwNDzMDLHlHSKN9HINHXcwR2GL5qOrxXBOmsdpaAUU4pI+bxawauvA3qIo6YANruhArJgBJ1NfpJkNl/Xao2TCcZI+zxD/bLRa9q53VKNDlHxKPc8ZnN+BnHZEU4ciHXmyWc+FuO+LvGvVkt83e9xrofz36nk3fbKy7Iz7CQ9xXmagSX48ewWd9CmoepbZ3top2q1XN5fPW3k+kklpVaIyH9OhUp8/TpWLFcY9c2iZyk+u5mFD6bXqGixoa8IikVTaCsF7qiZ7zJFrz64+tWmjrYsUvZ0UwK6a6b2YWTEgvVXZayfRPBtBwTal0DN6HCtCtbspmvp8D2Hx9CmNPMz64yMQj8r4cKpch2Y+hVkcKhJeP/YJ145ayz72yESxX5LIN637tp9nITs/xsjc/ty4S1lm3nVKyFAXJbMENJyASb2wkUDc9yQ4XQo3/V4N9XK3kz9ozDWVyq95cbLado3oH1xuIT4SV/Lz2wTE3YRQ8Iyghp+OZ2yeoebbZEJs59ty13kBA57QZwWc0l4vA/IPX3uF/jGvL64ZLKZ8YLHBaGkjThjZE55Yk7KKmxhX3sTbG/4xjmMZS0Ek9vaHMn3RNa1PqLzNrJoWiFLiBZ7qBJKwuJr4Ztd22pQxLq2+W7OAPnBYLe39c+ZamQ+F3stnO/mrlXerTXMJU8rxzkVV25adpK5imwqGyYDvL3JJ1EjHlw6U1bqhpXyi0jA4+aBFhYtsc0BViaXHRCPr5e47MLqLGKeQYoXkVE6BMiJqM6lDXoxwHgUIVVyghiEvJZs=",N=600000;
+
 function d(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)})}
-document.getElementById("f").addEventListener("submit",async function(ev){
-  ev.preventDefault();var e=document.getElementById("e"),b=document.getElementById("b");e.textContent="";b.disabled=true;b.textContent="Verificando…";
-  try{
-    var m=await crypto.subtle.importKey("raw",new TextEncoder().encode(document.getElementById("p").value),"PBKDF2",false,["deriveKey"]);
-    var k=await crypto.subtle.deriveKey({name:"PBKDF2",salt:d(S),iterations:N,hash:"SHA-256"},m,{name:"AES-GCM",length:256},false,["decrypt"]);
-    var t=await crypto.subtle.decrypt({name:"AES-GCM",iv:d(I)},k,d(C));
-    var x=await new Response(new Blob([t]).stream().pipeThrough(new DecompressionStream("gzip"))).text();
-    document.open();document.write(x);document.close();
-  }catch(x){e.textContent="Contraseña incorrecta.";b.disabled=false;b.textContent="Ingresar"}
+var K="rgm_priv";
+async function abrir(pw){
+  var m=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
+  var k=await crypto.subtle.deriveKey({name:"PBKDF2",salt:d(S),iterations:N,hash:"SHA-256"},m,{name:"AES-GCM",length:256},false,["decrypt"]);
+  var t=await crypto.subtle.decrypt({name:"AES-GCM",iv:d(I)},k,d(C));
+  var x=await new Response(new Blob([t]).stream().pipeThrough(new DecompressionStream("gzip"))).text();
+  document.open();document.write(x);document.close();
+}
+var f=document.getElementById("f"),e=document.getElementById("e"),b=document.getElementById("b");
+var g=null;try{g=sessionStorage.getItem(K)}catch(z){}
+if(g){f.style.visibility="hidden";abrir(g).catch(function(){try{sessionStorage.removeItem(K)}catch(z){}f.style.visibility="visible"})}
+f.addEventListener("submit",async function(ev){
+  ev.preventDefault();e.textContent="";b.disabled=true;b.textContent="Verificando…";
+  var v=document.getElementById("p").value;
+  try{await abrir(v);try{sessionStorage.setItem(K,v)}catch(z){}}
+  catch(x){e.textContent="Contraseña incorrecta.";b.disabled=false;b.textContent="Ingresar"}
 });
 </script></body></html>
