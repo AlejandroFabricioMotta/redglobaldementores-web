@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--bg:#f3f5f7;--surface:#fff;--fg:#14212b;--muted:#53626f;--line:#d5dde4;--navy:#16324a;--teal:#0f7b78;--err:#a32a2a}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1820;--surface:#16232d;--fg:#e6edf2;--muted:#9db0bf;--line:#2c3d4a;--navy:#8fb8dc;--teal:#4cc2bd;--err:#ff8a8a;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;padding:16px}
+form{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;width:min(380px,100%);display:flex;flex-direction:column;gap:14px}
+h1{font:700 22px/1.25 Georgia,serif;color:var(--navy);margin:0}
+p{margin:0;color:var(--muted);font-size:14.5px}
+input{font:inherit;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+input:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+button{font:600 15px inherit;font-family:inherit;padding:10px;border-radius:8px;border:0;background:var(--teal);color:var(--surface);cursor:pointer}
+#e{color:var(--err);font-size:14px;min-height:1.3em}
+</style></head><body>
+<form id="f" autocomplete="off"><h1>Organigrama Mixto de Unidades Productivas</h1><p>Documento de acceso restringido. Ingresá la contraseña para verlo.</p>
+<label for="p" style="font-size:14px">Contraseña</label><input id="p" type="password" inputmode="numeric" autocomplete="off" required autofocus>
+<button id="b" type="submit">Ingresar</button><div id="e" role="alert"></div></form>
+<script>
+var S="+NsuKOGP8+Jx9VDBsAFbZg==",I="9OAklXE/nJlf9seu",C="dUfGk8+yDnbBGBT2eWGNJh3SikJ1LROvZFaP4YZ4+W2aAvlMgXfcluGr5jH9Kg4A6kDaF3mCXIMDtd27/JSYDLYbCRgdCjOSYpDbficXrUNU+SUZP5/43zbOIvAOAJ359rjKLEZxDq88Vz5W1dJpjafkgxI44C9lBqRxJNIHjb4EmZbOkS+if3qd47gHtAl/nXNHtnwU+1Beo5oVSjtGW5EWwPOSC6Q/th+SH85fZU24xYd/TWUcJ5Fuk2UCKd2zmKodBqUGoIuRTYgx41MIuycNbHnntChHvKLV9GvEscL2cde1kVZDrcGq5LglbgmgUOqsSbdQuDtHHoFmrWSDn3TIQk3K8crZTHo0vF/HvThfUeFVJEk+AEGvadmhaSB9+wZkFZcAy/AYhMU+Qj+AVB6PfKp18Cx/Gz/hhi3TpVXah7wryp8ZOgl4Lvdf0K8FxYTpG8G+o8fyA0NkeZ1lAi0jRRuTmFKrXtbRnjGAtQSvfh3M7CqCpOhLwhrzzT/Q+L4enRgm7oU0VcfMFUaL41IOYIR0WrbViW0gFwMASd1vqwMscofWaVubQU779z/Gsv5PKts3FEoLOhDl5ACEY6kPxvlJmw5W235ghuLqmPr/3BYAkloCiE4DxXANeSHr6qOLc+hNJFc8EzPiysDdnAliOYASLksn5xIFE4lwLMcemMfZIaT77aYtgZiSkvEktkttlBQl23/OoRS8gY2NZI3oQB1WSk4TZOWlnqyaft8y/arvnRGwNDzMDLHlHSKN9HINHXcwR2GL5qOrxXBOmsdpaAUU4pI+bxawauvA3qIo6YANruhArJgBJ1NfpJkNl/Xao2TCcZI+zxD/bLRa9q53VKNDlHxKPc8ZnN+BnHZEU4ciHXmyWc+FuO+LvGvVkt83e9xrofz36nk3fbKy7Iz7CQ9xXmagSX48ewWd9CmoepbZ3top2q1XN5fPW3k+kklpVaIyH9OhUp8/TpWLFcY9c2iZyk+u5mFD6bXqGixoa8IikVTaCsF7qiZ7zJFrz64+tWmjrYsUvZ0UwK6a6b2YWTEgvVXZayfRPBtBwTal0DN6HCtCtbspmvp8D2Hx9CmNPMz64yMQj8r4cKpch2Y+hVkcKhJeP/YJ145ayz72yESxX5LIN637tp9nITs/xsjc/ty4S1lm3nVKyFAXJbMENJyASb2wkUDc9yQ4XQo3/V4N9XK3kz9ozDWVyq95cbLado3oH1xuIT4SV/Lz2wTE3YRQ8Iyghp+OZ2yeoebbZEJs59ty13kBA57QZwWc0l4vA/IPX3uF/jGvL64ZLKZ8YLHBaGkjThjZE55Yk7KKmxhX3sTbG/4xjmMZS0Ek9vaHMn3RNa1PqLzNrJoWiFLiBZ7qBJKwuJr4Ztd22pQxLq2+W7OAPnBYLe39c+ZamQ+F3stnO/mrlXerTXMJU8rxzkVV25adpK5imwqGyYDvL3JJ1EjHlw6U1bqhpXyi0jA4+aBFhYtsc0BViaXHRCPr5e47MLqLGKeQYoXkVE6BMiJqM6lDXoxwHgUIVVyghiEvJZs=",N=600000;
+function d(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)})}
+document.getElementById("f").addEventListener("submit",async function(ev){
+  ev.preventDefault();var e=document.getElementById("e"),b=document.getElementById("b");e.textContent="";b.disabled=true;b.textContent="Verificando…";
+  try{
+    var m=await crypto.subtle.importKey("raw",new TextEncoder().encode(document.getElementById("p").value),"PBKDF2",false,["deriveKey"]);
+    var k=await crypto.subtle.deriveKey({name:"PBKDF2",salt:d(S),iterations:N,hash:"SHA-256"},m,{name:"AES-GCM",length:256},false,["decrypt"]);
+    var t=await crypto.subtle.decrypt({name:"AES-GCM",iv:d(I)},k,d(C));
+    var x=await new Response(new Blob([t]).stream().pipeThrough(new DecompressionStream("gzip"))).text();
+    document.open();document.write(x);document.close();
+  }catch(x){e.textContent="Contraseña incorrecta.";b.disabled=false;b.textContent="Ingresar"}
+});
+</script></body></html>
