@@ -34,6 +34,9 @@ h1{margin:0;font-size:clamp(30px,5vw,48px);line-height:1.15;font-weight:700;text
 .pronto{border:1px solid var(--linea);color:var(--arena)}
 a.tarjeta:hover,a.tarjeta:focus-visible{background:rgba(255,255,255,.09);border-color:var(--dorado)}
 a.tarjeta:focus-visible{outline:3px solid var(--dorado);outline-offset:3px}
+.tarjeta.ancha{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 22px;padding:16px 24px;background:#5b1a2e;border-color:#9c3a56}
+.tarjeta.ancha .etiqueta{align-self:center}.tarjeta.ancha h2{flex:0 1 auto}.tarjeta.ancha p{flex:1 1 320px}
+a.tarjeta.ancha:hover,a.tarjeta.ancha:focus-visible{background:#74213a;border-color:#c9607e}
 .tarjeta.inactiva{opacity:.78}
 .sub{margin:48px 0 16px;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--arena)}
 .grilla.menor{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
@@ -68,7 +71,7 @@ a.tarjeta:focus-visible{outline:3px solid var(--dorado);outline-offset:3px}
       <h2>Información para inversores</h2>
       <p>En esta sección se muestra lo hecho y lo por hacer en cada Unidad Productiva (Academia Global RGM, RGM+, Editorial RGM, Directorio RGM, Encuentros RGM).</p>
     </a>
-    <a class="tarjeta" href="/Avances-NuevaGobernanza/">
+    <a class="tarjeta ancha" href="/Avances-NuevaGobernanza/">
       <span class="etiqueta activo">Con contraseña</span>
       <h2>Avances de la Nueva Gobernanza</h2>
       <p>En esta sección se muestran los avances realizados en las diferentes tareas listadas por la Carta Magna de la Nueva Gobernanza.</p>
